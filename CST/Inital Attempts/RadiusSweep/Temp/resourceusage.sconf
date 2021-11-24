@@ -1,0 +1,15 @@
+FeatureKeywords:string:modeler:load:fastloading, meshloading:problem_class_only, front:parametersweep, DELETERESULTS:M0P0, modeler:variables:rebuild, modeler:variables:fullrebuild, mesh::background::boolean, mesh:workflow:LegacyInput_from_CST_Studio_2020, mesh:workflow:nru, mesh:workflow:boolean, mesh:workflow:boolean:advanced, mesh::attributes:rstepw, mesh:lib:blsurf, solver:hf:fd:task:1, monitor:resultfilemap:load, monitor:scaling:peak, monitor:scaling:timeaverage, mesh:tet:adaptive:anisotropicedge, monitor:resultfilemap:save, solver:hf:fd:meshenhancement, la:iterative, la:precond:pdss7, DenseInitDangerousDim, la:parallel_excitation:block, solver:hf:fd:sweep:ctdauto, solver:hf:fd:samples:5, background:normal, boundary:expanded open:zmax, boundary:expanded open:zmin, boundary:open:ConvPML, boundary:open:isolated, boundary:unit cell:xmax, boundary:unit cell:xmin, boundary:unit cell:ymax, boundary:unit cell:ymin, mesh:tet, mesh:tet:autocurvature, mesh:tet:curved, mesh:tet:curved:3, monitor:power:1d, solver:hf:fd, solver:hf:fd:generalpurpose:tet, solver:hf:fd:order:2, solver:hf:fd:portloss, source:floquet, units:Capacitance:pF, units:Conductance:S, units:Current:A, units:Frequency:PHz, units:Inductance:nH, units:Length:nm, units:Resistance:Ohm, units:Temperature:Kelvin, units:Time:ps, units:Voltage:V, solver:pp:sparameter:sensitivityanalysis, solver:pp:sparameter:basicbranch, solver:pp:sparameter:unnorm, solver:pp:sparameter:updatebalance, TABLE:UNIT_CHECK:WRITE, acceleration:cpu:1, acceleration:mpi:0, lineqssolver:setting:acceleratedrestart, lineqssolver:setting:auto, lineqssolver:setting:treecotree, mesh:tet:adaptive, solver:hf:fd:sweep:addcheck:i, solver:hf:fd:samples:6, solver:hf:fd:samples:7, solver:hf:fd:samples:8, solver:hf:fd:sweep:addcheck:b, solver:hf:fd:samples:11, solver:hf:fd:lowweightedmodes
+LastWorkflowState:string:tetmesh:success
+solver_hf_tet_fd/InitialFreePhysicalInMB:int:11739
+solver_hf_tet_fd/MaxResidentSizeInMB:int:240
+solver_hf_tet_fd/MaxResidentSizeMiB:int:663
+solver_hf_tet_fd/MinFreePhysicalInMB:int:11522
+solver_pp/InitialFreePhysicalInMB:int:11715
+solver_pp/MaxResidentSizeInMB:int:38
+solver_pp/MaxResidentSizeMiB:int:21
+solver_pp/MinFreePhysicalInMB:int:11698
+tetmesh/InitialFreePhysicalInMB:int:11736
+tetmesh/MaxResidentSizeInMB:int:80
+tetmesh/MaxResidentSizeMiB:int:65
+tetmesh/MinFreePhysicalInMB:int:11726
+---

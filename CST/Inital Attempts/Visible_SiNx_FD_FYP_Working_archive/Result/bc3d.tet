@@ -1,0 +1,82 @@
+// Number 3D OBJECTS:
+// ^^^^^^^^^^^^^^^^^^
+4
+
+// Obj3D_ID, MediaCode (0=Iso3D,1=LossyIso3D,2=PEC,3=Aniso3D,4=LossyAniso3D,5=SurfaceImp)
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0 0
+>> Material name:
+Vacuum
+
+1 0
+>> Material name:
+air_0
+
+2 0
+>> Material name:
+fused silica
+
+3 0
+>> Material name:
+Silicon Nitride
+
+// Number 2D OBJECTS:
+// ^^^^^^^^^^^^^^^^^^
+22
+
+// Obj2D_ID, BCCode (0=Reg,1=PEC,2=PMC,3=RHO,4=OHM,5=PORT,6=OPEN,7=EXPANDEDOPEN,8=PERIODIC,9=TANGENTIAL,10=NORMAL):
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0 0
+
+1 5
+1
+
+2 5
+2
+
+3 8
+
+4 8
+
+5 8
+
+6 8
+
+7 8
+
+8 8
+
+9 8
+
+10 0
+
+11 0
+
+12 8
+
+13 0
+
+14 0
+
+15 0
+
+16 8
+
+17 0
+
+18 8
+
+19 8
+
+20 0
+
+21 8
+
+// Number 1D OBJECTS:
+// ^^^^^^^^^^^^^^^^^^
+1
+
+// Obj1D_ID, BCCode (0=Reg,1=PEC,2=PMC,3=PORT,4=Lumped):
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0 0
+

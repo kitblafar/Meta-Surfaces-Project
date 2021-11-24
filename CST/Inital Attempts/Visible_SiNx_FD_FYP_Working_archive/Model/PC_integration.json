@@ -1,0 +1,40 @@
+{
+   "execution": {
+      "classname": "SMAPowerByEmagHPCFrame",
+      "libname": "SMAPowerByEmagUI"
+   },
+   "inputVariables": [
+      {
+         "name": "s",
+         "type": "float",
+         "value": 410.0
+      },
+      {
+         "name": "h2",
+         "type": "float",
+         "value": 1000.0
+      },
+      {
+         "name": "r",
+         "type": "float",
+         "value": 200.0
+      },
+      {
+         "name": "h1",
+         "type": "float",
+         "value": 130.0
+      },
+      {
+         "name": "lambda",
+         "type": "float",
+         "value": 630.0
+      }
+   ],
+   "outputVariables": [
+      {
+         "len": 1,
+         "name": "3D\\Average Phase",
+         "type": "float"
+      }
+   ]
+}

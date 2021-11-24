@@ -1,0 +1,35 @@
+{
+    "parameters": [
+        {
+            "descr": "Substrate unit cell size",
+            "expr": "410",
+            "name": "s",
+            "value": "410"
+        },
+        {
+            "descr": "Substrate depth",
+            "expr": "1000",
+            "name": "h2",
+            "value": "1000"
+        },
+        {
+            "descr": "Pillar radius",
+            "expr": "200",
+            "name": "r",
+            "value": "200"
+        },
+        {
+            "descr": "Pillar height",
+            "expr": "130",
+            "name": "h1",
+            "value": "130"
+        },
+        {
+            "descr": "Wavelength",
+            "expr": "630",
+            "name": "lambda",
+            "value": "630"
+        }
+    ],
+    "version": 1
+}
