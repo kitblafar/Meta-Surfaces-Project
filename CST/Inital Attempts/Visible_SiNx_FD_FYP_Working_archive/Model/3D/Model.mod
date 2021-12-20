@@ -636,3 +636,8 @@ With IESolver
      .CalculateModalWeightingCoefficientsCMA "True" 
 End With
 
+'@ change solver type
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+ChangeSolverType "HF Frequency Domain"
+

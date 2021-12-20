@@ -14,21 +14,21 @@
         },
         {
             "descr": "Pillar radius",
-            "expr": "200",
+            "expr": "194",
             "name": "r",
-            "value": "200"
+            "value": "194"
         },
         {
             "descr": "Pillar height",
-            "expr": "130",
+            "expr": "695",
             "name": "h1",
-            "value": "130"
+            "value": "695"
         },
         {
             "descr": "Wavelength",
-            "expr": "630",
+            "expr": "561",
             "name": "lambda",
-            "value": "630"
+            "value": "561"
         }
     ],
     "version": 1

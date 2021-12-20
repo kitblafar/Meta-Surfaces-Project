@@ -1,0 +1,78 @@
+{
+   "execution": {
+      "classname": "SMAPowerByEmagHPCFrame",
+      "libname": "SMAPowerByEmagUI"
+   },
+   "inputVariables": [
+      {
+         "name": "s",
+         "type": "float",
+         "value": 410.0
+      },
+      {
+         "name": "h2",
+         "type": "float",
+         "value": 1000.0
+      },
+      {
+         "name": "r0",
+         "type": "float",
+         "value": 50.0
+      },
+      {
+         "name": "h1",
+         "type": "float",
+         "value": 695.0
+      },
+      {
+         "name": "lambda",
+         "type": "float",
+         "value": 560.0
+      },
+      {
+         "name": "r1",
+         "type": "float",
+         "value": 50.0
+      },
+      {
+         "name": "r2",
+         "type": "float",
+         "value": 70.0
+      },
+      {
+         "name": "r3",
+         "type": "float",
+         "value": 85.0
+      },
+      {
+         "name": "r4",
+         "type": "float",
+         "value": 85.0
+      },
+      {
+         "name": "r5",
+         "type": "float",
+         "value": 115.0
+      }
+   ],
+   "outputVariables": [
+      {
+         "len": 1,
+         "name": "3D\\Average Phase",
+         "type": "float",
+         "value": -107.212365784495
+      },
+      {
+         "len": 1,
+         "name": "3D\\Average Phase_1",
+         "type": "float",
+         "value": 0.703068103064855
+      },
+      {
+         "len": 1,
+         "name": "3D\\Load Data_1",
+         "type": "float",
+         "value": 0.494304757547214
+      }
+   ]
+}

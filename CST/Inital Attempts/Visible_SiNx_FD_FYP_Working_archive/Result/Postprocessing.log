@@ -9,13 +9,15 @@ Units settings:
 
 ----------------------------------------------------------------------------------------
 
-Template based post-processing started at: 06:24 PM Tuesday, 23. November 2021
+Template based post-processing started at: 02:41 PM Monday, 20. December 2021
 
   Evaluating 'Load Data': 0 s
-  Evaluating 'Convert to Wavelength': 0 s
+  Evaluating 'Convert to Wavelength_1_1': 0 s
   Evaluating 'Average Phase': 0 s
+  Evaluating 'Average Phase_1': 0 s
+  Evaluating 'Load Data_1': 1 s
 
-  Total time: 0 s  ( = 0 h, 0 m, 0 s )
+  Total time: 1 s  ( = 0 h, 0 m, 1 s )
 
-Template based post-processing finished at: 06:24 PM Tuesday, 23. November 2021
+Template based post-processing finished at: 02:41 PM Monday, 20. December 2021
 ----------------------------------------------------------------------------------------

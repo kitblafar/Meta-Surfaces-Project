@@ -4,8 +4,8 @@
 [PCB_IMPORT: False]
 [PCB_IMPORT_NEW: False]
 [DISABLE_FAST_LOAD: False]
-[BBOX:-205 205 -205 205 -1157.4999999996032 287.49999999960312]
-[BBOX_STRUCTURE:-205 205 -205 205 -1000 130]
+[BBOX:-205 205 -205 205 -1140.2499999995543 835.24999999955435]
+[BBOX_STRUCTURE:-205 205 -205 205 -1000 695]
 [UNITS]
      .Geometry "nm" 
      .Frequency "PHz" 
@@ -20,7 +20,7 @@
      .SetResultUnit "frequency", "wavelength", "nm" 
 [ENDUNITS]
 [FREQUENCYRANGE]
-Solver.FrequencyRange "(CLight * 1e-06)/(630+0.001)", "(CLight * 1e-06)/(630-0.001)" 
+Solver.FrequencyRange "(CLight * 1e-06)/(561+0.001)", "(CLight * 1e-06)/(561-0.001)" 
 [ENDFREQUENCYRANGE]
 [FREQUENCYRANGE_PARAMETRIC]
 Solver.FrequencyRange "(CLight * 1e-06)/(lambda+0.001)", "(CLight * 1e-06)/(lambda-0.001)" 

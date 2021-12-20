@@ -1,7 +1,7 @@
 10
 0
 0
-3
+5
 Load Data
 Mix Template Results
 1
@@ -12,7 +12,7 @@ EP11
 Mix Template Results.rtp
 1
 Load Data
-Convert to Wavelength
+Convert to Wavelength_1_1
 0D or 1D Result from 1D Result (Rescale, Derivation, etc)
 1
 1DC
@@ -21,7 +21,7 @@ P
 EP11
 0D or 1D Result from 1D Result (Rescale, Derivation, etc).rtp
 1
-Convert to Wavelength
+Convert to Wavelength_1_1
 Average Phase
 0D or 1D Result from 1D Result (Rescale, Derivation, etc)
 1
@@ -32,5 +32,27 @@ EP11
 0D or 1D Result from 1D Result (Rescale, Derivation, etc).rtp
 1
 Average Phase
+Average Phase_1
+0D or 1D Result from 1D Result (Rescale, Derivation, etc)
 1
+0D
+General 1D
+P
+EP11
+0D or 1D Result from 1D Result (Rescale, Derivation, etc).rtp
+1
+Average Phase_1
+Load Data_1
+Mix Template Results
+1
+0D
+General 1D
+P
+EP11
+Mix Template Results.rtp
+1
+Load Data_1
+3
 1:Tables\1D Results\Load Data
+2:Tables\1D Results\Load Data_1
+3:Tables\0D Results\Load Data_1

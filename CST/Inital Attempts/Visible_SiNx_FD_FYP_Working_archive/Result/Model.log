@@ -1,11 +1,11 @@
-23/Nov/2021 18:24:29  Units settings: 
+20/Dec/2021 14:32:21  Units settings: 
                       
                         Dimensions: nm
                         Frequency:  PHz
                         Time:       ps
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:29  Boundary conditions: 
+20/Dec/2021 14:32:21  Boundary conditions: 
                       
                         YZsymmetry: none
                         XZsymmetry: none
@@ -21,635 +21,2431 @@
                         Zmax: expanded open
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:29  Order settings: 
+20/Dec/2021 14:32:21  Order settings: 
                       
                         Solver order   : 2nd (constant)
                         Curved elements: up to order 3 (automatic)
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:29    Mesh time                :	1 s
+20/Dec/2021 14:32:22    Mesh time                :	1 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:30  
+20/Dec/2021 14:32:22  
                       ================================================================================
                       Frequency Domain Solver calculation cycle started
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:30  Solver started at: 06:24 PM Tuesday, 23. November 2021 (GMT Standard Time)
+20/Dec/2021 14:32:22  Solver started at: 02:32 PM Monday, 20. December 2021 (GMT Standard Time)
                       
                         Module:  Frequency Domain: S-Parameter (Win 64)
                         Version: 2021.1 Release from 2020-11-10 (change 826605)
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:30  The low frequency stabilization is not applied to periodic problems.
+20/Dec/2021 14:32:22  The low frequency stabilization is not applied to periodic problems.
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:30    Calculation 1 of 1 (Frequency: 0.475862 PHz, Theta: 0, Phi: 0)
+20/Dec/2021 14:32:22    Calculation 1 of 1 (Frequency: 0.53439 PHz, Theta: 0, Phi: 0)
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:30  The wavelength based mesh refinement has been applied to 6.5% of all mesh edges.
+20/Dec/2021 14:32:22  The wavelength based mesh refinement has been applied to 7.7% of all mesh edges.
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:30  For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
+20/Dec/2021 14:32:23  For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:31  Adaptive mesh refinement pass 1
+20/Dec/2021 14:32:23  Adaptive mesh refinement pass 1
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:31  Performing block excitation with block size 8 and 8 threads.  More...
+20/Dec/2021 14:32:23  Performing block excitation with block size 8 and 8 threads.  More...
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:32    Matrix setup time        :	0 s
-                        Degrees of freedom       :	11740
-                        Number of mesh cells     :	1701
+20/Dec/2021 14:32:33    Matrix setup time        :	0 s
+                        Degrees of freedom       :	25244
+                        Number of mesh cells     :	3775
                       
                         Stimulation port         :	Zmin
                         Mode number              :	1
-                        Accuracy                 :	9.61407e-05
-                        Iterations               :	27
-                        Solver time              :	1 s
+                        Accuracy                 :	9.23398e-05
+                        Iterations               :	67
+                        Solver time              :	6 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:32    Stimulation port         :	Zmin
+20/Dec/2021 14:32:33    Stimulation port         :	Zmin
                         Mode number              :	2
-                        Accuracy                 :	9.1e-05
-                        Iterations               :	22
-                        Solver time              :	0 s
+                        Accuracy                 :	8.686e-05
+                        Iterations               :	69
+                        Solver time              :	6 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:32    Stimulation port         :	Zmin
+20/Dec/2021 14:32:33    Stimulation port         :	Zmin
                         Mode number              :	3
-                        Accuracy                 :	6.40999e-05
-                        Iterations               :	16
-                        Solver time              :	0 s
+                        Accuracy                 :	8.76063e-05
+                        Iterations               :	83
+                        Solver time              :	7 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:32    Stimulation port         :	Zmin
+20/Dec/2021 14:32:33    Stimulation port         :	Zmin
                         Mode number              :	4
-                        Accuracy                 :	7.25007e-05
-                        Iterations               :	14
-                        Solver time              :	0 s
+                        Accuracy                 :	9.4835e-05
+                        Iterations               :	54
+                        Solver time              :	5 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:32    Stimulation port         :	Zmin
+20/Dec/2021 14:32:33    Stimulation port         :	Zmin
                         Mode number              :	5
-                        Accuracy                 :	5.45777e-05
-                        Iterations               :	17
-                        Solver time              :	0 s
+                        Accuracy                 :	7.3754e-05
+                        Iterations               :	95
+                        Solver time              :	8 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:32    Stimulation port         :	Zmin
+20/Dec/2021 14:32:33    Stimulation port         :	Zmin
                         Mode number              :	6
-                        Accuracy                 :	4.74852e-05
-                        Iterations               :	16
-                        Solver time              :	0 s
+                        Accuracy                 :	9.16553e-05
+                        Iterations               :	55
+                        Solver time              :	5 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:32    Stimulation port         :	Zmax
+20/Dec/2021 14:32:33    Stimulation port         :	Zmax
                         Mode number              :	1
-                        Accuracy                 :	9.18622e-05
-                        Iterations               :	26
-                        Solver time              :	1 s
+                        Accuracy                 :	9.3392e-05
+                        Iterations               :	66
+                        Solver time              :	6 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:32    Stimulation port         :	Zmax
+20/Dec/2021 14:32:33    Stimulation port         :	Zmax
                         Mode number              :	2
-                        Accuracy                 :	8.30918e-05
-                        Iterations               :	22
-                        Solver time              :	0 s
+                        Accuracy                 :	5.6701e-05
+                        Iterations               :	73
+                        Solver time              :	6 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:32    Stimulation port         :	Zmax
+20/Dec/2021 14:32:33    Stimulation port         :	Zmax
                         Mode number              :	3
-                        Accuracy                 :	5.97833e-05
+                        Accuracy                 :	6.91533e-05
+                        Iterations               :	94
+                        Solver time              :	5 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:32:33    Stimulation port         :	Zmax
+                        Mode number              :	4
+                        Accuracy                 :	9.99434e-05
+                        Iterations               :	61
+                        Solver time              :	4 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:32:33    Stimulation port         :	Zmax
+                        Mode number              :	5
+                        Accuracy                 :	8.26051e-05
+                        Iterations               :	91
+                        Solver time              :	4 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:32:33    Stimulation port         :	Zmax
+                        Mode number              :	6
+                        Accuracy                 :	9.61325e-05
+                        Iterations               :	57
+                        Solver time              :	3 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:32:33  6% of all mesh edges seem to be longer than expected. The adaptive mesh refinement's growth limitation will therefore 
+                      use 5220 instead of 2523 mesh cells as a reference.
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:32:33  The wavelength based mesh refinement has been applied to 0.3% of all mesh edges.
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:32:34  For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:32:34  Adaptive mesh refinement pass 2
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:32:47    Matrix setup time        :	0 s
+                        Degrees of freedom       :	30814
+                        Number of mesh cells     :	4530
+                      
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	9.60749e-05
+                        Iterations               :	73
+                        Solver time              :	8 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:32:47    Stimulation port         :	Zmin
+                        Mode number              :	2
+                        Accuracy                 :	8.91705e-05
+                        Iterations               :	71
+                        Solver time              :	8 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:32:47    Stimulation port         :	Zmin
+                        Mode number              :	3
+                        Accuracy                 :	8.2121e-05
+                        Iterations               :	89
+                        Solver time              :	9 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:32:47    Stimulation port         :	Zmin
+                        Mode number              :	4
+                        Accuracy                 :	9.56444e-05
+                        Iterations               :	63
+                        Solver time              :	7 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:32:47    Stimulation port         :	Zmin
+                        Mode number              :	5
+                        Accuracy                 :	7.53975e-05
+                        Iterations               :	86
+                        Solver time              :	9 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:32:47    Stimulation port         :	Zmin
+                        Mode number              :	6
+                        Accuracy                 :	7.90039e-05
+                        Iterations               :	63
+                        Solver time              :	7 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:32:47    Stimulation port         :	Zmax
+                        Mode number              :	1
+                        Accuracy                 :	4.9078e-05
+                        Iterations               :	76
+                        Solver time              :	8 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:32:47    Stimulation port         :	Zmax
+                        Mode number              :	2
+                        Accuracy                 :	9.99142e-05
+                        Iterations               :	73
+                        Solver time              :	8 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:32:47    Stimulation port         :	Zmax
+                        Mode number              :	3
+                        Accuracy                 :	5.72204e-05
+                        Iterations               :	93
+                        Solver time              :	6 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:32:47    Stimulation port         :	Zmax
+                        Mode number              :	4
+                        Accuracy                 :	7.95068e-05
+                        Iterations               :	61
+                        Solver time              :	5 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:32:47    Stimulation port         :	Zmax
+                        Mode number              :	5
+                        Accuracy                 :	7.05979e-05
+                        Iterations               :	86
+                        Solver time              :	5 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:32:47    Stimulation port         :	Zmax
+                        Mode number              :	6
+                        Accuracy                 :	6.44979e-05
+                        Iterations               :	70
+                        Solver time              :	4 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:32:47    Delta calculation        
+20/Dec/2021 14:32:47    All S-Parameters         :	0.0203255
+
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:32:48  For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:32:48  Adaptive mesh refinement pass 3
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:02    Matrix setup time        :	0 s
+                        Degrees of freedom       :	42520
+                        Number of mesh cells     :	6235
+                      
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	6.80482e-05
+                        Iterations               :	50
+                        Solver time              :	8 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:02    Stimulation port         :	Zmin
+                        Mode number              :	2
+                        Accuracy                 :	9.01809e-05
+                        Iterations               :	50
+                        Solver time              :	8 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:02    Stimulation port         :	Zmin
+                        Mode number              :	3
+                        Accuracy                 :	8.28414e-05
+                        Iterations               :	75
+                        Solver time              :	11 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:02    Stimulation port         :	Zmin
+                        Mode number              :	4
+                        Accuracy                 :	9.26118e-05
+                        Iterations               :	44
+                        Solver time              :	7 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:02    Stimulation port         :	Zmin
+                        Mode number              :	5
+                        Accuracy                 :	8.38924e-05
+                        Iterations               :	75
+                        Solver time              :	11 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:02    Stimulation port         :	Zmin
+                        Mode number              :	6
+                        Accuracy                 :	8.76743e-05
+                        Iterations               :	43
+                        Solver time              :	7 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:02    Stimulation port         :	Zmax
+                        Mode number              :	1
+                        Accuracy                 :	5.90852e-05
+                        Iterations               :	50
+                        Solver time              :	8 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:02    Stimulation port         :	Zmax
+                        Mode number              :	2
+                        Accuracy                 :	4.84038e-05
+                        Iterations               :	55
+                        Solver time              :	9 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:02    Stimulation port         :	Zmax
+                        Mode number              :	3
+                        Accuracy                 :	7.70246e-05
+                        Iterations               :	69
+                        Solver time              :	7 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:02    Stimulation port         :	Zmax
+                        Mode number              :	4
+                        Accuracy                 :	2.34528e-05
+                        Iterations               :	59
+                        Solver time              :	6 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:02    Stimulation port         :	Zmax
+                        Mode number              :	5
+                        Accuracy                 :	8.6166e-05
+                        Iterations               :	70
+                        Solver time              :	6 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:02    Stimulation port         :	Zmax
+                        Mode number              :	6
+                        Accuracy                 :	9.38683e-05
+                        Iterations               :	44
+                        Solver time              :	5 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:02    Delta calculation        
+20/Dec/2021 14:33:02    All S-Parameters         :	0.0999987
+
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:03  For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:03  Adaptive mesh refinement pass 4
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:18    Matrix setup time        :	1 s
+                        Degrees of freedom       :	53918
+                        Number of mesh cells     :	7943
+                      
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	6.57171e-05
+                        Iterations               :	38
+                        Solver time              :	8 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:18    Stimulation port         :	Zmin
+                        Mode number              :	2
+                        Accuracy                 :	8.88235e-05
+                        Iterations               :	39
+                        Solver time              :	8 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:18    Stimulation port         :	Zmin
+                        Mode number              :	3
+                        Accuracy                 :	9.92861e-05
+                        Iterations               :	63
+                        Solver time              :	12 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:18    Stimulation port         :	Zmin
+                        Mode number              :	4
+                        Accuracy                 :	8.07752e-05
+                        Iterations               :	34
+                        Solver time              :	7 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:18    Stimulation port         :	Zmin
+                        Mode number              :	5
+                        Accuracy                 :	7.00722e-05
+                        Iterations               :	51
+                        Solver time              :	10 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:18    Stimulation port         :	Zmin
+                        Mode number              :	6
+                        Accuracy                 :	8.80725e-05
+                        Iterations               :	34
+                        Solver time              :	7 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:18    Stimulation port         :	Zmax
+                        Mode number              :	1
+                        Accuracy                 :	9.51468e-05
+                        Iterations               :	42
+                        Solver time              :	9 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:18    Stimulation port         :	Zmax
+                        Mode number              :	2
+                        Accuracy                 :	9.74226e-05
+                        Iterations               :	52
+                        Solver time              :	10 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:18    Stimulation port         :	Zmax
+                        Mode number              :	3
+                        Accuracy                 :	3.45711e-05
+                        Iterations               :	52
+                        Solver time              :	7 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:18    Stimulation port         :	Zmax
+                        Mode number              :	4
+                        Accuracy                 :	5.60919e-05
+                        Iterations               :	38
+                        Solver time              :	6 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:18    Stimulation port         :	Zmax
+                        Mode number              :	5
+                        Accuracy                 :	7.90165e-05
+                        Iterations               :	52
+                        Solver time              :	6 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:18    Stimulation port         :	Zmax
+                        Mode number              :	6
+                        Accuracy                 :	7.90548e-05
+                        Iterations               :	37
+                        Solver time              :	5 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:18    Delta calculation        
+20/Dec/2021 14:33:18    All S-Parameters         :	0.0905129
+
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:19  For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:19  Adaptive mesh refinement pass 5
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:36    Matrix setup time        :	1 s
+                        Degrees of freedom       :	65032
+                        Number of mesh cells     :	9617
+                      
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	7.87788e-05
+                        Iterations               :	41
+                        Solver time              :	10 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:36    Stimulation port         :	Zmin
+                        Mode number              :	2
+                        Accuracy                 :	6.75188e-05
+                        Iterations               :	38
+                        Solver time              :	9 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:36    Stimulation port         :	Zmin
+                        Mode number              :	3
+                        Accuracy                 :	7.98065e-05
+                        Iterations               :	52
+                        Solver time              :	12 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:36    Stimulation port         :	Zmin
+                        Mode number              :	4
+                        Accuracy                 :	6.48529e-05
+                        Iterations               :	33
+                        Solver time              :	8 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:36    Stimulation port         :	Zmin
+                        Mode number              :	5
+                        Accuracy                 :	9.01592e-05
+                        Iterations               :	49
+                        Solver time              :	11 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:36    Stimulation port         :	Zmin
+                        Mode number              :	6
+                        Accuracy                 :	9.65542e-05
+                        Iterations               :	35
+                        Solver time              :	8 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:36    Stimulation port         :	Zmax
+                        Mode number              :	1
+                        Accuracy                 :	6.77073e-05
+                        Iterations               :	38
+                        Solver time              :	9 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:36    Stimulation port         :	Zmax
+                        Mode number              :	2
+                        Accuracy                 :	7.12513e-05
+                        Iterations               :	38
+                        Solver time              :	9 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:36    Stimulation port         :	Zmax
+                        Mode number              :	3
+                        Accuracy                 :	5.4751e-05
+                        Iterations               :	47
+                        Solver time              :	7 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:36    Stimulation port         :	Zmax
+                        Mode number              :	4
+                        Accuracy                 :	9.25437e-05
+                        Iterations               :	30
+                        Solver time              :	6 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:36    Stimulation port         :	Zmax
+                        Mode number              :	5
+                        Accuracy                 :	6.7274e-05
+                        Iterations               :	53
+                        Solver time              :	7 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:36    Stimulation port         :	Zmax
+                        Mode number              :	6
+                        Accuracy                 :	9.11881e-05
+                        Iterations               :	39
+                        Solver time              :	6 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:36    Delta calculation        
+20/Dec/2021 14:33:36    All S-Parameters         :	0.0983395
+
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:37  For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:37  Adaptive mesh refinement pass 6
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:56    Matrix setup time        :	0 s
+                        Degrees of freedom       :	75720
+                        Number of mesh cells     :	11261
+                      
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	9.58558e-05
+                        Iterations               :	39
+                        Solver time              :	12 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:56    Stimulation port         :	Zmin
+                        Mode number              :	2
+                        Accuracy                 :	9.35272e-05
+                        Iterations               :	33
+                        Solver time              :	9 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:56    Stimulation port         :	Zmin
+                        Mode number              :	3
+                        Accuracy                 :	9.80874e-05
+                        Iterations               :	42
+                        Solver time              :	12 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:56    Stimulation port         :	Zmin
+                        Mode number              :	4
+                        Accuracy                 :	8.74881e-05
+                        Iterations               :	31
+                        Solver time              :	9 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:56    Stimulation port         :	Zmin
+                        Mode number              :	5
+                        Accuracy                 :	7.70899e-05
+                        Iterations               :	49
+                        Solver time              :	13 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:56    Stimulation port         :	Zmin
+                        Mode number              :	6
+                        Accuracy                 :	8.61633e-05
+                        Iterations               :	32
+                        Solver time              :	9 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:56    Stimulation port         :	Zmax
+                        Mode number              :	1
+                        Accuracy                 :	8.71194e-05
+                        Iterations               :	39
+                        Solver time              :	11 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:56    Stimulation port         :	Zmax
+                        Mode number              :	2
+                        Accuracy                 :	6.56313e-05
+                        Iterations               :	34
+                        Solver time              :	10 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:56    Stimulation port         :	Zmax
+                        Mode number              :	3
+                        Accuracy                 :	5.32877e-05
+                        Iterations               :	51
+                        Solver time              :	9 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:56    Stimulation port         :	Zmax
+                        Mode number              :	4
+                        Accuracy                 :	9.24227e-05
+                        Iterations               :	29
+                        Solver time              :	6 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:56    Stimulation port         :	Zmax
+                        Mode number              :	5
+                        Accuracy                 :	5.37592e-05
+                        Iterations               :	47
+                        Solver time              :	8 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:56    Stimulation port         :	Zmax
+                        Mode number              :	6
+                        Accuracy                 :	9.86053e-05
+                        Iterations               :	30
+                        Solver time              :	6 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:56    Delta calculation        
+20/Dec/2021 14:33:56    All S-Parameters         :	0.0943576
+
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:57  For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:33:57  Adaptive mesh refinement pass 7
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:34:17    Matrix setup time        :	0 s
+                        Solver setup             :	1 s
+                        Degrees of freedom       :	87002
+                        Number of mesh cells     :	12949
+                      
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	8.67613e-05
+                        Iterations               :	31
+                        Solver time              :	10 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:34:17    Stimulation port         :	Zmin
+                        Mode number              :	2
+                        Accuracy                 :	9.71531e-05
+                        Iterations               :	30
+                        Solver time              :	10 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:34:17    Stimulation port         :	Zmin
+                        Mode number              :	3
+                        Accuracy                 :	9.68145e-05
+                        Iterations               :	48
+                        Solver time              :	15 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:34:17    Stimulation port         :	Zmin
+                        Mode number              :	4
+                        Accuracy                 :	9.52456e-05
+                        Iterations               :	27
+                        Solver time              :	9 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:34:17    Stimulation port         :	Zmin
+                        Mode number              :	5
+                        Accuracy                 :	9.31219e-05
+                        Iterations               :	43
+                        Solver time              :	14 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:34:17    Stimulation port         :	Zmin
+                        Mode number              :	6
+                        Accuracy                 :	9.30172e-05
+                        Iterations               :	26
+                        Solver time              :	9 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:34:17    Stimulation port         :	Zmax
+                        Mode number              :	1
+                        Accuracy                 :	7.23113e-05
+                        Iterations               :	32
+                        Solver time              :	11 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:34:17    Stimulation port         :	Zmax
+                        Mode number              :	2
+                        Accuracy                 :	7.76047e-05
+                        Iterations               :	32
+                        Solver time              :	11 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:34:17    Stimulation port         :	Zmax
+                        Mode number              :	3
+                        Accuracy                 :	8.16085e-05
+                        Iterations               :	43
+                        Solver time              :	10 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:34:17    Stimulation port         :	Zmax
+                        Mode number              :	4
+                        Accuracy                 :	6.52236e-05
+                        Iterations               :	29
+                        Solver time              :	8 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:34:17    Stimulation port         :	Zmax
+                        Mode number              :	5
+                        Accuracy                 :	5.81064e-05
+                        Iterations               :	44
+                        Solver time              :	9 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:34:17    Stimulation port         :	Zmax
+                        Mode number              :	6
+                        Accuracy                 :	8.2485e-05
                         Iterations               :	28
-                        Solver time              :	1 s
+                        Solver time              :	7 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:32    Stimulation port         :	Zmax
-                        Mode number              :	4
-                        Accuracy                 :	9.22058e-05
-                        Iterations               :	22
-                        Solver time              :	1 s
-                      
+20/Dec/2021 14:34:17    Delta calculation        
+20/Dec/2021 14:34:17    All S-Parameters         :	0.0518539
+
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:34:18  For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:32    Stimulation port         :	Zmax
-                        Mode number              :	5
-                        Accuracy                 :	6.52915e-05
-                        Iterations               :	27
-                        Solver time              :	1 s
-                      
+20/Dec/2021 14:34:19  Adaptive mesh refinement pass 8
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:32    Stimulation port         :	Zmax
-                        Mode number              :	6
-                        Accuracy                 :	8.91365e-05
-                        Iterations               :	26
-                        Solver time              :	1 s
-                      
-                      
-                      ------------------------------------------------------------------------------
-23/Nov/2021 18:24:32  8% of all mesh edges seem to be longer than expected. The adaptive mesh refinement's growth limitation will therefore 
-                      use 2548 instead of 1173 mesh cells as a reference.
-                      
-                      ------------------------------------------------------------------------------
-23/Nov/2021 18:24:33  For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
-                      
-                      ------------------------------------------------------------------------------
-23/Nov/2021 18:24:33  Adaptive mesh refinement pass 2
-                      
-                      ------------------------------------------------------------------------------
-23/Nov/2021 18:24:35    Matrix setup time        :	0 s
-                        Degrees of freedom       :	16206
-                        Number of mesh cells     :	2343
+20/Dec/2021 14:34:43    Matrix setup time        :	0 s
+                        Degrees of freedom       :	97922
+                        Number of mesh cells     :	14621
                       
                         Stimulation port         :	Zmin
                         Mode number              :	1
-                        Accuracy                 :	8.02084e-05
-                        Iterations               :	22
-                        Solver time              :	1 s
+                        Accuracy                 :	9.39958e-05
+                        Iterations               :	33
+                        Solver time              :	14 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:35    Stimulation port         :	Zmin
+20/Dec/2021 14:34:43    Stimulation port         :	Zmin
                         Mode number              :	2
-                        Accuracy                 :	9.3129e-05
-                        Iterations               :	20
-                        Solver time              :	1 s
+                        Accuracy                 :	7.75451e-05
+                        Iterations               :	30
+                        Solver time              :	13 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:35    Stimulation port         :	Zmin
+20/Dec/2021 14:34:43    Stimulation port         :	Zmin
                         Mode number              :	3
-                        Accuracy                 :	5.88577e-05
-                        Iterations               :	15
-                        Solver time              :	1 s
+                        Accuracy                 :	9.58428e-05
+                        Iterations               :	43
+                        Solver time              :	17 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:35    Stimulation port         :	Zmin
+20/Dec/2021 14:34:43    Stimulation port         :	Zmin
                         Mode number              :	4
-                        Accuracy                 :	2.54198e-05
-                        Iterations               :	17
-                        Solver time              :	1 s
+                        Accuracy                 :	9.62761e-05
+                        Iterations               :	35
+                        Solver time              :	15 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:35    Stimulation port         :	Zmin
+20/Dec/2021 14:34:43    Stimulation port         :	Zmin
                         Mode number              :	5
-                        Accuracy                 :	6.8852e-05
-                        Iterations               :	14
-                        Solver time              :	1 s
+                        Accuracy                 :	7.419e-05
+                        Iterations               :	42
+                        Solver time              :	17 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:35    Stimulation port         :	Zmin
+20/Dec/2021 14:34:43    Stimulation port         :	Zmin
                         Mode number              :	6
-                        Accuracy                 :	4.04575e-05
-                        Iterations               :	17
-                        Solver time              :	1 s
+                        Accuracy                 :	8.08699e-05
+                        Iterations               :	33
+                        Solver time              :	14 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:35    Stimulation port         :	Zmax
+20/Dec/2021 14:34:43    Stimulation port         :	Zmax
                         Mode number              :	1
-                        Accuracy                 :	9.5394e-05
-                        Iterations               :	19
-                        Solver time              :	1 s
+                        Accuracy                 :	6.74519e-05
+                        Iterations               :	38
+                        Solver time              :	16 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:35    Stimulation port         :	Zmax
+20/Dec/2021 14:34:43    Stimulation port         :	Zmax
                         Mode number              :	2
-                        Accuracy                 :	9.55468e-05
-                        Iterations               :	21
-                        Solver time              :	1 s
+                        Accuracy                 :	8.03984e-05
+                        Iterations               :	32
+                        Solver time              :	13 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:35    Stimulation port         :	Zmax
+20/Dec/2021 14:34:43    Stimulation port         :	Zmax
                         Mode number              :	3
-                        Accuracy                 :	2.42597e-05
-                        Iterations               :	20
-                        Solver time              :	1 s
+                        Accuracy                 :	8.82591e-05
+                        Iterations               :	49
+                        Solver time              :	11 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:35    Stimulation port         :	Zmax
+20/Dec/2021 14:34:43    Stimulation port         :	Zmax
                         Mode number              :	4
-                        Accuracy                 :	8.71576e-05
-                        Iterations               :	19
-                        Solver time              :	1 s
+                        Accuracy                 :	5.84759e-05
+                        Iterations               :	29
+                        Solver time              :	8 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:35    Stimulation port         :	Zmax
+20/Dec/2021 14:34:43    Stimulation port         :	Zmax
                         Mode number              :	5
-                        Accuracy                 :	3.44956e-05
-                        Iterations               :	20
-                        Solver time              :	1 s
+                        Accuracy                 :	5.95228e-05
+                        Iterations               :	47
+                        Solver time              :	10 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:35    Stimulation port         :	Zmax
+20/Dec/2021 14:34:43    Stimulation port         :	Zmax
                         Mode number              :	6
-                        Accuracy                 :	9.16712e-05
-                        Iterations               :	20
-                        Solver time              :	1 s
+                        Accuracy                 :	6.63004e-05
+                        Iterations               :	31
+                        Solver time              :	8 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:35    Delta calculation        
-23/Nov/2021 18:24:35    All S-Parameters         :	0.0116092
+20/Dec/2021 14:34:43    Delta calculation        
+20/Dec/2021 14:34:43    All S-Parameters         :	0.0510124
 
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:35  For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
+20/Dec/2021 14:34:43  *** Warning ***
+                      
+20/Dec/2021 14:34:43  Mesh adaptation terminated because the maximum number of passes is reached.
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:35  Adaptive mesh refinement pass 3
+20/Dec/2021 14:34:44    Generating results       :	1 s
+                      
+                        Total time               :	142 s	 (= 0 h, 02 m, 22 s)
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:38    Matrix setup time        :	0 s
-                        Degrees of freedom       :	21750
-                        Number of mesh cells     :	3138
+
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:34:46    Calculation 2 (Frequency: 0.534388 PHz, Theta: 0, Phi: 0)
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:35:15    Matrix setup time        :	0 s
+                        Solver setup             :	1 s
+                        Degrees of freedom       :	97922
+                        Number of mesh cells     :	14621
                       
                         Stimulation port         :	Zmin
                         Mode number              :	1
-                        Accuracy                 :	7.04366e-05
-                        Iterations               :	20
-                        Solver time              :	2 s
+                        Accuracy                 :	9.35011e-05
+                        Iterations               :	33
+                        Solver time              :	13 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:38    Stimulation port         :	Zmin
+20/Dec/2021 14:35:15    Stimulation port         :	Zmin
                         Mode number              :	2
-                        Accuracy                 :	8.21367e-05
-                        Iterations               :	19
-                        Solver time              :	2 s
+                        Accuracy                 :	7.68312e-05
+                        Iterations               :	30
+                        Solver time              :	12 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:38    Stimulation port         :	Zmin
+20/Dec/2021 14:35:15    Stimulation port         :	Zmin
                         Mode number              :	3
-                        Accuracy                 :	7.83565e-05
-                        Iterations               :	14
-                        Solver time              :	2 s
+                        Accuracy                 :	8.09774e-05
+                        Iterations               :	43
+                        Solver time              :	17 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:38    Stimulation port         :	Zmin
+20/Dec/2021 14:35:15    Stimulation port         :	Zmin
                         Mode number              :	4
-                        Accuracy                 :	9.00884e-05
-                        Iterations               :	11
-                        Solver time              :	1 s
+                        Accuracy                 :	8.91713e-05
+                        Iterations               :	33
+                        Solver time              :	13 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:38    Stimulation port         :	Zmin
+20/Dec/2021 14:35:15    Stimulation port         :	Zmin
                         Mode number              :	5
-                        Accuracy                 :	2.87927e-05
-                        Iterations               :	14
-                        Solver time              :	2 s
+                        Accuracy                 :	7.99075e-05
+                        Iterations               :	50
+                        Solver time              :	18 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:38    Stimulation port         :	Zmin
+20/Dec/2021 14:35:15    Stimulation port         :	Zmin
                         Mode number              :	6
-                        Accuracy                 :	9.75042e-05
-                        Iterations               :	12
-                        Solver time              :	1 s
+                        Accuracy                 :	9.99055e-05
+                        Iterations               :	32
+                        Solver time              :	13 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:38    Stimulation port         :	Zmax
+20/Dec/2021 14:35:15    Stimulation port         :	Zmax
                         Mode number              :	1
-                        Accuracy                 :	9.02631e-05
-                        Iterations               :	19
-                        Solver time              :	2 s
+                        Accuracy                 :	6.76628e-05
+                        Iterations               :	38
+                        Solver time              :	15 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:38    Stimulation port         :	Zmax
+20/Dec/2021 14:35:15    Stimulation port         :	Zmax
                         Mode number              :	2
-                        Accuracy                 :	8.87108e-05
-                        Iterations               :	18
-                        Solver time              :	2 s
+                        Accuracy                 :	8.04144e-05
+                        Iterations               :	32
+                        Solver time              :	13 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:38    Stimulation port         :	Zmax
+20/Dec/2021 14:35:15    Stimulation port         :	Zmax
                         Mode number              :	3
-                        Accuracy                 :	8.29714e-05
-                        Iterations               :	18
-                        Solver time              :	1 s
+                        Accuracy                 :	7.56094e-05
+                        Iterations               :	43
+                        Solver time              :	11 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:38    Stimulation port         :	Zmax
+20/Dec/2021 14:35:15    Stimulation port         :	Zmax
                         Mode number              :	4
-                        Accuracy                 :	9.64307e-05
-                        Iterations               :	17
-                        Solver time              :	1 s
+                        Accuracy                 :	6.42889e-05
+                        Iterations               :	29
+                        Solver time              :	8 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:38    Stimulation port         :	Zmax
+20/Dec/2021 14:35:15    Stimulation port         :	Zmax
                         Mode number              :	5
-                        Accuracy                 :	9.75651e-05
-                        Iterations               :	19
-                        Solver time              :	1 s
+                        Accuracy                 :	8.71165e-05
+                        Iterations               :	46
+                        Solver time              :	10 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:38    Stimulation port         :	Zmax
+20/Dec/2021 14:35:15    Stimulation port         :	Zmax
                         Mode number              :	6
-                        Accuracy                 :	5.58786e-05
-                        Iterations               :	17
-                        Solver time              :	1 s
+                        Accuracy                 :	6.57153e-05
+                        Iterations               :	31
+                        Solver time              :	8 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:38    Delta calculation        
-23/Nov/2021 18:24:38    All S-Parameters         :	0.00992213
-
-                      ------------------------------------------------------------------------------
-23/Nov/2021 18:24:38  Mesh adaptation terminated because the desired accuracy limit is reached.
+20/Dec/2021 14:35:17    Generating results       :	2 s
                       
-                      ------------------------------------------------------------------------------
-23/Nov/2021 18:24:38    Total time               :	8 s
+                        Total time               :	31 s
                       
                       ------------------------------------------------------------------------------
 
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:39    Calculation 2 (Frequency: 0.47586 PHz, Theta: 0, Phi: 0)
+20/Dec/2021 14:35:17    Calculation 3 (Frequency: 0.534389 PHz, Theta: 0, Phi: 0)
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:42    Matrix setup time        :	0 s
-                        Degrees of freedom       :	21750
-                        Number of mesh cells     :	3138
+20/Dec/2021 14:35:46    Matrix setup time        :	0 s
+                        Solver setup             :	1 s
+                        Degrees of freedom       :	97922
+                        Number of mesh cells     :	14621
                       
                         Stimulation port         :	Zmin
                         Mode number              :	1
-                        Accuracy                 :	7.03493e-05
-                        Iterations               :	20
-                        Solver time              :	1 s
+                        Accuracy                 :	9.47722e-05
+                        Iterations               :	33
+                        Solver time              :	12 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:42    Stimulation port         :	Zmin
+20/Dec/2021 14:35:46    Stimulation port         :	Zmin
                         Mode number              :	2
-                        Accuracy                 :	8.20481e-05
-                        Iterations               :	19
-                        Solver time              :	1 s
+                        Accuracy                 :	7.81073e-05
+                        Iterations               :	30
+                        Solver time              :	11 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:42    Stimulation port         :	Zmin
+20/Dec/2021 14:35:46    Stimulation port         :	Zmin
                         Mode number              :	3
-                        Accuracy                 :	7.83838e-05
-                        Iterations               :	14
-                        Solver time              :	1 s
+                        Accuracy                 :	8.41848e-05
+                        Iterations               :	43
+                        Solver time              :	16 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:42    Stimulation port         :	Zmin
+20/Dec/2021 14:35:46    Stimulation port         :	Zmin
                         Mode number              :	4
-                        Accuracy                 :	9.02161e-05
-                        Iterations               :	11
-                        Solver time              :	1 s
+                        Accuracy                 :	8.70722e-05
+                        Iterations               :	33
+                        Solver time              :	12 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:42    Stimulation port         :	Zmin
+20/Dec/2021 14:35:46    Stimulation port         :	Zmin
                         Mode number              :	5
-                        Accuracy                 :	2.87324e-05
-                        Iterations               :	14
-                        Solver time              :	1 s
+                        Accuracy                 :	6.27524e-05
+                        Iterations               :	51
+                        Solver time              :	18 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:42    Stimulation port         :	Zmin
+20/Dec/2021 14:35:46    Stimulation port         :	Zmin
                         Mode number              :	6
-                        Accuracy                 :	9.74264e-05
-                        Iterations               :	12
-                        Solver time              :	1 s
+                        Accuracy                 :	9.99863e-05
+                        Iterations               :	32
+                        Solver time              :	12 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:42    Stimulation port         :	Zmax
+20/Dec/2021 14:35:46    Stimulation port         :	Zmax
                         Mode number              :	1
-                        Accuracy                 :	9.03278e-05
-                        Iterations               :	19
-                        Solver time              :	1 s
+                        Accuracy                 :	6.58861e-05
+                        Iterations               :	38
+                        Solver time              :	14 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:42    Stimulation port         :	Zmax
+20/Dec/2021 14:35:46    Stimulation port         :	Zmax
                         Mode number              :	2
-                        Accuracy                 :	8.87167e-05
-                        Iterations               :	18
-                        Solver time              :	1 s
+                        Accuracy                 :	8.06809e-05
+                        Iterations               :	32
+                        Solver time              :	12 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:42    Stimulation port         :	Zmax
+20/Dec/2021 14:35:46    Stimulation port         :	Zmax
                         Mode number              :	3
-                        Accuracy                 :	8.30889e-05
-                        Iterations               :	18
-                        Solver time              :	1 s
+                        Accuracy                 :	7.35771e-05
+                        Iterations               :	49
+                        Solver time              :	12 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:42    Stimulation port         :	Zmax
+20/Dec/2021 14:35:46    Stimulation port         :	Zmax
                         Mode number              :	4
-                        Accuracy                 :	9.63997e-05
-                        Iterations               :	17
-                        Solver time              :	1 s
+                        Accuracy                 :	5.98711e-05
+                        Iterations               :	29
+                        Solver time              :	8 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:42    Stimulation port         :	Zmax
+20/Dec/2021 14:35:46    Stimulation port         :	Zmax
                         Mode number              :	5
-                        Accuracy                 :	9.75402e-05
-                        Iterations               :	19
-                        Solver time              :	1 s
+                        Accuracy                 :	9.0909e-05
+                        Iterations               :	46
+                        Solver time              :	11 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:42    Stimulation port         :	Zmax
+20/Dec/2021 14:35:46    Stimulation port         :	Zmax
                         Mode number              :	6
-                        Accuracy                 :	5.5876e-05
-                        Iterations               :	17
-                        Solver time              :	1 s
+                        Accuracy                 :	6.64771e-05
+                        Iterations               :	31
+                        Solver time              :	9 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:42    Total time               :	3 s
+20/Dec/2021 14:35:48    Generating results       :	2 s
+                      
+                        Total time               :	31 s
                       
                       ------------------------------------------------------------------------------
 
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:42    Calculation 3 (Frequency: 0.475861 PHz, Theta: 0, Phi: 0)
+20/Dec/2021 14:35:48    Calculation 4 (Frequency: 0.534389 PHz, Theta: 0, Phi: 0)
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:46    Matrix setup time        :	0 s
-                        Degrees of freedom       :	21750
-                        Number of mesh cells     :	3138
+20/Dec/2021 14:36:17    Matrix setup time        :	0 s
+                        Solver setup             :	1 s
+                        Degrees of freedom       :	97922
+                        Number of mesh cells     :	14621
                       
                         Stimulation port         :	Zmin
                         Mode number              :	1
-                        Accuracy                 :	7.03948e-05
-                        Iterations               :	20
-                        Solver time              :	1 s
+                        Accuracy                 :	9.80183e-05
+                        Iterations               :	33
+                        Solver time              :	13 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:46    Stimulation port         :	Zmin
+20/Dec/2021 14:36:17    Stimulation port         :	Zmin
                         Mode number              :	2
-                        Accuracy                 :	8.21016e-05
-                        Iterations               :	19
-                        Solver time              :	1 s
+                        Accuracy                 :	7.8081e-05
+                        Iterations               :	30
+                        Solver time              :	12 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:46    Stimulation port         :	Zmin
+20/Dec/2021 14:36:17    Stimulation port         :	Zmin
                         Mode number              :	3
-                        Accuracy                 :	7.83213e-05
-                        Iterations               :	14
-                        Solver time              :	1 s
+                        Accuracy                 :	7.94767e-05
+                        Iterations               :	43
+                        Solver time              :	16 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:46    Stimulation port         :	Zmin
+20/Dec/2021 14:36:17    Stimulation port         :	Zmin
                         Mode number              :	4
-                        Accuracy                 :	9.01922e-05
-                        Iterations               :	11
-                        Solver time              :	1 s
+                        Accuracy                 :	8.97371e-05
+                        Iterations               :	36
+                        Solver time              :	14 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:46    Stimulation port         :	Zmin
+20/Dec/2021 14:36:17    Stimulation port         :	Zmin
                         Mode number              :	5
-                        Accuracy                 :	2.87514e-05
-                        Iterations               :	14
-                        Solver time              :	1 s
+                        Accuracy                 :	9.67454e-05
+                        Iterations               :	46
+                        Solver time              :	17 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:46    Stimulation port         :	Zmin
+20/Dec/2021 14:36:17    Stimulation port         :	Zmin
                         Mode number              :	6
-                        Accuracy                 :	9.74259e-05
-                        Iterations               :	12
-                        Solver time              :	1 s
+                        Accuracy                 :	8.36952e-05
+                        Iterations               :	33
+                        Solver time              :	13 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:46    Stimulation port         :	Zmax
+20/Dec/2021 14:36:17    Stimulation port         :	Zmax
                         Mode number              :	1
-                        Accuracy                 :	9.0297e-05
-                        Iterations               :	19
-                        Solver time              :	1 s
+                        Accuracy                 :	7.02105e-05
+                        Iterations               :	38
+                        Solver time              :	15 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:46    Stimulation port         :	Zmax
+20/Dec/2021 14:36:17    Stimulation port         :	Zmax
                         Mode number              :	2
-                        Accuracy                 :	8.87138e-05
-                        Iterations               :	18
-                        Solver time              :	1 s
+                        Accuracy                 :	8.30227e-05
+                        Iterations               :	32
+                        Solver time              :	12 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:46    Stimulation port         :	Zmax
+20/Dec/2021 14:36:17    Stimulation port         :	Zmax
                         Mode number              :	3
-                        Accuracy                 :	8.30373e-05
-                        Iterations               :	18
-                        Solver time              :	1 s
+                        Accuracy                 :	7.62345e-05
+                        Iterations               :	49
+                        Solver time              :	11 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:46    Stimulation port         :	Zmax
+20/Dec/2021 14:36:17    Stimulation port         :	Zmax
                         Mode number              :	4
-                        Accuracy                 :	9.64155e-05
-                        Iterations               :	17
-                        Solver time              :	1 s
+                        Accuracy                 :	6.36112e-05
+                        Iterations               :	29
+                        Solver time              :	8 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:46    Stimulation port         :	Zmax
+20/Dec/2021 14:36:17    Stimulation port         :	Zmax
                         Mode number              :	5
-                        Accuracy                 :	9.75546e-05
-                        Iterations               :	19
-                        Solver time              :	1 s
+                        Accuracy                 :	5.59521e-05
+                        Iterations               :	46
+                        Solver time              :	10 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:46    Stimulation port         :	Zmax
+20/Dec/2021 14:36:17    Stimulation port         :	Zmax
                         Mode number              :	6
-                        Accuracy                 :	5.58773e-05
-                        Iterations               :	17
-                        Solver time              :	1 s
+                        Accuracy                 :	7.17287e-05
+                        Iterations               :	31
+                        Solver time              :	8 s
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:46    Total time               :	4 s
+20/Dec/2021 14:36:19  Calculating additional frequency samples due to field monitors, equidistant sampling interval, or single frequency 
+                      sample definitions.
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:36:19    Generating results       :	2 s
+                      
+                        Total time               :	31 s
                       
                       ------------------------------------------------------------------------------
 
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:46  *** Error ***
+20/Dec/2021 14:36:19    Calculation 5 (Frequency: 0.534389 PHz, Theta: 0, Phi: 0)
                       
-23/Nov/2021 18:24:46  Could not determine a valid simulation point for the next frequency domain solver sample. The propagation constants at 
-                      the lower and upper end of the sampling intervals might be zero.
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:46  *** Warning ***
+20/Dec/2021 14:36:48    Matrix setup time        :	0 s
+                        Degrees of freedom       :	97922
+                        Number of mesh cells     :	14621
                       
-23/Nov/2021 18:24:46  The broadband frequency sweep convergence criterion has not yet been satisfied. Please continue the broadband frequency 
-                      sweep by starting the frequency domain solver again.
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	9.45487e-05
+                        Iterations               :	33
+                        Solver time              :	14 s
+                      
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:46    Total Solver Time        :	16 s
+20/Dec/2021 14:36:48    Stimulation port         :	Zmin
+                        Mode number              :	2
+                        Accuracy                 :	7.83721e-05
+                        Iterations               :	30
+                        Solver time              :	12 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:36:48    Stimulation port         :	Zmin
+                        Mode number              :	3
+                        Accuracy                 :	9.29849e-05
+                        Iterations               :	43
+                        Solver time              :	17 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:36:48    Stimulation port         :	Zmin
+                        Mode number              :	4
+                        Accuracy                 :	9.40069e-05
+                        Iterations               :	33
+                        Solver time              :	14 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:36:48    Stimulation port         :	Zmin
+                        Mode number              :	5
+                        Accuracy                 :	9.58575e-05
+                        Iterations               :	41
+                        Solver time              :	16 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:36:48    Stimulation port         :	Zmin
+                        Mode number              :	6
+                        Accuracy                 :	9.85767e-05
+                        Iterations               :	33
+                        Solver time              :	14 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:36:48    Stimulation port         :	Zmax
+                        Mode number              :	1
+                        Accuracy                 :	6.65317e-05
+                        Iterations               :	38
+                        Solver time              :	16 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:36:48    Stimulation port         :	Zmax
+                        Mode number              :	2
+                        Accuracy                 :	8.01467e-05
+                        Iterations               :	32
+                        Solver time              :	13 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:36:48    Stimulation port         :	Zmax
+                        Mode number              :	3
+                        Accuracy                 :	9.52747e-05
+                        Iterations               :	49
+                        Solver time              :	12 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:36:48    Stimulation port         :	Zmax
+                        Mode number              :	4
+                        Accuracy                 :	5.7772e-05
+                        Iterations               :	29
+                        Solver time              :	8 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:36:48    Stimulation port         :	Zmax
+                        Mode number              :	5
+                        Accuracy                 :	7.84162e-05
+                        Iterations               :	46
+                        Solver time              :	10 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:36:48    Stimulation port         :	Zmax
+                        Mode number              :	6
+                        Accuracy                 :	9.68267e-05
+                        Iterations               :	29
+                        Solver time              :	7 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:36:50    Generating results       :	2 s
+                      
+                        Total time               :	31 s
+                      
+                      ------------------------------------------------------------------------------
+
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:36:50    Calculation 6 (Frequency: 0.534389 PHz, Theta: 0, Phi: 0)
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:37:19    Matrix setup time        :	0 s
+                        Degrees of freedom       :	97922
+                        Number of mesh cells     :	14621
+                      
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	9.97793e-05
+                        Iterations               :	35
+                        Solver time              :	15 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:37:19    Stimulation port         :	Zmin
+                        Mode number              :	2
+                        Accuracy                 :	7.81418e-05
+                        Iterations               :	30
+                        Solver time              :	12 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:37:19    Stimulation port         :	Zmin
+                        Mode number              :	3
+                        Accuracy                 :	8.80915e-05
+                        Iterations               :	44
+                        Solver time              :	17 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:37:19    Stimulation port         :	Zmin
+                        Mode number              :	4
+                        Accuracy                 :	8.9916e-05
+                        Iterations               :	33
+                        Solver time              :	14 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:37:19    Stimulation port         :	Zmin
+                        Mode number              :	5
+                        Accuracy                 :	7.44843e-05
+                        Iterations               :	50
+                        Solver time              :	19 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:37:19    Stimulation port         :	Zmin
+                        Mode number              :	6
+                        Accuracy                 :	8.42618e-05
+                        Iterations               :	33
+                        Solver time              :	14 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:37:19    Stimulation port         :	Zmax
+                        Mode number              :	1
+                        Accuracy                 :	6.68139e-05
+                        Iterations               :	38
+                        Solver time              :	16 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:37:19    Stimulation port         :	Zmax
+                        Mode number              :	2
+                        Accuracy                 :	8.16775e-05
+                        Iterations               :	32
+                        Solver time              :	13 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:37:19    Stimulation port         :	Zmax
+                        Mode number              :	3
+                        Accuracy                 :	6.88723e-05
+                        Iterations               :	43
+                        Solver time              :	11 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:37:19    Stimulation port         :	Zmax
+                        Mode number              :	4
+                        Accuracy                 :	5.92014e-05
+                        Iterations               :	29
+                        Solver time              :	9 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:37:19    Stimulation port         :	Zmax
+                        Mode number              :	5
+                        Accuracy                 :	9.36364e-05
+                        Iterations               :	45
+                        Solver time              :	10 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:37:19    Stimulation port         :	Zmax
+                        Mode number              :	6
+                        Accuracy                 :	9.85434e-05
+                        Iterations               :	30
+                        Solver time              :	8 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:37:21    Generating results       :	2 s
+                      
+                        Total time               :	31 s
+                      
+                      ------------------------------------------------------------------------------
+
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:37:21    Calculation 7 (Frequency: 0.534389 PHz, Theta: 0, Phi: 0)
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:37:49    Matrix setup time        :	0 s
+                        Degrees of freedom       :	97922
+                        Number of mesh cells     :	14621
+                      
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	9.78717e-05
+                        Iterations               :	34
+                        Solver time              :	14 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:37:49    Stimulation port         :	Zmin
+                        Mode number              :	2
+                        Accuracy                 :	7.76936e-05
+                        Iterations               :	30
+                        Solver time              :	12 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:37:49    Stimulation port         :	Zmin
+                        Mode number              :	3
+                        Accuracy                 :	7.5337e-05
+                        Iterations               :	45
+                        Solver time              :	17 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:37:49    Stimulation port         :	Zmin
+                        Mode number              :	4
+                        Accuracy                 :	9.19891e-05
+                        Iterations               :	34
+                        Solver time              :	14 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:37:49    Stimulation port         :	Zmin
+                        Mode number              :	5
+                        Accuracy                 :	6.65088e-05
+                        Iterations               :	50
+                        Solver time              :	18 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:37:49    Stimulation port         :	Zmin
+                        Mode number              :	6
+                        Accuracy                 :	9.93963e-05
+                        Iterations               :	32
+                        Solver time              :	13 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:37:49    Stimulation port         :	Zmax
+                        Mode number              :	1
+                        Accuracy                 :	6.64534e-05
+                        Iterations               :	38
+                        Solver time              :	15 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:37:49    Stimulation port         :	Zmax
+                        Mode number              :	2
+                        Accuracy                 :	8.00402e-05
+                        Iterations               :	32
+                        Solver time              :	13 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:37:49    Stimulation port         :	Zmax
+                        Mode number              :	3
+                        Accuracy                 :	6.84318e-05
+                        Iterations               :	49
+                        Solver time              :	11 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:37:49    Stimulation port         :	Zmax
+                        Mode number              :	4
+                        Accuracy                 :	9.05692e-05
+                        Iterations               :	29
+                        Solver time              :	8 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:37:49    Stimulation port         :	Zmax
+                        Mode number              :	5
+                        Accuracy                 :	7.61241e-05
+                        Iterations               :	47
+                        Solver time              :	10 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:37:49    Stimulation port         :	Zmax
+                        Mode number              :	6
+                        Accuracy                 :	7.05823e-05
+                        Iterations               :	31
+                        Solver time              :	7 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:37:51    Generating results       :	2 s
+                      
+                        Total time               :	30 s
+                      
+                      ------------------------------------------------------------------------------
+
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:37:51    Calculation 8 (Frequency: 0.53439 PHz, Theta: 0, Phi: 0)
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:38:20    Matrix setup time        :	1 s
+                        Degrees of freedom       :	97922
+                        Number of mesh cells     :	14621
+                      
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	9.7776e-05
+                        Iterations               :	33
+                        Solver time              :	13 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:38:20    Stimulation port         :	Zmin
+                        Mode number              :	2
+                        Accuracy                 :	7.74593e-05
+                        Iterations               :	30
+                        Solver time              :	12 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:38:20    Stimulation port         :	Zmin
+                        Mode number              :	3
+                        Accuracy                 :	7.60586e-05
+                        Iterations               :	43
+                        Solver time              :	16 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:38:20    Stimulation port         :	Zmin
+                        Mode number              :	4
+                        Accuracy                 :	8.90122e-05
+                        Iterations               :	33
+                        Solver time              :	13 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:38:20    Stimulation port         :	Zmin
+                        Mode number              :	5
+                        Accuracy                 :	8.057e-05
+                        Iterations               :	50
+                        Solver time              :	18 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:38:20    Stimulation port         :	Zmin
+                        Mode number              :	6
+                        Accuracy                 :	9.60304e-05
+                        Iterations               :	32
+                        Solver time              :	13 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:38:20    Stimulation port         :	Zmax
+                        Mode number              :	1
+                        Accuracy                 :	6.70101e-05
+                        Iterations               :	38
+                        Solver time              :	15 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:38:20    Stimulation port         :	Zmax
+                        Mode number              :	2
+                        Accuracy                 :	8.0469e-05
+                        Iterations               :	32
+                        Solver time              :	13 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:38:20    Stimulation port         :	Zmax
+                        Mode number              :	3
+                        Accuracy                 :	6.11649e-05
+                        Iterations               :	49
+                        Solver time              :	11 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:38:20    Stimulation port         :	Zmax
+                        Mode number              :	4
+                        Accuracy                 :	5.90641e-05
+                        Iterations               :	29
+                        Solver time              :	8 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:38:20    Stimulation port         :	Zmax
+                        Mode number              :	5
+                        Accuracy                 :	9.51944e-05
+                        Iterations               :	42
+                        Solver time              :	10 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:38:20    Stimulation port         :	Zmax
+                        Mode number              :	6
+                        Accuracy                 :	7.07234e-05
+                        Iterations               :	31
+                        Solver time              :	8 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:38:22    Generating results       :	2 s
+                      
+                        Total time               :	31 s
+                      
+                      ------------------------------------------------------------------------------
+
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:38:22    Calculation 9 (Frequency: 0.53439 PHz, Theta: 0, Phi: 0)
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:38:50    Matrix setup time        :	0 s
+                        Solver setup             :	1 s
+                        Degrees of freedom       :	97922
+                        Number of mesh cells     :	14621
+                      
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	9.62374e-05
+                        Iterations               :	34
+                        Solver time              :	13 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:38:50    Stimulation port         :	Zmin
+                        Mode number              :	2
+                        Accuracy                 :	8.34873e-05
+                        Iterations               :	30
+                        Solver time              :	11 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:38:50    Stimulation port         :	Zmin
+                        Mode number              :	3
+                        Accuracy                 :	7.65576e-05
+                        Iterations               :	44
+                        Solver time              :	16 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:38:50    Stimulation port         :	Zmin
+                        Mode number              :	4
+                        Accuracy                 :	9.39605e-05
+                        Iterations               :	33
+                        Solver time              :	13 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:38:50    Stimulation port         :	Zmin
+                        Mode number              :	5
+                        Accuracy                 :	7.18497e-05
+                        Iterations               :	50
+                        Solver time              :	18 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:38:50    Stimulation port         :	Zmin
+                        Mode number              :	6
+                        Accuracy                 :	8.09265e-05
+                        Iterations               :	33
+                        Solver time              :	13 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:38:50    Stimulation port         :	Zmax
+                        Mode number              :	1
+                        Accuracy                 :	6.72118e-05
+                        Iterations               :	38
+                        Solver time              :	14 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:38:50    Stimulation port         :	Zmax
+                        Mode number              :	2
+                        Accuracy                 :	8.11268e-05
+                        Iterations               :	33
+                        Solver time              :	13 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:38:50    Stimulation port         :	Zmax
+                        Mode number              :	3
+                        Accuracy                 :	6.37643e-05
+                        Iterations               :	44
+                        Solver time              :	11 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:38:50    Stimulation port         :	Zmax
+                        Mode number              :	4
+                        Accuracy                 :	5.83539e-05
+                        Iterations               :	29
+                        Solver time              :	7 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:38:50    Stimulation port         :	Zmax
+                        Mode number              :	5
+                        Accuracy                 :	8.41727e-05
+                        Iterations               :	45
+                        Solver time              :	9 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:38:50    Stimulation port         :	Zmax
+                        Mode number              :	6
+                        Accuracy                 :	6.99251e-05
+                        Iterations               :	31
+                        Solver time              :	8 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:38:52    Generating results       :	2 s
+                      
+                        Total time               :	30 s
+                      
+                      ------------------------------------------------------------------------------
+
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:38:52    Calculation 10 (Frequency: 0.53439 PHz, Theta: 0, Phi: 0)
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:39:20    Matrix setup time        :	0 s
+                        Degrees of freedom       :	97922
+                        Number of mesh cells     :	14621
+                      
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	9.57442e-05
+                        Iterations               :	33
+                        Solver time              :	13 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:39:20    Stimulation port         :	Zmin
+                        Mode number              :	2
+                        Accuracy                 :	7.71268e-05
+                        Iterations               :	30
+                        Solver time              :	12 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:39:20    Stimulation port         :	Zmin
+                        Mode number              :	3
+                        Accuracy                 :	8.5321e-05
+                        Iterations               :	46
+                        Solver time              :	17 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:39:20    Stimulation port         :	Zmin
+                        Mode number              :	4
+                        Accuracy                 :	9.24296e-05
+                        Iterations               :	33
+                        Solver time              :	13 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:39:20    Stimulation port         :	Zmin
+                        Mode number              :	5
+                        Accuracy                 :	9.6351e-05
+                        Iterations               :	41
+                        Solver time              :	16 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:39:20    Stimulation port         :	Zmin
+                        Mode number              :	6
+                        Accuracy                 :	9.65867e-05
+                        Iterations               :	32
+                        Solver time              :	13 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:39:20    Stimulation port         :	Zmax
+                        Mode number              :	1
+                        Accuracy                 :	6.93492e-05
+                        Iterations               :	38
+                        Solver time              :	15 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:39:20    Stimulation port         :	Zmax
+                        Mode number              :	2
+                        Accuracy                 :	8.03957e-05
+                        Iterations               :	32
+                        Solver time              :	13 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:39:20    Stimulation port         :	Zmax
+                        Mode number              :	3
+                        Accuracy                 :	8.80375e-05
+                        Iterations               :	44
+                        Solver time              :	10 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:39:20    Stimulation port         :	Zmax
+                        Mode number              :	4
+                        Accuracy                 :	7.34448e-05
+                        Iterations               :	29
+                        Solver time              :	7 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:39:20    Stimulation port         :	Zmax
+                        Mode number              :	5
+                        Accuracy                 :	8.74818e-05
+                        Iterations               :	42
+                        Solver time              :	9 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:39:20    Stimulation port         :	Zmax
+                        Mode number              :	6
+                        Accuracy                 :	6.57432e-05
+                        Iterations               :	31
+                        Solver time              :	8 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:39:22    Generating results       :	2 s
+                      
+                        Total time               :	30 s
+                      
+                      ------------------------------------------------------------------------------
+
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:39:22    Calculation 11 (Frequency: 0.53439 PHz, Theta: 0, Phi: 0)
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:39:51    Matrix setup time        :	0 s
+                        Degrees of freedom       :	97922
+                        Number of mesh cells     :	14621
+                      
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	9.4137e-05
+                        Iterations               :	34
+                        Solver time              :	14 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:39:51    Stimulation port         :	Zmin
+                        Mode number              :	2
+                        Accuracy                 :	7.73991e-05
+                        Iterations               :	30
+                        Solver time              :	11 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:39:51    Stimulation port         :	Zmin
+                        Mode number              :	3
+                        Accuracy                 :	7.59534e-05
+                        Iterations               :	45
+                        Solver time              :	16 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:39:51    Stimulation port         :	Zmin
+                        Mode number              :	4
+                        Accuracy                 :	8.68435e-05
+                        Iterations               :	33
+                        Solver time              :	12 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:39:51    Stimulation port         :	Zmin
+                        Mode number              :	5
+                        Accuracy                 :	6.89409e-05
+                        Iterations               :	50
+                        Solver time              :	18 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:39:51    Stimulation port         :	Zmin
+                        Mode number              :	6
+                        Accuracy                 :	8.51134e-05
+                        Iterations               :	33
+                        Solver time              :	12 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:39:51    Stimulation port         :	Zmax
+                        Mode number              :	1
+                        Accuracy                 :	6.57144e-05
+                        Iterations               :	38
+                        Solver time              :	14 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:39:51    Stimulation port         :	Zmax
+                        Mode number              :	2
+                        Accuracy                 :	8.04215e-05
+                        Iterations               :	32
+                        Solver time              :	12 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:39:51    Stimulation port         :	Zmax
+                        Mode number              :	3
+                        Accuracy                 :	7.41799e-05
+                        Iterations               :	49
+                        Solver time              :	12 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:39:51    Stimulation port         :	Zmax
+                        Mode number              :	4
+                        Accuracy                 :	6.15121e-05
+                        Iterations               :	29
+                        Solver time              :	8 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:39:51    Stimulation port         :	Zmax
+                        Mode number              :	5
+                        Accuracy                 :	6.01371e-05
+                        Iterations               :	47
+                        Solver time              :	11 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:39:51    Stimulation port         :	Zmax
+                        Mode number              :	6
+                        Accuracy                 :	8.68786e-05
+                        Iterations               :	29
+                        Solver time              :	8 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:39:52  No automatic samples have been calculated up to now. Therefore, the frequency sweep is continued with additional 
+                      automatically chosen samples.
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:39:53    Generating results       :	2 s
+                      
+                        Total time               :	31 s
+                      
+                      ------------------------------------------------------------------------------
+
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:39:53    Calculation 12 (Frequency: 0.534389 PHz, Theta: 0, Phi: 0)
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:40:21    Matrix setup time        :	0 s
+                        Degrees of freedom       :	97922
+                        Number of mesh cells     :	14621
+                      
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	9.45844e-05
+                        Iterations               :	34
+                        Solver time              :	14 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:40:21    Stimulation port         :	Zmin
+                        Mode number              :	2
+                        Accuracy                 :	7.74402e-05
+                        Iterations               :	30
+                        Solver time              :	12 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:40:21    Stimulation port         :	Zmin
+                        Mode number              :	3
+                        Accuracy                 :	8.71984e-05
+                        Iterations               :	43
+                        Solver time              :	17 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:40:21    Stimulation port         :	Zmin
+                        Mode number              :	4
+                        Accuracy                 :	9.88628e-05
+                        Iterations               :	34
+                        Solver time              :	14 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:40:21    Stimulation port         :	Zmin
+                        Mode number              :	5
+                        Accuracy                 :	7.78915e-05
+                        Iterations               :	50
+                        Solver time              :	18 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:40:21    Stimulation port         :	Zmin
+                        Mode number              :	6
+                        Accuracy                 :	8.21344e-05
+                        Iterations               :	33
+                        Solver time              :	13 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:40:21    Stimulation port         :	Zmax
+                        Mode number              :	1
+                        Accuracy                 :	6.63281e-05
+                        Iterations               :	38
+                        Solver time              :	15 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:40:21    Stimulation port         :	Zmax
+                        Mode number              :	2
+                        Accuracy                 :	8.04349e-05
+                        Iterations               :	32
+                        Solver time              :	13 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:40:21    Stimulation port         :	Zmax
+                        Mode number              :	3
+                        Accuracy                 :	9.08324e-05
+                        Iterations               :	45
+                        Solver time              :	11 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:40:21    Stimulation port         :	Zmax
+                        Mode number              :	4
+                        Accuracy                 :	5.9103e-05
+                        Iterations               :	29
+                        Solver time              :	8 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:40:21    Stimulation port         :	Zmax
+                        Mode number              :	5
+                        Accuracy                 :	7.36213e-05
+                        Iterations               :	47
+                        Solver time              :	10 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:40:21    Stimulation port         :	Zmax
+                        Mode number              :	6
+                        Accuracy                 :	6.94261e-05
+                        Iterations               :	31
+                        Solver time              :	8 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:40:22    Generating results       :	1 s
+                      
+                        Total time               :	29 s
+                      
+                      ------------------------------------------------------------------------------
+
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:40:22    Calculation 13 (Frequency: 0.53439 PHz, Theta: 0, Phi: 0)
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:40:50    Matrix setup time        :	0 s
+                        Degrees of freedom       :	97922
+                        Number of mesh cells     :	14621
+                      
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	9.52586e-05
+                        Iterations               :	33
+                        Solver time              :	13 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:40:50    Stimulation port         :	Zmin
+                        Mode number              :	2
+                        Accuracy                 :	7.78037e-05
+                        Iterations               :	30
+                        Solver time              :	12 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:40:50    Stimulation port         :	Zmin
+                        Mode number              :	3
+                        Accuracy                 :	9.97621e-05
+                        Iterations               :	43
+                        Solver time              :	17 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:40:50    Stimulation port         :	Zmin
+                        Mode number              :	4
+                        Accuracy                 :	9.04996e-05
+                        Iterations               :	33
+                        Solver time              :	13 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:40:50    Stimulation port         :	Zmin
+                        Mode number              :	5
+                        Accuracy                 :	9.59883e-05
+                        Iterations               :	48
+                        Solver time              :	18 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:40:50    Stimulation port         :	Zmin
+                        Mode number              :	6
+                        Accuracy                 :	8.19869e-05
+                        Iterations               :	33
+                        Solver time              :	13 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:40:50    Stimulation port         :	Zmax
+                        Mode number              :	1
+                        Accuracy                 :	6.54263e-05
+                        Iterations               :	38
+                        Solver time              :	15 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:40:50    Stimulation port         :	Zmax
+                        Mode number              :	2
+                        Accuracy                 :	8.19915e-05
+                        Iterations               :	32
+                        Solver time              :	13 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:40:50    Stimulation port         :	Zmax
+                        Mode number              :	3
+                        Accuracy                 :	6.98309e-05
+                        Iterations               :	43
+                        Solver time              :	11 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:40:50    Stimulation port         :	Zmax
+                        Mode number              :	4
+                        Accuracy                 :	5.83666e-05
+                        Iterations               :	29
+                        Solver time              :	8 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:40:50    Stimulation port         :	Zmax
+                        Mode number              :	5
+                        Accuracy                 :	6.43103e-05
+                        Iterations               :	47
+                        Solver time              :	10 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:40:50    Stimulation port         :	Zmax
+                        Mode number              :	6
+                        Accuracy                 :	6.85433e-05
+                        Iterations               :	31
+                        Solver time              :	9 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:40:51    Generating results       :	1 s
+                      
+                        Total time               :	29 s
+                      
+                      ------------------------------------------------------------------------------
+
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:40:51    Calculation 14 (Frequency: 0.53439 PHz, Theta: 0, Phi: 0)
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:41:19    Matrix setup time        :	0 s
+                        Degrees of freedom       :	97922
+                        Number of mesh cells     :	14621
+                      
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	9.6251e-05
+                        Iterations               :	33
+                        Solver time              :	13 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:41:19    Stimulation port         :	Zmin
+                        Mode number              :	2
+                        Accuracy                 :	7.76926e-05
+                        Iterations               :	30
+                        Solver time              :	12 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:41:19    Stimulation port         :	Zmin
+                        Mode number              :	3
+                        Accuracy                 :	8.37203e-05
+                        Iterations               :	43
+                        Solver time              :	17 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:41:19    Stimulation port         :	Zmin
+                        Mode number              :	4
+                        Accuracy                 :	8.85041e-05
+                        Iterations               :	33
+                        Solver time              :	13 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:41:19    Stimulation port         :	Zmin
+                        Mode number              :	5
+                        Accuracy                 :	6.53493e-05
+                        Iterations               :	50
+                        Solver time              :	18 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:41:19    Stimulation port         :	Zmin
+                        Mode number              :	6
+                        Accuracy                 :	9.49626e-05
+                        Iterations               :	32
+                        Solver time              :	13 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:41:19    Stimulation port         :	Zmax
+                        Mode number              :	1
+                        Accuracy                 :	6.91604e-05
+                        Iterations               :	38
+                        Solver time              :	15 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:41:19    Stimulation port         :	Zmax
+                        Mode number              :	2
+                        Accuracy                 :	8.06841e-05
+                        Iterations               :	32
+                        Solver time              :	13 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:41:19    Stimulation port         :	Zmax
+                        Mode number              :	3
+                        Accuracy                 :	9.84336e-05
+                        Iterations               :	43
+                        Solver time              :	11 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:41:19    Stimulation port         :	Zmax
+                        Mode number              :	4
+                        Accuracy                 :	6.2999e-05
+                        Iterations               :	29
+                        Solver time              :	8 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:41:19    Stimulation port         :	Zmax
+                        Mode number              :	5
+                        Accuracy                 :	8.33162e-05
+                        Iterations               :	45
+                        Solver time              :	10 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:41:19    Stimulation port         :	Zmax
+                        Mode number              :	6
+                        Accuracy                 :	6.58751e-05
+                        Iterations               :	31
+                        Solver time              :	8 s
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:41:19    Total time               :	28 s
+                      
+                      ------------------------------------------------------------------------------
+
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:41:19  Finished the general purpose interpolative broadband frequency sweep:
+                      All broadband sweep convergence criteria have been satisfied after
+                      calculating 14 frequency samples:
+                      
+                        Broadband sweep error threshold value : 
+                                                                0.01 (All S-Parameters) 
+                        Number of error criterion checks      : 
+                                                                2 (All S-Parameters) 
+                        Minimum number of samples             : 3
+                      
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:41:19    Total Solver Time        :	536 s	 (= 0 h, 08 m, 56 s)
                       ================================================================================
                       
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:46    ----------------------------------------------------------------------------
+20/Dec/2021 14:41:19  Calculating remaining monitors.
+                      
+                      ------------------------------------------------------------------------------
+20/Dec/2021 14:41:34    ----------------------------------------------------------------------------
                                             Peak memory used (kB)         Free physical memory (kB) 
                                                                           At begin     Minimum      
                         ----------------------------------------------------------------------------
-                        Solver start        20072                         8455584      8454844      
-                        Eq. system setup    269940                        8388852      8228660      
-                        Eq. system solve    269940                        8370436      8206088      
-                        Mesh refinement     241996                        8251248      8235144      
-                        Solver run total    269940                        8455588      8208288      
+                        Solver start        20084                         7544536      7543756      
+                        Eq. system setup    706048                        7494316      6860968      
+                        Eq. system solve    706048                        7452236      6734560      
+                        Mesh refinement     704304                        7383556      6873484      
+                        Solver run total    706048                        7544540      6734560      
                       
                         Computer name       DESKTOP-755877E
                         ----------------------------------------------------------------------------
                       
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:46  Running postprocessing.
+20/Dec/2021 14:41:34  Running postprocessing.
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:48  Postprocessing finished.
+20/Dec/2021 14:41:37  Postprocessing finished.
                       
                       ------------------------------------------------------------------------------
-23/Nov/2021 18:24:49  Creating parametric 1D results for Run ID 72
+20/Dec/2021 14:41:40  Creating parametric 1D results for Run ID 367
                       
                       ------------------------------------------------------------------------------

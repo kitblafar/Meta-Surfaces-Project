@@ -17,23 +17,33 @@
       {
          "name": "r",
          "type": "float",
-         "value": 200.0
+         "value": 194.0
       },
       {
          "name": "h1",
          "type": "float",
-         "value": 130.0
+         "value": 695.0
       },
       {
          "name": "lambda",
          "type": "float",
-         "value": 630.0
+         "value": 561.0
       }
    ],
    "outputVariables": [
       {
          "len": 1,
          "name": "3D\\Average Phase",
+         "type": "float"
+      },
+      {
+         "len": 1,
+         "name": "3D\\Average Phase_1",
+         "type": "float"
+      },
+      {
+         "len": 1,
+         "name": "3D\\Load Data_1",
          "type": "float"
       }
    ]

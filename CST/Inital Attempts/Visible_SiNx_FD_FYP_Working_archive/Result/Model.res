@@ -1,5 +1,21 @@
 MWS Result File Version 20150206
-size=i:1569
+size=i:2131
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:Load Data_1.rd0
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:Average Phase_1.rd0
 
 type=s:HIDDENITEM
 problemclass=s::8:1000
@@ -15,7 +31,7 @@ visibility=s:hidden
 creation=s:internal
 lifetime=s:rebuild
 result=s:1
-files=s:Convert to Wavelength.rd1
+files=s:Convert to Wavelength_1_1.rd1
 
 type=s:HIDDENITEM
 problemclass=s::8:1000
@@ -48,6 +64,1062 @@ creation=s:internal
 lifetime=s:solverstart
 result=s:1
 files=s:fd.spd
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9992)_Zmax(6).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9992)_Zmax(5).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9992)_Zmax(4).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9992)_Zmax(3).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9992)_Zmax(2).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9992)_Zmax(1).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9992)_Zmin(6).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9992)_Zmin(5).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9992)_Zmin(4).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9992)_Zmin(3).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9992)_Zmin(2).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9992)_Zmin(1).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9994)_Zmax(6).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9994)_Zmax(5).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9994)_Zmax(4).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9994)_Zmax(3).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9994)_Zmax(2).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9994)_Zmax(1).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9994)_Zmin(6).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9994)_Zmin(5).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9994)_Zmin(4).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9994)_Zmin(3).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9994)_Zmin(2).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9994)_Zmin(1).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9996)_Zmax(6).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9996)_Zmax(5).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9996)_Zmax(4).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9996)_Zmax(3).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9996)_Zmax(2).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9996)_Zmax(1).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9996)_Zmin(6).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9996)_Zmin(5).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9996)_Zmin(4).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9996)_Zmin(3).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9996)_Zmin(2).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9996)_Zmin(1).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9998)_Zmax(6).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9998)_Zmax(5).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9998)_Zmax(4).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9998)_Zmax(3).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9998)_Zmax(2).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9998)_Zmax(1).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9998)_Zmin(6).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9998)_Zmin(5).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9998)_Zmin(4).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9998)_Zmin(3).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9998)_Zmin(2).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.9998)_Zmin(1).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561)_Zmax(6).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561)_Zmax(5).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561)_Zmax(4).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561)_Zmax(3).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561)_Zmax(2).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561)_Zmax(1).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561)_Zmin(6).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561)_Zmin(5).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561)_Zmin(4).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561)_Zmin(3).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561)_Zmin(2).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561)_Zmin(1).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0002)_Zmax(6).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0002)_Zmax(5).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0002)_Zmax(4).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0002)_Zmax(3).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0002)_Zmax(2).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0002)_Zmax(1).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0002)_Zmin(6).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0002)_Zmin(5).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0002)_Zmin(4).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0002)_Zmin(3).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0002)_Zmin(2).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0002)_Zmin(1).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0004)_Zmax(6).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0004)_Zmax(5).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0004)_Zmax(4).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0004)_Zmax(3).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0004)_Zmax(2).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0004)_Zmax(1).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0004)_Zmin(6).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0004)_Zmin(5).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0004)_Zmin(4).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0004)_Zmin(3).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0004)_Zmin(2).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0004)_Zmin(1).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0006)_Zmax(6).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0006)_Zmax(5).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0006)_Zmax(4).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0006)_Zmax(3).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0006)_Zmax(2).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0006)_Zmax(1).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0006)_Zmin(6).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0006)_Zmin(5).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0006)_Zmin(4).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0006)_Zmin(3).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0006)_Zmin(2).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0006)_Zmin(1).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0008)_Zmax(6).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0008)_Zmax(5).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0008)_Zmax(4).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0008)_Zmax(3).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0008)_Zmax(2).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0008)_Zmax(1).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0008)_Zmin(6).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0008)_Zmin(5).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0008)_Zmin(4).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0008)_Zmin(3).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0008)_Zmin(2).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.0008)_Zmin(1).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.001)_Zmax(6).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.001)_Zmax(5).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.001)_Zmax(4).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.001)_Zmax(3).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.001)_Zmax(2).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.001)_Zmax(1).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.001)_Zmin(6).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.001)_Zmin(5).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.001)_Zmin(4).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.001)_Zmin(3).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.001)_Zmin(2).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=561.001)_Zmin(1).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.999)_Zmax(6).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.999)_Zmax(5).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.999)_Zmax(4).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.999)_Zmax(3).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.999)_Zmax(2).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.999)_Zmax(1).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.999)_Zmin(6).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.999)_Zmin(5).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.999)_Zmin(4).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.999)_Zmin(3).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.999)_Zmin(2).m3m
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:e-field (wl=560.999)_Zmin(1).m3m
 
 type=s:HIDDENITEM
 problemclass=s::8:1000
@@ -2908,19 +3980,6 @@ treepath=s:Tables\1D Results\Load Data
 files=s:Load Data.rt1
 files=s:Load Data.rd1
 title=s:Load Data
-
-type=s:TABLE
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:surviveparchange
-result=s:1
-treepath=s:Tables\1D Results\Convert to Wavelength
-files=s:Convert to Wavelength.rt1
-files=s:Convert to Wavelength.rd1
-title=s:Convert to Wavelength
-xlabel=s:Wavelength / nm
 
 type=s:TABLE
 subtype=s:user
@@ -9965,6 +11024,3277 @@ parametric=s:P
 treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(6),Zmax(6)
 files=s:amr(#0000)_svspZmax(6)_Zmax(6).sig
 
+type=s:TABLE
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+treepath=s:Tables\0D Results\Average Phase_1
+files=s:Average Phase_1.rt0
+files=s:Average Phase_1.rd0
+title=s:Average Phase_1
+
+type=s:TABLE
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+treepath=s:Tables\0D Results\Load Data_1
+files=s:Load Data_1.rt0
+files=s:Load Data_1.rd0
+title=s:Load Data_1
+
+type=s:TABLE
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+treepath=s:Tables\1D Results\Convert to Wavelength_1_1
+files=s:Convert to Wavelength_1_1.rt1
+files=s:Convert to Wavelength_1_1.rd1
+title=s:Convert to Wavelength_1_1
+xlabel=s:Wavelength / nm
+
+type=s:XYSIGNAL2
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\Delta\All S-Parameters
+files=s:amr(#0000)_deltas All S-Parametersvsp.sig
+
+type=s:XYSIGNAL2
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\Solvertime
+files=s:amr(#0000)_solvertimevsp.sig
+
+type=s:XYSIGNAL2
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\Meshcells
+files=s:amr(#0000)_meshcellsvsp.sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(1),Zmin(1)
+files=s:amr(#0000)_svspZmin(1)_Zmin(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(2),Zmin(1)
+files=s:amr(#0000)_svspZmin(2)_Zmin(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(3),Zmin(1)
+files=s:amr(#0000)_svspZmin(3)_Zmin(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(4),Zmin(1)
+files=s:amr(#0000)_svspZmin(4)_Zmin(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(5),Zmin(1)
+files=s:amr(#0000)_svspZmin(5)_Zmin(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(6),Zmin(1)
+files=s:amr(#0000)_svspZmin(6)_Zmin(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(1),Zmin(1)
+files=s:amr(#0000)_svspZmax(1)_Zmin(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(2),Zmin(1)
+files=s:amr(#0000)_svspZmax(2)_Zmin(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(3),Zmin(1)
+files=s:amr(#0000)_svspZmax(3)_Zmin(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(4),Zmin(1)
+files=s:amr(#0000)_svspZmax(4)_Zmin(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(5),Zmin(1)
+files=s:amr(#0000)_svspZmax(5)_Zmin(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(6),Zmin(1)
+files=s:amr(#0000)_svspZmax(6)_Zmin(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(1),Zmin(2)
+files=s:amr(#0000)_svspZmin(1)_Zmin(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(2),Zmin(2)
+files=s:amr(#0000)_svspZmin(2)_Zmin(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(3),Zmin(2)
+files=s:amr(#0000)_svspZmin(3)_Zmin(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(4),Zmin(2)
+files=s:amr(#0000)_svspZmin(4)_Zmin(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(5),Zmin(2)
+files=s:amr(#0000)_svspZmin(5)_Zmin(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(6),Zmin(2)
+files=s:amr(#0000)_svspZmin(6)_Zmin(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(1),Zmin(2)
+files=s:amr(#0000)_svspZmax(1)_Zmin(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(2),Zmin(2)
+files=s:amr(#0000)_svspZmax(2)_Zmin(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(3),Zmin(2)
+files=s:amr(#0000)_svspZmax(3)_Zmin(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(4),Zmin(2)
+files=s:amr(#0000)_svspZmax(4)_Zmin(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(5),Zmin(2)
+files=s:amr(#0000)_svspZmax(5)_Zmin(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(6),Zmin(2)
+files=s:amr(#0000)_svspZmax(6)_Zmin(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(1),Zmin(3)
+files=s:amr(#0000)_svspZmin(1)_Zmin(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(2),Zmin(3)
+files=s:amr(#0000)_svspZmin(2)_Zmin(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(3),Zmin(3)
+files=s:amr(#0000)_svspZmin(3)_Zmin(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(4),Zmin(3)
+files=s:amr(#0000)_svspZmin(4)_Zmin(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(5),Zmin(3)
+files=s:amr(#0000)_svspZmin(5)_Zmin(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(6),Zmin(3)
+files=s:amr(#0000)_svspZmin(6)_Zmin(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(1),Zmin(3)
+files=s:amr(#0000)_svspZmax(1)_Zmin(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(2),Zmin(3)
+files=s:amr(#0000)_svspZmax(2)_Zmin(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(3),Zmin(3)
+files=s:amr(#0000)_svspZmax(3)_Zmin(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(4),Zmin(3)
+files=s:amr(#0000)_svspZmax(4)_Zmin(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(5),Zmin(3)
+files=s:amr(#0000)_svspZmax(5)_Zmin(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(6),Zmin(3)
+files=s:amr(#0000)_svspZmax(6)_Zmin(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(1),Zmin(4)
+files=s:amr(#0000)_svspZmin(1)_Zmin(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(2),Zmin(4)
+files=s:amr(#0000)_svspZmin(2)_Zmin(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(3),Zmin(4)
+files=s:amr(#0000)_svspZmin(3)_Zmin(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(4),Zmin(4)
+files=s:amr(#0000)_svspZmin(4)_Zmin(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(5),Zmin(4)
+files=s:amr(#0000)_svspZmin(5)_Zmin(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(6),Zmin(4)
+files=s:amr(#0000)_svspZmin(6)_Zmin(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(1),Zmin(4)
+files=s:amr(#0000)_svspZmax(1)_Zmin(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(2),Zmin(4)
+files=s:amr(#0000)_svspZmax(2)_Zmin(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(3),Zmin(4)
+files=s:amr(#0000)_svspZmax(3)_Zmin(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(4),Zmin(4)
+files=s:amr(#0000)_svspZmax(4)_Zmin(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(5),Zmin(4)
+files=s:amr(#0000)_svspZmax(5)_Zmin(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(6),Zmin(4)
+files=s:amr(#0000)_svspZmax(6)_Zmin(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(1),Zmin(5)
+files=s:amr(#0000)_svspZmin(1)_Zmin(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(2),Zmin(5)
+files=s:amr(#0000)_svspZmin(2)_Zmin(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(3),Zmin(5)
+files=s:amr(#0000)_svspZmin(3)_Zmin(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(4),Zmin(5)
+files=s:amr(#0000)_svspZmin(4)_Zmin(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(5),Zmin(5)
+files=s:amr(#0000)_svspZmin(5)_Zmin(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(6),Zmin(5)
+files=s:amr(#0000)_svspZmin(6)_Zmin(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(1),Zmin(5)
+files=s:amr(#0000)_svspZmax(1)_Zmin(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(2),Zmin(5)
+files=s:amr(#0000)_svspZmax(2)_Zmin(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(3),Zmin(5)
+files=s:amr(#0000)_svspZmax(3)_Zmin(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(4),Zmin(5)
+files=s:amr(#0000)_svspZmax(4)_Zmin(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(5),Zmin(5)
+files=s:amr(#0000)_svspZmax(5)_Zmin(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(6),Zmin(5)
+files=s:amr(#0000)_svspZmax(6)_Zmin(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(1),Zmin(6)
+files=s:amr(#0000)_svspZmin(1)_Zmin(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(2),Zmin(6)
+files=s:amr(#0000)_svspZmin(2)_Zmin(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(3),Zmin(6)
+files=s:amr(#0000)_svspZmin(3)_Zmin(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(4),Zmin(6)
+files=s:amr(#0000)_svspZmin(4)_Zmin(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(5),Zmin(6)
+files=s:amr(#0000)_svspZmin(5)_Zmin(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(6),Zmin(6)
+files=s:amr(#0000)_svspZmin(6)_Zmin(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(1),Zmin(6)
+files=s:amr(#0000)_svspZmax(1)_Zmin(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(2),Zmin(6)
+files=s:amr(#0000)_svspZmax(2)_Zmin(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(3),Zmin(6)
+files=s:amr(#0000)_svspZmax(3)_Zmin(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(4),Zmin(6)
+files=s:amr(#0000)_svspZmax(4)_Zmin(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(5),Zmin(6)
+files=s:amr(#0000)_svspZmax(5)_Zmin(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(6),Zmin(6)
+files=s:amr(#0000)_svspZmax(6)_Zmin(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(1),Zmax(1)
+files=s:amr(#0000)_svspZmin(1)_Zmax(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(2),Zmax(1)
+files=s:amr(#0000)_svspZmin(2)_Zmax(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(3),Zmax(1)
+files=s:amr(#0000)_svspZmin(3)_Zmax(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(4),Zmax(1)
+files=s:amr(#0000)_svspZmin(4)_Zmax(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(5),Zmax(1)
+files=s:amr(#0000)_svspZmin(5)_Zmax(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(6),Zmax(1)
+files=s:amr(#0000)_svspZmin(6)_Zmax(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(1),Zmax(1)
+files=s:amr(#0000)_svspZmax(1)_Zmax(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(2),Zmax(1)
+files=s:amr(#0000)_svspZmax(2)_Zmax(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(3),Zmax(1)
+files=s:amr(#0000)_svspZmax(3)_Zmax(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(4),Zmax(1)
+files=s:amr(#0000)_svspZmax(4)_Zmax(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(5),Zmax(1)
+files=s:amr(#0000)_svspZmax(5)_Zmax(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(6),Zmax(1)
+files=s:amr(#0000)_svspZmax(6)_Zmax(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(1),Zmax(2)
+files=s:amr(#0000)_svspZmin(1)_Zmax(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(2),Zmax(2)
+files=s:amr(#0000)_svspZmin(2)_Zmax(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(3),Zmax(2)
+files=s:amr(#0000)_svspZmin(3)_Zmax(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(4),Zmax(2)
+files=s:amr(#0000)_svspZmin(4)_Zmax(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(5),Zmax(2)
+files=s:amr(#0000)_svspZmin(5)_Zmax(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(6),Zmax(2)
+files=s:amr(#0000)_svspZmin(6)_Zmax(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(1),Zmax(2)
+files=s:amr(#0000)_svspZmax(1)_Zmax(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(2),Zmax(2)
+files=s:amr(#0000)_svspZmax(2)_Zmax(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(3),Zmax(2)
+files=s:amr(#0000)_svspZmax(3)_Zmax(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(4),Zmax(2)
+files=s:amr(#0000)_svspZmax(4)_Zmax(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(5),Zmax(2)
+files=s:amr(#0000)_svspZmax(5)_Zmax(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(6),Zmax(2)
+files=s:amr(#0000)_svspZmax(6)_Zmax(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(1),Zmax(3)
+files=s:amr(#0000)_svspZmin(1)_Zmax(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(2),Zmax(3)
+files=s:amr(#0000)_svspZmin(2)_Zmax(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(3),Zmax(3)
+files=s:amr(#0000)_svspZmin(3)_Zmax(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(4),Zmax(3)
+files=s:amr(#0000)_svspZmin(4)_Zmax(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(5),Zmax(3)
+files=s:amr(#0000)_svspZmin(5)_Zmax(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(6),Zmax(3)
+files=s:amr(#0000)_svspZmin(6)_Zmax(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(1),Zmax(3)
+files=s:amr(#0000)_svspZmax(1)_Zmax(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(2),Zmax(3)
+files=s:amr(#0000)_svspZmax(2)_Zmax(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(3),Zmax(3)
+files=s:amr(#0000)_svspZmax(3)_Zmax(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(4),Zmax(3)
+files=s:amr(#0000)_svspZmax(4)_Zmax(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(5),Zmax(3)
+files=s:amr(#0000)_svspZmax(5)_Zmax(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(6),Zmax(3)
+files=s:amr(#0000)_svspZmax(6)_Zmax(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(1),Zmax(4)
+files=s:amr(#0000)_svspZmin(1)_Zmax(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(2),Zmax(4)
+files=s:amr(#0000)_svspZmin(2)_Zmax(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(3),Zmax(4)
+files=s:amr(#0000)_svspZmin(3)_Zmax(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(4),Zmax(4)
+files=s:amr(#0000)_svspZmin(4)_Zmax(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(5),Zmax(4)
+files=s:amr(#0000)_svspZmin(5)_Zmax(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(6),Zmax(4)
+files=s:amr(#0000)_svspZmin(6)_Zmax(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(1),Zmax(4)
+files=s:amr(#0000)_svspZmax(1)_Zmax(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(2),Zmax(4)
+files=s:amr(#0000)_svspZmax(2)_Zmax(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(3),Zmax(4)
+files=s:amr(#0000)_svspZmax(3)_Zmax(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(4),Zmax(4)
+files=s:amr(#0000)_svspZmax(4)_Zmax(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(5),Zmax(4)
+files=s:amr(#0000)_svspZmax(5)_Zmax(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(6),Zmax(4)
+files=s:amr(#0000)_svspZmax(6)_Zmax(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(1),Zmax(5)
+files=s:amr(#0000)_svspZmin(1)_Zmax(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(2),Zmax(5)
+files=s:amr(#0000)_svspZmin(2)_Zmax(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(3),Zmax(5)
+files=s:amr(#0000)_svspZmin(3)_Zmax(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(4),Zmax(5)
+files=s:amr(#0000)_svspZmin(4)_Zmax(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(5),Zmax(5)
+files=s:amr(#0000)_svspZmin(5)_Zmax(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(6),Zmax(5)
+files=s:amr(#0000)_svspZmin(6)_Zmax(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(1),Zmax(5)
+files=s:amr(#0000)_svspZmax(1)_Zmax(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(2),Zmax(5)
+files=s:amr(#0000)_svspZmax(2)_Zmax(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(3),Zmax(5)
+files=s:amr(#0000)_svspZmax(3)_Zmax(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(4),Zmax(5)
+files=s:amr(#0000)_svspZmax(4)_Zmax(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(5),Zmax(5)
+files=s:amr(#0000)_svspZmax(5)_Zmax(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(6),Zmax(5)
+files=s:amr(#0000)_svspZmax(6)_Zmax(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(1),Zmax(6)
+files=s:amr(#0000)_svspZmin(1)_Zmax(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(2),Zmax(6)
+files=s:amr(#0000)_svspZmin(2)_Zmax(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(3),Zmax(6)
+files=s:amr(#0000)_svspZmin(3)_Zmax(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(4),Zmax(6)
+files=s:amr(#0000)_svspZmin(4)_Zmax(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(5),Zmax(6)
+files=s:amr(#0000)_svspZmin(5)_Zmax(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(6),Zmax(6)
+files=s:amr(#0000)_svspZmin(6)_Zmax(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(1),Zmax(6)
+files=s:amr(#0000)_svspZmax(1)_Zmax(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(2),Zmax(6)
+files=s:amr(#0000)_svspZmax(2)_Zmax(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(3),Zmax(6)
+files=s:amr(#0000)_svspZmax(3)_Zmax(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(4),Zmax(6)
+files=s:amr(#0000)_svspZmax(4)_Zmax(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(5),Zmax(6)
+files=s:amr(#0000)_svspZmax(5)_Zmax(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(6),Zmax(6)
+files=s:amr(#0000)_svspZmax(6)_Zmax(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\Delta\All S-Parameters
+files=s:amr(#0000)_deltas All S-Parametersvsp.sig
+
+type=s:XYSIGNAL2
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\Solvertime
+files=s:amr(#0000)_solvertimevsp.sig
+
+type=s:XYSIGNAL2
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\Meshcells
+files=s:amr(#0000)_meshcellsvsp.sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(1),Zmin(1)
+files=s:amr(#0000)_svspZmin(1)_Zmin(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(2),Zmin(1)
+files=s:amr(#0000)_svspZmin(2)_Zmin(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(3),Zmin(1)
+files=s:amr(#0000)_svspZmin(3)_Zmin(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(4),Zmin(1)
+files=s:amr(#0000)_svspZmin(4)_Zmin(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(5),Zmin(1)
+files=s:amr(#0000)_svspZmin(5)_Zmin(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(6),Zmin(1)
+files=s:amr(#0000)_svspZmin(6)_Zmin(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(1),Zmin(1)
+files=s:amr(#0000)_svspZmax(1)_Zmin(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(2),Zmin(1)
+files=s:amr(#0000)_svspZmax(2)_Zmin(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(3),Zmin(1)
+files=s:amr(#0000)_svspZmax(3)_Zmin(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(4),Zmin(1)
+files=s:amr(#0000)_svspZmax(4)_Zmin(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(5),Zmin(1)
+files=s:amr(#0000)_svspZmax(5)_Zmin(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(6),Zmin(1)
+files=s:amr(#0000)_svspZmax(6)_Zmin(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(1),Zmin(2)
+files=s:amr(#0000)_svspZmin(1)_Zmin(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(2),Zmin(2)
+files=s:amr(#0000)_svspZmin(2)_Zmin(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(3),Zmin(2)
+files=s:amr(#0000)_svspZmin(3)_Zmin(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(4),Zmin(2)
+files=s:amr(#0000)_svspZmin(4)_Zmin(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(5),Zmin(2)
+files=s:amr(#0000)_svspZmin(5)_Zmin(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(6),Zmin(2)
+files=s:amr(#0000)_svspZmin(6)_Zmin(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(1),Zmin(2)
+files=s:amr(#0000)_svspZmax(1)_Zmin(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(2),Zmin(2)
+files=s:amr(#0000)_svspZmax(2)_Zmin(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(3),Zmin(2)
+files=s:amr(#0000)_svspZmax(3)_Zmin(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(4),Zmin(2)
+files=s:amr(#0000)_svspZmax(4)_Zmin(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(5),Zmin(2)
+files=s:amr(#0000)_svspZmax(5)_Zmin(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(6),Zmin(2)
+files=s:amr(#0000)_svspZmax(6)_Zmin(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(1),Zmin(3)
+files=s:amr(#0000)_svspZmin(1)_Zmin(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(2),Zmin(3)
+files=s:amr(#0000)_svspZmin(2)_Zmin(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(3),Zmin(3)
+files=s:amr(#0000)_svspZmin(3)_Zmin(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(4),Zmin(3)
+files=s:amr(#0000)_svspZmin(4)_Zmin(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(5),Zmin(3)
+files=s:amr(#0000)_svspZmin(5)_Zmin(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(6),Zmin(3)
+files=s:amr(#0000)_svspZmin(6)_Zmin(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(1),Zmin(3)
+files=s:amr(#0000)_svspZmax(1)_Zmin(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(2),Zmin(3)
+files=s:amr(#0000)_svspZmax(2)_Zmin(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(3),Zmin(3)
+files=s:amr(#0000)_svspZmax(3)_Zmin(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(4),Zmin(3)
+files=s:amr(#0000)_svspZmax(4)_Zmin(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(5),Zmin(3)
+files=s:amr(#0000)_svspZmax(5)_Zmin(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(6),Zmin(3)
+files=s:amr(#0000)_svspZmax(6)_Zmin(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(1),Zmin(4)
+files=s:amr(#0000)_svspZmin(1)_Zmin(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(2),Zmin(4)
+files=s:amr(#0000)_svspZmin(2)_Zmin(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(3),Zmin(4)
+files=s:amr(#0000)_svspZmin(3)_Zmin(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(4),Zmin(4)
+files=s:amr(#0000)_svspZmin(4)_Zmin(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(5),Zmin(4)
+files=s:amr(#0000)_svspZmin(5)_Zmin(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(6),Zmin(4)
+files=s:amr(#0000)_svspZmin(6)_Zmin(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(1),Zmin(4)
+files=s:amr(#0000)_svspZmax(1)_Zmin(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(2),Zmin(4)
+files=s:amr(#0000)_svspZmax(2)_Zmin(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(3),Zmin(4)
+files=s:amr(#0000)_svspZmax(3)_Zmin(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(4),Zmin(4)
+files=s:amr(#0000)_svspZmax(4)_Zmin(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(5),Zmin(4)
+files=s:amr(#0000)_svspZmax(5)_Zmin(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(6),Zmin(4)
+files=s:amr(#0000)_svspZmax(6)_Zmin(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(1),Zmin(5)
+files=s:amr(#0000)_svspZmin(1)_Zmin(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(2),Zmin(5)
+files=s:amr(#0000)_svspZmin(2)_Zmin(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(3),Zmin(5)
+files=s:amr(#0000)_svspZmin(3)_Zmin(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(4),Zmin(5)
+files=s:amr(#0000)_svspZmin(4)_Zmin(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(5),Zmin(5)
+files=s:amr(#0000)_svspZmin(5)_Zmin(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(6),Zmin(5)
+files=s:amr(#0000)_svspZmin(6)_Zmin(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(1),Zmin(5)
+files=s:amr(#0000)_svspZmax(1)_Zmin(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(2),Zmin(5)
+files=s:amr(#0000)_svspZmax(2)_Zmin(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(3),Zmin(5)
+files=s:amr(#0000)_svspZmax(3)_Zmin(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(4),Zmin(5)
+files=s:amr(#0000)_svspZmax(4)_Zmin(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(5),Zmin(5)
+files=s:amr(#0000)_svspZmax(5)_Zmin(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(6),Zmin(5)
+files=s:amr(#0000)_svspZmax(6)_Zmin(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(1),Zmin(6)
+files=s:amr(#0000)_svspZmin(1)_Zmin(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(2),Zmin(6)
+files=s:amr(#0000)_svspZmin(2)_Zmin(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(3),Zmin(6)
+files=s:amr(#0000)_svspZmin(3)_Zmin(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(4),Zmin(6)
+files=s:amr(#0000)_svspZmin(4)_Zmin(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(5),Zmin(6)
+files=s:amr(#0000)_svspZmin(5)_Zmin(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(6),Zmin(6)
+files=s:amr(#0000)_svspZmin(6)_Zmin(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(1),Zmin(6)
+files=s:amr(#0000)_svspZmax(1)_Zmin(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(2),Zmin(6)
+files=s:amr(#0000)_svspZmax(2)_Zmin(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(3),Zmin(6)
+files=s:amr(#0000)_svspZmax(3)_Zmin(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(4),Zmin(6)
+files=s:amr(#0000)_svspZmax(4)_Zmin(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(5),Zmin(6)
+files=s:amr(#0000)_svspZmax(5)_Zmin(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(6),Zmin(6)
+files=s:amr(#0000)_svspZmax(6)_Zmin(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(1),Zmax(1)
+files=s:amr(#0000)_svspZmin(1)_Zmax(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(2),Zmax(1)
+files=s:amr(#0000)_svspZmin(2)_Zmax(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(3),Zmax(1)
+files=s:amr(#0000)_svspZmin(3)_Zmax(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(4),Zmax(1)
+files=s:amr(#0000)_svspZmin(4)_Zmax(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(5),Zmax(1)
+files=s:amr(#0000)_svspZmin(5)_Zmax(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(6),Zmax(1)
+files=s:amr(#0000)_svspZmin(6)_Zmax(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(1),Zmax(1)
+files=s:amr(#0000)_svspZmax(1)_Zmax(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(2),Zmax(1)
+files=s:amr(#0000)_svspZmax(2)_Zmax(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(3),Zmax(1)
+files=s:amr(#0000)_svspZmax(3)_Zmax(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(4),Zmax(1)
+files=s:amr(#0000)_svspZmax(4)_Zmax(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(5),Zmax(1)
+files=s:amr(#0000)_svspZmax(5)_Zmax(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(6),Zmax(1)
+files=s:amr(#0000)_svspZmax(6)_Zmax(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(1),Zmax(2)
+files=s:amr(#0000)_svspZmin(1)_Zmax(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(2),Zmax(2)
+files=s:amr(#0000)_svspZmin(2)_Zmax(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(3),Zmax(2)
+files=s:amr(#0000)_svspZmin(3)_Zmax(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(4),Zmax(2)
+files=s:amr(#0000)_svspZmin(4)_Zmax(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(5),Zmax(2)
+files=s:amr(#0000)_svspZmin(5)_Zmax(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(6),Zmax(2)
+files=s:amr(#0000)_svspZmin(6)_Zmax(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(1),Zmax(2)
+files=s:amr(#0000)_svspZmax(1)_Zmax(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(2),Zmax(2)
+files=s:amr(#0000)_svspZmax(2)_Zmax(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(3),Zmax(2)
+files=s:amr(#0000)_svspZmax(3)_Zmax(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(4),Zmax(2)
+files=s:amr(#0000)_svspZmax(4)_Zmax(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(5),Zmax(2)
+files=s:amr(#0000)_svspZmax(5)_Zmax(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(6),Zmax(2)
+files=s:amr(#0000)_svspZmax(6)_Zmax(2).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(1),Zmax(3)
+files=s:amr(#0000)_svspZmin(1)_Zmax(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(2),Zmax(3)
+files=s:amr(#0000)_svspZmin(2)_Zmax(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(3),Zmax(3)
+files=s:amr(#0000)_svspZmin(3)_Zmax(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(4),Zmax(3)
+files=s:amr(#0000)_svspZmin(4)_Zmax(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(5),Zmax(3)
+files=s:amr(#0000)_svspZmin(5)_Zmax(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(6),Zmax(3)
+files=s:amr(#0000)_svspZmin(6)_Zmax(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(1),Zmax(3)
+files=s:amr(#0000)_svspZmax(1)_Zmax(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(2),Zmax(3)
+files=s:amr(#0000)_svspZmax(2)_Zmax(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(3),Zmax(3)
+files=s:amr(#0000)_svspZmax(3)_Zmax(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(4),Zmax(3)
+files=s:amr(#0000)_svspZmax(4)_Zmax(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(5),Zmax(3)
+files=s:amr(#0000)_svspZmax(5)_Zmax(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(6),Zmax(3)
+files=s:amr(#0000)_svspZmax(6)_Zmax(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(1),Zmax(4)
+files=s:amr(#0000)_svspZmin(1)_Zmax(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(2),Zmax(4)
+files=s:amr(#0000)_svspZmin(2)_Zmax(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(3),Zmax(4)
+files=s:amr(#0000)_svspZmin(3)_Zmax(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(4),Zmax(4)
+files=s:amr(#0000)_svspZmin(4)_Zmax(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(5),Zmax(4)
+files=s:amr(#0000)_svspZmin(5)_Zmax(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(6),Zmax(4)
+files=s:amr(#0000)_svspZmin(6)_Zmax(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(1),Zmax(4)
+files=s:amr(#0000)_svspZmax(1)_Zmax(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(2),Zmax(4)
+files=s:amr(#0000)_svspZmax(2)_Zmax(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(3),Zmax(4)
+files=s:amr(#0000)_svspZmax(3)_Zmax(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(4),Zmax(4)
+files=s:amr(#0000)_svspZmax(4)_Zmax(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(5),Zmax(4)
+files=s:amr(#0000)_svspZmax(5)_Zmax(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(6),Zmax(4)
+files=s:amr(#0000)_svspZmax(6)_Zmax(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(1),Zmax(5)
+files=s:amr(#0000)_svspZmin(1)_Zmax(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(2),Zmax(5)
+files=s:amr(#0000)_svspZmin(2)_Zmax(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(3),Zmax(5)
+files=s:amr(#0000)_svspZmin(3)_Zmax(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(4),Zmax(5)
+files=s:amr(#0000)_svspZmin(4)_Zmax(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(5),Zmax(5)
+files=s:amr(#0000)_svspZmin(5)_Zmax(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(6),Zmax(5)
+files=s:amr(#0000)_svspZmin(6)_Zmax(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(1),Zmax(5)
+files=s:amr(#0000)_svspZmax(1)_Zmax(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(2),Zmax(5)
+files=s:amr(#0000)_svspZmax(2)_Zmax(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(3),Zmax(5)
+files=s:amr(#0000)_svspZmax(3)_Zmax(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(4),Zmax(5)
+files=s:amr(#0000)_svspZmax(4)_Zmax(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(5),Zmax(5)
+files=s:amr(#0000)_svspZmax(5)_Zmax(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(6),Zmax(5)
+files=s:amr(#0000)_svspZmax(6)_Zmax(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(1),Zmax(6)
+files=s:amr(#0000)_svspZmin(1)_Zmax(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(2),Zmax(6)
+files=s:amr(#0000)_svspZmin(2)_Zmax(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(3),Zmax(6)
+files=s:amr(#0000)_svspZmin(3)_Zmax(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(4),Zmax(6)
+files=s:amr(#0000)_svspZmin(4)_Zmax(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(5),Zmax(6)
+files=s:amr(#0000)_svspZmin(5)_Zmax(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmin(6),Zmax(6)
+files=s:amr(#0000)_svspZmin(6)_Zmax(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(1),Zmax(6)
+files=s:amr(#0000)_svspZmax(1)_Zmax(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(2),Zmax(6)
+files=s:amr(#0000)_svspZmax(2)_Zmax(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(3),Zmax(6)
+files=s:amr(#0000)_svspZmax(3)_Zmax(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(4),Zmax(6)
+files=s:amr(#0000)_svspZmax(4)_Zmax(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(5),Zmax(6)
+files=s:amr(#0000)_svspZmax(5)_Zmax(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Adaptive Meshing\f=0.473607\S-Parameters\SZmax(6),Zmax(6)
+files=s:amr(#0000)_svspZmax(6)_Zmax(6).sig
+
 type=s:XYSIGNAL2
 subtype=s:user
 problemclass=s:Low Frequency:4:3
@@ -11523,7 +15853,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\Delta\All S-Parameters
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\Delta\All S-Parameters
 files=s:amr(#0000)_deltas All S-Parametersvsp.sig
 
 type=s:XYSIGNAL2
@@ -11533,7 +15863,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\Solvertime
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\Solvertime
 files=s:amr(#0000)_solvertimevsp.sig
 
 type=s:XYSIGNAL2
@@ -11543,7 +15873,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\Meshcells
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\Meshcells
 files=s:amr(#0000)_meshcellsvsp.sig
 
 type=s:XYSIGNAL2
@@ -11553,7 +15883,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(1),Zmin(1)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(1),Zmin(1)
 files=s:amr(#0000)_svspZmin(1)_Zmin(1).sig
 
 type=s:XYSIGNAL2
@@ -11563,7 +15893,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(2),Zmin(1)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(2),Zmin(1)
 files=s:amr(#0000)_svspZmin(2)_Zmin(1).sig
 
 type=s:XYSIGNAL2
@@ -11573,7 +15903,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(3),Zmin(1)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(3),Zmin(1)
 files=s:amr(#0000)_svspZmin(3)_Zmin(1).sig
 
 type=s:XYSIGNAL2
@@ -11583,7 +15913,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(4),Zmin(1)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(4),Zmin(1)
 files=s:amr(#0000)_svspZmin(4)_Zmin(1).sig
 
 type=s:XYSIGNAL2
@@ -11593,7 +15923,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(5),Zmin(1)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(5),Zmin(1)
 files=s:amr(#0000)_svspZmin(5)_Zmin(1).sig
 
 type=s:XYSIGNAL2
@@ -11603,7 +15933,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(6),Zmin(1)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(6),Zmin(1)
 files=s:amr(#0000)_svspZmin(6)_Zmin(1).sig
 
 type=s:XYSIGNAL2
@@ -11613,7 +15943,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(1),Zmin(1)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(1),Zmin(1)
 files=s:amr(#0000)_svspZmax(1)_Zmin(1).sig
 
 type=s:XYSIGNAL2
@@ -11623,7 +15953,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(2),Zmin(1)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(2),Zmin(1)
 files=s:amr(#0000)_svspZmax(2)_Zmin(1).sig
 
 type=s:XYSIGNAL2
@@ -11633,7 +15963,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(3),Zmin(1)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(3),Zmin(1)
 files=s:amr(#0000)_svspZmax(3)_Zmin(1).sig
 
 type=s:XYSIGNAL2
@@ -11643,7 +15973,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(4),Zmin(1)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(4),Zmin(1)
 files=s:amr(#0000)_svspZmax(4)_Zmin(1).sig
 
 type=s:XYSIGNAL2
@@ -11653,7 +15983,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(5),Zmin(1)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(5),Zmin(1)
 files=s:amr(#0000)_svspZmax(5)_Zmin(1).sig
 
 type=s:XYSIGNAL2
@@ -11663,7 +15993,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(6),Zmin(1)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(6),Zmin(1)
 files=s:amr(#0000)_svspZmax(6)_Zmin(1).sig
 
 type=s:XYSIGNAL2
@@ -11673,7 +16003,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(1),Zmin(2)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(1),Zmin(2)
 files=s:amr(#0000)_svspZmin(1)_Zmin(2).sig
 
 type=s:XYSIGNAL2
@@ -11683,7 +16013,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(2),Zmin(2)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(2),Zmin(2)
 files=s:amr(#0000)_svspZmin(2)_Zmin(2).sig
 
 type=s:XYSIGNAL2
@@ -11693,7 +16023,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(3),Zmin(2)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(3),Zmin(2)
 files=s:amr(#0000)_svspZmin(3)_Zmin(2).sig
 
 type=s:XYSIGNAL2
@@ -11703,7 +16033,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(4),Zmin(2)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(4),Zmin(2)
 files=s:amr(#0000)_svspZmin(4)_Zmin(2).sig
 
 type=s:XYSIGNAL2
@@ -11713,7 +16043,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(5),Zmin(2)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(5),Zmin(2)
 files=s:amr(#0000)_svspZmin(5)_Zmin(2).sig
 
 type=s:XYSIGNAL2
@@ -11723,7 +16053,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(6),Zmin(2)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(6),Zmin(2)
 files=s:amr(#0000)_svspZmin(6)_Zmin(2).sig
 
 type=s:XYSIGNAL2
@@ -11733,7 +16063,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(1),Zmin(2)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(1),Zmin(2)
 files=s:amr(#0000)_svspZmax(1)_Zmin(2).sig
 
 type=s:XYSIGNAL2
@@ -11743,7 +16073,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(2),Zmin(2)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(2),Zmin(2)
 files=s:amr(#0000)_svspZmax(2)_Zmin(2).sig
 
 type=s:XYSIGNAL2
@@ -11753,7 +16083,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(3),Zmin(2)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(3),Zmin(2)
 files=s:amr(#0000)_svspZmax(3)_Zmin(2).sig
 
 type=s:XYSIGNAL2
@@ -11763,7 +16093,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(4),Zmin(2)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(4),Zmin(2)
 files=s:amr(#0000)_svspZmax(4)_Zmin(2).sig
 
 type=s:XYSIGNAL2
@@ -11773,7 +16103,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(5),Zmin(2)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(5),Zmin(2)
 files=s:amr(#0000)_svspZmax(5)_Zmin(2).sig
 
 type=s:XYSIGNAL2
@@ -11783,7 +16113,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(6),Zmin(2)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(6),Zmin(2)
 files=s:amr(#0000)_svspZmax(6)_Zmin(2).sig
 
 type=s:XYSIGNAL2
@@ -11793,7 +16123,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(1),Zmin(3)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(1),Zmin(3)
 files=s:amr(#0000)_svspZmin(1)_Zmin(3).sig
 
 type=s:XYSIGNAL2
@@ -11803,7 +16133,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(2),Zmin(3)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(2),Zmin(3)
 files=s:amr(#0000)_svspZmin(2)_Zmin(3).sig
 
 type=s:XYSIGNAL2
@@ -11813,7 +16143,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(3),Zmin(3)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(3),Zmin(3)
 files=s:amr(#0000)_svspZmin(3)_Zmin(3).sig
 
 type=s:XYSIGNAL2
@@ -11823,7 +16153,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(4),Zmin(3)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(4),Zmin(3)
 files=s:amr(#0000)_svspZmin(4)_Zmin(3).sig
 
 type=s:XYSIGNAL2
@@ -11833,7 +16163,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(5),Zmin(3)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(5),Zmin(3)
 files=s:amr(#0000)_svspZmin(5)_Zmin(3).sig
 
 type=s:XYSIGNAL2
@@ -11843,7 +16173,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(6),Zmin(3)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(6),Zmin(3)
 files=s:amr(#0000)_svspZmin(6)_Zmin(3).sig
 
 type=s:XYSIGNAL2
@@ -11853,7 +16183,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(1),Zmin(3)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(1),Zmin(3)
 files=s:amr(#0000)_svspZmax(1)_Zmin(3).sig
 
 type=s:XYSIGNAL2
@@ -11863,7 +16193,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(2),Zmin(3)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(2),Zmin(3)
 files=s:amr(#0000)_svspZmax(2)_Zmin(3).sig
 
 type=s:XYSIGNAL2
@@ -11873,7 +16203,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(3),Zmin(3)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(3),Zmin(3)
 files=s:amr(#0000)_svspZmax(3)_Zmin(3).sig
 
 type=s:XYSIGNAL2
@@ -11883,7 +16213,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(4),Zmin(3)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(4),Zmin(3)
 files=s:amr(#0000)_svspZmax(4)_Zmin(3).sig
 
 type=s:XYSIGNAL2
@@ -11893,7 +16223,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(5),Zmin(3)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(5),Zmin(3)
 files=s:amr(#0000)_svspZmax(5)_Zmin(3).sig
 
 type=s:XYSIGNAL2
@@ -11903,7 +16233,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(6),Zmin(3)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(6),Zmin(3)
 files=s:amr(#0000)_svspZmax(6)_Zmin(3).sig
 
 type=s:XYSIGNAL2
@@ -11913,7 +16243,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(1),Zmin(4)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(1),Zmin(4)
 files=s:amr(#0000)_svspZmin(1)_Zmin(4).sig
 
 type=s:XYSIGNAL2
@@ -11923,7 +16253,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(2),Zmin(4)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(2),Zmin(4)
 files=s:amr(#0000)_svspZmin(2)_Zmin(4).sig
 
 type=s:XYSIGNAL2
@@ -11933,7 +16263,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(3),Zmin(4)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(3),Zmin(4)
 files=s:amr(#0000)_svspZmin(3)_Zmin(4).sig
 
 type=s:XYSIGNAL2
@@ -11943,7 +16273,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(4),Zmin(4)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(4),Zmin(4)
 files=s:amr(#0000)_svspZmin(4)_Zmin(4).sig
 
 type=s:XYSIGNAL2
@@ -11953,7 +16283,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(5),Zmin(4)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(5),Zmin(4)
 files=s:amr(#0000)_svspZmin(5)_Zmin(4).sig
 
 type=s:XYSIGNAL2
@@ -11963,7 +16293,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(6),Zmin(4)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(6),Zmin(4)
 files=s:amr(#0000)_svspZmin(6)_Zmin(4).sig
 
 type=s:XYSIGNAL2
@@ -11973,7 +16303,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(1),Zmin(4)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(1),Zmin(4)
 files=s:amr(#0000)_svspZmax(1)_Zmin(4).sig
 
 type=s:XYSIGNAL2
@@ -11983,7 +16313,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(2),Zmin(4)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(2),Zmin(4)
 files=s:amr(#0000)_svspZmax(2)_Zmin(4).sig
 
 type=s:XYSIGNAL2
@@ -11993,7 +16323,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(3),Zmin(4)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(3),Zmin(4)
 files=s:amr(#0000)_svspZmax(3)_Zmin(4).sig
 
 type=s:XYSIGNAL2
@@ -12003,7 +16333,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(4),Zmin(4)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(4),Zmin(4)
 files=s:amr(#0000)_svspZmax(4)_Zmin(4).sig
 
 type=s:XYSIGNAL2
@@ -12013,7 +16343,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(5),Zmin(4)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(5),Zmin(4)
 files=s:amr(#0000)_svspZmax(5)_Zmin(4).sig
 
 type=s:XYSIGNAL2
@@ -12023,7 +16353,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(6),Zmin(4)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(6),Zmin(4)
 files=s:amr(#0000)_svspZmax(6)_Zmin(4).sig
 
 type=s:XYSIGNAL2
@@ -12033,7 +16363,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(1),Zmin(5)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(1),Zmin(5)
 files=s:amr(#0000)_svspZmin(1)_Zmin(5).sig
 
 type=s:XYSIGNAL2
@@ -12043,7 +16373,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(2),Zmin(5)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(2),Zmin(5)
 files=s:amr(#0000)_svspZmin(2)_Zmin(5).sig
 
 type=s:XYSIGNAL2
@@ -12053,7 +16383,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(3),Zmin(5)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(3),Zmin(5)
 files=s:amr(#0000)_svspZmin(3)_Zmin(5).sig
 
 type=s:XYSIGNAL2
@@ -12063,7 +16393,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(4),Zmin(5)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(4),Zmin(5)
 files=s:amr(#0000)_svspZmin(4)_Zmin(5).sig
 
 type=s:XYSIGNAL2
@@ -12073,7 +16403,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(5),Zmin(5)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(5),Zmin(5)
 files=s:amr(#0000)_svspZmin(5)_Zmin(5).sig
 
 type=s:XYSIGNAL2
@@ -12083,7 +16413,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(6),Zmin(5)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(6),Zmin(5)
 files=s:amr(#0000)_svspZmin(6)_Zmin(5).sig
 
 type=s:XYSIGNAL2
@@ -12093,7 +16423,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(1),Zmin(5)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(1),Zmin(5)
 files=s:amr(#0000)_svspZmax(1)_Zmin(5).sig
 
 type=s:XYSIGNAL2
@@ -12103,7 +16433,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(2),Zmin(5)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(2),Zmin(5)
 files=s:amr(#0000)_svspZmax(2)_Zmin(5).sig
 
 type=s:XYSIGNAL2
@@ -12113,7 +16443,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(3),Zmin(5)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(3),Zmin(5)
 files=s:amr(#0000)_svspZmax(3)_Zmin(5).sig
 
 type=s:XYSIGNAL2
@@ -12123,7 +16453,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(4),Zmin(5)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(4),Zmin(5)
 files=s:amr(#0000)_svspZmax(4)_Zmin(5).sig
 
 type=s:XYSIGNAL2
@@ -12133,7 +16463,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(5),Zmin(5)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(5),Zmin(5)
 files=s:amr(#0000)_svspZmax(5)_Zmin(5).sig
 
 type=s:XYSIGNAL2
@@ -12143,7 +16473,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(6),Zmin(5)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(6),Zmin(5)
 files=s:amr(#0000)_svspZmax(6)_Zmin(5).sig
 
 type=s:XYSIGNAL2
@@ -12153,7 +16483,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(1),Zmin(6)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(1),Zmin(6)
 files=s:amr(#0000)_svspZmin(1)_Zmin(6).sig
 
 type=s:XYSIGNAL2
@@ -12163,7 +16493,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(2),Zmin(6)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(2),Zmin(6)
 files=s:amr(#0000)_svspZmin(2)_Zmin(6).sig
 
 type=s:XYSIGNAL2
@@ -12173,7 +16503,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(3),Zmin(6)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(3),Zmin(6)
 files=s:amr(#0000)_svspZmin(3)_Zmin(6).sig
 
 type=s:XYSIGNAL2
@@ -12183,7 +16513,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(4),Zmin(6)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(4),Zmin(6)
 files=s:amr(#0000)_svspZmin(4)_Zmin(6).sig
 
 type=s:XYSIGNAL2
@@ -12193,7 +16523,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(5),Zmin(6)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(5),Zmin(6)
 files=s:amr(#0000)_svspZmin(5)_Zmin(6).sig
 
 type=s:XYSIGNAL2
@@ -12203,7 +16533,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(6),Zmin(6)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(6),Zmin(6)
 files=s:amr(#0000)_svspZmin(6)_Zmin(6).sig
 
 type=s:XYSIGNAL2
@@ -12213,7 +16543,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(1),Zmin(6)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(1),Zmin(6)
 files=s:amr(#0000)_svspZmax(1)_Zmin(6).sig
 
 type=s:XYSIGNAL2
@@ -12223,7 +16553,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(2),Zmin(6)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(2),Zmin(6)
 files=s:amr(#0000)_svspZmax(2)_Zmin(6).sig
 
 type=s:XYSIGNAL2
@@ -12233,7 +16563,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(3),Zmin(6)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(3),Zmin(6)
 files=s:amr(#0000)_svspZmax(3)_Zmin(6).sig
 
 type=s:XYSIGNAL2
@@ -12243,7 +16573,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(4),Zmin(6)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(4),Zmin(6)
 files=s:amr(#0000)_svspZmax(4)_Zmin(6).sig
 
 type=s:XYSIGNAL2
@@ -12253,7 +16583,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(5),Zmin(6)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(5),Zmin(6)
 files=s:amr(#0000)_svspZmax(5)_Zmin(6).sig
 
 type=s:XYSIGNAL2
@@ -12263,7 +16593,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(6),Zmin(6)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(6),Zmin(6)
 files=s:amr(#0000)_svspZmax(6)_Zmin(6).sig
 
 type=s:XYSIGNAL2
@@ -12273,7 +16603,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(1),Zmax(1)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(1),Zmax(1)
 files=s:amr(#0000)_svspZmin(1)_Zmax(1).sig
 
 type=s:XYSIGNAL2
@@ -12283,7 +16613,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(2),Zmax(1)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(2),Zmax(1)
 files=s:amr(#0000)_svspZmin(2)_Zmax(1).sig
 
 type=s:XYSIGNAL2
@@ -12293,7 +16623,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(3),Zmax(1)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(3),Zmax(1)
 files=s:amr(#0000)_svspZmin(3)_Zmax(1).sig
 
 type=s:XYSIGNAL2
@@ -12303,7 +16633,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(4),Zmax(1)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(4),Zmax(1)
 files=s:amr(#0000)_svspZmin(4)_Zmax(1).sig
 
 type=s:XYSIGNAL2
@@ -12313,7 +16643,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(5),Zmax(1)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(5),Zmax(1)
 files=s:amr(#0000)_svspZmin(5)_Zmax(1).sig
 
 type=s:XYSIGNAL2
@@ -12323,7 +16653,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(6),Zmax(1)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(6),Zmax(1)
 files=s:amr(#0000)_svspZmin(6)_Zmax(1).sig
 
 type=s:XYSIGNAL2
@@ -12333,7 +16663,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(1),Zmax(1)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(1),Zmax(1)
 files=s:amr(#0000)_svspZmax(1)_Zmax(1).sig
 
 type=s:XYSIGNAL2
@@ -12343,7 +16673,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(2),Zmax(1)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(2),Zmax(1)
 files=s:amr(#0000)_svspZmax(2)_Zmax(1).sig
 
 type=s:XYSIGNAL2
@@ -12353,7 +16683,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(3),Zmax(1)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(3),Zmax(1)
 files=s:amr(#0000)_svspZmax(3)_Zmax(1).sig
 
 type=s:XYSIGNAL2
@@ -12363,7 +16693,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(4),Zmax(1)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(4),Zmax(1)
 files=s:amr(#0000)_svspZmax(4)_Zmax(1).sig
 
 type=s:XYSIGNAL2
@@ -12373,7 +16703,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(5),Zmax(1)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(5),Zmax(1)
 files=s:amr(#0000)_svspZmax(5)_Zmax(1).sig
 
 type=s:XYSIGNAL2
@@ -12383,7 +16713,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(6),Zmax(1)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(6),Zmax(1)
 files=s:amr(#0000)_svspZmax(6)_Zmax(1).sig
 
 type=s:XYSIGNAL2
@@ -12393,7 +16723,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(1),Zmax(2)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(1),Zmax(2)
 files=s:amr(#0000)_svspZmin(1)_Zmax(2).sig
 
 type=s:XYSIGNAL2
@@ -12403,7 +16733,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(2),Zmax(2)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(2),Zmax(2)
 files=s:amr(#0000)_svspZmin(2)_Zmax(2).sig
 
 type=s:XYSIGNAL2
@@ -12413,7 +16743,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(3),Zmax(2)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(3),Zmax(2)
 files=s:amr(#0000)_svspZmin(3)_Zmax(2).sig
 
 type=s:XYSIGNAL2
@@ -12423,7 +16753,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(4),Zmax(2)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(4),Zmax(2)
 files=s:amr(#0000)_svspZmin(4)_Zmax(2).sig
 
 type=s:XYSIGNAL2
@@ -12433,7 +16763,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(5),Zmax(2)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(5),Zmax(2)
 files=s:amr(#0000)_svspZmin(5)_Zmax(2).sig
 
 type=s:XYSIGNAL2
@@ -12443,7 +16773,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(6),Zmax(2)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(6),Zmax(2)
 files=s:amr(#0000)_svspZmin(6)_Zmax(2).sig
 
 type=s:XYSIGNAL2
@@ -12453,7 +16783,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(1),Zmax(2)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(1),Zmax(2)
 files=s:amr(#0000)_svspZmax(1)_Zmax(2).sig
 
 type=s:XYSIGNAL2
@@ -12463,7 +16793,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(2),Zmax(2)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(2),Zmax(2)
 files=s:amr(#0000)_svspZmax(2)_Zmax(2).sig
 
 type=s:XYSIGNAL2
@@ -12473,7 +16803,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(3),Zmax(2)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(3),Zmax(2)
 files=s:amr(#0000)_svspZmax(3)_Zmax(2).sig
 
 type=s:XYSIGNAL2
@@ -12483,7 +16813,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(4),Zmax(2)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(4),Zmax(2)
 files=s:amr(#0000)_svspZmax(4)_Zmax(2).sig
 
 type=s:XYSIGNAL2
@@ -12493,7 +16823,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(5),Zmax(2)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(5),Zmax(2)
 files=s:amr(#0000)_svspZmax(5)_Zmax(2).sig
 
 type=s:XYSIGNAL2
@@ -12503,7 +16833,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(6),Zmax(2)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(6),Zmax(2)
 files=s:amr(#0000)_svspZmax(6)_Zmax(2).sig
 
 type=s:XYSIGNAL2
@@ -12513,7 +16843,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(1),Zmax(3)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(1),Zmax(3)
 files=s:amr(#0000)_svspZmin(1)_Zmax(3).sig
 
 type=s:XYSIGNAL2
@@ -12523,7 +16853,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(2),Zmax(3)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(2),Zmax(3)
 files=s:amr(#0000)_svspZmin(2)_Zmax(3).sig
 
 type=s:XYSIGNAL2
@@ -12533,7 +16863,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(3),Zmax(3)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(3),Zmax(3)
 files=s:amr(#0000)_svspZmin(3)_Zmax(3).sig
 
 type=s:XYSIGNAL2
@@ -12543,7 +16873,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(4),Zmax(3)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(4),Zmax(3)
 files=s:amr(#0000)_svspZmin(4)_Zmax(3).sig
 
 type=s:XYSIGNAL2
@@ -12553,7 +16883,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(5),Zmax(3)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(5),Zmax(3)
 files=s:amr(#0000)_svspZmin(5)_Zmax(3).sig
 
 type=s:XYSIGNAL2
@@ -12563,7 +16893,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(6),Zmax(3)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(6),Zmax(3)
 files=s:amr(#0000)_svspZmin(6)_Zmax(3).sig
 
 type=s:XYSIGNAL2
@@ -12573,7 +16903,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(1),Zmax(3)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(1),Zmax(3)
 files=s:amr(#0000)_svspZmax(1)_Zmax(3).sig
 
 type=s:XYSIGNAL2
@@ -12583,7 +16913,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(2),Zmax(3)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(2),Zmax(3)
 files=s:amr(#0000)_svspZmax(2)_Zmax(3).sig
 
 type=s:XYSIGNAL2
@@ -12593,7 +16923,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(3),Zmax(3)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(3),Zmax(3)
 files=s:amr(#0000)_svspZmax(3)_Zmax(3).sig
 
 type=s:XYSIGNAL2
@@ -12603,7 +16933,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(4),Zmax(3)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(4),Zmax(3)
 files=s:amr(#0000)_svspZmax(4)_Zmax(3).sig
 
 type=s:XYSIGNAL2
@@ -12613,7 +16943,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(5),Zmax(3)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(5),Zmax(3)
 files=s:amr(#0000)_svspZmax(5)_Zmax(3).sig
 
 type=s:XYSIGNAL2
@@ -12623,7 +16953,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(6),Zmax(3)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(6),Zmax(3)
 files=s:amr(#0000)_svspZmax(6)_Zmax(3).sig
 
 type=s:XYSIGNAL2
@@ -12633,7 +16963,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(1),Zmax(4)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(1),Zmax(4)
 files=s:amr(#0000)_svspZmin(1)_Zmax(4).sig
 
 type=s:XYSIGNAL2
@@ -12643,7 +16973,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(2),Zmax(4)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(2),Zmax(4)
 files=s:amr(#0000)_svspZmin(2)_Zmax(4).sig
 
 type=s:XYSIGNAL2
@@ -12653,7 +16983,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(3),Zmax(4)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(3),Zmax(4)
 files=s:amr(#0000)_svspZmin(3)_Zmax(4).sig
 
 type=s:XYSIGNAL2
@@ -12663,7 +16993,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(4),Zmax(4)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(4),Zmax(4)
 files=s:amr(#0000)_svspZmin(4)_Zmax(4).sig
 
 type=s:XYSIGNAL2
@@ -12673,7 +17003,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(5),Zmax(4)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(5),Zmax(4)
 files=s:amr(#0000)_svspZmin(5)_Zmax(4).sig
 
 type=s:XYSIGNAL2
@@ -12683,7 +17013,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(6),Zmax(4)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(6),Zmax(4)
 files=s:amr(#0000)_svspZmin(6)_Zmax(4).sig
 
 type=s:XYSIGNAL2
@@ -12693,7 +17023,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(1),Zmax(4)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(1),Zmax(4)
 files=s:amr(#0000)_svspZmax(1)_Zmax(4).sig
 
 type=s:XYSIGNAL2
@@ -12703,7 +17033,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(2),Zmax(4)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(2),Zmax(4)
 files=s:amr(#0000)_svspZmax(2)_Zmax(4).sig
 
 type=s:XYSIGNAL2
@@ -12713,7 +17043,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(3),Zmax(4)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(3),Zmax(4)
 files=s:amr(#0000)_svspZmax(3)_Zmax(4).sig
 
 type=s:XYSIGNAL2
@@ -12723,7 +17053,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(4),Zmax(4)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(4),Zmax(4)
 files=s:amr(#0000)_svspZmax(4)_Zmax(4).sig
 
 type=s:XYSIGNAL2
@@ -12733,7 +17063,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(5),Zmax(4)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(5),Zmax(4)
 files=s:amr(#0000)_svspZmax(5)_Zmax(4).sig
 
 type=s:XYSIGNAL2
@@ -12743,7 +17073,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(6),Zmax(4)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(6),Zmax(4)
 files=s:amr(#0000)_svspZmax(6)_Zmax(4).sig
 
 type=s:XYSIGNAL2
@@ -12753,7 +17083,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(1),Zmax(5)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(1),Zmax(5)
 files=s:amr(#0000)_svspZmin(1)_Zmax(5).sig
 
 type=s:XYSIGNAL2
@@ -12763,7 +17093,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(2),Zmax(5)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(2),Zmax(5)
 files=s:amr(#0000)_svspZmin(2)_Zmax(5).sig
 
 type=s:XYSIGNAL2
@@ -12773,7 +17103,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(3),Zmax(5)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(3),Zmax(5)
 files=s:amr(#0000)_svspZmin(3)_Zmax(5).sig
 
 type=s:XYSIGNAL2
@@ -12783,7 +17113,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(4),Zmax(5)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(4),Zmax(5)
 files=s:amr(#0000)_svspZmin(4)_Zmax(5).sig
 
 type=s:XYSIGNAL2
@@ -12793,7 +17123,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(5),Zmax(5)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(5),Zmax(5)
 files=s:amr(#0000)_svspZmin(5)_Zmax(5).sig
 
 type=s:XYSIGNAL2
@@ -12803,7 +17133,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(6),Zmax(5)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(6),Zmax(5)
 files=s:amr(#0000)_svspZmin(6)_Zmax(5).sig
 
 type=s:XYSIGNAL2
@@ -12813,7 +17143,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(1),Zmax(5)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(1),Zmax(5)
 files=s:amr(#0000)_svspZmax(1)_Zmax(5).sig
 
 type=s:XYSIGNAL2
@@ -12823,7 +17153,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(2),Zmax(5)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(2),Zmax(5)
 files=s:amr(#0000)_svspZmax(2)_Zmax(5).sig
 
 type=s:XYSIGNAL2
@@ -12833,7 +17163,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(3),Zmax(5)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(3),Zmax(5)
 files=s:amr(#0000)_svspZmax(3)_Zmax(5).sig
 
 type=s:XYSIGNAL2
@@ -12843,7 +17173,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(4),Zmax(5)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(4),Zmax(5)
 files=s:amr(#0000)_svspZmax(4)_Zmax(5).sig
 
 type=s:XYSIGNAL2
@@ -12853,7 +17183,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(5),Zmax(5)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(5),Zmax(5)
 files=s:amr(#0000)_svspZmax(5)_Zmax(5).sig
 
 type=s:XYSIGNAL2
@@ -12863,7 +17193,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(6),Zmax(5)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(6),Zmax(5)
 files=s:amr(#0000)_svspZmax(6)_Zmax(5).sig
 
 type=s:XYSIGNAL2
@@ -12873,7 +17203,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(1),Zmax(6)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(1),Zmax(6)
 files=s:amr(#0000)_svspZmin(1)_Zmax(6).sig
 
 type=s:XYSIGNAL2
@@ -12883,7 +17213,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(2),Zmax(6)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(2),Zmax(6)
 files=s:amr(#0000)_svspZmin(2)_Zmax(6).sig
 
 type=s:XYSIGNAL2
@@ -12893,7 +17223,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(3),Zmax(6)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(3),Zmax(6)
 files=s:amr(#0000)_svspZmin(3)_Zmax(6).sig
 
 type=s:XYSIGNAL2
@@ -12903,7 +17233,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(4),Zmax(6)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(4),Zmax(6)
 files=s:amr(#0000)_svspZmin(4)_Zmax(6).sig
 
 type=s:XYSIGNAL2
@@ -12913,7 +17243,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(5),Zmax(6)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(5),Zmax(6)
 files=s:amr(#0000)_svspZmin(5)_Zmax(6).sig
 
 type=s:XYSIGNAL2
@@ -12923,7 +17253,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmin(6),Zmax(6)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmin(6),Zmax(6)
 files=s:amr(#0000)_svspZmin(6)_Zmax(6).sig
 
 type=s:XYSIGNAL2
@@ -12933,7 +17263,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(1),Zmax(6)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(1),Zmax(6)
 files=s:amr(#0000)_svspZmax(1)_Zmax(6).sig
 
 type=s:XYSIGNAL2
@@ -12943,7 +17273,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(2),Zmax(6)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(2),Zmax(6)
 files=s:amr(#0000)_svspZmax(2)_Zmax(6).sig
 
 type=s:XYSIGNAL2
@@ -12953,7 +17283,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(3),Zmax(6)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(3),Zmax(6)
 files=s:amr(#0000)_svspZmax(3)_Zmax(6).sig
 
 type=s:XYSIGNAL2
@@ -12963,7 +17293,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(4),Zmax(6)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(4),Zmax(6)
 files=s:amr(#0000)_svspZmax(4)_Zmax(6).sig
 
 type=s:XYSIGNAL2
@@ -12973,7 +17303,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(5),Zmax(6)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(5),Zmax(6)
 files=s:amr(#0000)_svspZmax(5)_Zmax(6).sig
 
 type=s:XYSIGNAL2
@@ -12983,7 +17313,7 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:survivemeshadapt
 result=s:1
-treepath=s:1D Results\Adaptive Meshing\f=0.475862\S-Parameters\SZmax(6),Zmax(6)
+treepath=s:1D Results\Adaptive Meshing\f=0.53439\S-Parameters\SZmax(6),Zmax(6)
 files=s:amr(#0000)_svspZmax(6)_Zmax(6).sig
 
 type=s:XYSIGNAL2
@@ -14553,58 +18883,8 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:rebuild
 result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(1)]\Power Accepted per Port\Port Zmin
-files=s:AcceptedPower_Zmin(Zmax(1)).sig
-
-type=s:XYSIGNAL2
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(1)]\Power Accepted per Port\Port Zmax
-files=s:AcceptedPower_Zmax(Zmax(1)).sig
-
-type=s:XYSIGNAL2
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(2)]\Loss per Material\Metal loss in [Boundary wall]
-files=s:cMetal_loss_[Boundary wall](Zmax(2)).sig
-
-type=s:XYSIGNAL2
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(2)]\Loss in Metals
-files=s:cTotal_metal_loss(Zmax(2)).sig
-
-type=s:XYSIGNAL2
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(2)]\Loss in Dielectrics
-files=s:cTotal_loss_in_dielectrics(Zmax(2)).sig
-
-type=s:XYSIGNAL2
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(1)]\Power Accepted
-files=s:AcceptedPower_Zmax(1).sig
+treepath=s:1D Results\Power\Excitation [Zmax(2)]\Power Outgoing all Ports
+files=s:ReflectedPower_Zmax(2).sig
 
 type=s:XYSIGNAL2
 subtype=s:complex
@@ -14623,36 +18903,6 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:rebuild
 result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(1)]\Power Outgoing all Ports
-files=s:ReflectedPower_Zmax(1).sig
-
-type=s:XYSIGNAL2
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [Zmin(6)]\Power Accepted
-files=s:AcceptedPower_Zmin(6).sig
-
-type=s:XYSIGNAL2
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [Zmin(6)]\Power Accepted per Port\Port Zmin
-files=s:AcceptedPower_Zmin(Zmin(6)).sig
-
-type=s:XYSIGNAL2
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
 treepath=s:1D Results\Power\Excitation [Zmax(2)]\Power Stimulated
 files=s:StimulatedPower_Zmax(2).sig
 
@@ -14663,8 +18913,8 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:rebuild
 result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(2)]\Power Accepted per Port\Port Zmax
-files=s:AcceptedPower_Zmax(Zmax(2)).sig
+treepath=s:1D Results\Power\Excitation [Zmax(2)]\Loss in Dielectrics
+files=s:cTotal_loss_in_dielectrics(Zmax(2)).sig
 
 type=s:XYSIGNAL2
 subtype=s:complex
@@ -14673,8 +18923,58 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:rebuild
 result=s:1
-treepath=s:1D Results\Power\Excitation [Zmin(6)]\Power Stimulated
-files=s:StimulatedPower_Zmin(6).sig
+treepath=s:1D Results\Power\Excitation [Zmax(2)]\Loss in Metals
+files=s:cTotal_metal_loss(Zmax(2)).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [Zmax(2)]\Loss per Material\Metal loss in [Boundary wall]
+files=s:cMetal_loss_[Boundary wall](Zmax(2)).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [Zmax(1)]\Power Accepted per Port\Port Zmax
+files=s:AcceptedPower_Zmax(Zmax(1)).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [Zmax(1)]\Power Accepted per Port\Port Zmin
+files=s:AcceptedPower_Zmin(Zmax(1)).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [Zmax(1)]\Power Outgoing all Ports
+files=s:ReflectedPower_Zmax(1).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [Zmax(1)]\Power Accepted
+files=s:AcceptedPower_Zmax(1).sig
 
 type=s:XYSIGNAL2
 subtype=s:complex
@@ -14685,26 +18985,6 @@ lifetime=s:rebuild
 result=s:1
 treepath=s:1D Results\Power\Excitation [Zmax(1)]\Power Stimulated
 files=s:StimulatedPower_Zmax(1).sig
-
-type=s:XYSIGNAL2
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(2)]\Power Outgoing all Ports
-files=s:ReflectedPower_Zmax(2).sig
-
-type=s:XYSIGNAL2
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(1)]\Loss per Material\Metal loss in [Boundary wall]
-files=s:cMetal_loss_[Boundary wall](Zmax(1)).sig
 
 type=s:XYSIGNAL2
 subtype=s:complex
@@ -14733,48 +19013,8 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:rebuild
 result=s:1
-treepath=s:1D Results\Power\Excitation [Zmin(6)]\Power Outgoing all Ports
-files=s:ReflectedPower_Zmin(6).sig
-
-type=s:XYSIGNAL2
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(3)]\Loss per Material\Metal loss in [Boundary wall]
-files=s:cMetal_loss_[Boundary wall](Zmax(3)).sig
-
-type=s:XYSIGNAL2
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(5)]\Power Stimulated
-files=s:StimulatedPower_Zmax(5).sig
-
-type=s:XYSIGNAL2
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(5)]\Power Accepted
-files=s:AcceptedPower_Zmax(5).sig
-
-type=s:XYSIGNAL2
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(2)]\Power Accepted per Port\Port Zmin
-files=s:AcceptedPower_Zmin(Zmax(2)).sig
+treepath=s:1D Results\Power\Excitation [Zmax(1)]\Loss per Material\Metal loss in [Boundary wall]
+files=s:cMetal_loss_[Boundary wall](Zmax(1)).sig
 
 type=s:XYSIGNAL2
 subtype=s:complex
@@ -14793,186 +19033,6 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:rebuild
 result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(5)]\Loss in Metals
-files=s:cTotal_metal_loss(Zmax(5)).sig
-
-type=s:XYSIGNAL2
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(4)]\Power Accepted per Port\Port Zmax
-files=s:AcceptedPower_Zmax(Zmax(4)).sig
-
-type=s:XYSIGNAL2
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(4)]\Power Outgoing all Ports
-files=s:ReflectedPower_Zmax(4).sig
-
-type=s:XYSIGNAL2
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(5)]\Loss in Dielectrics
-files=s:cTotal_loss_in_dielectrics(Zmax(5)).sig
-
-type=s:XYSIGNAL2
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(4)]\Power Stimulated
-files=s:StimulatedPower_Zmax(4).sig
-
-type=s:XYSIGNAL2
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(4)]\Power Accepted per Port\Port Zmin
-files=s:AcceptedPower_Zmin(Zmax(4)).sig
-
-type=s:XYSIGNAL2
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(4)]\Loss in Metals
-files=s:cTotal_metal_loss(Zmax(4)).sig
-
-type=s:XYSIGNAL2
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(4)]\Power Accepted
-files=s:AcceptedPower_Zmax(4).sig
-
-type=s:XYSIGNAL2
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(3)]\Power Accepted per Port\Port Zmax
-files=s:AcceptedPower_Zmax(Zmax(3)).sig
-
-type=s:XYSIGNAL2
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(5)]\Loss per Material\Metal loss in [Boundary wall]
-files=s:cMetal_loss_[Boundary wall](Zmax(5)).sig
-
-type=s:XYSIGNAL2
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(4)]\Loss per Material\Metal loss in [Boundary wall]
-files=s:cMetal_loss_[Boundary wall](Zmax(4)).sig
-
-type=s:XYSIGNAL2
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(4)]\Loss in Dielectrics
-files=s:cTotal_loss_in_dielectrics(Zmax(4)).sig
-
-type=s:XYSIGNAL2
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(3)]\Power Outgoing all Ports
-files=s:ReflectedPower_Zmax(3).sig
-
-type=s:XYSIGNAL2
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(3)]\Power Accepted per Port\Port Zmin
-files=s:AcceptedPower_Zmin(Zmax(3)).sig
-
-type=s:XYSIGNAL2
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(3)]\Power Stimulated
-files=s:StimulatedPower_Zmax(3).sig
-
-type=s:XYSIGNAL2
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(3)]\Power Accepted
-files=s:AcceptedPower_Zmax(3).sig
-
-type=s:XYSIGNAL2
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(3)]\Loss in Metals
-files=s:cTotal_metal_loss(Zmax(3)).sig
-
-type=s:XYSIGNAL2
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(3)]\Loss in Dielectrics
-files=s:cTotal_loss_in_dielectrics(Zmax(3)).sig
-
-type=s:XYSIGNAL2
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
 treepath=s:1D Results\Power\Excitation [Zmax(6)]\Power Accepted per Port\Port Zmax
 files=s:AcceptedPower_Zmax(Zmax(6)).sig
 
@@ -14983,18 +19043,8 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:rebuild
 result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(6)]\Power Outgoing all Ports
-files=s:ReflectedPower_Zmax(6).sig
-
-type=s:XYSIGNAL2
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(6)]\Power Stimulated
-files=s:StimulatedPower_Zmax(6).sig
+treepath=s:1D Results\Power\Excitation [Zmin(6)]\Loss in Dielectrics
+files=s:cTotal_loss_in_dielectrics(Zmin(6)).sig
 
 type=s:XYSIGNAL2
 subtype=s:complex
@@ -15013,8 +19063,48 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:rebuild
 result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(6)]\Loss in Metals
-files=s:cTotal_metal_loss(Zmax(6)).sig
+treepath=s:1D Results\Power\Excitation [Zmax(3)]\Loss per Material\Metal loss in [Boundary wall]
+files=s:cMetal_loss_[Boundary wall](Zmax(3)).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [Zmax(6)]\Power Outgoing all Ports
+files=s:ReflectedPower_Zmax(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [Zmin(6)]\Power Outgoing all Ports
+files=s:ReflectedPower_Zmin(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [Zmin(6)]\Power Accepted per Port\Port Zmin
+files=s:AcceptedPower_Zmin(Zmin(6)).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [Zmax(2)]\Power Accepted per Port\Port Zmax
+files=s:AcceptedPower_Zmax(Zmax(2)).sig
 
 type=s:XYSIGNAL2
 subtype=s:complex
@@ -15033,8 +19123,8 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:rebuild
 result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(5)]\Power Accepted per Port\Port Zmax
-files=s:AcceptedPower_Zmax(Zmax(5)).sig
+treepath=s:1D Results\Power\Excitation [Zmin(6)]\Power Accepted
+files=s:AcceptedPower_Zmin(6).sig
 
 type=s:XYSIGNAL2
 subtype=s:complex
@@ -15043,8 +19133,188 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:rebuild
 result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(6)]\Loss in Dielectrics
-files=s:cTotal_loss_in_dielectrics(Zmax(6)).sig
+treepath=s:1D Results\Power\Excitation [Zmax(3)]\Loss in Metals
+files=s:cTotal_metal_loss(Zmax(3)).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [Zmin(6)]\Power Stimulated
+files=s:StimulatedPower_Zmin(6).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [Zmax(3)]\Power Stimulated
+files=s:StimulatedPower_Zmax(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [Zmax(3)]\Power Outgoing all Ports
+files=s:ReflectedPower_Zmax(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [Zmax(3)]\Loss in Dielectrics
+files=s:cTotal_loss_in_dielectrics(Zmax(3)).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [Zmax(3)]\Power Accepted per Port\Port Zmax
+files=s:AcceptedPower_Zmax(Zmax(3)).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [Zmax(3)]\Power Accepted
+files=s:AcceptedPower_Zmax(3).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [Zmax(4)]\Loss in Metals
+files=s:cTotal_metal_loss(Zmax(4)).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [Zmax(3)]\Power Accepted per Port\Port Zmin
+files=s:AcceptedPower_Zmin(Zmax(3)).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [Zmax(4)]\Power Stimulated
+files=s:StimulatedPower_Zmax(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [Zmax(4)]\Loss per Material\Metal loss in [Boundary wall]
+files=s:cMetal_loss_[Boundary wall](Zmax(4)).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [Zmax(4)]\Power Outgoing all Ports
+files=s:ReflectedPower_Zmax(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [Zmax(4)]\Loss in Dielectrics
+files=s:cTotal_loss_in_dielectrics(Zmax(4)).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [Zmax(4)]\Power Accepted per Port\Port Zmax
+files=s:AcceptedPower_Zmax(Zmax(4)).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [Zmax(4)]\Power Accepted
+files=s:AcceptedPower_Zmax(4).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [Zmax(5)]\Loss in Metals
+files=s:cTotal_metal_loss(Zmax(5)).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [Zmax(4)]\Power Accepted per Port\Port Zmin
+files=s:AcceptedPower_Zmin(Zmax(4)).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [Zmax(5)]\Power Stimulated
+files=s:StimulatedPower_Zmax(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [Zmax(5)]\Loss per Material\Metal loss in [Boundary wall]
+files=s:cMetal_loss_[Boundary wall](Zmax(5)).sig
 
 type=s:XYSIGNAL2
 subtype=s:complex
@@ -15063,8 +19333,38 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:rebuild
 result=s:1
-treepath=s:1D Results\Power\Excitation [Zmax(6)]\Loss per Material\Metal loss in [Boundary wall]
-files=s:cMetal_loss_[Boundary wall](Zmax(6)).sig
+treepath=s:1D Results\Power\Excitation [Zmax(5)]\Loss in Dielectrics
+files=s:cTotal_loss_in_dielectrics(Zmax(5)).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [Zmax(6)]\Loss in Metals
+files=s:cTotal_metal_loss(Zmax(6)).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [Zmax(5)]\Power Accepted
+files=s:AcceptedPower_Zmax(5).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [Zmax(6)]\Power Stimulated
+files=s:StimulatedPower_Zmax(6).sig
 
 type=s:XYSIGNAL2
 subtype=s:complex
@@ -15083,8 +19383,38 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:rebuild
 result=s:1
-treepath=s:1D Results\Power\Excitation [Zmin(6)]\Loss in Dielectrics
-files=s:cTotal_loss_in_dielectrics(Zmin(6)).sig
+treepath=s:1D Results\Power\Excitation [Zmax(5)]\Power Accepted per Port\Port Zmax
+files=s:AcceptedPower_Zmax(Zmax(5)).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [Zmax(6)]\Loss per Material\Metal loss in [Boundary wall]
+files=s:cMetal_loss_[Boundary wall](Zmax(6)).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [Zmax(6)]\Loss in Dielectrics
+files=s:cTotal_loss_in_dielectrics(Zmax(6)).sig
+
+type=s:XYSIGNAL2
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [Zmax(2)]\Power Accepted per Port\Port Zmin
+files=s:AcceptedPower_Zmin(Zmax(2)).sig
 
 type=s:XYSIGNAL2
 subtype=s:complex
@@ -15505,6 +19835,1458 @@ lifetime=s:rebuild
 result=s:1
 treepath=s:1D Results\Power\Excitation [Zmin(1)]\Loss in Metals
 files=s:cTotal_metal_loss(Zmin(1)).sig
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.999) [Zmin(1)]
+files=s:e-field (wl=560.999)_Zmin(1).m3m
+files=s:e-field (wl=560.999)_Zmin(1).m3mm3m.rex
+ylabel=s:e-field (wl=560.999) [Zmin(1)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.999) [Zmin(2)]
+files=s:e-field (wl=560.999)_Zmin(2).m3m
+files=s:e-field (wl=560.999)_Zmin(2).m3mm3m.rex
+ylabel=s:e-field (wl=560.999) [Zmin(2)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.999) [Zmin(3)]
+files=s:e-field (wl=560.999)_Zmin(3).m3m
+files=s:e-field (wl=560.999)_Zmin(3).m3mm3m.rex
+ylabel=s:e-field (wl=560.999) [Zmin(3)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.999) [Zmin(4)]
+files=s:e-field (wl=560.999)_Zmin(4).m3m
+files=s:e-field (wl=560.999)_Zmin(4).m3mm3m.rex
+ylabel=s:e-field (wl=560.999) [Zmin(4)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.999) [Zmin(5)]
+files=s:e-field (wl=560.999)_Zmin(5).m3m
+files=s:e-field (wl=560.999)_Zmin(5).m3mm3m.rex
+ylabel=s:e-field (wl=560.999) [Zmin(5)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.999) [Zmin(6)]
+files=s:e-field (wl=560.999)_Zmin(6).m3m
+files=s:e-field (wl=560.999)_Zmin(6).m3mm3m.rex
+ylabel=s:e-field (wl=560.999) [Zmin(6)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.999) [Zmax(1)]
+files=s:e-field (wl=560.999)_Zmax(1).m3m
+files=s:e-field (wl=560.999)_Zmax(1).m3mm3m.rex
+ylabel=s:e-field (wl=560.999) [Zmax(1)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.999) [Zmax(2)]
+files=s:e-field (wl=560.999)_Zmax(2).m3m
+files=s:e-field (wl=560.999)_Zmax(2).m3mm3m.rex
+ylabel=s:e-field (wl=560.999) [Zmax(2)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.999) [Zmax(3)]
+files=s:e-field (wl=560.999)_Zmax(3).m3m
+files=s:e-field (wl=560.999)_Zmax(3).m3mm3m.rex
+ylabel=s:e-field (wl=560.999) [Zmax(3)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.999) [Zmax(4)]
+files=s:e-field (wl=560.999)_Zmax(4).m3m
+files=s:e-field (wl=560.999)_Zmax(4).m3mm3m.rex
+ylabel=s:e-field (wl=560.999) [Zmax(4)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.999) [Zmax(5)]
+files=s:e-field (wl=560.999)_Zmax(5).m3m
+files=s:e-field (wl=560.999)_Zmax(5).m3mm3m.rex
+ylabel=s:e-field (wl=560.999) [Zmax(5)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.999) [Zmax(6)]
+files=s:e-field (wl=560.999)_Zmax(6).m3m
+files=s:e-field (wl=560.999)_Zmax(6).m3mm3m.rex
+ylabel=s:e-field (wl=560.999) [Zmax(6)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.001) [Zmin(1)]
+files=s:e-field (wl=561.001)_Zmin(1).m3m
+files=s:e-field (wl=561.001)_Zmin(1).m3mm3m.rex
+ylabel=s:e-field (wl=561.001) [Zmin(1)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.001) [Zmin(2)]
+files=s:e-field (wl=561.001)_Zmin(2).m3m
+files=s:e-field (wl=561.001)_Zmin(2).m3mm3m.rex
+ylabel=s:e-field (wl=561.001) [Zmin(2)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.001) [Zmin(3)]
+files=s:e-field (wl=561.001)_Zmin(3).m3m
+files=s:e-field (wl=561.001)_Zmin(3).m3mm3m.rex
+ylabel=s:e-field (wl=561.001) [Zmin(3)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.001) [Zmin(4)]
+files=s:e-field (wl=561.001)_Zmin(4).m3m
+files=s:e-field (wl=561.001)_Zmin(4).m3mm3m.rex
+ylabel=s:e-field (wl=561.001) [Zmin(4)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.001) [Zmin(5)]
+files=s:e-field (wl=561.001)_Zmin(5).m3m
+files=s:e-field (wl=561.001)_Zmin(5).m3mm3m.rex
+ylabel=s:e-field (wl=561.001) [Zmin(5)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.001) [Zmin(6)]
+files=s:e-field (wl=561.001)_Zmin(6).m3m
+files=s:e-field (wl=561.001)_Zmin(6).m3mm3m.rex
+ylabel=s:e-field (wl=561.001) [Zmin(6)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.001) [Zmax(1)]
+files=s:e-field (wl=561.001)_Zmax(1).m3m
+files=s:e-field (wl=561.001)_Zmax(1).m3mm3m.rex
+ylabel=s:e-field (wl=561.001) [Zmax(1)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.001) [Zmax(2)]
+files=s:e-field (wl=561.001)_Zmax(2).m3m
+files=s:e-field (wl=561.001)_Zmax(2).m3mm3m.rex
+ylabel=s:e-field (wl=561.001) [Zmax(2)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.001) [Zmax(3)]
+files=s:e-field (wl=561.001)_Zmax(3).m3m
+files=s:e-field (wl=561.001)_Zmax(3).m3mm3m.rex
+ylabel=s:e-field (wl=561.001) [Zmax(3)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.001) [Zmax(4)]
+files=s:e-field (wl=561.001)_Zmax(4).m3m
+files=s:e-field (wl=561.001)_Zmax(4).m3mm3m.rex
+ylabel=s:e-field (wl=561.001) [Zmax(4)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.001) [Zmax(5)]
+files=s:e-field (wl=561.001)_Zmax(5).m3m
+files=s:e-field (wl=561.001)_Zmax(5).m3mm3m.rex
+ylabel=s:e-field (wl=561.001) [Zmax(5)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.001) [Zmax(6)]
+files=s:e-field (wl=561.001)_Zmax(6).m3m
+files=s:e-field (wl=561.001)_Zmax(6).m3mm3m.rex
+ylabel=s:e-field (wl=561.001) [Zmax(6)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0008) [Zmin(1)]
+files=s:e-field (wl=561.0008)_Zmin(1).m3m
+files=s:e-field (wl=561.0008)_Zmin(1).m3mm3m.rex
+ylabel=s:e-field (wl=561.0008) [Zmin(1)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0008) [Zmin(2)]
+files=s:e-field (wl=561.0008)_Zmin(2).m3m
+files=s:e-field (wl=561.0008)_Zmin(2).m3mm3m.rex
+ylabel=s:e-field (wl=561.0008) [Zmin(2)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0008) [Zmin(3)]
+files=s:e-field (wl=561.0008)_Zmin(3).m3m
+files=s:e-field (wl=561.0008)_Zmin(3).m3mm3m.rex
+ylabel=s:e-field (wl=561.0008) [Zmin(3)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0008) [Zmin(4)]
+files=s:e-field (wl=561.0008)_Zmin(4).m3m
+files=s:e-field (wl=561.0008)_Zmin(4).m3mm3m.rex
+ylabel=s:e-field (wl=561.0008) [Zmin(4)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0008) [Zmin(5)]
+files=s:e-field (wl=561.0008)_Zmin(5).m3m
+files=s:e-field (wl=561.0008)_Zmin(5).m3mm3m.rex
+ylabel=s:e-field (wl=561.0008) [Zmin(5)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0008) [Zmin(6)]
+files=s:e-field (wl=561.0008)_Zmin(6).m3m
+files=s:e-field (wl=561.0008)_Zmin(6).m3mm3m.rex
+ylabel=s:e-field (wl=561.0008) [Zmin(6)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0008) [Zmax(1)]
+files=s:e-field (wl=561.0008)_Zmax(1).m3m
+files=s:e-field (wl=561.0008)_Zmax(1).m3mm3m.rex
+ylabel=s:e-field (wl=561.0008) [Zmax(1)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0008) [Zmax(2)]
+files=s:e-field (wl=561.0008)_Zmax(2).m3m
+files=s:e-field (wl=561.0008)_Zmax(2).m3mm3m.rex
+ylabel=s:e-field (wl=561.0008) [Zmax(2)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0008) [Zmax(3)]
+files=s:e-field (wl=561.0008)_Zmax(3).m3m
+files=s:e-field (wl=561.0008)_Zmax(3).m3mm3m.rex
+ylabel=s:e-field (wl=561.0008) [Zmax(3)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0008) [Zmax(4)]
+files=s:e-field (wl=561.0008)_Zmax(4).m3m
+files=s:e-field (wl=561.0008)_Zmax(4).m3mm3m.rex
+ylabel=s:e-field (wl=561.0008) [Zmax(4)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0008) [Zmax(5)]
+files=s:e-field (wl=561.0008)_Zmax(5).m3m
+files=s:e-field (wl=561.0008)_Zmax(5).m3mm3m.rex
+ylabel=s:e-field (wl=561.0008) [Zmax(5)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0008) [Zmax(6)]
+files=s:e-field (wl=561.0008)_Zmax(6).m3m
+files=s:e-field (wl=561.0008)_Zmax(6).m3mm3m.rex
+ylabel=s:e-field (wl=561.0008) [Zmax(6)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0006) [Zmin(1)]
+files=s:e-field (wl=561.0006)_Zmin(1).m3m
+files=s:e-field (wl=561.0006)_Zmin(1).m3mm3m.rex
+ylabel=s:e-field (wl=561.0006) [Zmin(1)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0006) [Zmin(2)]
+files=s:e-field (wl=561.0006)_Zmin(2).m3m
+files=s:e-field (wl=561.0006)_Zmin(2).m3mm3m.rex
+ylabel=s:e-field (wl=561.0006) [Zmin(2)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0006) [Zmin(3)]
+files=s:e-field (wl=561.0006)_Zmin(3).m3m
+files=s:e-field (wl=561.0006)_Zmin(3).m3mm3m.rex
+ylabel=s:e-field (wl=561.0006) [Zmin(3)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0006) [Zmin(4)]
+files=s:e-field (wl=561.0006)_Zmin(4).m3m
+files=s:e-field (wl=561.0006)_Zmin(4).m3mm3m.rex
+ylabel=s:e-field (wl=561.0006) [Zmin(4)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0006) [Zmin(5)]
+files=s:e-field (wl=561.0006)_Zmin(5).m3m
+files=s:e-field (wl=561.0006)_Zmin(5).m3mm3m.rex
+ylabel=s:e-field (wl=561.0006) [Zmin(5)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0006) [Zmin(6)]
+files=s:e-field (wl=561.0006)_Zmin(6).m3m
+files=s:e-field (wl=561.0006)_Zmin(6).m3mm3m.rex
+ylabel=s:e-field (wl=561.0006) [Zmin(6)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0006) [Zmax(1)]
+files=s:e-field (wl=561.0006)_Zmax(1).m3m
+files=s:e-field (wl=561.0006)_Zmax(1).m3mm3m.rex
+ylabel=s:e-field (wl=561.0006) [Zmax(1)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0006) [Zmax(2)]
+files=s:e-field (wl=561.0006)_Zmax(2).m3m
+files=s:e-field (wl=561.0006)_Zmax(2).m3mm3m.rex
+ylabel=s:e-field (wl=561.0006) [Zmax(2)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0006) [Zmax(3)]
+files=s:e-field (wl=561.0006)_Zmax(3).m3m
+files=s:e-field (wl=561.0006)_Zmax(3).m3mm3m.rex
+ylabel=s:e-field (wl=561.0006) [Zmax(3)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0006) [Zmax(4)]
+files=s:e-field (wl=561.0006)_Zmax(4).m3m
+files=s:e-field (wl=561.0006)_Zmax(4).m3mm3m.rex
+ylabel=s:e-field (wl=561.0006) [Zmax(4)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0006) [Zmax(5)]
+files=s:e-field (wl=561.0006)_Zmax(5).m3m
+files=s:e-field (wl=561.0006)_Zmax(5).m3mm3m.rex
+ylabel=s:e-field (wl=561.0006) [Zmax(5)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0006) [Zmax(6)]
+files=s:e-field (wl=561.0006)_Zmax(6).m3m
+files=s:e-field (wl=561.0006)_Zmax(6).m3mm3m.rex
+ylabel=s:e-field (wl=561.0006) [Zmax(6)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0004) [Zmin(1)]
+files=s:e-field (wl=561.0004)_Zmin(1).m3m
+files=s:e-field (wl=561.0004)_Zmin(1).m3mm3m.rex
+ylabel=s:e-field (wl=561.0004) [Zmin(1)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0004) [Zmin(2)]
+files=s:e-field (wl=561.0004)_Zmin(2).m3m
+files=s:e-field (wl=561.0004)_Zmin(2).m3mm3m.rex
+ylabel=s:e-field (wl=561.0004) [Zmin(2)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0004) [Zmin(3)]
+files=s:e-field (wl=561.0004)_Zmin(3).m3m
+files=s:e-field (wl=561.0004)_Zmin(3).m3mm3m.rex
+ylabel=s:e-field (wl=561.0004) [Zmin(3)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0004) [Zmin(4)]
+files=s:e-field (wl=561.0004)_Zmin(4).m3m
+files=s:e-field (wl=561.0004)_Zmin(4).m3mm3m.rex
+ylabel=s:e-field (wl=561.0004) [Zmin(4)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0004) [Zmin(5)]
+files=s:e-field (wl=561.0004)_Zmin(5).m3m
+files=s:e-field (wl=561.0004)_Zmin(5).m3mm3m.rex
+ylabel=s:e-field (wl=561.0004) [Zmin(5)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0004) [Zmin(6)]
+files=s:e-field (wl=561.0004)_Zmin(6).m3m
+files=s:e-field (wl=561.0004)_Zmin(6).m3mm3m.rex
+ylabel=s:e-field (wl=561.0004) [Zmin(6)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0004) [Zmax(1)]
+files=s:e-field (wl=561.0004)_Zmax(1).m3m
+files=s:e-field (wl=561.0004)_Zmax(1).m3mm3m.rex
+ylabel=s:e-field (wl=561.0004) [Zmax(1)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0004) [Zmax(2)]
+files=s:e-field (wl=561.0004)_Zmax(2).m3m
+files=s:e-field (wl=561.0004)_Zmax(2).m3mm3m.rex
+ylabel=s:e-field (wl=561.0004) [Zmax(2)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0004) [Zmax(3)]
+files=s:e-field (wl=561.0004)_Zmax(3).m3m
+files=s:e-field (wl=561.0004)_Zmax(3).m3mm3m.rex
+ylabel=s:e-field (wl=561.0004) [Zmax(3)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0004) [Zmax(4)]
+files=s:e-field (wl=561.0004)_Zmax(4).m3m
+files=s:e-field (wl=561.0004)_Zmax(4).m3mm3m.rex
+ylabel=s:e-field (wl=561.0004) [Zmax(4)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0004) [Zmax(5)]
+files=s:e-field (wl=561.0004)_Zmax(5).m3m
+files=s:e-field (wl=561.0004)_Zmax(5).m3mm3m.rex
+ylabel=s:e-field (wl=561.0004) [Zmax(5)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0004) [Zmax(6)]
+files=s:e-field (wl=561.0004)_Zmax(6).m3m
+files=s:e-field (wl=561.0004)_Zmax(6).m3mm3m.rex
+ylabel=s:e-field (wl=561.0004) [Zmax(6)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0002) [Zmin(1)]
+files=s:e-field (wl=561.0002)_Zmin(1).m3m
+files=s:e-field (wl=561.0002)_Zmin(1).m3mm3m.rex
+ylabel=s:e-field (wl=561.0002) [Zmin(1)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0002) [Zmin(2)]
+files=s:e-field (wl=561.0002)_Zmin(2).m3m
+files=s:e-field (wl=561.0002)_Zmin(2).m3mm3m.rex
+ylabel=s:e-field (wl=561.0002) [Zmin(2)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0002) [Zmin(3)]
+files=s:e-field (wl=561.0002)_Zmin(3).m3m
+files=s:e-field (wl=561.0002)_Zmin(3).m3mm3m.rex
+ylabel=s:e-field (wl=561.0002) [Zmin(3)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0002) [Zmin(4)]
+files=s:e-field (wl=561.0002)_Zmin(4).m3m
+files=s:e-field (wl=561.0002)_Zmin(4).m3mm3m.rex
+ylabel=s:e-field (wl=561.0002) [Zmin(4)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0002) [Zmin(5)]
+files=s:e-field (wl=561.0002)_Zmin(5).m3m
+files=s:e-field (wl=561.0002)_Zmin(5).m3mm3m.rex
+ylabel=s:e-field (wl=561.0002) [Zmin(5)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0002) [Zmin(6)]
+files=s:e-field (wl=561.0002)_Zmin(6).m3m
+files=s:e-field (wl=561.0002)_Zmin(6).m3mm3m.rex
+ylabel=s:e-field (wl=561.0002) [Zmin(6)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0002) [Zmax(1)]
+files=s:e-field (wl=561.0002)_Zmax(1).m3m
+files=s:e-field (wl=561.0002)_Zmax(1).m3mm3m.rex
+ylabel=s:e-field (wl=561.0002) [Zmax(1)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0002) [Zmax(2)]
+files=s:e-field (wl=561.0002)_Zmax(2).m3m
+files=s:e-field (wl=561.0002)_Zmax(2).m3mm3m.rex
+ylabel=s:e-field (wl=561.0002) [Zmax(2)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0002) [Zmax(3)]
+files=s:e-field (wl=561.0002)_Zmax(3).m3m
+files=s:e-field (wl=561.0002)_Zmax(3).m3mm3m.rex
+ylabel=s:e-field (wl=561.0002) [Zmax(3)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0002) [Zmax(4)]
+files=s:e-field (wl=561.0002)_Zmax(4).m3m
+files=s:e-field (wl=561.0002)_Zmax(4).m3mm3m.rex
+ylabel=s:e-field (wl=561.0002) [Zmax(4)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0002) [Zmax(5)]
+files=s:e-field (wl=561.0002)_Zmax(5).m3m
+files=s:e-field (wl=561.0002)_Zmax(5).m3mm3m.rex
+ylabel=s:e-field (wl=561.0002) [Zmax(5)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561.0002) [Zmax(6)]
+files=s:e-field (wl=561.0002)_Zmax(6).m3m
+files=s:e-field (wl=561.0002)_Zmax(6).m3mm3m.rex
+ylabel=s:e-field (wl=561.0002) [Zmax(6)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561) [Zmin(1)]
+files=s:e-field (wl=561)_Zmin(1).m3m
+files=s:e-field (wl=561)_Zmin(1).m3mm3m.rex
+ylabel=s:e-field (wl=561) [Zmin(1)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561) [Zmin(2)]
+files=s:e-field (wl=561)_Zmin(2).m3m
+files=s:e-field (wl=561)_Zmin(2).m3mm3m.rex
+ylabel=s:e-field (wl=561) [Zmin(2)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561) [Zmin(3)]
+files=s:e-field (wl=561)_Zmin(3).m3m
+files=s:e-field (wl=561)_Zmin(3).m3mm3m.rex
+ylabel=s:e-field (wl=561) [Zmin(3)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561) [Zmin(4)]
+files=s:e-field (wl=561)_Zmin(4).m3m
+files=s:e-field (wl=561)_Zmin(4).m3mm3m.rex
+ylabel=s:e-field (wl=561) [Zmin(4)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561) [Zmin(5)]
+files=s:e-field (wl=561)_Zmin(5).m3m
+files=s:e-field (wl=561)_Zmin(5).m3mm3m.rex
+ylabel=s:e-field (wl=561) [Zmin(5)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561) [Zmin(6)]
+files=s:e-field (wl=561)_Zmin(6).m3m
+files=s:e-field (wl=561)_Zmin(6).m3mm3m.rex
+ylabel=s:e-field (wl=561) [Zmin(6)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561) [Zmax(1)]
+files=s:e-field (wl=561)_Zmax(1).m3m
+files=s:e-field (wl=561)_Zmax(1).m3mm3m.rex
+ylabel=s:e-field (wl=561) [Zmax(1)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561) [Zmax(2)]
+files=s:e-field (wl=561)_Zmax(2).m3m
+files=s:e-field (wl=561)_Zmax(2).m3mm3m.rex
+ylabel=s:e-field (wl=561) [Zmax(2)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561) [Zmax(3)]
+files=s:e-field (wl=561)_Zmax(3).m3m
+files=s:e-field (wl=561)_Zmax(3).m3mm3m.rex
+ylabel=s:e-field (wl=561) [Zmax(3)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561) [Zmax(4)]
+files=s:e-field (wl=561)_Zmax(4).m3m
+files=s:e-field (wl=561)_Zmax(4).m3mm3m.rex
+ylabel=s:e-field (wl=561) [Zmax(4)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561) [Zmax(5)]
+files=s:e-field (wl=561)_Zmax(5).m3m
+files=s:e-field (wl=561)_Zmax(5).m3mm3m.rex
+ylabel=s:e-field (wl=561) [Zmax(5)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=561) [Zmax(6)]
+files=s:e-field (wl=561)_Zmax(6).m3m
+files=s:e-field (wl=561)_Zmax(6).m3mm3m.rex
+ylabel=s:e-field (wl=561) [Zmax(6)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9998) [Zmin(1)]
+files=s:e-field (wl=560.9998)_Zmin(1).m3m
+files=s:e-field (wl=560.9998)_Zmin(1).m3mm3m.rex
+ylabel=s:e-field (wl=560.9998) [Zmin(1)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9998) [Zmin(2)]
+files=s:e-field (wl=560.9998)_Zmin(2).m3m
+files=s:e-field (wl=560.9998)_Zmin(2).m3mm3m.rex
+ylabel=s:e-field (wl=560.9998) [Zmin(2)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9998) [Zmin(3)]
+files=s:e-field (wl=560.9998)_Zmin(3).m3m
+files=s:e-field (wl=560.9998)_Zmin(3).m3mm3m.rex
+ylabel=s:e-field (wl=560.9998) [Zmin(3)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9998) [Zmin(4)]
+files=s:e-field (wl=560.9998)_Zmin(4).m3m
+files=s:e-field (wl=560.9998)_Zmin(4).m3mm3m.rex
+ylabel=s:e-field (wl=560.9998) [Zmin(4)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9998) [Zmin(5)]
+files=s:e-field (wl=560.9998)_Zmin(5).m3m
+files=s:e-field (wl=560.9998)_Zmin(5).m3mm3m.rex
+ylabel=s:e-field (wl=560.9998) [Zmin(5)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9998) [Zmin(6)]
+files=s:e-field (wl=560.9998)_Zmin(6).m3m
+files=s:e-field (wl=560.9998)_Zmin(6).m3mm3m.rex
+ylabel=s:e-field (wl=560.9998) [Zmin(6)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9998) [Zmax(1)]
+files=s:e-field (wl=560.9998)_Zmax(1).m3m
+files=s:e-field (wl=560.9998)_Zmax(1).m3mm3m.rex
+ylabel=s:e-field (wl=560.9998) [Zmax(1)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9998) [Zmax(2)]
+files=s:e-field (wl=560.9998)_Zmax(2).m3m
+files=s:e-field (wl=560.9998)_Zmax(2).m3mm3m.rex
+ylabel=s:e-field (wl=560.9998) [Zmax(2)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9998) [Zmax(3)]
+files=s:e-field (wl=560.9998)_Zmax(3).m3m
+files=s:e-field (wl=560.9998)_Zmax(3).m3mm3m.rex
+ylabel=s:e-field (wl=560.9998) [Zmax(3)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9998) [Zmax(4)]
+files=s:e-field (wl=560.9998)_Zmax(4).m3m
+files=s:e-field (wl=560.9998)_Zmax(4).m3mm3m.rex
+ylabel=s:e-field (wl=560.9998) [Zmax(4)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9998) [Zmax(5)]
+files=s:e-field (wl=560.9998)_Zmax(5).m3m
+files=s:e-field (wl=560.9998)_Zmax(5).m3mm3m.rex
+ylabel=s:e-field (wl=560.9998) [Zmax(5)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9998) [Zmax(6)]
+files=s:e-field (wl=560.9998)_Zmax(6).m3m
+files=s:e-field (wl=560.9998)_Zmax(6).m3mm3m.rex
+ylabel=s:e-field (wl=560.9998) [Zmax(6)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9996) [Zmin(1)]
+files=s:e-field (wl=560.9996)_Zmin(1).m3m
+files=s:e-field (wl=560.9996)_Zmin(1).m3mm3m.rex
+ylabel=s:e-field (wl=560.9996) [Zmin(1)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9996) [Zmin(2)]
+files=s:e-field (wl=560.9996)_Zmin(2).m3m
+files=s:e-field (wl=560.9996)_Zmin(2).m3mm3m.rex
+ylabel=s:e-field (wl=560.9996) [Zmin(2)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9996) [Zmin(3)]
+files=s:e-field (wl=560.9996)_Zmin(3).m3m
+files=s:e-field (wl=560.9996)_Zmin(3).m3mm3m.rex
+ylabel=s:e-field (wl=560.9996) [Zmin(3)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9996) [Zmin(4)]
+files=s:e-field (wl=560.9996)_Zmin(4).m3m
+files=s:e-field (wl=560.9996)_Zmin(4).m3mm3m.rex
+ylabel=s:e-field (wl=560.9996) [Zmin(4)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9996) [Zmin(5)]
+files=s:e-field (wl=560.9996)_Zmin(5).m3m
+files=s:e-field (wl=560.9996)_Zmin(5).m3mm3m.rex
+ylabel=s:e-field (wl=560.9996) [Zmin(5)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9996) [Zmin(6)]
+files=s:e-field (wl=560.9996)_Zmin(6).m3m
+files=s:e-field (wl=560.9996)_Zmin(6).m3mm3m.rex
+ylabel=s:e-field (wl=560.9996) [Zmin(6)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9996) [Zmax(1)]
+files=s:e-field (wl=560.9996)_Zmax(1).m3m
+files=s:e-field (wl=560.9996)_Zmax(1).m3mm3m.rex
+ylabel=s:e-field (wl=560.9996) [Zmax(1)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9996) [Zmax(2)]
+files=s:e-field (wl=560.9996)_Zmax(2).m3m
+files=s:e-field (wl=560.9996)_Zmax(2).m3mm3m.rex
+ylabel=s:e-field (wl=560.9996) [Zmax(2)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9996) [Zmax(3)]
+files=s:e-field (wl=560.9996)_Zmax(3).m3m
+files=s:e-field (wl=560.9996)_Zmax(3).m3mm3m.rex
+ylabel=s:e-field (wl=560.9996) [Zmax(3)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9996) [Zmax(4)]
+files=s:e-field (wl=560.9996)_Zmax(4).m3m
+files=s:e-field (wl=560.9996)_Zmax(4).m3mm3m.rex
+ylabel=s:e-field (wl=560.9996) [Zmax(4)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9996) [Zmax(5)]
+files=s:e-field (wl=560.9996)_Zmax(5).m3m
+files=s:e-field (wl=560.9996)_Zmax(5).m3mm3m.rex
+ylabel=s:e-field (wl=560.9996) [Zmax(5)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9996) [Zmax(6)]
+files=s:e-field (wl=560.9996)_Zmax(6).m3m
+files=s:e-field (wl=560.9996)_Zmax(6).m3mm3m.rex
+ylabel=s:e-field (wl=560.9996) [Zmax(6)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9994) [Zmin(1)]
+files=s:e-field (wl=560.9994)_Zmin(1).m3m
+files=s:e-field (wl=560.9994)_Zmin(1).m3mm3m.rex
+ylabel=s:e-field (wl=560.9994) [Zmin(1)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9994) [Zmin(2)]
+files=s:e-field (wl=560.9994)_Zmin(2).m3m
+files=s:e-field (wl=560.9994)_Zmin(2).m3mm3m.rex
+ylabel=s:e-field (wl=560.9994) [Zmin(2)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9994) [Zmin(3)]
+files=s:e-field (wl=560.9994)_Zmin(3).m3m
+files=s:e-field (wl=560.9994)_Zmin(3).m3mm3m.rex
+ylabel=s:e-field (wl=560.9994) [Zmin(3)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9994) [Zmin(4)]
+files=s:e-field (wl=560.9994)_Zmin(4).m3m
+files=s:e-field (wl=560.9994)_Zmin(4).m3mm3m.rex
+ylabel=s:e-field (wl=560.9994) [Zmin(4)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9994) [Zmin(5)]
+files=s:e-field (wl=560.9994)_Zmin(5).m3m
+files=s:e-field (wl=560.9994)_Zmin(5).m3mm3m.rex
+ylabel=s:e-field (wl=560.9994) [Zmin(5)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9994) [Zmin(6)]
+files=s:e-field (wl=560.9994)_Zmin(6).m3m
+files=s:e-field (wl=560.9994)_Zmin(6).m3mm3m.rex
+ylabel=s:e-field (wl=560.9994) [Zmin(6)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9994) [Zmax(1)]
+files=s:e-field (wl=560.9994)_Zmax(1).m3m
+files=s:e-field (wl=560.9994)_Zmax(1).m3mm3m.rex
+ylabel=s:e-field (wl=560.9994) [Zmax(1)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9994) [Zmax(2)]
+files=s:e-field (wl=560.9994)_Zmax(2).m3m
+files=s:e-field (wl=560.9994)_Zmax(2).m3mm3m.rex
+ylabel=s:e-field (wl=560.9994) [Zmax(2)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9994) [Zmax(3)]
+files=s:e-field (wl=560.9994)_Zmax(3).m3m
+files=s:e-field (wl=560.9994)_Zmax(3).m3mm3m.rex
+ylabel=s:e-field (wl=560.9994) [Zmax(3)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9994) [Zmax(4)]
+files=s:e-field (wl=560.9994)_Zmax(4).m3m
+files=s:e-field (wl=560.9994)_Zmax(4).m3mm3m.rex
+ylabel=s:e-field (wl=560.9994) [Zmax(4)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9994) [Zmax(5)]
+files=s:e-field (wl=560.9994)_Zmax(5).m3m
+files=s:e-field (wl=560.9994)_Zmax(5).m3mm3m.rex
+ylabel=s:e-field (wl=560.9994) [Zmax(5)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9994) [Zmax(6)]
+files=s:e-field (wl=560.9994)_Zmax(6).m3m
+files=s:e-field (wl=560.9994)_Zmax(6).m3mm3m.rex
+ylabel=s:e-field (wl=560.9994) [Zmax(6)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9992) [Zmin(1)]
+files=s:e-field (wl=560.9992)_Zmin(1).m3m
+files=s:e-field (wl=560.9992)_Zmin(1).m3mm3m.rex
+ylabel=s:e-field (wl=560.9992) [Zmin(1)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9992) [Zmin(2)]
+files=s:e-field (wl=560.9992)_Zmin(2).m3m
+files=s:e-field (wl=560.9992)_Zmin(2).m3mm3m.rex
+ylabel=s:e-field (wl=560.9992) [Zmin(2)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9992) [Zmin(3)]
+files=s:e-field (wl=560.9992)_Zmin(3).m3m
+files=s:e-field (wl=560.9992)_Zmin(3).m3mm3m.rex
+ylabel=s:e-field (wl=560.9992) [Zmin(3)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9992) [Zmin(4)]
+files=s:e-field (wl=560.9992)_Zmin(4).m3m
+files=s:e-field (wl=560.9992)_Zmin(4).m3mm3m.rex
+ylabel=s:e-field (wl=560.9992) [Zmin(4)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9992) [Zmin(5)]
+files=s:e-field (wl=560.9992)_Zmin(5).m3m
+files=s:e-field (wl=560.9992)_Zmin(5).m3mm3m.rex
+ylabel=s:e-field (wl=560.9992) [Zmin(5)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9992) [Zmin(6)]
+files=s:e-field (wl=560.9992)_Zmin(6).m3m
+files=s:e-field (wl=560.9992)_Zmin(6).m3mm3m.rex
+ylabel=s:e-field (wl=560.9992) [Zmin(6)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9992) [Zmax(1)]
+files=s:e-field (wl=560.9992)_Zmax(1).m3m
+files=s:e-field (wl=560.9992)_Zmax(1).m3mm3m.rex
+ylabel=s:e-field (wl=560.9992) [Zmax(1)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9992) [Zmax(2)]
+files=s:e-field (wl=560.9992)_Zmax(2).m3m
+files=s:e-field (wl=560.9992)_Zmax(2).m3mm3m.rex
+ylabel=s:e-field (wl=560.9992) [Zmax(2)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9992) [Zmax(3)]
+files=s:e-field (wl=560.9992)_Zmax(3).m3m
+files=s:e-field (wl=560.9992)_Zmax(3).m3mm3m.rex
+ylabel=s:e-field (wl=560.9992) [Zmax(3)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9992) [Zmax(4)]
+files=s:e-field (wl=560.9992)_Zmax(4).m3m
+files=s:e-field (wl=560.9992)_Zmax(4).m3mm3m.rex
+ylabel=s:e-field (wl=560.9992) [Zmax(4)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9992) [Zmax(5)]
+files=s:e-field (wl=560.9992)_Zmax(5).m3m
+files=s:e-field (wl=560.9992)_Zmax(5).m3mm3m.rex
+ylabel=s:e-field (wl=560.9992) [Zmax(5)]
+
+type=s:MONITOR3DMAP
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field\e-field (wl=560.9992) [Zmax(6)]
+files=s:e-field (wl=560.9992)_Zmax(6).m3m
+files=s:e-field (wl=560.9992)_Zmax(6).m3mm3m.rex
+ylabel=s:e-field (wl=560.9992) [Zmax(6)]
 
 type=s:XYSIGNAL2
 subtype=s:complex

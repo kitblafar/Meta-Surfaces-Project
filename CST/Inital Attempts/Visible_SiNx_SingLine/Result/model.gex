@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaGeometryFile version="20200202" creator="TetMesher">
+  <Components>
+    <Shape name="Components\component10:Substrate_10_1" id="0" visible="1" material="fused silica" line_material="">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="231 261 262 263 265 266"/>
+        <Neg list="231 260 264"/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list="319"/>
+    </Shape>
+    <Shape name="Components\component10:Substrate_10" id="1" visible="1" material="fused silica" line_material="">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="226 228 229 230 231 233 263"/>
+        <Neg list="227 263"/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list="328"/>
+    </Shape>
+    <Shape name="Components\air_0:brick" id="2" visible="1" material="air_0" line_material="">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="209 210 211 212 213 214 215 216 217 218"/>
+        <Neg list="219 221 223 225 226 230 232 234 235 236 239 240 242 243 246 247 249 250 253 256 258 259 262 265 267 268 271 272 274 275 278 281 283 284 287 288 290 291 294 297 299 300 303 306"/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list="308 331"/>
+    </Shape>
+    <Shape name="Components\component8:Substrate_8" id="3" visible="1" material="fused silica" line_material="" color="0 0.501960993 0.25097999">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="302 303 306 307"/>
+        <Neg list="301 304 305"/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list="309"/>
+    </Shape>
+    <Shape name="Components\component8:Pillar_8" id="4" visible="1" material="Silicon Nitride" line_material="">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="299 300 301"/>
+        <Neg list=""/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list="310"/>
+    </Shape>
+    <Shape name="Components\component6:Substrate_6" id="5" visible="1" material="fused silica" line_material="" color="0 0.501960993 0.25097999">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="293 294 297 298"/>
+        <Neg list="292 295 296"/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list="311"/>
+    </Shape>
+    <Shape name="Components\component6:Pillar_6" id="6" visible="1" material="Silicon Nitride" line_material="">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="290 291 292"/>
+        <Neg list=""/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list="312"/>
+    </Shape>
+    <Shape name="Components\component7:Substrate_7" id="7" visible="1" material="fused silica" line_material="" color="0 0.501960993 0.25097999">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="286 287 288 289 295 305"/>
+        <Neg list="285"/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list="313"/>
+    </Shape>
+    <Shape name="Components\component7:Pillar_7" id="8" visible="1" material="Silicon Nitride" line_material="">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="283 284 285"/>
+        <Neg list=""/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list="314"/>
+    </Shape>
+    <Shape name="Components\component6:Substrate_6_1" id="9" visible="1" material="fused silica" line_material="" color="0 0.501960993 0.25097999">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="277 278 281 282"/>
+        <Neg list="276 279 280"/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list="315"/>
+    </Shape>
+    <Shape name="Components\component6:Pillar_6_1" id="10" visible="1" material="Silicon Nitride" line_material="">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="274 275 276"/>
+        <Neg list=""/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list="316"/>
+    </Shape>
+    <Shape name="Components\component0:Substrate" id="11" visible="1" material="fused silica" line_material="" color="0 0.501960993 0.25097999">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="270 271 272 273 279 296"/>
+        <Neg list="269"/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list="317"/>
+    </Shape>
+    <Shape name="Components\component0:Pillar" id="12" visible="1" material="Silicon Nitride" line_material="" color="0.501960993 0.501960993 0.752941012">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="267 268 269"/>
+        <Neg list=""/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list="318"/>
+    </Shape>
+    <Shape name="Components\component10:Pillar_10_1" id="13" visible="1" material="Silicon Nitride" line_material="">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="258 259 260"/>
+        <Neg list=""/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list="320"/>
+    </Shape>
+    <Shape name="Components\component8:Substrate_8_1" id="14" visible="1" material="fused silica" line_material="" color="0 0.501960993 0.25097999">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="252 253 256 257"/>
+        <Neg list="251 254 255"/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list="321"/>
+    </Shape>
+    <Shape name="Components\component8:Pillar_8_1" id="15" visible="1" material="Silicon Nitride" line_material="">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="249 250 251"/>
+        <Neg list=""/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list="322"/>
+    </Shape>
+    <Shape name="Components\component7:Substrate_7_1" id="16" visible="1" material="fused silica" line_material="" color="0 0.501960993 0.25097999">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="245 246 247 248 254 280"/>
+        <Neg list="244"/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list="323"/>
+    </Shape>
+    <Shape name="Components\component7:Pillar_7_1" id="17" visible="1" material="Silicon Nitride" line_material="">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="242 243 244"/>
+        <Neg list=""/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list="324"/>
+    </Shape>
+    <Shape name="Components\component9:Substrate_9_1" id="18" visible="1" material="fused silica" line_material="" color="0 0.501960993 0.25097999">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="238 239 240 241 255 264"/>
+        <Neg list="237"/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list="325"/>
+    </Shape>
+    <Shape name="Components\component9:Pillar_9_1" id="19" visible="1" material="Silicon Nitride" line_material="">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="235 236 237"/>
+        <Neg list=""/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list="326"/>
+    </Shape>
+    <Shape name="Components\component10:Pillar_10" id="20" visible="1" material="Silicon Nitride" line_material="">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="232 234"/>
+        <Neg list="233"/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list="327"/>
+    </Shape>
+    <Shape name="Components\component9:Pillar_9" id="21" visible="1" material="Silicon Nitride" line_material="">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="223 225"/>
+        <Neg list="224"/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list="329"/>
+    </Shape>
+    <Shape name="Components\component9:Substrate_9" id="22" visible="1" material="fused silica" line_material="" color="0 0.501960993 0.25097999">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="219 220 221 222 224 227 304"/>
+        <Neg list=""/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list="330"/>
+    </Shape>
+  </Components>
+  <Materials>
+    <Material name="PEC" priority="1">
+      <Drawstyle color="0.800000012 0.800000012 0.800000012" transparency="0" linestrength="1"/>
+    </Material>
+    <Material name="Vacuum" priority="1">
+      <Drawstyle color="0.5 0.800000012 1" transparency="0" linestrength="1"/>
+    </Material>
+    <Material name="air_0" priority="1">
+      <Drawstyle color="0.600000024 0.600000024 0.600000024" transparency="0" linestrength="1"/>
+    </Material>
+    <Material name="fused silica" priority="1">
+      <Drawstyle color="1 0.501960993 1" transparency="0" linestrength="1"/>
+    </Material>
+    <Material name="Silicon Nitride" priority="1">
+      <Drawstyle color="0 1 1" transparency="0" linestrength="1"/>
+    </Material>
+    <Material name="$NFSMaterial$" priority="1">
+      <Drawstyle color="0 1 1" transparency="0" linestrength="1"/>
+    </Material>
+  </Materials>
+  <Groups/>
+  <SimulationDomain min="-6765 -615 -1140" max="2255 205 835"/>
+  <MeshType type="TETRAHEDRAL"/>
+  <HexMesh>
+    <Dimensions nx="162" ny="20" nz="36"/>
+    <MeshPlanesX values="-6765 -6708.9751552795033 -6652.9503105590056 -6596.925465838508 -6540.9006211180122 -6484.8757763975145 -6428.8509316770169 -6372.8260869565202 -6316.8012422360225 -6260.7763975155249 -6204.7515527950281 -6148.7267080745305 -6092.7018633540338 -6036.677018633537 -5980.6521739130394 -5924.6273291925427 -5868.602484472045 -5812.5776397515474 -5756.5527950310507 -5700.527950310553 -5644.5031055900563 -5588.4782608695596 -5532.4534161490619 -5476.4285714285643 -5420.4037267080676 -5364.3788819875699 -5308.3540372670723 -5252.3291925465755 -5196.3043478260779 -5140.2795031055812 -5084.2546583850844 -5028.2298136645868 -4972.2049689440901 -4916.1801242235942 -4860.1552795030993 -4804.1304347826035 -4748.1055900621086 -4692.0807453416137 -4636.0559006211188 -4580.031055900623 -4524.006211180128 -4467.9813664596322 -4411.9565217391382 -4355.9316770186424 -4299.9068322981466 -4243.8819875776517 -4187.8571428571568 -4131.8322981366618 -4075.8074534161665 -4019.7826086956716 -3963.7577639751762 -3907.7329192546808 -3851.7080745341855 -3795.6832298136906 -3739.6583850931952 -3683.6335403726998 -3627.6086956522049 -3571.5838509317095 -3515.5590062112142 -3459.5341614907193 -3403.5093167702239 -3347.4844720497285 -3291.4596273292332 -3235.4347826087383 -3179.4099378882429 -3123.3850931677439 -3067.3602484472444 -3011.335403726745 -2955.310559006246 -2899.285714285747 -2843.260869565248 -2787.2360248447485 -2731.2111801242495 -2675.18633540375 -2619.161490683251 -2563.1366459627516 -2507.1118012422521 -2451.0869565217536 -2395.0621118012541 -2339.0372670807542 -2283.0124223602556 -2226.9875776397562 -2170.9627329192567 -2114.9378881987573 -2058.9130434782587 -2002.888198757759 -1946.8633540372593 -1890.8385093167608 -1834.8136645962613 -1778.7888198757628 -1722.7639751552631 -1666.7391304347636 -1610.7142857142651 -1554.6894409937654 -1498.6645962732659 -1442.6397515527674 -1386.6149068322677 -1330.5900621117682 -1274.5652173912697 -1218.5403726707702 -1162.5155279502706 -1106.490683229772 -1050.4658385092725 -994.44099378877308 -938.41614906827442 -882.39130434777496 -826.36645962727539 -770.34161490677673 -714.31677018627727 -658.29192546577769 -602.26708074527915 -546.24223602477957 -490.21739130428091 -434.19254658378139 -378.16770186328182 -322.14285714278321 -266.1180124222837 -210.09316770178418 -154.06832298128555 -98.043478260786031 -42.018633540286508 14.006211180212905 70.031055900711522 126.05590062121105 182.08074534171058 238.10559006220919 294.13043478270873 350.15527950320825 406.18012422370685 462.20496894419841 518.22981366468991 574.25465838518062 630.27950310567212 686.30434782616373 742.32919254665433 798.35403726714594 854.37888198763665 910.40372670812815 966.42857142861976 1022.4534161491105 1078.4782608696021 1134.5031055900936 1190.5279503105842 1246.5527950310759 1302.5776397515674 1358.602484472058 1414.6273291925497 1470.6521739130403 1526.6770186335318 1582.7018633540233 1638.726708074515 1694.7515527950065 1750.7763975154962 1806.801242235988 1862.8260869564795 1918.850931676971 1974.8757763974625 2030.9006211179542 2086.9254658384434 2142.9503105589351 2198.9751552794269 2255"/>
+    <MeshPlanesY values="-615 -571.84210526315769 -528.68421052631527 -485.52631578947307 -442.36842105263071 -399.21052631578846 -356.05263157894603 -312.89473684210373 -269.73684210526136 -226.57894736841939 -183.42105263157742 -140.26315789473546 -97.105263157893546 -53.947368421051557 -10.789473684209593 32.368421052632371 75.526315789474225 118.68421052631619 161.84210526315815 205"/>
+    <MeshPlanesZ values="-1140 -1083.5714285714289 -1027.1428571428576 -970.71428571428646 -914.28571428571524 -857.85714285714414 -801.42857142857292 -745.00000000000182 -688.57142857143049 -632.14285714285893 -575.71428571428714 -519.28571428571558 -462.85714285714391 -406.42857142857224 -350.00000000000057 -293.5714285714289 -237.14285714285734 -180.71428571428669 -124.28571428571608 -67.857142857145405 -11.428571428574855 44.999999999995929 101.42857142856647 157.85714285713726 214.2857142857078 270.71428571427862 327.14285714284915 383.57142857141986 439.99999999999039 496.42857142856121 552.85714285713175 609.28571428570251 665.71428571427327 722.14285714284404 778.57142857141457 835"/>
+  </HexMesh>
+  <UnitCell>
+    <TranslationS1 values="-4510 -0 -0"/>
+    <TranslationS2 values="-2.51052587e-14 -410 -0"/>
+  </UnitCell>
+  <GeometryFile filename="3d.slim" type="slim" scale_factor_to_meter="1.0000000000000001e-09" subdomain_id=""/>
+</MetaGeometryFile>

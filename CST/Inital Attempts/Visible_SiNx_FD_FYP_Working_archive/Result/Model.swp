@@ -1,588 +1,2260 @@
-23/Nov/2021 17:52:57  Some of the upcoming parameter combinations were already performed previously and will be skipped.
+20/Dec/2021 07:41:11  Some of the upcoming parameter combinations were already performed previously and will be skipped.
                       Potential changes in the result settings like Template Based Post Processing are not taken into account. The feature can be deactivated via "Parameter Sweep -> Options..."
-23/Nov/2021 17:52:57  ==========================================================================
+20/Dec/2021 07:41:11  ==========================================================================
                       Sequence: Sequence 1
                       ==========================================================================
 
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:11  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         r = 20
+                         lambda = 561
+20/Dec/2021 07:41:11  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:11  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         r = 20
+                         lambda = 633
+20/Dec/2021 07:41:11  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:11  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 25
-                         lambda = 560
-23/Nov/2021 17:52:57  
+                         lambda = 561
+20/Dec/2021 07:41:11  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:11  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 25
-                         lambda = 630
-23/Nov/2021 17:52:57  
+                         lambda = 633
+20/Dec/2021 07:41:11  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:11  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 30
-                         lambda = 560
-23/Nov/2021 17:52:57  
+                         lambda = 561
+20/Dec/2021 07:41:11  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:11  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 30
-                         lambda = 630
-23/Nov/2021 17:52:57  
+                         lambda = 633
+20/Dec/2021 07:41:11  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:11  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 35
-                         lambda = 560
-23/Nov/2021 17:52:57  
+                         lambda = 561
+20/Dec/2021 07:41:11  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:11  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 35
-                         lambda = 630
-23/Nov/2021 17:52:57  
+                         lambda = 633
+20/Dec/2021 07:41:11  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:11  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 40
-                         lambda = 560
-23/Nov/2021 17:52:57  
+                         lambda = 561
+20/Dec/2021 07:41:11  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:11  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 40
-                         lambda = 630
-23/Nov/2021 17:52:57  
+                         lambda = 633
+20/Dec/2021 07:41:11  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:11  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 45
-                         lambda = 560
-23/Nov/2021 17:52:57  
+                         lambda = 561
+20/Dec/2021 07:41:11  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:11  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 45
-                         lambda = 630
-23/Nov/2021 17:52:57  
+                         lambda = 633
+20/Dec/2021 07:41:11  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:11  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 50
-                         lambda = 560
-23/Nov/2021 17:52:57  
+                         lambda = 561
+20/Dec/2021 07:41:11  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:11  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 50
-                         lambda = 630
-23/Nov/2021 17:52:57  
+                         lambda = 633
+20/Dec/2021 07:41:11  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:11  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 55
-                         lambda = 560
-23/Nov/2021 17:52:57  
+                         lambda = 561
+20/Dec/2021 07:41:11  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:11  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 55
-                         lambda = 630
-23/Nov/2021 17:52:57  
+                         lambda = 633
+20/Dec/2021 07:41:11  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:11  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 60
-                         lambda = 560
-23/Nov/2021 17:52:57  
+                         lambda = 561
+20/Dec/2021 07:41:11  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:11  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 60
-                         lambda = 630
-23/Nov/2021 17:52:57  
+                         lambda = 633
+20/Dec/2021 07:41:11  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:11  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 65
-                         lambda = 560
-23/Nov/2021 17:52:57  
+                         lambda = 561
+20/Dec/2021 07:41:11  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:11  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 65
-                         lambda = 630
-23/Nov/2021 17:52:57  
+                         lambda = 633
+20/Dec/2021 07:41:11  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:11  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 70
-                         lambda = 560
-23/Nov/2021 17:52:57  
+                         lambda = 561
+20/Dec/2021 07:41:11  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:11  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 70
-                         lambda = 630
-23/Nov/2021 17:52:57  
+                         lambda = 633
+20/Dec/2021 07:41:11  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:11  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 75
-                         lambda = 560
-23/Nov/2021 17:52:57  
+                         lambda = 561
+20/Dec/2021 07:41:12  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 75
-                         lambda = 630
-23/Nov/2021 17:52:57  
+                         lambda = 633
+20/Dec/2021 07:41:12  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 80
-                         lambda = 560
-23/Nov/2021 17:52:57  
+                         lambda = 561
+20/Dec/2021 07:41:12  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 80
-                         lambda = 630
-23/Nov/2021 17:52:57  
+                         lambda = 633
+20/Dec/2021 07:41:12  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 85
-                         lambda = 560
-23/Nov/2021 17:52:57  
+                         lambda = 561
+20/Dec/2021 07:41:12  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 85
-                         lambda = 630
-23/Nov/2021 17:52:57  
+                         lambda = 633
+20/Dec/2021 07:41:12  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 90
-                         lambda = 560
-23/Nov/2021 17:52:57  
+                         lambda = 561
+20/Dec/2021 07:41:12  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 90
-                         lambda = 630
-23/Nov/2021 17:52:57  
+                         lambda = 633
+20/Dec/2021 07:41:12  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 95
-                         lambda = 560
-23/Nov/2021 17:52:57  
+                         lambda = 561
+20/Dec/2021 07:41:12  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 95
-                         lambda = 630
-23/Nov/2021 17:52:57  
+                         lambda = 633
+20/Dec/2021 07:41:12  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 100
-                         lambda = 560
-23/Nov/2021 17:52:57  
+                         lambda = 561
+20/Dec/2021 07:41:12  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 100
-                         lambda = 630
-23/Nov/2021 17:52:57  
+                         lambda = 633
+20/Dec/2021 07:41:12  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 105
-                         lambda = 560
-23/Nov/2021 17:52:57  
+                         lambda = 561
+20/Dec/2021 07:41:12  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 105
-                         lambda = 630
-23/Nov/2021 17:52:57  
+                         lambda = 633
+20/Dec/2021 07:41:12  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 110
-                         lambda = 560
-23/Nov/2021 17:52:57  
+                         lambda = 561
+20/Dec/2021 07:41:12  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 110
-                         lambda = 630
-23/Nov/2021 17:52:57  
+                         lambda = 633
+20/Dec/2021 07:41:12  
                       Simulation for this parameter combination has already been performed (Run ID found).
-23/Nov/2021 17:52:57  --------------------------------------------------------------------------
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 115
-                         lambda = 560
-23/Nov/2021 17:52:59  
-                      Structure update: Successful
-23/Nov/2021 17:54:08            Solver: Successful
-23/Nov/2021 17:54:08       Solver time: 0 hours, 1 min., 9 sec.
-23/Nov/2021 17:54:08  --------------------------------------------------------------------------
+                         lambda = 561
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 115
-                         lambda = 630
-23/Nov/2021 17:54:10  
-                      Structure update: Successful
-23/Nov/2021 17:54:28            Solver: Aborted
-23/Nov/2021 17:54:28       Solver time: 0 hours, 0 min., 18 sec.
-23/Nov/2021 17:54:28  --------------------------------------------------------------------------
+                         lambda = 633
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 120
-                         lambda = 560
-23/Nov/2021 17:54:30  
-                      Structure update: Successful
-23/Nov/2021 17:56:21            Solver: Successful
-23/Nov/2021 17:56:21       Solver time: 0 hours, 1 min., 51 sec.
-23/Nov/2021 17:56:21  --------------------------------------------------------------------------
+                         lambda = 561
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 120
-                         lambda = 630
-23/Nov/2021 17:56:23  
-                      Structure update: Successful
-23/Nov/2021 17:56:42            Solver: Aborted
-23/Nov/2021 17:56:42       Solver time: 0 hours, 0 min., 19 sec.
-23/Nov/2021 17:56:42  --------------------------------------------------------------------------
+                         lambda = 633
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 125
-                         lambda = 560
-23/Nov/2021 17:56:44  
-                      Structure update: Successful
-23/Nov/2021 18:02:48            Solver: Successful
-23/Nov/2021 18:02:48       Solver time: 0 hours, 6 min., 4 sec.
-23/Nov/2021 18:02:48  --------------------------------------------------------------------------
+                         lambda = 561
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 125
-                         lambda = 630
-23/Nov/2021 18:02:51  
-                      Structure update: Successful
-23/Nov/2021 18:03:11            Solver: Aborted
-23/Nov/2021 18:03:11       Solver time: 0 hours, 0 min., 20 sec.
-23/Nov/2021 18:03:11  --------------------------------------------------------------------------
+                         lambda = 633
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 130
-                         lambda = 560
-23/Nov/2021 18:03:13  
-                      Structure update: Successful
-23/Nov/2021 18:07:02            Solver: Successful
-23/Nov/2021 18:07:02       Solver time: 0 hours, 3 min., 49 sec.
-23/Nov/2021 18:07:02  --------------------------------------------------------------------------
+                         lambda = 561
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 130
-                         lambda = 630
-23/Nov/2021 18:07:04  
-                      Structure update: Successful
-23/Nov/2021 18:07:24            Solver: Aborted
-23/Nov/2021 18:07:24       Solver time: 0 hours, 0 min., 20 sec.
-23/Nov/2021 18:07:24  --------------------------------------------------------------------------
+                         lambda = 633
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 135
-                         lambda = 560
-23/Nov/2021 18:07:27  
-                      Structure update: Successful
-23/Nov/2021 18:08:24            Solver: Successful
-23/Nov/2021 18:08:24       Solver time: 0 hours, 0 min., 57 sec.
-23/Nov/2021 18:08:24  --------------------------------------------------------------------------
+                         lambda = 561
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 135
-                         lambda = 630
-23/Nov/2021 18:08:26  
-                      Structure update: Successful
-23/Nov/2021 18:08:45            Solver: Aborted
-23/Nov/2021 18:08:45       Solver time: 0 hours, 0 min., 19 sec.
-23/Nov/2021 18:08:45  --------------------------------------------------------------------------
+                         lambda = 633
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 140
-                         lambda = 560
-23/Nov/2021 18:08:47  
-                      Structure update: Successful
-23/Nov/2021 18:09:39            Solver: Successful
-23/Nov/2021 18:09:39       Solver time: 0 hours, 0 min., 52 sec.
-23/Nov/2021 18:09:39  --------------------------------------------------------------------------
+                         lambda = 561
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 140
-                         lambda = 630
-23/Nov/2021 18:09:42  
-                      Structure update: Successful
-23/Nov/2021 18:10:01            Solver: Aborted
-23/Nov/2021 18:10:01       Solver time: 0 hours, 0 min., 19 sec.
-23/Nov/2021 18:10:01  --------------------------------------------------------------------------
+                         lambda = 633
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 145
-                         lambda = 560
-23/Nov/2021 18:10:03  
-                      Structure update: Successful
-23/Nov/2021 18:10:49            Solver: Successful
-23/Nov/2021 18:10:49       Solver time: 0 hours, 0 min., 46 sec.
-23/Nov/2021 18:10:49  --------------------------------------------------------------------------
+                         lambda = 561
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 145
-                         lambda = 630
-23/Nov/2021 18:10:52  
-                      Structure update: Successful
-23/Nov/2021 18:11:10            Solver: Aborted
-23/Nov/2021 18:11:10       Solver time: 0 hours, 0 min., 18 sec.
-23/Nov/2021 18:11:10  --------------------------------------------------------------------------
+                         lambda = 633
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 150
-                         lambda = 560
-23/Nov/2021 18:11:13  
-                      Structure update: Successful
-23/Nov/2021 18:12:01            Solver: Successful
-23/Nov/2021 18:12:01       Solver time: 0 hours, 0 min., 48 sec.
-23/Nov/2021 18:12:01  --------------------------------------------------------------------------
+                         lambda = 561
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 150
-                         lambda = 630
-23/Nov/2021 18:12:04  
-                      Structure update: Successful
-23/Nov/2021 18:12:23            Solver: Aborted
-23/Nov/2021 18:12:23       Solver time: 0 hours, 0 min., 19 sec.
-23/Nov/2021 18:12:23  --------------------------------------------------------------------------
+                         lambda = 633
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 155
-                         lambda = 560
-23/Nov/2021 18:12:25  
-                      Structure update: Successful
-23/Nov/2021 18:13:18            Solver: Successful
-23/Nov/2021 18:13:18       Solver time: 0 hours, 0 min., 53 sec.
-23/Nov/2021 18:13:18  --------------------------------------------------------------------------
+                         lambda = 561
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 155
-                         lambda = 630
-23/Nov/2021 18:13:21  
-                      Structure update: Successful
-23/Nov/2021 18:13:40            Solver: Aborted
-23/Nov/2021 18:13:40       Solver time: 0 hours, 0 min., 19 sec.
-23/Nov/2021 18:13:40  --------------------------------------------------------------------------
+                         lambda = 633
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 160
-                         lambda = 560
-23/Nov/2021 18:13:43  
-                      Structure update: Successful
-23/Nov/2021 18:14:31            Solver: Successful
-23/Nov/2021 18:14:31       Solver time: 0 hours, 0 min., 48 sec.
-23/Nov/2021 18:14:31  --------------------------------------------------------------------------
+                         lambda = 561
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 160
-                         lambda = 630
-23/Nov/2021 18:14:34  
-                      Structure update: Successful
-23/Nov/2021 18:14:53            Solver: Aborted
-23/Nov/2021 18:14:53       Solver time: 0 hours, 0 min., 19 sec.
-23/Nov/2021 18:14:53  --------------------------------------------------------------------------
+                         lambda = 633
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 165
-                         lambda = 560
-23/Nov/2021 18:14:55  
-                      Structure update: Successful
-23/Nov/2021 18:15:43            Solver: Successful
-23/Nov/2021 18:15:43       Solver time: 0 hours, 0 min., 48 sec.
-23/Nov/2021 18:15:43  --------------------------------------------------------------------------
+                         lambda = 561
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 165
-                         lambda = 630
-23/Nov/2021 18:15:45  
-                      Structure update: Successful
-23/Nov/2021 18:16:05            Solver: Aborted
-23/Nov/2021 18:16:05       Solver time: 0 hours, 0 min., 20 sec.
-23/Nov/2021 18:16:05  --------------------------------------------------------------------------
+                         lambda = 633
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 170
-                         lambda = 560
-23/Nov/2021 18:16:08  
-                      Structure update: Successful
-23/Nov/2021 18:16:56            Solver: Successful
-23/Nov/2021 18:16:56       Solver time: 0 hours, 0 min., 48 sec.
-23/Nov/2021 18:16:56  --------------------------------------------------------------------------
+                         lambda = 561
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 170
-                         lambda = 630
-23/Nov/2021 18:16:59  
-                      Structure update: Successful
-23/Nov/2021 18:17:19            Solver: Aborted
-23/Nov/2021 18:17:19       Solver time: 0 hours, 0 min., 20 sec.
-23/Nov/2021 18:17:19  --------------------------------------------------------------------------
+                         lambda = 633
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 175
-                         lambda = 560
-23/Nov/2021 18:17:22  
-                      Structure update: Successful
-23/Nov/2021 18:18:09            Solver: Successful
-23/Nov/2021 18:18:09       Solver time: 0 hours, 0 min., 47 sec.
-23/Nov/2021 18:18:09  --------------------------------------------------------------------------
+                         lambda = 561
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 175
-                         lambda = 630
-23/Nov/2021 18:18:12  
-                      Structure update: Successful
-23/Nov/2021 18:18:33            Solver: Aborted
-23/Nov/2021 18:18:33       Solver time: 0 hours, 0 min., 21 sec.
-23/Nov/2021 18:18:33  --------------------------------------------------------------------------
+                         lambda = 633
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 180
-                         lambda = 560
-23/Nov/2021 18:18:36  
-                      Structure update: Successful
-23/Nov/2021 18:19:18            Solver: Successful
-23/Nov/2021 18:19:18       Solver time: 0 hours, 0 min., 42 sec.
-23/Nov/2021 18:19:18  --------------------------------------------------------------------------
+                         lambda = 561
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 180
-                         lambda = 630
-23/Nov/2021 18:19:21  
-                      Structure update: Successful
-23/Nov/2021 18:19:43            Solver: Aborted
-23/Nov/2021 18:19:43       Solver time: 0 hours, 0 min., 22 sec.
-23/Nov/2021 18:19:43  --------------------------------------------------------------------------
+                         lambda = 633
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 185
-                         lambda = 560
-23/Nov/2021 18:19:45  
-                      Structure update: Successful
-23/Nov/2021 18:20:33            Solver: Successful
-23/Nov/2021 18:20:33       Solver time: 0 hours, 0 min., 48 sec.
-23/Nov/2021 18:20:33  --------------------------------------------------------------------------
+                         lambda = 561
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 185
-                         lambda = 630
-23/Nov/2021 18:20:36  
-                      Structure update: Successful
-23/Nov/2021 18:20:59            Solver: Aborted
-23/Nov/2021 18:20:59       Solver time: 0 hours, 0 min., 23 sec.
-23/Nov/2021 18:20:59  --------------------------------------------------------------------------
+                         lambda = 633
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 190
-                         lambda = 560
-23/Nov/2021 18:21:01  
-                      Structure update: Successful
-23/Nov/2021 18:21:49            Solver: Successful
-23/Nov/2021 18:21:49       Solver time: 0 hours, 0 min., 48 sec.
-23/Nov/2021 18:21:49  --------------------------------------------------------------------------
+                         lambda = 561
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 190
-                         lambda = 630
-23/Nov/2021 18:21:52  
-                      Structure update: Successful
-23/Nov/2021 18:22:13            Solver: Aborted
-23/Nov/2021 18:22:13       Solver time: 0 hours, 0 min., 21 sec.
-23/Nov/2021 18:22:13  --------------------------------------------------------------------------
+                         lambda = 633
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 195
-                         lambda = 560
-23/Nov/2021 18:22:16  
-                      Structure update: Successful
-23/Nov/2021 18:23:06            Solver: Successful
-23/Nov/2021 18:23:06       Solver time: 0 hours, 0 min., 50 sec.
-23/Nov/2021 18:23:06  --------------------------------------------------------------------------
+                         lambda = 561
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 195
-                         lambda = 630
-23/Nov/2021 18:23:09  
-                      Structure update: Successful
-23/Nov/2021 18:23:31            Solver: Aborted
-23/Nov/2021 18:23:31       Solver time: 0 hours, 0 min., 22 sec.
-23/Nov/2021 18:23:31  --------------------------------------------------------------------------
+                         lambda = 633
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 200
-                         lambda = 560
-23/Nov/2021 18:23:34  
-                      Structure update: Successful
-23/Nov/2021 18:24:24            Solver: Successful
-23/Nov/2021 18:24:24       Solver time: 0 hours, 0 min., 50 sec.
-23/Nov/2021 18:24:24  --------------------------------------------------------------------------
+                         lambda = 561
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
                       Parameter Values: 
                       
                          r = 200
-                         lambda = 630
-23/Nov/2021 18:24:27  
-                      Structure update: Successful
-23/Nov/2021 18:24:50            Solver: Aborted
-23/Nov/2021 18:24:50       Solver time: 0 hours, 0 min., 23 sec.
-23/Nov/2021 18:24:50  --------------------------------------------------------------------------
-23/Nov/2021 18:24:50  36 parameter combinations were skipped in the parameter sweep because they were already performed previously.
-23/Nov/2021 18:24:50  
+                         lambda = 633
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+
+20/Dec/2021 07:41:12  ==========================================================================
+                      Sequence: Sequence 2
                       ==========================================================================
-                      Total evaluation time: 0 hours, 30 min., 20 sec.
+
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 85
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 86
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 87
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 88
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 89
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 90
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 91
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 92
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 93
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 94
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 95
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 96
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 97
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 98
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 99
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 100
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 101
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 102
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 103
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 104
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 105
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 106
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 107
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 108
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 109
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 110
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 111
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 112
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 113
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 114
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 115
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+
+20/Dec/2021 07:41:12  ==========================================================================
+                      Sequence: Sequence 3
+                      ==========================================================================
+
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 145
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 146
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 147
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 148
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 149
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 150
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 151
+20/Dec/2021 07:41:12  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 07:41:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 152
+20/Dec/2021 07:41:14  
+                      Structure update: Successful
+20/Dec/2021 07:49:45            Solver: Successful
+20/Dec/2021 07:49:45       Solver time: 0 hours, 8 min., 31 sec.
+20/Dec/2021 07:49:45  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 153
+20/Dec/2021 07:49:50  
+                      Structure update: Successful
+20/Dec/2021 07:56:51            Solver: Successful
+20/Dec/2021 07:56:51       Solver time: 0 hours, 7 min., 1 sec.
+20/Dec/2021 07:56:51  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 154
+20/Dec/2021 07:56:55  
+                      Structure update: Successful
+20/Dec/2021 08:04:23            Solver: Successful
+20/Dec/2021 08:04:23       Solver time: 0 hours, 7 min., 28 sec.
+20/Dec/2021 08:04:23  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 155
+20/Dec/2021 08:04:23  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 08:04:23  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 156
+20/Dec/2021 08:04:28  
+                      Structure update: Successful
+20/Dec/2021 08:09:37            Solver: Successful
+20/Dec/2021 08:09:37       Solver time: 0 hours, 5 min., 9 sec.
+20/Dec/2021 08:09:37  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 157
+20/Dec/2021 08:09:41  
+                      Structure update: Successful
+20/Dec/2021 08:14:23            Solver: Successful
+20/Dec/2021 08:14:23       Solver time: 0 hours, 4 min., 42 sec.
+20/Dec/2021 08:14:23  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 158
+20/Dec/2021 08:14:27  
+                      Structure update: Successful
+20/Dec/2021 08:19:27            Solver: Successful
+20/Dec/2021 08:19:27       Solver time: 0 hours, 5 min., 0 sec.
+20/Dec/2021 08:19:27  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 159
+20/Dec/2021 08:19:31  
+                      Structure update: Successful
+20/Dec/2021 08:24:16            Solver: Successful
+20/Dec/2021 08:24:16       Solver time: 0 hours, 4 min., 45 sec.
+20/Dec/2021 08:24:16  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 160
+20/Dec/2021 08:24:16  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 08:24:16  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 161
+20/Dec/2021 08:24:21  
+                      Structure update: Successful
+20/Dec/2021 09:16:17            Solver: Successful
+20/Dec/2021 09:16:17       Solver time: 0 hours, 51 min., 56 sec.
+20/Dec/2021 09:16:17  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 162
+20/Dec/2021 09:16:24  
+                      Structure update: Successful
+20/Dec/2021 09:27:42            Solver: Successful
+20/Dec/2021 09:27:42       Solver time: 0 hours, 11 min., 18 sec.
+20/Dec/2021 09:27:42  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 163
+20/Dec/2021 09:27:46  
+                      Structure update: Successful
+20/Dec/2021 09:37:31            Solver: Successful
+20/Dec/2021 09:37:31       Solver time: 0 hours, 9 min., 45 sec.
+20/Dec/2021 09:37:31  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 164
+20/Dec/2021 09:37:36  
+                      Structure update: Successful
+20/Dec/2021 09:43:33            Solver: Successful
+20/Dec/2021 09:43:33       Solver time: 0 hours, 5 min., 57 sec.
+20/Dec/2021 09:43:33  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 165
+20/Dec/2021 09:43:33  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 09:43:33  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 166
+20/Dec/2021 09:43:37  
+                      Structure update: Successful
+20/Dec/2021 09:49:09            Solver: Successful
+20/Dec/2021 09:49:09       Solver time: 0 hours, 5 min., 32 sec.
+20/Dec/2021 09:49:09  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 167
+20/Dec/2021 09:49:13  
+                      Structure update: Successful
+20/Dec/2021 09:58:18            Solver: Successful
+20/Dec/2021 09:58:18       Solver time: 0 hours, 9 min., 5 sec.
+20/Dec/2021 09:58:18  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 168
+20/Dec/2021 09:58:22  
+                      Structure update: Successful
+20/Dec/2021 10:04:40            Solver: Successful
+20/Dec/2021 10:04:40       Solver time: 0 hours, 6 min., 18 sec.
+20/Dec/2021 10:04:40  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 169
+20/Dec/2021 10:04:44  
+                      Structure update: Successful
+20/Dec/2021 10:11:31            Solver: Successful
+20/Dec/2021 10:11:31       Solver time: 0 hours, 6 min., 47 sec.
+20/Dec/2021 10:11:31  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 170
+20/Dec/2021 10:11:31  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 10:11:31  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 171
+20/Dec/2021 10:11:36  
+                      Structure update: Successful
+20/Dec/2021 10:22:14            Solver: Successful
+20/Dec/2021 10:22:14       Solver time: 0 hours, 10 min., 38 sec.
+20/Dec/2021 10:22:14  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 172
+20/Dec/2021 10:22:19  
+                      Structure update: Successful
+20/Dec/2021 10:34:55            Solver: Successful
+20/Dec/2021 10:34:55       Solver time: 0 hours, 12 min., 36 sec.
+20/Dec/2021 10:34:55  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 173
+20/Dec/2021 10:35:00  
+                      Structure update: Successful
+20/Dec/2021 10:40:33            Solver: Successful
+20/Dec/2021 10:40:33       Solver time: 0 hours, 5 min., 33 sec.
+20/Dec/2021 10:40:33  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 174
+20/Dec/2021 10:40:37  
+                      Structure update: Successful
+20/Dec/2021 10:45:32            Solver: Successful
+20/Dec/2021 10:45:32       Solver time: 0 hours, 4 min., 55 sec.
+20/Dec/2021 10:45:32  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 175
+20/Dec/2021 10:45:32  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 10:45:32  --------------------------------------------------------------------------
+
+20/Dec/2021 10:45:32  ==========================================================================
+                      Sequence: Sequence 4
+                      ==========================================================================
+
+20/Dec/2021 10:45:32  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 125
+20/Dec/2021 10:45:32  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 10:45:32  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 126
+20/Dec/2021 10:45:36  
+                      Structure update: Successful
+20/Dec/2021 10:46:22            Solver: Successful
+20/Dec/2021 10:46:22       Solver time: 0 hours, 0 min., 45 sec.
+20/Dec/2021 10:46:22  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 127
+20/Dec/2021 10:46:26  
+                      Structure update: Successful
+20/Dec/2021 10:47:12            Solver: Successful
+20/Dec/2021 10:47:12       Solver time: 0 hours, 0 min., 46 sec.
+20/Dec/2021 10:47:12  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 128
+20/Dec/2021 10:47:16  
+                      Structure update: Successful
+20/Dec/2021 10:48:05            Solver: Successful
+20/Dec/2021 10:48:05       Solver time: 0 hours, 0 min., 49 sec.
+20/Dec/2021 10:48:05  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 129
+20/Dec/2021 10:48:09  
+                      Structure update: Successful
+20/Dec/2021 10:48:59            Solver: Successful
+20/Dec/2021 10:48:59       Solver time: 0 hours, 0 min., 50 sec.
+20/Dec/2021 10:48:59  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 130
+20/Dec/2021 10:48:59  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 10:48:59  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 131
+20/Dec/2021 10:49:04  
+                      Structure update: Successful
+20/Dec/2021 10:50:06            Solver: Successful
+20/Dec/2021 10:50:06       Solver time: 0 hours, 1 min., 2 sec.
+20/Dec/2021 10:50:06  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 132
+20/Dec/2021 10:50:10  
+                      Structure update: Successful
+20/Dec/2021 10:51:05            Solver: Successful
+20/Dec/2021 10:51:05       Solver time: 0 hours, 0 min., 55 sec.
+20/Dec/2021 10:51:05  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 133
+20/Dec/2021 10:51:09  
+                      Structure update: Successful
+20/Dec/2021 10:52:03            Solver: Successful
+20/Dec/2021 10:52:03       Solver time: 0 hours, 0 min., 54 sec.
+20/Dec/2021 10:52:03  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 134
+20/Dec/2021 10:52:07  
+                      Structure update: Successful
+20/Dec/2021 10:52:59            Solver: Successful
+20/Dec/2021 10:52:59       Solver time: 0 hours, 0 min., 52 sec.
+20/Dec/2021 10:52:59  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 135
+20/Dec/2021 10:52:59  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 10:52:59  --------------------------------------------------------------------------
+
+20/Dec/2021 10:52:59  ==========================================================================
+                      Sequence: Sequence 5
+                      ==========================================================================
+
+20/Dec/2021 10:52:59  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 165
+20/Dec/2021 10:52:59  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 10:52:59  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 166
+20/Dec/2021 10:53:03  
+                      Structure update: Successful
+20/Dec/2021 10:53:57            Solver: Successful
+20/Dec/2021 10:53:57       Solver time: 0 hours, 0 min., 54 sec.
+20/Dec/2021 10:53:57  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 167
+20/Dec/2021 10:54:01  
+                      Structure update: Successful
+20/Dec/2021 10:54:59            Solver: Successful
+20/Dec/2021 10:54:59       Solver time: 0 hours, 0 min., 58 sec.
+20/Dec/2021 10:54:59  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 168
+20/Dec/2021 10:55:03  
+                      Structure update: Successful
+20/Dec/2021 10:56:04            Solver: Successful
+20/Dec/2021 10:56:04       Solver time: 0 hours, 1 min., 1 sec.
+20/Dec/2021 10:56:04  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 169
+20/Dec/2021 10:56:09  
+                      Structure update: Successful
+20/Dec/2021 10:59:03            Solver: Successful
+20/Dec/2021 10:59:03       Solver time: 0 hours, 2 min., 54 sec.
+20/Dec/2021 10:59:03  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 170
+20/Dec/2021 10:59:03  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 10:59:03  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 171
+20/Dec/2021 10:59:07  
+                      Structure update: Successful
+20/Dec/2021 11:00:07            Solver: Successful
+20/Dec/2021 11:00:07       Solver time: 0 hours, 1 min., 0 sec.
+20/Dec/2021 11:00:07  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 172
+20/Dec/2021 11:00:11  
+                      Structure update: Successful
+20/Dec/2021 11:01:09            Solver: Successful
+20/Dec/2021 11:01:09       Solver time: 0 hours, 0 min., 58 sec.
+20/Dec/2021 11:01:09  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 173
+20/Dec/2021 11:01:13  
+                      Structure update: Successful
+20/Dec/2021 11:02:11            Solver: Successful
+20/Dec/2021 11:02:11       Solver time: 0 hours, 0 min., 58 sec.
+20/Dec/2021 11:02:11  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 174
+20/Dec/2021 11:02:15  
+                      Structure update: Successful
+20/Dec/2021 11:03:13            Solver: Successful
+20/Dec/2021 11:03:13       Solver time: 0 hours, 0 min., 58 sec.
+20/Dec/2021 11:03:13  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 175
+20/Dec/2021 11:03:13  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:03:13  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 176
+20/Dec/2021 11:03:18  
+                      Structure update: Successful
+20/Dec/2021 11:04:15            Solver: Successful
+20/Dec/2021 11:04:15       Solver time: 0 hours, 0 min., 57 sec.
+20/Dec/2021 11:04:15  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 177
+20/Dec/2021 11:04:19  
+                      Structure update: Successful
+20/Dec/2021 11:06:16            Solver: Successful
+20/Dec/2021 11:06:16       Solver time: 0 hours, 1 min., 57 sec.
+20/Dec/2021 11:06:16  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 178
+20/Dec/2021 11:06:20  
+                      Structure update: Successful
+20/Dec/2021 11:07:41            Solver: Successful
+20/Dec/2021 11:07:41       Solver time: 0 hours, 1 min., 21 sec.
+20/Dec/2021 11:07:41  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 179
+20/Dec/2021 11:07:46  
+                      Structure update: Successful
+20/Dec/2021 11:08:57            Solver: Successful
+20/Dec/2021 11:08:57       Solver time: 0 hours, 1 min., 11 sec.
+20/Dec/2021 11:08:57  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 180
+20/Dec/2021 11:08:57  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:08:57  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 181
+20/Dec/2021 11:09:01  
+                      Structure update: Successful
+20/Dec/2021 11:10:03            Solver: Successful
+20/Dec/2021 11:10:03       Solver time: 0 hours, 1 min., 2 sec.
+20/Dec/2021 11:10:03  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 182
+20/Dec/2021 11:10:07  
+                      Structure update: Successful
+20/Dec/2021 11:11:31            Solver: Successful
+20/Dec/2021 11:11:31       Solver time: 0 hours, 1 min., 24 sec.
+20/Dec/2021 11:11:31  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 183
+20/Dec/2021 11:11:35  
+                      Structure update: Successful
+20/Dec/2021 11:12:35            Solver: Successful
+20/Dec/2021 11:12:35       Solver time: 0 hours, 1 min., 0 sec.
+20/Dec/2021 11:12:35  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 184
+20/Dec/2021 11:12:39  
+                      Structure update: Successful
+20/Dec/2021 11:13:39            Solver: Successful
+20/Dec/2021 11:13:39       Solver time: 0 hours, 1 min., 0 sec.
+20/Dec/2021 11:13:39  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 185
+20/Dec/2021 11:13:39  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:13:39  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 186
+20/Dec/2021 11:13:44  
+                      Structure update: Successful
+20/Dec/2021 11:14:59            Solver: Successful
+20/Dec/2021 11:14:59       Solver time: 0 hours, 1 min., 15 sec.
+20/Dec/2021 11:14:59  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 187
+20/Dec/2021 11:15:04  
+                      Structure update: Successful
+20/Dec/2021 11:16:08            Solver: Successful
+20/Dec/2021 11:16:08       Solver time: 0 hours, 1 min., 4 sec.
+20/Dec/2021 11:16:08  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 188
+20/Dec/2021 11:16:12  
+                      Structure update: Successful
+20/Dec/2021 11:17:15            Solver: Successful
+20/Dec/2021 11:17:15       Solver time: 0 hours, 1 min., 3 sec.
+20/Dec/2021 11:17:15  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 189
+20/Dec/2021 11:17:19  
+                      Structure update: Successful
+20/Dec/2021 11:18:31            Solver: Successful
+20/Dec/2021 11:18:31       Solver time: 0 hours, 1 min., 12 sec.
+20/Dec/2021 11:18:31  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 190
+20/Dec/2021 11:18:31  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:18:31  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 191
+20/Dec/2021 11:18:35  
+                      Structure update: Successful
+20/Dec/2021 11:20:22            Solver: Successful
+20/Dec/2021 11:20:22       Solver time: 0 hours, 1 min., 47 sec.
+20/Dec/2021 11:20:22  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 192
+20/Dec/2021 11:20:26  
+                      Structure update: Successful
+20/Dec/2021 11:23:27            Solver: Successful
+20/Dec/2021 11:23:27       Solver time: 0 hours, 3 min., 1 sec.
+20/Dec/2021 11:23:27  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 193
+20/Dec/2021 11:23:31  
+                      Structure update: Successful
+20/Dec/2021 11:25:17            Solver: Successful
+20/Dec/2021 11:25:17       Solver time: 0 hours, 1 min., 46 sec.
+20/Dec/2021 11:25:17  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 194
+20/Dec/2021 11:25:21  
+                      Structure update: Successful
+20/Dec/2021 11:26:53            Solver: Successful
+20/Dec/2021 11:26:53       Solver time: 0 hours, 1 min., 32 sec.
+20/Dec/2021 11:26:53  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 195
+20/Dec/2021 11:26:53  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:26:53  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 196
+20/Dec/2021 11:26:57  
+                      Structure update: Successful
+20/Dec/2021 11:28:24            Solver: Successful
+20/Dec/2021 11:28:24       Solver time: 0 hours, 1 min., 27 sec.
+20/Dec/2021 11:28:24  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 197
+20/Dec/2021 11:28:28  
+                      Structure update: Successful
+20/Dec/2021 11:29:49            Solver: Successful
+20/Dec/2021 11:29:49       Solver time: 0 hours, 1 min., 21 sec.
+20/Dec/2021 11:29:49  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 198
+20/Dec/2021 11:29:54  
+                      Structure update: Successful
+20/Dec/2021 11:31:11            Solver: Successful
+20/Dec/2021 11:31:11       Solver time: 0 hours, 1 min., 17 sec.
+20/Dec/2021 11:31:11  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 199
+20/Dec/2021 11:31:15  
+                      Structure update: Successful
+20/Dec/2021 11:32:44            Solver: Successful
+20/Dec/2021 11:32:44       Solver time: 0 hours, 1 min., 29 sec.
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 200
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+
+20/Dec/2021 11:32:44  ==========================================================================
+                      Sequence: Sequence 6
+                      ==========================================================================
+
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 90
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 91
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 92
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 93
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 94
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 95
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 96
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 97
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 98
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 99
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 100
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 101
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 102
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 103
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 104
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 105
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 106
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 107
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 108
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 109
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 110
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 111
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 112
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 113
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 114
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 115
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+
+20/Dec/2021 11:32:44  ==========================================================================
+                      Sequence: Sequence 7
+                      ==========================================================================
+
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 145
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 146
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 147
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 148
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 149
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 150
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 151
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 152
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 153
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 154
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 155
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 156
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 157
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 158
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 159
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 160
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 161
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 162
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 163
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 164
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 165
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 166
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 167
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 168
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 169
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 170
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 171
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 172
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 173
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 174
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 175
+20/Dec/2021 11:32:44  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:32:44  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 176
+20/Dec/2021 11:32:49  
+                      Structure update: Successful
+20/Dec/2021 11:37:32            Solver: Successful
+20/Dec/2021 11:37:32       Solver time: 0 hours, 4 min., 43 sec.
+20/Dec/2021 11:37:32  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 177
+20/Dec/2021 11:37:37  
+                      Structure update: Successful
+20/Dec/2021 11:41:35            Solver: Successful
+20/Dec/2021 11:41:35       Solver time: 0 hours, 3 min., 58 sec.
+20/Dec/2021 11:41:35  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 178
+20/Dec/2021 11:41:40  
+                      Structure update: Successful
+20/Dec/2021 11:45:34            Solver: Successful
+20/Dec/2021 11:45:34       Solver time: 0 hours, 3 min., 54 sec.
+20/Dec/2021 11:45:34  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 179
+20/Dec/2021 11:45:39  
+                      Structure update: Successful
+20/Dec/2021 11:49:27            Solver: Successful
+20/Dec/2021 11:49:27       Solver time: 0 hours, 3 min., 48 sec.
+20/Dec/2021 11:49:27  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 180
+20/Dec/2021 11:49:27  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 11:49:27  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 181
+20/Dec/2021 11:49:32  
+                      Structure update: Successful
+20/Dec/2021 11:53:16            Solver: Successful
+20/Dec/2021 11:53:16       Solver time: 0 hours, 3 min., 44 sec.
+20/Dec/2021 11:53:16  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 182
+20/Dec/2021 11:53:21  
+                      Structure update: Successful
+20/Dec/2021 11:57:03            Solver: Successful
+20/Dec/2021 11:57:03       Solver time: 0 hours, 3 min., 42 sec.
+20/Dec/2021 11:57:03  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 183
+20/Dec/2021 11:57:07  
+                      Structure update: Successful
+20/Dec/2021 12:00:48            Solver: Successful
+20/Dec/2021 12:00:48       Solver time: 0 hours, 3 min., 41 sec.
+20/Dec/2021 12:00:48  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 184
+20/Dec/2021 12:00:53  
+                      Structure update: Successful
+20/Dec/2021 12:04:46            Solver: Successful
+20/Dec/2021 12:04:46       Solver time: 0 hours, 3 min., 53 sec.
+20/Dec/2021 12:04:46  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 185
+20/Dec/2021 12:04:46  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 12:04:46  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 186
+20/Dec/2021 12:04:52  
+                      Structure update: Successful
+20/Dec/2021 12:09:18            Solver: Successful
+20/Dec/2021 12:09:18       Solver time: 0 hours, 4 min., 26 sec.
+20/Dec/2021 12:09:18  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 187
+20/Dec/2021 12:09:23  
+                      Structure update: Successful
+20/Dec/2021 12:13:51            Solver: Successful
+20/Dec/2021 12:13:51       Solver time: 0 hours, 4 min., 28 sec.
+20/Dec/2021 12:13:51  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 188
+20/Dec/2021 12:13:56  
+                      Structure update: Successful
+20/Dec/2021 12:23:00            Solver: Successful
+20/Dec/2021 12:23:00       Solver time: 0 hours, 9 min., 4 sec.
+20/Dec/2021 12:23:00  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 189
+20/Dec/2021 12:23:05  
+                      Structure update: Successful
+20/Dec/2021 12:29:55            Solver: Successful
+20/Dec/2021 12:29:55       Solver time: 0 hours, 6 min., 50 sec.
+20/Dec/2021 12:29:55  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 190
+20/Dec/2021 12:29:55  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 12:29:55  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 191
+20/Dec/2021 12:30:01  
+                      Structure update: Successful
+20/Dec/2021 12:35:47            Solver: Successful
+20/Dec/2021 12:35:47       Solver time: 0 hours, 5 min., 46 sec.
+20/Dec/2021 12:35:47  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 192
+20/Dec/2021 12:35:52  
+                      Structure update: Successful
+20/Dec/2021 12:42:14            Solver: Successful
+20/Dec/2021 12:42:14       Solver time: 0 hours, 6 min., 22 sec.
+20/Dec/2021 12:42:14  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 193
+20/Dec/2021 12:42:22  
+                      Structure update: Successful
+20/Dec/2021 14:32:17            Solver: Aborted
+20/Dec/2021 14:32:17       Solver time: 1 hours, 49 min., 55 sec.
+20/Dec/2021 14:32:17  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 194
+20/Dec/2021 14:32:19  
+                      Structure update: Successful
+20/Dec/2021 14:41:41            Solver: Successful
+20/Dec/2021 14:41:41       Solver time: 0 hours, 9 min., 22 sec.
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 561
+                         r = 195
+20/Dec/2021 14:41:41  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+
+20/Dec/2021 14:41:41  ==========================================================================
+                      Sequence: Sequence 8
+                      ==========================================================================
+
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 125
+20/Dec/2021 14:41:41  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 126
+20/Dec/2021 14:41:41  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 127
+20/Dec/2021 14:41:41  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 128
+20/Dec/2021 14:41:41  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 129
+20/Dec/2021 14:41:41  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 130
+20/Dec/2021 14:41:41  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 131
+20/Dec/2021 14:41:41  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 132
+20/Dec/2021 14:41:41  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 133
+20/Dec/2021 14:41:41  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 134
+20/Dec/2021 14:41:41  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 135
+20/Dec/2021 14:41:41  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+
+20/Dec/2021 14:41:41  ==========================================================================
+                      Sequence: Sequence 9
+                      ==========================================================================
+
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 165
+20/Dec/2021 14:41:41  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 166
+20/Dec/2021 14:41:41  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 167
+20/Dec/2021 14:41:41  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 168
+20/Dec/2021 14:41:41  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 169
+20/Dec/2021 14:41:41  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 170
+20/Dec/2021 14:41:41  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 171
+20/Dec/2021 14:41:41  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 172
+20/Dec/2021 14:41:41  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 173
+20/Dec/2021 14:41:41  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 174
+20/Dec/2021 14:41:41  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 175
+20/Dec/2021 14:41:41  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+
+20/Dec/2021 14:41:41  ==========================================================================
+                      Sequence: Sequence 10
+                      ==========================================================================
+
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 185
+20/Dec/2021 14:41:41  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 186
+20/Dec/2021 14:41:41  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 187
+20/Dec/2021 14:41:41  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 188
+20/Dec/2021 14:41:41  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 189
+20/Dec/2021 14:41:41  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 190
+20/Dec/2021 14:41:41  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 191
+20/Dec/2021 14:41:41  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 192
+20/Dec/2021 14:41:41  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 193
+20/Dec/2021 14:41:41  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 194
+20/Dec/2021 14:41:41  
+                      Simulation for this parameter data has already been performed.
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         lambda = 633
+                         r = 195
+20/Dec/2021 14:41:41  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+20/Dec/2021 14:41:41  --------------------------------------------------------------------------
+20/Dec/2021 14:41:41  179 parameter combinations were skipped in the parameter sweep because they were already performed previously.
+                      43 parameter combinations were skipped because they were defined multiple times in the current sweep.
+20/Dec/2021 14:41:41  
+                      ==========================================================================
+                      Total evaluation time: 6 hours, 55 min., 12 sec.
                       ==========================================================================

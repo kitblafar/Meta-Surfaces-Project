@@ -9,21 +9,192 @@
         "sequences": {
             "Sequence 1": [
                 {
-                    "from": "25",
+                    "from": "20",
                     "step width": "5",
                     "to": "200",
                     "type": "linear",
                     "varname": "r"
                 },
                 {
-                    "from": "560",
+                    "from": "561",
                     "samples": "2",
-                    "to": "630",
+                    "to": "633",
                     "type": "linear",
                     "varname": "lambda"
                 },
                 {
                     "index": 1
+                }
+            ],
+            "Sequence 10": [
+                {
+                    "from": "633",
+                    "samples": "1",
+                    "to": "633",
+                    "type": "linear",
+                    "varname": "lambda"
+                },
+                {
+                    "from": "185",
+                    "step width": "1",
+                    "to": "195",
+                    "type": "linear",
+                    "varname": "r"
+                },
+                {
+                    "index": 10
+                }
+            ],
+            "Sequence 2": [
+                {
+                    "from": "561",
+                    "samples": "1",
+                    "to": "633",
+                    "type": "linear",
+                    "varname": "lambda"
+                },
+                {
+                    "from": "85",
+                    "step width": "1",
+                    "to": "115",
+                    "type": "linear",
+                    "varname": "r"
+                },
+                {
+                    "index": 2
+                }
+            ],
+            "Sequence 3": [
+                {
+                    "from": "561",
+                    "samples": "1",
+                    "to": "633",
+                    "type": "linear",
+                    "varname": "lambda"
+                },
+                {
+                    "from": "145",
+                    "step width": "1",
+                    "to": "175",
+                    "type": "linear",
+                    "varname": "r"
+                },
+                {
+                    "index": 3
+                }
+            ],
+            "Sequence 4": [
+                {
+                    "from": "633",
+                    "samples": "1",
+                    "to": "633",
+                    "type": "linear",
+                    "varname": "lambda"
+                },
+                {
+                    "from": "125",
+                    "step width": "1",
+                    "to": "135",
+                    "type": "linear",
+                    "varname": "r"
+                },
+                {
+                    "index": 4
+                }
+            ],
+            "Sequence 5": [
+                {
+                    "from": "633",
+                    "samples": "1",
+                    "to": "633",
+                    "type": "linear",
+                    "varname": "lambda"
+                },
+                {
+                    "from": "165",
+                    "step width": "1",
+                    "to": "200",
+                    "type": "linear",
+                    "varname": "r"
+                },
+                {
+                    "index": 5
+                }
+            ],
+            "Sequence 6": [
+                {
+                    "from": "561",
+                    "samples": "1",
+                    "to": "633",
+                    "type": "linear",
+                    "varname": "lambda"
+                },
+                {
+                    "from": "90",
+                    "step width": "1",
+                    "to": "115",
+                    "type": "linear",
+                    "varname": "r"
+                },
+                {
+                    "index": 6
+                }
+            ],
+            "Sequence 7": [
+                {
+                    "from": "561",
+                    "samples": "1",
+                    "to": "633",
+                    "type": "linear",
+                    "varname": "lambda"
+                },
+                {
+                    "from": "145",
+                    "step width": "1",
+                    "to": "195",
+                    "type": "linear",
+                    "varname": "r"
+                },
+                {
+                    "index": 7
+                }
+            ],
+            "Sequence 8": [
+                {
+                    "from": "633",
+                    "samples": "1",
+                    "to": "633",
+                    "type": "linear",
+                    "varname": "lambda"
+                },
+                {
+                    "from": "125",
+                    "step width": "1",
+                    "to": "135",
+                    "type": "linear",
+                    "varname": "r"
+                },
+                {
+                    "index": 8
+                }
+            ],
+            "Sequence 9": [
+                {
+                    "from": "633",
+                    "samples": "1",
+                    "to": "633",
+                    "type": "linear",
+                    "varname": "lambda"
+                },
+                {
+                    "from": "165",
+                    "step width": "1",
+                    "to": "175",
+                    "type": "linear",
+                    "varname": "r"
+                },
+                {
+                    "index": 9
                 }
             ]
         },

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SchematicTopology Version="2.5" Seed="1" Grid="25">
+    <Block Id="1" ForeignId="48772160" Class="MWSSCHEM" ImageIndex="1">
+        <Size Height="525" Width="300"/>
+        <Pins Distribution="Custom">
+            <Pin Index="0" Port="0" BlockPosition="Left">
+                <Label>Zmin(1)</Label>
+            </Pin>
+            <Pin Index="5" Port="1" BlockPosition="Right">
+                <Label>Zmin(2)</Label>
+            </Pin>
+            <Pin Index="1" Port="2" BlockPosition="Left">
+                <Label>Zmin(3)</Label>
+            </Pin>
+            <Pin Index="4" Port="3" BlockPosition="Right">
+                <Label>Zmin(4)</Label>
+            </Pin>
+            <Pin Index="2" Port="4" BlockPosition="Left">
+                <Label>Zmin(5)</Label>
+            </Pin>
+            <Pin Index="3" Port="5" BlockPosition="Right">
+                <Label>Zmin(6)</Label>
+            </Pin>
+            <Pin Index="3" Port="6" BlockPosition="Left">
+                <Label>Zmax(1)</Label>
+            </Pin>
+            <Pin Index="2" Port="7" BlockPosition="Right">
+                <Label>Zmax(2)</Label>
+            </Pin>
+            <Pin Index="4" Port="8" BlockPosition="Left">
+                <Label>Zmax(3)</Label>
+            </Pin>
+            <Pin Index="1" Port="9" BlockPosition="Right">
+                <Label>Zmax(4)</Label>
+            </Pin>
+            <Pin Index="5" Port="10" BlockPosition="Left">
+                <Label>Zmax(5)</Label>
+            </Pin>
+            <Pin Index="0" Port="11" BlockPosition="Right">
+                <Label>Zmax(6)</Label>
+            </Pin>
+            <Ports>
+                <Port Name="Zmin(1)" Label=""/>
+                <Port Name="Zmin(2)" Label=""/>
+                <Port Name="Zmin(3)" Label=""/>
+                <Port Name="Zmin(4)" Label=""/>
+                <Port Name="Zmin(5)" Label=""/>
+                <Port Name="Zmin(6)" Label=""/>
+                <Port Name="Zmax(1)" Label=""/>
+                <Port Name="Zmax(2)" Label=""/>
+                <Port Name="Zmax(3)" Label=""/>
+                <Port Name="Zmax(4)" Label=""/>
+                <Port Name="Zmax(5)" Label=""/>
+                <Port Name="Zmax(6)" Label=""/>
+            </Ports>
+        </Pins>
+        <Image FileName="../../3D/Model.dib" Scale="AutoFit"/>
+        <Pos X="100" Y="-62.5"/>
+        <ToolTip>CST MICROWAVE STUDIO schematic block MWSSCHEM1</ToolTip>
+    </Block>
+</SchematicTopology>

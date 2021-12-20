@@ -1,0 +1,217 @@
+[16:16:04] -------- TetMesher Log --------
+[16:16:04] Build Number: 20201110; ID: 2021.1 Release from 2020-11-10 (change 826605); Date: 2020-11-10; ACIS version: 30.0.1, SPAresabs & SPAresnor: 1e-06, 1e-10; Problem class: Optical
+[16:16:04] - Reading information
+[16:16:04] - Building single body
+[16:16:04] Found 109 faces.
+[16:16:04] Choosing Advanced Boolean Loop...
+[16:16:04] Volume Attributes enabled
+[16:16:04] Attaching Volume Attributes
+[16:16:04] Sorted out 3 special bodies.
+[16:16:04] Processing 24 entities.
+[16:16:04] Queue Size: 1
+[16:16:04] Combining solid component0:Pillar and solid component6:Pillar_6 (Pair #1 out of 12)
+[16:16:04] Combining solid component10:Pillar_10 and solid component9:Pillar_9 (Pair #2 out of 12)
+[16:16:04] Combining solid component10:Pillar_10_1 and solid component9:Pillar_9_1 (Pair #3 out of 12)
+[16:16:04] Combining solid component6:Pillar_6_1 and solid component7:Pillar_7_1 (Pair #4 out of 12)
+[16:16:04] Combining solid component7:Pillar_7 and solid component8:Pillar_8 (Pair #5 out of 12)
+[16:16:04] Combining non-pec sheet component10:Substrate_10 and solid component9:Substrate_9_1 (Pair #6 out of 12)
+[16:16:04] Combining non-pec sheet component10:Substrate_10_1 and solid component9:Substrate_9 (Pair #7 out of 12)
+[16:16:04] Combining solid component0:Substrate and solid component7:Substrate_7 (Pair #8 out of 12)
+[16:16:04] Combining solid component10:Substrate_10 and solid component8:Substrate_8 (Pair #9 out of 12)
+[16:16:04] Combining solid component10:Substrate_10_1 and solid component8:Substrate_8_1 (Pair #10 out of 12)
+[16:16:04] Combining solid component6:Substrate_6 and solid component6:Substrate_6_1 (Pair #11 out of 12)
+[16:16:04] Combining solid component7:Substrate_7_1 and solid component8:Pillar_8_1 (Pair #12 out of 12)
+[16:16:04] Processing 12 entities.
+[16:16:04] Queue Size: 1
+[16:16:04] Combining Compound Body and Compound Body (Pair #1 out of 6)
+[16:16:04] Combining Compound Body and Compound Body (Pair #2 out of 6)
+[16:16:04] Combining Compound Body and Compound Body (Pair #3 out of 6)
+[16:16:04] Combining Compound Body and Compound Body (Pair #4 out of 6)
+[16:16:05] Combining Compound Body and Compound Body (Pair #5 out of 6)
+[16:16:05] Combining Compound Body and Compound Body (Pair #6 out of 6)
+[16:16:05] Processing 6 entities.
+[16:16:05] Queue Size: 1
+[16:16:05] Combining Compound Body and Compound Body (Pair #1 out of 3)
+[16:16:05] Combining Compound Body and Compound Body (Pair #2 out of 3)
+[16:16:05] Adding Compound Body to Compound Body (Pair #3 out of 3)
+[16:16:05] Processing 3 entities.
+[16:16:05] Queue Size: 1
+[16:16:05] Adding Compound Body to Compound Body (Pair #1 out of 1)
+[16:16:05] Processing 2 entities.
+[16:16:05] Queue Size: 1
+[16:16:05] Adding Compound Body to Compound Body (Pair #1 out of 1)
+[16:16:05] Exiting Boolean Unite Module.
+[16:16:05] Added Compound Body (ID: 219, 36, 423, 359, 386, 413, 246, 281, 273, 203, 28, 133, 351, 71, 141, 211, 176, 149, 79, 289, 343, 63, 106, 316) to model
+[16:16:05] Added background material (ID: 1) to model
+[16:16:05] Added waveguide port wavequide port (Floquet) at Zmin (ID: 433) to model
+[16:16:05] Added waveguide port wavequide port (Floquet) at Zmax (ID: 443) to model
+[16:16:05] -- Building object info
+[16:16:05] -- OK
+[16:16:05] - Storing model cells
+[16:16:05] - OK
+[16:16:05] Creating ModelDatabase
+[16:16:05] - Mesh sizes: global mesh size near to model = 2.0307397230826845e+02
+              min requested = 9.9089952194793796e+01
+              max requested = 2.0307397230826845e+02
+[16:16:05] - OK
+[16:16:05] Temporary directory: "C:\MetaSurfacesProject\CST\Inital Attempts\Visible_SiNx_SingLine\Temp\1-temp.tet"
+[16:16:05] [CADSurf] cad_add_face_multiple_periodicity_with_transformation_function
+[16:16:05] [CADSurf] fid1: 213, 216, 231, fid2: 209, 210, 263, 
+[16:16:05] [CADSurf] cad_add_face_multiple_periodicity_with_transformation_function
+[16:16:05] [CADSurf] fid1: 214, 215, 222, 228, 241, 248, 257, 261, 273, 282, 289, 298, 307, fid2: 212, 211, 220, 229, 238, 245, 252, 266, 270, 277, 286, 293, 302, 
+[16:16:05] [CADSurf] MeshGems Version: MeshGems-Core 2.10-1
+[16:16:05] [CADSurf] === Begin: PreCAD-related parameters ===
+[16:16:05] [CADSurf] == CADSurf Parameters == 
+[16:16:05] [CADSurf] meshgems_cadsurf_set_param(css, "use_precad",  "yes")
+[16:16:05] [CADSurf] Bounding box diagonal = 4.9405288178490036e+03
+[16:16:05] [CADSurf] meshgems_cadsurf_set_param(css, "remove_nano_edges",  "0")
+[16:16:05] [CADSurf] meshgems_cadsurf_set_param(css, "discard_input_topology",  "0")
+[16:16:05] [CADSurf] meshgems_cadsurf_set_param(css, "process_3d_topology",  "0")
+[16:16:05] [CADSurf] meshgems_cadsurf_set_param(css, "discard_input_2d_topology",  "0")
+[16:16:05] [CADSurf] Default periodic tolerance (1e-4*diag) = 4.9405288178490037e-01
+[16:16:05] [CADSurf] Minimum periodic tolerance = 1.0000000000000001e-05
+[16:16:05] [CADSurf] Setting it to max( 1.0000000000000001e-05, 4.9405288178490037e-01 )
+[16:16:05] [CADSurf] meshgems_cadsurf_set_param(css, "periodic_tolerance",  "0.49405288178490037")
+[16:16:05] [CADSurf] meshgems_cadsurf_set_param(css, "remove_duplicate_cad_faces",  "0")
+[16:16:05] [CADSurf] meshgems_cadsurf_set_param(css, "remove_tiny_uv_edges",  "0")
+[16:16:05] [CADSurf] === End: PreCAD-related parameters ===
+[16:16:05] [CADSurf] ==
+[16:16:05] [CADSurf] == CADSurf Parameters == 
+[16:16:05] [CADSurf] meshgems_cadsurf_set_param(css, "verbose",  "3")
+[16:16:05] [CADSurf] meshgems_cadsurf_set_param(css, "geometric_size_mode",  "local")
+[16:16:05] [CADSurf] meshgems_cadsurf_set_param(css, "physical_size_mode",  "local")
+[16:16:05] [CADSurf] 	 Max user size    = 2.0307397230826845e+02
+[16:16:05] [CADSurf] 	 Global size near = 2.0307397230826845e+02
+[16:16:05] [CADSurf] 	 Global size far  = 2.0307397230826845e+02
+[16:16:05] [CADSurf] 	 Upper size bound = 2.0307397230826845e+02
+[16:16:05] [CADSurf] meshgems_cadsurf_set_param(css, "max_size",  "203.07397230826845")
+[16:16:05] [CADSurf] 	Calculating min. mesh size for CADSurf...
+[16:16:05] [CADSurf] 	Diagonal of model + background box: 4.9405288178490036e+03
+[16:16:05] [CADSurf] 	Min. mesh size by diagonal (1e-3 x diagonal): 4.9405288178490032e+00
+[16:16:05] [CADSurf] 	Diagonal of model: 4.8354136327722781e+03
+[16:16:05] [CADSurf] 	Min. mesh size of model: 9.9089952194793796e+01
+[16:16:05] [CADSurf] 	Max. cell defined by user (near to model): 2.0307397230826845e+02
+[16:16:05] [CADSurf] 	Min. cell defined by user: 0.0000000000000000e+00
+[16:16:05] [CADSurf] 	Min. cell used for calculation: 2.0307397230826845e+00
+[16:16:05] [CADSurf] 	Note: min. mesh size by diagonal is too large, consider using (0.01 x max. cell = 2.0307397230826845e+00)
+[16:16:05] [CADSurf] Geometric refinement uses "min_size" setting.
+[16:16:05] [CADSurf] CADSurf "min_size" is set to min. cell: 2.0307397230826845e+00
+[16:16:05] [CADSurf] meshgems_cadsurf_set_param(css, "min_size",  "2.0307397230826845")
+[16:16:05] [CADSurf] meshgems_cadsurf_set_param(css, "max_number_of_points_per_patch",  "0")
+[16:16:05] [CADSurf] meshgems_cadsurf_set_param(css, "element_generation",  "local")
+[16:16:05] [CADSurf] Setting Triangle as default element type
+[16:16:05] [CADSurf] meshgems_cadsurf_set_param(css, "gradation",  "1.5")
+[16:16:05] [CADSurf] meshgems_cadsurf_set_param(css, "volume_gradation",  "2")
+[16:16:05] [CADSurf] meshgems_cadsurf_set_param(css, "patch_independent",  "0")
+[16:16:05] [CADSurf] meshgems_cadsurf_set_param(css, "remove_tiny_edges",  "0")
+[16:16:05] [CADSurf] meshgems_cadsurf_set_param(css, "optimise_tiny_edges",  "0")
+[16:16:05] [CADSurf] meshgems_cadsurf_set_param(css, "tiny_edge_respect_geometry",  "1")
+[16:16:05] [CADSurf] meshgems_cadsurf_set_param(css, "CheckWellDefined",  "8")
+[16:16:05] [CADSurf] meshgems_cadsurf_set_param(css, "anisotropic",  "1")
+[16:16:05] [CADSurf] meshgems_cadsurf_set_param(css, "anisotropic_ratio",  "5")
+[16:16:05] [CADSurf] meshgems_cadsurf_set_param(css, "correct_surface_intersections",  "1")
+[16:16:05] [CADSurf] meshgems_cadsurf_set_param(css, "intersection_processing_max_cost",  "15")
+[16:16:05] [CADSurf] ==
+[16:16:05] [CADSurf] Status: OK
+[16:16:05] [CADSurf] Number of intersecting edges: 0, total edge count: 883
+[16:16:05] [CADSurf] Number of intersecting faces: 0
+[16:16:05] [CADSurf] - Mesh stats: N=3272, E=883, T=7048, Q=0
+[16:16:05] [CADSurf] Testing watertightness
+[16:16:05] [CADSurf] - OK
+[16:16:05] Creating volume mesh from surface mesh - begin
+[16:16:05] Volume meshing: 8 threads will be allocated to mesh 24 sub-domains.
+[16:16:05] - Submitting for meshing subdomain 1 of 24
+[16:16:05]      Name: background material
+[16:16:05] - Submitting for meshing subdomain 2 of 24
+[16:16:05]      Name: solid component8:Substrate_8
+[16:16:05] - Submitting for meshing subdomain 3 of 24
+[16:16:05]      Name: solid component8:Pillar_8
+[16:16:05] - Submitting for meshing subdomain 4 of 24
+[16:16:05]      Name: solid component6:Substrate_6
+[16:16:05] - Submitting for meshing subdomain 5 of 24
+[16:16:05]      Name: solid component6:Pillar_6
+[16:16:05] - Submitting for meshing subdomain 6 of 24
+[16:16:05]      Name: solid component7:Substrate_7
+[16:16:05] - Submitting for meshing subdomain 7 of 24
+[16:16:05]      Name: solid component7:Pillar_7
+[16:16:05] - Submitting for meshing subdomain 8 of 24
+[16:16:05]      Name: solid component6:Substrate_6_1
+[16:16:05] - Submitting for meshing subdomain 9 of 24
+[16:16:05]      Name: solid component6:Pillar_6_1
+[16:16:05] - Submitting for meshing subdomain 10 of 24
+[16:16:05]      Name: solid component0:Substrate
+[16:16:05] - Submitting for meshing subdomain 11 of 24
+[16:16:05]      Name: solid component0:Pillar
+[16:16:05] - Submitting for meshing subdomain 12 of 24
+[16:16:05]      Name: solid component10:Substrate_10_1
+[16:16:05] - Submitting for meshing subdomain 13 of 24
+[16:16:05]      Name: solid component10:Pillar_10_1
+[16:16:05] - Submitting for meshing subdomain 14 of 24
+[16:16:05]      Name: solid component8:Substrate_8_1
+[16:16:05] - Submitting for meshing subdomain 15 of 24
+[16:16:06]      Name: solid component8:Pillar_8_1
+[16:16:06] - Submitting for meshing subdomain 16 of 24
+[16:16:06]      Name: solid component7:Substrate_7_1
+[16:16:06] - Submitting for meshing subdomain 17 of 24
+[16:16:06]      Name: solid component7:Pillar_7_1
+[16:16:06] - Submitting for meshing subdomain 18 of 24
+[16:16:06]      Name: solid component9:Substrate_9_1
+[16:16:06] - Submitting for meshing subdomain 19 of 24
+[16:16:06]      Name: solid component9:Pillar_9_1
+[16:16:06] - Submitting for meshing subdomain 20 of 24
+[16:16:06]      Name: solid component10:Pillar_10
+[16:16:06] - Submitting for meshing subdomain 21 of 24
+[16:16:06]      Name: solid component10:Substrate_10
+[16:16:06] - Submitting for meshing subdomain 22 of 24
+[16:16:06]      Name: solid component9:Pillar_9
+[16:16:06] - Submitting for meshing subdomain 23 of 24
+[16:16:06]      Name: solid component9:Substrate_9
+[16:16:06] - Submitting for meshing subdomain 24 of 24
+[16:16:06]      Name: background material
+[16:16:06] - Number of elements for background material:12369
+[16:16:06] - Number of elements for solid component8:Substrate_8:809
+[16:16:06] - Number of elements for solid component8:Pillar_8:378
+[16:16:06] - Number of elements for solid component6:Substrate_6:930
+[16:16:06] - Number of elements for solid component6:Pillar_6:686
+[16:16:06] - Number of elements for solid component7:Substrate_7:886
+[16:16:06] - Number of elements for solid component7:Pillar_7:439
+[16:16:06] - Number of elements for solid component6:Substrate_6_1:973
+[16:16:06] - Number of elements for solid component6:Pillar_6_1:686
+[16:16:06] - Number of elements for solid component0:Substrate:933
+[16:16:06] - Number of elements for solid component0:Pillar:552
+[16:16:06] - Number of elements for solid component10:Substrate_10_1:767
+[16:16:06] - Number of elements for solid component10:Pillar_10_1:508
+[16:16:06] - Number of elements for solid component8:Substrate_8_1:826
+[16:16:06] - Number of elements for solid component8:Pillar_8_1:378
+[16:16:06] - Number of elements for solid component7:Substrate_7_1:903
+[16:16:06] - Number of elements for solid component7:Pillar_7_1:416
+[16:16:06] - Number of elements for solid component9:Substrate_9_1:865
+[16:16:06] - Number of elements for solid component9:Pillar_9_1:378
+[16:16:06] - Number of elements for solid component10:Pillar_10:498
+[16:16:06] - Number of elements for solid component10:Substrate_10:794
+[16:16:06] - Number of elements for solid component9:Pillar_9:414
+[16:16:06] - Number of elements for solid component9:Substrate_9:819
+[16:16:06] - Number of elements for background material:421
+[16:16:06] - Volume mesh stats: Nb nodes = 5261, Nb edges = 883, Nb surface elements = 7048, Nb tets = 27628
+[16:16:06] Creating volume mesh from surface mesh - done
+[16:16:06] Using generalized mesh output routines.
+[16:16:06] Writing Bc file
+[16:16:06] Writing gex file for volume mesh
+[16:16:06] Running model geometry simplification... 
+[16:16:06] Model geometry simplification: 0 seconds
+[16:16:06] Using generalized UID topology and model geometry output
+[16:16:06] Writing topot.tet...
+[16:16:06] Done (topot.tet)
+[16:16:06] Writing moegeom.tet ...
+[16:16:06] Done (moegeom.tet) 
+[16:16:07] Mesh curving:
+[16:16:07]     available cores:   8
+[16:16:07]     number of threads: 8
+[16:16:07] Curving elements
+[16:16:07]  Curve elements, order = 3
+
+[16:16:07] 
+#### Feedback Report Begins ####
+#### Feedback Report Ends ####
+
+[16:16:07] Done
