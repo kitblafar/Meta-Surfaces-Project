@@ -103,8 +103,12 @@ def im_resize(name):
     print(imageSize, ' ', name)
     squareSize = math.sqrt(imageSize * imageSize / 2) - 3
     diff = int((imageSize - squareSize) / 2)
-    box = (diff, diff, (imageSize - diff), (imageSize - diff))
 
+    # TODO Render images for HDR with less lens in
+    if name == 'HDR': # HDR requires a tighter crop so no lens is shown
+        diff = diff*1.5
+
+    box = (diff, diff, (imageSize - diff), (imageSize - diff))
     for i in range(1, mmlSize + 1):
         for j in range(1, mmlSize + 1):
             fileName = image_filename(name, i, j)

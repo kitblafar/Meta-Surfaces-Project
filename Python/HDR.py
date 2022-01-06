@@ -4,6 +4,7 @@ from tkinter import ttk
 import parallax
 import cv2 as cv
 import numpy as np
+from matplotlib import pyplot as plt
 
 
 class HDRPage(tk.Frame):
@@ -53,38 +54,89 @@ class HDRPage(tk.Frame):
         container.tkraise()
 
 
-""" find the overlap between two neighbouring images (with middle absorption= best chance of features) and remove overlap from all images (spiral)
-lens spacing and therefore overlap are constant between images"""
+"""find the overlap between two neighbouring images (with middle absorption= best chance of features) and remove 
+overlap from all images (spiral) lens spacing and therefore overlap are constant between images """
 # TODO stitch two images, stitched image length- original image length= cut-off
-images = []
-filenames = []
-size = parallax.mml_size('HDR')
-for i in range(1, size+1):
-    for j in range(1, size+1):
-        filenames.append('HDRAltered/' + parallax.image_filename('HDR', j, i))
-        print(filenames)
-
-for i in range(len(filenames)):
-    images.append(cv.imread(filenames[i]))
-    cv.imshow(str(i), images[i])
-
-cv.waitKey(0)
-
-stitchy = cv.Stitcher.create()
-(dummy, output) = stitchy.stitch(images)
-
-if dummy != cv.STITCHER_OK:
-    # checking if the stitching procedure is sucessful
-    # .stitch() function returns a true value if stitching is
-    # done successfully
-    print("stitching ain't successful")
-else:
-    print('Your Panorama is ready!!!')
-
-# final output
-cv.imshow('final result', output)
-
-cv.waitKey(0)
+"""as the parallax is small (in reality), aligning using the expose align built into opencv should work"""
 
 
+def align_images():
+    images = []
+    size = parallax.mml_size('HDR')
 
+    # read images into an array
+    for i in range(1, size+1):
+        for j in range(1, size+1):
+            filename = 'HDRAltered/'+parallax.image_filename('HDR', j, i)
+            im = cv.imread(filename)
+            images.append(im)
+
+    # align the images
+    alignMTB = cv.createAlignMTB()
+    alignMTB.process(images, images)
+
+    # # show the aligned images
+    # for i in range(1, (size+1)*(size+1)):
+    #     cv.imshow(str(i), images[i])
+    #
+    # cv.waitKey(0)
+    return images
+    ''' Demonstration of stiching usage
+    images = []
+    filenames = ['HDRAltered/' + parallax.image_filename('HDR', 1, 1), 'HDRAltered/' + parallax.image_filename('HDR', 1, 2)]
+    
+    for i in range(len(filenames)):
+        images.append(cv.imread(filenames[i]))
+        cv.imshow(str(i), images[i])
+    
+    cv.waitKey(0)
+    
+    stitching = cv.Stitcher.create()
+    (dummy, output) = stitching.stitch(images)
+    
+    if dummy != cv.STITCHER_OK:
+        # .stitch() function returns a true value if stitching success
+        print("did not work")
+    else:
+        print('worked')
+    
+    # final output
+    cv.imshow('final result', output)
+    
+    cv.imwrite('StitchingExample.png', output)
+    
+    cv.waitKey(0)
+    '''
+
+
+# TODO allow users to adjust the estimated exposure (absorption rate) for each absorption lens to get a better image
+# i.e. a slider for max exposure and min exposure and assume equally distributed within take as inputs here
+def HDR_combine(inputImages):
+    maxAbs = 2.5
+    minAbs = 0.25
+    size = parallax.mml_size('HDR')
+    exposure = np.zeros((size*size), dtype=np.float32)
+    print(exposure)
+
+    for i in range((size*size-1), -1, -1): # highest absorption= lowest brightness= lowest exposure
+        absorption = i * ((maxAbs-minAbs)/(size*size))+minAbs  # as absorption is linearly distributed
+        print(absorption)
+        exposure[i] = 1/absorption
+
+
+    # Estimate the camera response function based on estimated exposure time
+    calibrate = cv.createCalibrateDebevec()  # TODO try other methods
+    response = calibrate.process(inputImages, exposure)
+
+    # Merge images in to HDR image
+    mergeDebevec = cv.createMergeDebevec()
+    hdr = mergeDebevec.process(inputImages, exposure, response)
+
+    # show the HDR image
+    cv.imshow('HDR', hdr)
+    cv.waitKey(0)
+
+
+# test HDR
+images = align_images()
+HDR_combine(images)
