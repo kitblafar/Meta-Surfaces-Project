@@ -1,12 +1,10 @@
-# Functions used to align images and perform HDR imaging
+# Functions used to add depth sensing imaging to the GUI
 import tkinter as tk
 from tkinter import ttk
 import parallax
-import cv2 as cv
-import numpy as np
 
 
-class HDRPage(tk.Frame):
+class DepthPage(tk.Frame):
     def __init__(self, container):
         super().__init__(container)
         # define the left and right frames
@@ -21,15 +19,15 @@ class HDRPage(tk.Frame):
         right_frame.rowconfigure(0, weight=1)
         right_frame.grid(row=0, column=1, sticky='nsew')
 
-        # Display HDR image in right_frame
+        # Display depth image in right_frame
         self.slide_image = tk.Frame(right_frame, bg='#f0f0f0')
         self.slide_image.rowconfigure(0, weight=5)
         self.slide_image.columnconfigure(0, weight=5)
         self.slide_image.grid(row=0, column=0, sticky='nsew')
 
         # Find the main image fileName
-        self.filename = parallax.image_filename('HDR', 1, 1)
-        self.image = tk.PhotoImage(file='HDRAltered/' + self.filename)
+        self.filename = parallax.image_filename(1, 1)
+        self.image = tk.PhotoImage(file='Altered/' + self.filename)
 
         # main image
         self.mainIm = tk.Label(self.slide_image, image=self.image)
@@ -51,40 +49,4 @@ class HDRPage(tk.Frame):
         tk.Label(par_par, text="File Location of Images").grid(row=1, column=0, padx=5, pady=5, sticky='n')
         tk.Entry(par_par).grid(row=1, column=1, padx=5, pady=5, sticky='n')
         container.tkraise()
-
-
-""" find the overlap between two neighbouring images (with middle absorption= best chance of features) and remove overlap from all images (spiral)
-lens spacing and therefore overlap are constant between images"""
-# TODO stitch two images, stitched image length- original image length= cut-off
-images = []
-filenames = []
-size = parallax.mml_size('HDR')
-for i in range(1, size+1):
-    for j in range(1, size+1):
-        filenames.append('HDRAltered/' + parallax.image_filename('HDR', j, i))
-        print(filenames)
-
-for i in range(len(filenames)):
-    images.append(cv.imread(filenames[i]))
-    cv.imshow(str(i), images[i])
-
-cv.waitKey(0)
-
-stitchy = cv.Stitcher.create()
-(dummy, output) = stitchy.stitch(images)
-
-if dummy != cv.STITCHER_OK:
-    # checking if the stitching procedure is sucessful
-    # .stitch() function returns a true value if stitching is
-    # done successfully
-    print("stitching ain't successful")
-else:
-    print('Your Panorama is ready!!!')
-
-# final output
-cv.imshow('final result', output)
-
-cv.waitKey(0)
-
-
 
