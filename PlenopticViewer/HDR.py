@@ -5,11 +5,13 @@ import parallax
 import cv2 as cv
 import numpy as np
 from matplotlib import pyplot as plt
+from PIL import Image, ImageTk
 
 
 class HDRPage(tk.Frame):
     def __init__(self, container):
         super().__init__(container)
+        self.imageSet = align_images()
         # define the left and right frames
         left_frame = tk.Frame(container)
         left_frame.grid(row=0, column=0, sticky=tk.NSEW)
@@ -23,35 +25,49 @@ class HDRPage(tk.Frame):
         right_frame.grid(row=0, column=1, sticky='nsew')
 
         # Display HDR image in right_frame
-        self.slide_image = tk.Frame(right_frame, bg='#f0f0f0')
-        self.slide_image.rowconfigure(0, weight=5)
-        self.slide_image.columnconfigure(0, weight=5)
-        self.slide_image.grid(row=0, column=0, sticky='nsew')
+        self.HDRImage = tk.Frame(right_frame, bg='#f0f0f0')
+        self.HDRImage.rowconfigure(0, weight=5)
+        self.HDRImage.columnconfigure(0, weight=5)
+        self.HDRImage.grid(row=0, column=0, sticky='nsew')
 
         # Find the main image fileName
         self.filename = parallax.image_filename('HDR', 1, 1)
-        self.image = tk.PhotoImage(file='HDRAltered/' + self.filename)
+        self.image = HDR_combine(self.imageSet)
 
         # main image
-        self.mainIm = tk.Label(self.slide_image, image=self.image)
+        self.mainIm = tk.Label(self.HDRImage, image=self.image)
         self.mainIm.grid(row=0, column=0)
 
-        # Create parallax parameters frame in the left frame
-        par_par = tk.Frame(left_frame)
-        par_par.rowconfigure(0, weight=1)
-        par_par.rowconfigure(1, weight=1)
-        par_par.columnconfigure(0, weight=1)
-        par_par.columnconfigure(1, weight=1)
-        par_par.grid(row=0, column=0)
+        # Create HDR parameters in the left frame
+        parPar = tk.Frame(left_frame)
+        parPar.grid(row=0, column=0)
+        parPar.rowconfigure(0, weight=1)
+        parPar.rowconfigure(1, weight=1)
+        parPar.rowconfigure(2, weight=1)
+        parPar.rowconfigure(3, weight=1)
+        parPar.rowconfigure(4, weight=1)
+        parPar.columnconfigure(0, weight=1)
 
-        # Example labels that serve as placeholders for other widgets
-        ttk.Button(par_par, text="Inputs").grid(row=0, column=0, padx=5, pady=3, ipadx=10, sticky='s')
-        ttk.Button(par_par, text="Viewing").grid(row=0, column=1, padx=5, pady=3, ipadx=10, sticky='s')
+        label1 = tk.Label(parPar, text="Maximum Absorption (between 5 and 30)")
+        label1.grid(row=0, column=0, padx=5, pady=5, sticky='n')
+        self.sl1 = ttk.Scale(parPar, from_=5, to=30, orient=tk.HORIZONTAL)
+        self.sl1.bind('<ButtonRelease>', self.update_absorb)
+        self.sl1.grid(row=1, column=0, sticky='NSEW')
+        label2 = tk.Label(parPar, text="Minimum Absorption (between 0 and 5)")
+        label2.grid(row=2, column=0)
+        self.sl2 = ttk.Scale(parPar, from_=0, to=5, orient=tk.HORIZONTAL)
+        self.sl2.bind('<ButtonRelease>', self.update_absorb)
+        self.sl2.grid(row=3, column=0, sticky='NSEW')
 
-        # Example labels that could be displayed under the "Tool" menu
-        tk.Label(par_par, text="File Location of Images").grid(row=1, column=0, padx=5, pady=5, sticky='n')
-        tk.Entry(par_par).grid(row=1, column=1, padx=5, pady=5, sticky='n')
-        container.tkraise()
+    def update_absorb(self, number):
+        minAbs = float(self.sl1.get())
+        print(minAbs)
+        maxAbs = float(self.sl2.get())
+        #update image
+        self.image = HDR_combine(self.imageSet, maxAbs, minAbs)
+        self.mainIm = tk.Label(self.HDRImage, image=self.image)
+        self.mainIm.grid(row=0, column=0)
+
 
 
 """find the overlap between two neighbouring images (with middle absorption= best chance of features) and remove 
@@ -111,32 +127,44 @@ def align_images():
 
 # TODO allow users to adjust the estimated exposure (absorption rate) for each absorption lens to get a better image
 # i.e. a slider for max exposure and min exposure and assume equally distributed within take as inputs here
-def HDR_combine(inputImages):
-    maxAbs = 2.5
-    minAbs = 0.25
+def HDR_combine(inputImages, maxAbs=15.0, minAbs=0.5):
     size = parallax.mml_size('HDR')
     exposure = np.zeros((size*size), dtype=np.float32)
-    print(exposure)
 
     for i in range((size*size-1), -1, -1): # highest absorption= lowest brightness= lowest exposure
         absorption = i * ((maxAbs-minAbs)/(size*size))+minAbs  # as absorption is linearly distributed
         print(absorption)
         exposure[i] = 1/absorption
 
-
     # Estimate the camera response function based on estimated exposure time
-    calibrate = cv.createCalibrateDebevec()  # TODO try other methods
+    calibrate = cv.createCalibrateDebevec()  # TODO try other methods i.e Robertson and Mertens Fusion
+    # https://docs.opencv.org/4.x/d2/df0/tutorial_py_hdr.html
     response = calibrate.process(inputImages, exposure)
 
     # Merge images in to HDR image
     mergeDebevec = cv.createMergeDebevec()
     hdr = mergeDebevec.process(inputImages, exposure, response)
 
-    # show the HDR image
-    cv.imshow('HDR', hdr)
-    cv.waitKey(0)
+    # Tonemap the HDR- Done to map 32 bit number onto 1 to 0 range (although some time larger therefore clip used)
+    tonemap1 = cv.createTonemap(gamma=2.2)
+    res_debevec = tonemap1.process(hdr.copy())
+
+    # # Attempt at exposure fusion method
+    # mergeExpoFus = cv.createMergeMertens()
+    # expoFus = mergeExpoFus.process(inputImages)
+    # cv.imshow('Exposure Fusion', expoFus)
+    # res_mertens_8bit = np.clip(expoFus * 255, 0, 255).astype('uint8')
+    # cv.imshow('Exposure Fusion', expoFus)
+
+    # save the HDR image (first convert to 8 bit)
+    hdr = np.clip(res_debevec*255, 0, 255).astype('uint8') # change type and clip overflow
+    cv.imwrite('HDRImage.png', hdr)
+    # Rearrange colors- put into format readable by tkinter
+    blue, green, red = cv.split(hdr)
+    hdr = cv.merge((red, green, blue))
+    hdr = Image.fromarray(hdr)
+    hdrtk = ImageTk.PhotoImage(image=hdr)
+    print('Image Saved')
+    return hdrtk
 
 
-# test HDR
-images = align_images()
-HDR_combine(images)

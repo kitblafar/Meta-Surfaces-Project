@@ -10,10 +10,9 @@ from tkinter.messagebox import showerror
 
 # Initial processing steps
 def initial_tasks():
-    parallax.im_resize('par')
-    parallax.im_resize('HDR')
+    # parallax.im_resize('par')
+    # parallax.im_resize('HDR')
     root.destroy()
-
 
 # loading window
 root = tk.Tk()
@@ -64,8 +63,11 @@ class ToolBar(tk.Frame):
         self.bottomFrame.rowconfigure(0, weight=1)
         self.bottomFrame.columnconfigure(0, weight=1)
         self.bottomFrame.columnconfigure(1, weight=1)
+        self.welcomeFrame = tk.Label(self.bottomFrame, text='Choose Viewing Option')
+        self.welcomeFrame.pack(expand=True)
 
     def change_frame(self, page):
+        self.welcomeFrame.destroy()
         if page == 0:
             self.frame = parallax.ParallaxPage(self.bottomFrame)
         elif page == 1:
