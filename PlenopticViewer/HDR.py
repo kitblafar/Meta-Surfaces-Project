@@ -4,8 +4,8 @@ from tkinter import ttk
 import parallax
 import cv2 as cv
 import numpy as np
-from matplotlib import pyplot as plt
 from PIL import Image, ImageTk
+import depth
 
 
 class HDRPage(tk.Frame):
@@ -96,11 +96,7 @@ def align_images():
     alignMTB = cv.createAlignMTB() # use open cv align med function to get estimate of shifts
 
     # read images into an array
-    for i in range(0, size):
-        for j in range(0, size):
-            filename = 'HDRAltered/'+parallax.image_filename('HDR', j+1, i+1)
-            im = cv.imread(filename)
-            images.append(im)
+    images = depth.read_images('HDR')
 
     # find the vertical and horizontal shifts of each image from the center image
     for i in range(0, size):
@@ -127,9 +123,9 @@ def align_images():
 
     # make list of new shifts
     for i in range(0, size):
-        for j in range(0, 3):
-            newShift[i*3 + j, 0] = -medHor * -(j - int((size-1)/2))
-            newShift[i*3 + j, 1] = -medVert * -(i - int((size-1)/2))
+        for j in range(0, size):
+            newShift[i*size + j, 0] = -medHor * -(j - int((size-1)/2))
+            newShift[i*size + j, 1] = -medVert * -(i - int((size-1)/2))
 
     # shift the image by the new shift values
     for i in range(0, size * size):
