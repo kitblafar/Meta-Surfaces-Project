@@ -53,17 +53,23 @@ class HDRPage(tk.Frame):
         self.sl1 = ttk.Scale(parPar, from_=5, to=30, orient=tk.HORIZONTAL)
         self.sl1.bind('<ButtonRelease>', self.update_absorb)
         self.sl1.grid(row=1, column=0, sticky='NSEW')
-        label2 = tk.Label(parPar, text="Minimum Absorption (between 0 and 5)")
+        label2 = tk.Label(parPar, text="Minimum Absorption (between 0 and 2)")
         label2.grid(row=2, column=0)
-        self.sl2 = ttk.Scale(parPar, from_=0, to=5, orient=tk.HORIZONTAL)
+        self.sl2 = ttk.Scale(parPar, from_=0, to=2, orient=tk.HORIZONTAL)
         self.sl2.bind('<ButtonRelease>', self.update_absorb)
         self.sl2.grid(row=3, column=0, sticky='NSEW')
 
     def update_absorb(self, number):
-        minAbs = float(self.sl1.get())
-        print(minAbs)
-        maxAbs = float(self.sl2.get())
-        #update image
+        maxAbs = self.sl1.get()
+        print('Max Absorption='+str(maxAbs))
+        minAbs = self.sl2.get()
+        print('Min Absorption=' + str(minAbs))
+
+        if minAbs == 0:
+            minAbs = 0.001
+
+        # update image
+        self.imageSet = align_images()
         self.image = HDR_combine(self.imageSet, maxAbs, minAbs)
         self.mainIm = tk.Label(self.HDRImage, image=self.image)
         self.mainIm.grid(row=0, column=0)
@@ -75,28 +81,61 @@ overlap from all images (spiral) lens spacing and therefore overlap are constant
 # TODO stitch two images, stitched image length- original image length= cut-off
 """as the parallax is small (in reality), aligning using the expose align built into opencv should work"""
 
-
+# align the images to a centre point
 def align_images():
     images = []
+    imagesOutput = []
     size = parallax.mml_size('HDR')
+    shift = np.zeros([size, size, 2])  # 2D shift therefore two shift values for each MML
+    vertShift = np.zeros([size*size, 1])
+    horShift = np.zeros([size*size, 1])
+    newShift = np.zeros([size*size, 2])
+    horList = np.zeros([size, 1])
+    vertList = np.zeros([size, 1])
+
+    alignMTB = cv.createAlignMTB() # use open cv align med function to get estimate of shifts
 
     # read images into an array
-    for i in range(1, size+1):
-        for j in range(1, size+1):
-            filename = 'HDRAltered/'+parallax.image_filename('HDR', j, i)
+    for i in range(0, size):
+        for j in range(0, size):
+            filename = 'HDRAltered/'+parallax.image_filename('HDR', j+1, i+1)
             im = cv.imread(filename)
             images.append(im)
 
-    # align the images
-    alignMTB = cv.createAlignMTB()
-    alignMTB.process(images, images)
+    # find the vertical and horizontal shifts of each image from the center image
+    for i in range(0, size):
+        for j in range(0, size):
+            shift[i, j] = alignMTB.calculateShift(cv.cvtColor(images[i * size + j], cv.COLOR_BGR2GRAY),
+                                                  cv.cvtColor(images[int((size*size - 1)/2)], cv.COLOR_BGR2GRAY))
 
-    # # show the aligned images
-    # for i in range(1, (size+1)*(size+1)):
-    #     cv.imshow(str(i), images[i])
-    #
-    # cv.waitKey(0)
-    return images
+    # find the median horizontal and vertical shifts and use this for all the images (spacing is even)
+    for i in range(0, size):
+        for j in range(0, size):
+            horShift[i * size + j] = shift[i, j, 0]
+            vertShift[i * size + j] = shift[i, j, 1]
+
+    for i in range(0, size):
+        horList[i] = horShift[i*3]
+
+    vertList = vertShift[0:size]
+
+    medHor = np.median(horList)
+    medVert = np.median(vertList)
+
+    if medHor == medVert:
+        print('Success: shift up matched shift across')
+
+    # make list of new shifts
+    for i in range(0, size):
+        for j in range(0, 3):
+            newShift[i*3 + j, 0] = -medHor * -(j - int((size-1)/2))
+            newShift[i*3 + j, 1] = -medVert * -(i - int((size-1)/2))
+
+    # shift the image by the new shift values
+    for i in range(0, size * size):
+        imagesOutput.append(shift_image(images[i], newShift[i]))
+
+    return imagesOutput
     ''' Demonstration of stiching usage
     images = []
     filenames = ['HDRAltered/' + parallax.image_filename('HDR', 1, 1), 'HDRAltered/' + parallax.image_filename('HDR', 1, 2)]
@@ -124,16 +163,27 @@ def align_images():
     cv.waitKey(0)
     '''
 
+# translating the image by a shift matrix using the transformation matrix
+def shift_image(inputImage, shift):
+    print(shift)
+    image = inputImage
+    horShift = int(shift[0])
+    vertShift = int(shift[1])
+    M = np.float32([[1, 0, horShift], [0, 1, vertShift]])
+    (rows, cols) = image.shape[:2]
+
+    outputImage = cv.warpAffine(image, M, (rows, cols))
+    return outputImage
 
 # TODO allow users to adjust the estimated exposure (absorption rate) for each absorption lens to get a better image
 # i.e. a slider for max exposure and min exposure and assume equally distributed within take as inputs here
+# HDR combination techniques applied to the final image
 def HDR_combine(inputImages, maxAbs=15.0, minAbs=0.5):
     size = parallax.mml_size('HDR')
     exposure = np.zeros((size*size), dtype=np.float32)
 
     for i in range((size*size-1), -1, -1): # highest absorption= lowest brightness= lowest exposure
         absorption = i * ((maxAbs-minAbs)/(size*size))+minAbs  # as absorption is linearly distributed
-        print(absorption)
         exposure[i] = 1/absorption
 
     # Estimate the camera response function based on estimated exposure time
@@ -156,8 +206,9 @@ def HDR_combine(inputImages, maxAbs=15.0, minAbs=0.5):
     # res_mertens_8bit = np.clip(expoFus * 255, 0, 255).astype('uint8')
     # cv.imshow('Exposure Fusion', expoFus)
 
+
     # save the HDR image (first convert to 8 bit)
-    hdr = np.clip(res_debevec*255, 0, 255).astype('uint8') # change type and clip overflow
+    hdr = np.clip(res_debevec*255, 0, 255).astype('uint8')  # change type and clip overflow
     cv.imwrite('HDRImage.png', hdr)
     # Rearrange colors- put into format readable by tkinter
     blue, green, red = cv.split(hdr)
@@ -166,5 +217,4 @@ def HDR_combine(inputImages, maxAbs=15.0, minAbs=0.5):
     hdrtk = ImageTk.PhotoImage(image=hdr)
     print('Image Saved')
     return hdrtk
-
 

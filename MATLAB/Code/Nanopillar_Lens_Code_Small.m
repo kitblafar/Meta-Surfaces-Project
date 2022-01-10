@@ -11,11 +11,11 @@ tic
                 
                 Py=((Px).*sqrt(3))./2; %period in y in um, for a honeycomb arrangement, change to just Px for square grid
 
-                f=820/100;    %focal length in um
+                f=820/250;    %focal length in um
 
                 pix=420/100;  %aperture or lens diameter size in um
 
-                lambda = 0.56;    %this is the wavelength in um for the equation
+                lambda = 0.561;    %this is the wavelength in um for the equation
 
                 sizes =importdata('10_SiNx_Pillars_561nm.txt');     %this is where you input the data file from CST with your pillar and corresponding phase values
 %                 sizes = sizes(:,1)
