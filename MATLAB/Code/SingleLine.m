@@ -14,6 +14,6 @@ index=find(Y==0);
 
 figure;
 scatter(X(index).*1000,D(index).*1000./2,'filled');
-title('Radius of 11 Pillars to Simulate in CST');
+title('Radius of 11 Pillars to Simulate in CST for focal length of 2929nm');
 ylabel('Radius (nm)')
 xlabel('Position of Centre (nm)')

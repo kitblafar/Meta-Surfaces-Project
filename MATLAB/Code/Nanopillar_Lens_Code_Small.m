@@ -11,7 +11,7 @@ tic
                 
                 Py=((Px).*sqrt(3))./2; %period in y in um, for a honeycomb arrangement, change to just Px for square grid
 
-                f=820/250;    %focal length in um
+                f=820/280;    %focal length in um
 
                 pix=420/100;  %aperture or lens diameter size in um
 

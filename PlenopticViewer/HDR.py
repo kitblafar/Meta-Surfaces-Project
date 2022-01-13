@@ -161,7 +161,6 @@ def align_images():
 
 # translating the image by a shift matrix using the transformation matrix
 def shift_image(inputImage, shift):
-    print(shift)
     image = inputImage
     horShift = int(shift[0])
     vertShift = int(shift[1])
