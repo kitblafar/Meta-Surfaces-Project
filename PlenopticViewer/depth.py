@@ -5,6 +5,7 @@ import parallax
 import cv2 as cv
 import matplotlib.pyplot as plt
 import numpy as np
+import math
 
 
 class DepthPage(tk.Frame):
@@ -31,12 +32,14 @@ class DepthPage(tk.Frame):
         # Find the main image fileName
         size = parallax.mml_size('depth')
         self.filename = parallax.image_filename('depth', int((size - 1)/2), int((size - 1)/2))
-        self.image = tk.PhotoImage(file='ParallaxAltered/' + self.filename)
+        self.image = tk.PhotoImage(file='DepthAltered/' + self.filename)
 
         # main image
         self.mainIm = tk.Label(self.slideImage, image=self.image)
         self.mainIm.grid(row=0, column=0)
         depthMap = depth_calculate()
+        cv.imshow('depthMap', depthMap)
+        cv.waitKey(0)
         self.averageDepthMap = segment(depthMap)
         self.mainIm.bind("<B1-Motion>", self.show_depth)
 
@@ -67,12 +70,20 @@ class DepthPage(tk.Frame):
 
 def read_images(name):
     images = []
-    if name =='depth' or name == 'par':
-        size = parallax.mml_size('depth')
+    if name =='par':
+        size = parallax.mml_size('par')
         # read images into an array
         for i in range(0, size):
             for j in range(0, size):
                 filename = 'ParallaxAltered/' + parallax.image_filename('par', j + 1, i + 1)
+                im = cv.imread(filename)
+                images.append(im)
+    elif name == 'depth':
+        size = parallax.mml_size('depth')
+        # read images into an array
+        for i in range(0, size):
+            for j in range(0, size):
+                filename = 'DepthAltered/' + parallax.image_filename('depth', j + 1, i + 1)
                 im = cv.imread(filename)
                 images.append(im)
     elif name == 'HDR':
@@ -87,6 +98,37 @@ def read_images(name):
     return images
 
 
+def remove_barrel(image):
+    width = image.shape[1]
+    height = image.shape[0]
+
+    distCoeff = np.zeros((4, 1), np.float64)
+    # TODO: add your coefficients here!
+    k1 = -2.0e-4  # negative to remove barrel distortion
+    k2 = 0.0
+    p1 = 0.0
+    p2 = 0.0
+
+    distCoeff[0, 0] = k1
+    distCoeff[1, 0] = k2
+    distCoeff[2, 0] = p1
+    distCoeff[3, 0] = p2
+
+    # assume unit matrix for camera
+    cam = np.eye(3, dtype=np.float32)
+
+    cam[0, 2] = width / 2.0  # define center x
+    cam[1, 2] = height / 2.0  # define center y
+    cam[0, 0] = 10.  # define focal length x
+    cam[1, 1] = 10.  # define focal length y
+
+    # here the undistortion will be computed
+    dst = cv.undistort(image, cam, distCoeff)
+
+    cv.imshow('dst', dst)
+    cv.waitKey(0)
+    return dst
+
 def depth_calculate(baseline=3, focalLength=4):
     images = read_images('depth')
     size = parallax.mml_size('depth')
@@ -94,32 +136,41 @@ def depth_calculate(baseline=3, focalLength=4):
     image1 = images[int((size * size - 1)/2)]
     image2 = images[int((size * size - 1) / 2 + 1)]
 
+
     # Set disparity parameters
     # Note: disparity range is tuned according to specific parameters obtained through trial and error.
     # allow users to tune
     win_size = 3
-    min_disp = 0
-    max_disp = 15  # min_disp * 9
+    min_disp = 60
+    max_disp = 120  # min_disp * 9
     num_disp = max_disp - min_disp  # Needs to be divisible by 16
+    num_disp = 16 * math.ceil(num_disp / 16)
     # Create Block matching object.
     stereo = cv.StereoSGBM_create(minDisparity=min_disp,
                                  numDisparities=num_disp,
-                                 blockSize=5,
+                                 blockSize=3,
                                  uniquenessRatio=5,
                                  speckleWindowSize=5,
                                  speckleRange=5,
                                  disp12MaxDiff=1,
-                                 P1=8*3*win_size**3,
+                                 P1=6*3*win_size**3,
                                  P2=8*3*win_size**3)
     # Compute disparity map
     print("\nComputing the disparity  map...")
-    disparityMap = stereo.compute(image1, image2)
+    disparityMap = stereo.compute(image1, image2) + 1
+
+    print(disparityMap.dtype)
 
     #convert the disparity map to the depth map
     # baseline is the distance between the centre of each mml in um (entered in GUI by user)
     # focal length is the focal length of the MML entered by user
+
+    disparityMap = disparityMap.astype(np.float32)
+    # Scaling down the disparity values and normalizing them
+    disparityMap = (disparityMap / 16.0 - min_disp) / num_disp
+
+    cv.imshow('dismap', disparityMap)
     depthMap = (baseline*focalLength)/(disparityMap)
-    print(type(depthMap))
     return depthMap
 
 
@@ -128,7 +179,7 @@ def segment(depthMap):
     size = parallax.mml_size('depth')
     selection = int((size-1)/2)
     filename = parallax.image_filename('depth', selection, selection)
-    filename = 'ParallaxAltered/'+filename
+    filename = 'DepthAltered/'+filename
     orImage = cv.imread(filename)
 
     image = cv.cvtColor(orImage, cv.COLOR_BGR2RGB)  # change to conventional channel order
@@ -139,7 +190,7 @@ def segment(depthMap):
 
     # define criteria, number of clusters(K) and apply k-means()
     criteria = (cv.TERM_CRITERIA_EPS + cv.TERM_CRITERIA_MAX_ITER, 10, 1.0)
-    noClusters = 5
+    noClusters = 10
     attempts = 10
     ret, label, center = cv.kmeans(vecImage, noClusters, None, criteria, attempts, cv.KMEANS_PP_CENTERS)
 
@@ -149,7 +200,7 @@ def segment(depthMap):
     segmentedImage = res.reshape(orImage.shape)  # change to conventional image shape
     segmentedImage = cv.cvtColor(segmentedImage, cv.COLOR_RGB2BGR)  # change to openCV channel order
 
-    # draw contours on the segmented image
+    # draw contours onto each cluster image
     edges = cv.Canny(segmentedImage, 10, 100)
     contours, hierarchy = cv.findContours(edges, cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE)
 

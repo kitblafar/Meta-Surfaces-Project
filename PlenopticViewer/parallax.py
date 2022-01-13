@@ -88,13 +88,17 @@ def mml_size(name):
 
 def im_resize(name):
     # setting up parameters for crop
-    if name == 'par' or name == 'depth':
+    if name == 'par':
         originalLocation = 'TreeScene/'
-        newLocation = './ParallaxAltered./'
+        newLocation = 'ParallaxAltered/'
         mmlSize = mml_size('par')
+    elif name == 'depth':
+        originalLocation = 'Depth/'
+        newLocation = 'DepthAltered/'
+        mmlSize = mml_size('depth')
     elif name == 'HDR':
         originalLocation = 'Absorption/'
-        newLocation = './HDRAltered./'
+        newLocation = 'HDRAltered/'
         mmlSize = mml_size('HDR')
     else:
         print('Please give a name of `par`, `HDR` or `depth`')
@@ -105,7 +109,7 @@ def im_resize(name):
     diff = int((imageSize - squareSize) / 2)
 
     # TODO Render images for HDR with less lens in
-    if name == 'HDR': # HDR requires a tighter crop so no lens is shown
+    if name == 'HDR' or name=='depth': # HDR requires a tighter crop so no lens is shown
         diff = diff*1.5
 
     box = (diff, diff, (imageSize - diff), (imageSize - diff))
@@ -127,8 +131,10 @@ def im_resize(name):
 def image_filename(name, sl1, sl2):
     col = str(sl1)
     row = str(sl2)
-    if name == 'par' or name == 'depth':
+    if name == 'par':
         groupName = 'fa'
+    elif name == 'depth':
+        groupName = 'de'
     elif name == 'HDR':
         groupName = 'abs'
     else:
