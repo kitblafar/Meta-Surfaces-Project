@@ -85,7 +85,7 @@ def mml_size(name):
     noMMLs = int(math.sqrt(len(noMMLs)))
     return noMMLs
 
-
+# resize a given image set
 def im_resize(name):
     # setting up parameters for crop
     if name == 'par':
@@ -109,7 +109,7 @@ def im_resize(name):
     diff = int((imageSize - squareSize) / 2)
 
     # TODO Render images for HDR with less lens in
-    if name == 'HDR' or name=='depth': # HDR requires a tighter crop so no lens is shown
+    if name == 'HDR':  # HDR requires a tighter crop so no lens is shown
         diff = diff*1.5
 
     box = (diff, diff, (imageSize - diff), (imageSize - diff))

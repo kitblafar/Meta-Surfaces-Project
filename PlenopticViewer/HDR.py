@@ -132,6 +132,7 @@ def align_images():
         imagesOutput.append(shift_image(images[i], newShift[i]))
 
     return imagesOutput
+
     ''' Demonstration of stiching usage
     images = []
     filenames = ['HDRAltered/' + parallax.image_filename('HDR', 1, 1), 'HDRAltered/' + parallax.image_filename('HDR', 1, 2)]

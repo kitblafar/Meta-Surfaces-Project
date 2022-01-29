@@ -31,15 +31,13 @@ class DepthPage(tk.Frame):
 
         # Find the main image fileName
         size = parallax.mml_size('depth')
-        self.filename = parallax.image_filename('depth', int((size - 1)/2), int((size - 1)/2))
+        self.filename = parallax.image_filename('depth', int((size - 1) / 2), int((size - 1) / 2))
         self.image = tk.PhotoImage(file='DepthAltered/' + self.filename)
 
         # main image
         self.mainIm = tk.Label(self.slideImage, image=self.image)
         self.mainIm.grid(row=0, column=0)
         depthMap = depth_calculate()
-        cv.imshow('depthMap', depthMap)
-        cv.waitKey(0)
         self.averageDepthMap = segment(depthMap)
         self.mainIm.bind("<B1-Motion>", self.show_depth)
 
@@ -68,9 +66,10 @@ class DepthPage(tk.Frame):
         depth = self.averageDepthMap[x1, y1]
         print(depth)
 
+
 def read_images(name):
     images = []
-    if name =='par':
+    if name == 'par':
         size = parallax.mml_size('par')
         # read images into an array
         for i in range(0, size):
@@ -98,6 +97,7 @@ def read_images(name):
     return images
 
 
+# function to remove barrel distortion on the image
 def remove_barrel(image):
     width = image.shape[1]
     height = image.shape[0]
@@ -125,105 +125,125 @@ def remove_barrel(image):
     # here the undistortion will be computed
     dst = cv.undistort(image, cam, distCoeff)
 
-    cv.imshow('dst', dst)
-    cv.waitKey(0)
+    # cv.imshow('dst', dst)
+    # cv.waitKey(0)
     return dst
+
+
+# buffer for trackbars
+def nothing(nothing):
+    i = 1
+
 
 def depth_calculate(baseline=3, focalLength=4):
     images = read_images('depth')
     size = parallax.mml_size('depth')
     # find the middle two images- from which depth is calculated (only 2 are needed)
-    image1 = images[int((size * size - 1)/2)]
+    image1 = images[int((size * size - 1) / 2)]
     image2 = images[int((size * size - 1) / 2 + 1)]
 
+    #median filter to remove drop pixels
+    image1 = cv.medianBlur(image1, 3)
+    image2 = cv.medianBlur(image2, 3)
 
     # Set disparity parameters
     # Note: disparity range is tuned according to specific parameters obtained through trial and error.
     # allow users to tune
-    win_size = 3
-    min_disp = 60
-    max_disp = 120  # min_disp * 9
-    num_disp = max_disp - min_disp  # Needs to be divisible by 16
-    num_disp = 16 * math.ceil(num_disp / 16)
     # Create Block matching object.
-    stereo = cv.StereoSGBM_create(minDisparity=min_disp,
-                                 numDisparities=num_disp,
-                                 blockSize=3,
-                                 uniquenessRatio=5,
-                                 speckleWindowSize=5,
-                                 speckleRange=5,
-                                 disp12MaxDiff=1,
-                                 P1=6*3*win_size**3,
-                                 P2=8*3*win_size**3)
+    minDisparity = 0
+    numDisparities = 50
+    stereo = cv.StereoSGBM_create(numDisparities=numDisparities,
+                                  blockSize=5,
+                                  P1=8*3*5*5,
+                                  P2=32*3*5*5,
+                                  preFilterCap=31,
+                                  uniquenessRatio=10,
+                                  speckleRange=0,
+                                  speckleWindowSize=0,
+                                  disp12MaxDiff=0,
+                                  minDisparity=minDisparity,
+                                  mode=1)
     # Compute disparity map
     print("\nComputing the disparity  map...")
     disparityMap = stereo.compute(image1, image2) + 1
 
     print(disparityMap.dtype)
 
-    #convert the disparity map to the depth map
+    # convert the disparity map to the depth map
     # baseline is the distance between the centre of each mml in um (entered in GUI by user)
     # focal length is the focal length of the MML entered by user
 
     disparityMap = disparityMap.astype(np.float32)
     # Scaling down the disparity values and normalizing them
-    disparityMap = (disparityMap / 16.0 - min_disp) / num_disp
+    disparityMap = (disparityMap / 16.0 - minDisparity) / numDisparities
+    #
+    # #apply heavy median filtering to remove all the speckling
+    # disparityMap = cv.medianBlur(disparityMap, 7)
 
+    cv.imshow('image1', image1)
     cv.imshow('dismap', disparityMap)
-    depthMap = (baseline*focalLength)/(disparityMap)
+    depthMap = (baseline * focalLength) / disparityMap
+    cv.imshow('depth', depthMap)
+    cv.waitKey(0)
     return depthMap
 
 
 # segment the image
 def segment(depthMap):
     size = parallax.mml_size('depth')
-    selection = int((size-1)/2)
+    selection = int((size - 1) / 2)
     filename = parallax.image_filename('depth', selection, selection)
-    filename = 'DepthAltered/'+filename
+    filename = 'DepthAltered/' + filename
     orImage = cv.imread(filename)
 
-    image = cv.cvtColor(orImage, cv.COLOR_BGR2RGB)  # change to conventional channel order
+    # median filter the image to remove non essential fine details
+    median = cv.medianBlur(orImage, 3)
 
-    vecImage = image.reshape((-1, 3))  # reshape into a 2 dimensional vector (each row is a vector in 3D RGB space)
+    # resharpen
+    kernel = np.array([[0, -1, 0],
+                       [-1, 5, -1],
+                       [0, -1, 0]])
+    sharp = cv.filter2D(src=median, ddepth=-1, kernel=kernel)
 
-    vecImage = np.float32(vecImage)  # convert from unit8 to float 32
+    # draw contours onto image
+    # make image grey scale
+    imgray = cv.cvtColor(sharp, cv.COLOR_BGR2GRAY)
+    # Find Canny edges
+    edged = cv.Canny(imgray, 190, 200)
 
-    # define criteria, number of clusters(K) and apply k-means()
-    criteria = (cv.TERM_CRITERIA_EPS + cv.TERM_CRITERIA_MAX_ITER, 10, 1.0)
-    noClusters = 10
-    attempts = 10
-    ret, label, center = cv.kmeans(vecImage, noClusters, None, criteria, attempts, cv.KMEANS_PP_CENTERS)
+    # dilate the image to join the contours
+    kernel = cv.getStructuringElement(cv.MORPH_ELLIPSE, (3, 3))
+    dilated = cv.dilate(edged, kernel)
+    contours, hierarchy = cv.findContours(dilated.copy(), cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)
 
-    center = np.uint8(center)  # convert back to unit8
+    for index in range(0, len(contours)):
+        colour = np.random.randint(0, 255, size=(3,))
 
-    res = center[label.flatten()]
-    segmentedImage = res.reshape(orImage.shape)  # change to conventional image shape
-    segmentedImage = cv.cvtColor(segmentedImage, cv.COLOR_RGB2BGR)  # change to openCV channel order
+        # convert data types int64 to int
+        colour = (int(colour[0]), int(colour[1]), int(colour[2]))
+        print(colour)
+        cv.drawContours(sharp, contours, index, colour, cv.FILLED, 8, hierarchy)
 
-    # draw contours onto each cluster image
-    edges = cv.Canny(segmentedImage, 10, 100)
-    contours, hierarchy = cv.findContours(edges, cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE)
-
-    # write contours into a mask within which the depth is averaged and return both the segmented image and the average
-    # depth map
-    averageDepthMap = np.zeros(segmentedImage.shape, np.uint8)
-
-    mask = np.zeros(segmentedImage.shape[:2], np.uint8)
-    for i in range(0, len(contours)):
-        contourArea = cv.contourArea(contours[i])
-        if contourArea > 10:
-            cv.drawContours(mask, contours, i, 255, -1)
-            cv.imshow('mask', mask)
-            smallDepthMap = cv.bitwise_and(depthMap, depthMap, mask=mask)
-            cv.imshow('smallDepthMap', smallDepthMap)
-            # find median of all non-zero values
-            median = np.median(np.nonzero(smallDepthMap))
-            # assign all non-zero values to the median value
-            averageSmallDepthMap = smallDepthMap
-            averageSmallDepthMap[np.nonzero(averageSmallDepthMap)] = median
-            cv.imshow('averageSmallDepthMap', averageSmallDepthMap)
-            averageDepthMap = np.add(averageDepthMap, averageSmallDepthMap)
-            cv.imshow('averageDepthMap', averageDepthMap)
-            cv.waitKey(0)
+    # # write contours into a mask within which the depth is averaged and return both the segmented image and the average
+    # # depth map
+    # averageDepthMap = np.zeros(orImage.shape, np.uint8)
+    #
+    # mask = np.zeros(orImage.shape[:2], np.uint8)
+    # for i in range(0, len(contours)):
+    #     contourArea = cv.contourArea(contours[i])
+    #     if contourArea > 10:
+    #         cv.drawContours(mask, contours, i, 255, -1)
+    #         cv.imshow('mask', mask)
+    #         smallDepthMap = cv.bitwise_and(depthMap, depthMap, mask=mask)
+    #         cv.imshow('smallDepthMap', smallDepthMap)
+    #         # find median of all non-zero values
+    #         median = np.median(np.nonzero(smallDepthMap))
+    #         # assign all non-zero values to the median value
+    #         averageSmallDepthMap = smallDepthMap
+    #         averageSmallDepthMap[np.nonzero(averageSmallDepthMap)] = median
+    #         cv.imshow('averageSmallDepthMap', averageSmallDepthMap)
+    #         averageDepthMap = np.add(averageDepthMap, averageSmallDepthMap)
+    #         cv.imshow('averageDepthMap', averageDepthMap)
+    #         cv.waitKey(0)
 
     return averageDepthMap
