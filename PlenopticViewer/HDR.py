@@ -48,14 +48,14 @@ class HDRPage(tk.Frame):
         parPar.rowconfigure(4, weight=1)
         parPar.columnconfigure(0, weight=1)
 
-        label1 = tk.Label(parPar, text="Maximum Absorption (between 5 and 30)")
+        label1 = tk.Label(parPar, text="Maximum Absorption (between 5 and 50)")
         label1.grid(row=0, column=0, padx=5, pady=5, sticky='n')
-        self.sl1 = ttk.Scale(parPar, from_=5, to=30, orient=tk.HORIZONTAL)
+        self.sl1 = ttk.Scale(parPar, from_=5, to=50, orient=tk.HORIZONTAL)
         self.sl1.bind('<ButtonRelease>', self.update_absorb)
         self.sl1.grid(row=1, column=0, sticky='NSEW')
-        label2 = tk.Label(parPar, text="Minimum Absorption (between 0 and 2)")
+        label2 = tk.Label(parPar, text="Minimum Absorption (between 0 and 10)")
         label2.grid(row=2, column=0)
-        self.sl2 = ttk.Scale(parPar, from_=0, to=2, orient=tk.HORIZONTAL)
+        self.sl2 = ttk.Scale(parPar, from_=0, to=10, orient=tk.HORIZONTAL)
         self.sl2.bind('<ButtonRelease>', self.update_absorb)
         self.sl2.grid(row=3, column=0, sticky='NSEW')
 
@@ -183,7 +183,7 @@ def shift_image(inputImage, shift):
 # TODO allow users to adjust the estimated exposure (absorption rate) for each absorption lens to get a better image
 # i.e. a slider for max exposure and min exposure and assume equally distributed within take as inputs here
 # HDR combination techniques applied to the final image
-def HDR_combine(inputImages, maxAbs=100, minAbs=5):
+def HDR_combine(inputImages, maxAbs=5, minAbs=0.5):
 
     size = parallax.mml_size('HDR')
     exposure = np.zeros((size*size), dtype=np.float32)
@@ -192,17 +192,12 @@ def HDR_combine(inputImages, maxAbs=100, minAbs=5):
         absorption = i * ((maxAbs-minAbs)/(size*size))+minAbs  # as absorption is linearly distributed
         exposure[i] = 1/absorption
 
-    # Estimate the camera response function based on estimated exposure time
-    calibrate = cv.createCalibrateDebevec()  # TODO try other methods i.e Robertson and Mertens Fusion
-    # https://docs.opencv.org/4.x/d2/df0/tutorial_py_hdr.html
-    response = calibrate.process(inputImages, exposure)
-
     # Merge images in to HDR image
-    mergeDebevec = cv.createMergeDebevec()
-    hdr = mergeDebevec.process(inputImages, exposure, response)
+    mergeDebvec = cv.createMergeDebevec()
+    hdr = mergeDebvec.process(inputImages, times=exposure.copy())
 
     # Tonemap the HDR- using Reinhard's method to obtain 24-bit color image
-    tonemapReinhard = cv.createTonemapReinhard(1.5, 0, 0, 0)
+    tonemapReinhard = cv.createTonemapReinhard(1, 0, 0, 0)
     ldrReinhard = tonemapReinhard.process(hdr)
 
     # # Attempt at exposure fusion method
