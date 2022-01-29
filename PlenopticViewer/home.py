@@ -10,9 +10,9 @@ from tkinter.messagebox import showerror
 
 # Initial processing steps
 def initial_tasks():
-    # parallax.im_resize('par')
-    # parallax.im_resize('HDR')
-    # parallax.im_resize('depth')
+    parallax.im_resize('par')
+    parallax.im_resize('HDR')
+    parallax.im_resize('cal')
     root.destroy()
 
 # loading window

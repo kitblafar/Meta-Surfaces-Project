@@ -3,9 +3,7 @@ import tkinter as tk
 from tkinter import ttk
 import parallax
 import cv2 as cv
-import matplotlib.pyplot as plt
 import numpy as np
-import math
 
 
 class DepthPage(tk.Frame):
@@ -29,10 +27,10 @@ class DepthPage(tk.Frame):
         self.slideImage.columnconfigure(0, weight=5)
         self.slideImage.grid(row=0, column=0, sticky='nsew')
 
-        # Find the main image fileName
-        size = parallax.mml_size('depth')
-        self.filename = parallax.image_filename('depth', int((size - 1) / 2), int((size - 1) / 2))
-        self.image = tk.PhotoImage(file='DepthAltered/' + self.filename)
+        # Find the main image fileName (middle image of the micro lens array)
+        size = parallax.mml_size('par')
+        self.filename = parallax.image_filename('depth', int((size+1) / 2), int((size+1) / 2))
+        self.image = tk.PhotoImage(file='ParallaxAltered/' + self.filename)
 
         # main image
         self.mainIm = tk.Label(self.slideImage, image=self.image)
@@ -67,32 +65,54 @@ class DepthPage(tk.Frame):
         print(depth)
 
 
-def read_images(name):
-    images = []
-    if name == 'par':
-        size = parallax.mml_size('par')
+def read_images(name, mode='normal'):
+    images = np.zeros((3, 3, 1000, 1000, 3), dtype=np.uint8)
+    groupname = 'blank'
+    directory = 'blank'
+    MMLsize = 0
+    if mode == 'init':
+        if name == 'par' or name == 'depth':
+            image = cv.imread('NewCamera/threemonkeys.png')
+            images = parallax.images_seperate(image)
+        elif name == 'cal':
+            image = cv.imread('NewCamera/calibration.png')
+            images = parallax.images_seperate(image)
+        elif name == 'HDR':
+            MMLsize = parallax.mml_size('HDR')
+            testIm = cv.imread('Absorption/HDR_11.png')
+            imageSize = testIm.shape[0]
+            images = np.zeros((MMLsize, MMLsize, imageSize, imageSize, 3), dtype=np.uint8)
+            # read images into an array
+            for i in range(0, MMLsize):
+                for j in range(0, MMLsize):
+                    filename = 'Absorption/' + parallax.image_filename('HDR', j + 1, i + 1)
+                    image = cv.imread(filename)
+                    image = cv.flip(image, 0)
+                    images[i, j] = image
+    else:
+        imageSize = 500 # all images are resized to this value for displaying
+        if name == 'par' or name == 'depth':
+            MMLsize = parallax.mml_size('par')
+            directory = 'ParallaxAltered/'
+            groupname = 'par'
+
+        elif name == 'cal':
+            MMLsize = parallax.mml_size('par')
+            directory = 'CalibrationAltered/'
+            groupname = 'cal'
+        elif name == 'HDR':
+            MMLsize = parallax.mml_size('HDR')
+            directory = 'HDRAltered/'
+            groupname = 'HDR'
+
+        images = np.zeros((MMLsize, MMLsize, imageSize, imageSize, 3), dtype=np.uint8)
         # read images into an array
-        for i in range(0, size):
-            for j in range(0, size):
-                filename = 'ParallaxAltered/' + parallax.image_filename('par', j + 1, i + 1)
+        for i in range(0, MMLsize):
+            for j in range(0, MMLsize):
+                filename = directory + parallax.image_filename(groupname, j + 1, i + 1)
+                print(filename)
                 im = cv.imread(filename)
-                images.append(im)
-    elif name == 'depth':
-        size = parallax.mml_size('depth')
-        # read images into an array
-        for i in range(0, size):
-            for j in range(0, size):
-                filename = 'DepthAltered/' + parallax.image_filename('depth', j + 1, i + 1)
-                im = cv.imread(filename)
-                images.append(im)
-    elif name == 'HDR':
-        size = parallax.mml_size('HDR')
-        # read images into an array
-        for i in range(0, size):
-            for j in range(0, size):
-                filename = 'HDRAltered/' + parallax.image_filename('HDR', j + 1, i + 1)
-                im = cv.imread(filename)
-                images.append(im)
+                images[i, j] = im
 
     return images
 
@@ -126,21 +146,26 @@ def remove_barrel(image):
     dst = cv.undistort(image, cam, distCoeff)
 
     # cv.imshow('dst', dst)
-    # cv.waitKey(0)
     return dst
 
 
-# buffer for trackbars
-def nothing(nothing):
-    i = 1
+def camera_calibrate():
+    images = read_images('depth')
+    size = parallax.mml_size('depth')
 
+    image1 = images[int((size * size) / 2)]
+    retval, corners = cv.findChessboardCorners(image1, patternSize, flags)
 
 def depth_calculate(baseline=3, focalLength=4):
     images = read_images('depth')
     size = parallax.mml_size('depth')
     # find the middle two images- from which depth is calculated (only 2 are needed)
-    image1 = images[int((size * size - 1) / 2)]
-    image2 = images[int((size * size - 1) / 2 + 1)]
+    image1 = images[int((size * size) / 2)]
+    image2 = images[int((size * size) / 2 + size)]
+
+    cv.imshow('image1', image1)
+    cv.imshow('image2', image2)
+
 
     #median filter to remove drop pixels
     image1 = cv.medianBlur(image1, 3)
@@ -151,7 +176,7 @@ def depth_calculate(baseline=3, focalLength=4):
     # allow users to tune
     # Create Block matching object.
     minDisparity = 0
-    numDisparities = 50
+    numDisparities = 30
     stereo = cv.StereoSGBM_create(numDisparities=numDisparities,
                                   blockSize=5,
                                   P1=8*3*5*5,
@@ -180,7 +205,6 @@ def depth_calculate(baseline=3, focalLength=4):
     # #apply heavy median filtering to remove all the speckling
     # disparityMap = cv.medianBlur(disparityMap, 7)
 
-    cv.imshow('image1', image1)
     cv.imshow('dismap', disparityMap)
     depthMap = (baseline * focalLength) / disparityMap
     cv.imshow('depth', depthMap)
@@ -193,7 +217,7 @@ def segment(depthMap):
     size = parallax.mml_size('depth')
     selection = int((size - 1) / 2)
     filename = parallax.image_filename('depth', selection, selection)
-    filename = 'DepthAltered/' + filename
+    filename = 'ParallaxAltered/' + filename
     orImage = cv.imread(filename)
 
     # median filter the image to remove non essential fine details

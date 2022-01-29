@@ -1,9 +1,13 @@
 # Function to Return the Correct Image Based on Slider Position #
 import os
 import math
-from PIL import Image
+
+import numpy as np
+import cv2 as cv
 import tkinter as tk
 from tkinter import ttk
+
+import depth
 
 
 class ParallaxPage(tk.Frame):
@@ -30,10 +34,11 @@ class ParallaxPage(tk.Frame):
         self.slideImage.grid(row=1, column=0, sticky='nsew')
 
         # top slider
-        self.S1 = tk.Scale(self.slideImage, from_=1, to=9, orient=tk.HORIZONTAL, command=self.image_update)
+        mmlSize = mml_size('par')
+        self.S1 = tk.Scale(self.slideImage, from_=1, to=mmlSize, orient=tk.HORIZONTAL, command=self.image_update)
         self.S1.grid(row=0, column=0, sticky=tk.EW)
         # right slider
-        self.S2 = tk.Scale(self.slideImage, from_=1, to=9, orient=tk.VERTICAL, command=self.image_update)
+        self.S2 = tk.Scale(self.slideImage, from_=1, to=mmlSize, orient=tk.VERTICAL, command=self.image_update)
         self.S2.grid(row=1, column=1, sticky=tk.NS)
 
         # Find the main image fileName
@@ -77,66 +82,97 @@ class ParallaxPage(tk.Frame):
 # find MML dimension N (NxN)
 def mml_size(name):
     if name == 'par' or name == 'depth':
-        noMMLs = os.listdir('TreeScene')  # count the number of images available
+        noMMLs = 9
+        # TODO make this a user input
     elif name == 'HDR':
-        noMMLs = os.listdir('Absorption')  # count the number of images available
+        noMMLs = len(os.listdir('Absorption'))  # count the number of images available
     else:
         print('Please give a name of `par`, `HDR` or `depth`')
-    noMMLs = int(math.sqrt(len(noMMLs)))
+    noMMLs = int(math.sqrt(noMMLs))
     return noMMLs
 
-# resize a given image set
-def im_resize(name):
-    # setting up parameters for crop
-    if name == 'par':
-        originalLocation = 'TreeScene/'
-        newLocation = 'ParallaxAltered/'
-        mmlSize = mml_size('par')
-    elif name == 'depth':
-        originalLocation = 'Depth/'
-        newLocation = 'DepthAltered/'
-        mmlSize = mml_size('depth')
-    elif name == 'HDR':
-        originalLocation = 'Absorption/'
-        newLocation = 'HDRAltered/'
-        mmlSize = mml_size('HDR')
-    else:
-        print('Please give a name of `par`, `HDR` or `depth`')
 
-    imageSize = Image.open(originalLocation + image_filename(name, 1, 1)).size[0]
+def images_seperate(image):
+    mmlSize = mml_size('par')
+    fullImage = image
+    # rotate the images 180 degrees
+    fullImage = cv.flip(fullImage, 0)
+    fullSize = fullImage.shape[0]
+    imageSize = int(fullSize / mmlSize)
+    images = np.zeros((mmlSize, mmlSize, imageSize, imageSize, 3), dtype=np.uint8)
+
+    # separate the full image from the plenoptic camera
+    for i in range(0, mmlSize):
+        for j in range(0, mmlSize):
+            images[i, j] = fullImage[int(imageSize * i):int(imageSize * (i + 1)),
+                           int(imageSize * j):int(imageSize * (j + 1))]
+
+    return images
+
+
+# read, separate (if necessary) and resize a given image set
+def im_resize(name):
+    # setting up parameters
+    mmlSize = 0
+    imageSize = 0
+    fileName = 'none'
+    images = np.zeros((mmlSize, mmlSize, 1000, 1000, 3), dtype=np.uint8)
+    newLocation = 'ParallaxAltered/'
+
+    if name == 'par' or name == 'depth':
+        images = depth.read_images('par', 'init')
+        mmlSize = mml_size('par')
+        newLocation = 'ParallaxAltered/'
+    elif name == 'cal':
+        images = depth.read_images('cal', 'init')
+        mmlSize = mml_size('par')
+        newLocation = 'CalibrationAltered/'
+    elif name == 'HDR':
+        mmlSize = mml_size('HDR')
+        images = depth.read_images('HDR', 'init')
+        newLocation = 'HDRAltered/'
+    else:
+        print('Please give a name of `par`, `cal`, `HDR` or `depth`')
+
+    imageSize = images[1, 1].shape[0]
     print(imageSize, ' ', name)
+
+    # set up crop conditions
     squareSize = math.sqrt(imageSize * imageSize / 2) - 3
     diff = int((imageSize - squareSize) / 2)
+    # do a tighter crop than the absolute minimum for HDR
+    if name == 'HDR':
+        diff = int(diff*1.5)
 
-    # TODO Render images for HDR with less lens in
-    if name == 'HDR':  # HDR requires a tighter crop so no lens is shown
-        diff = diff*1.5
-
-    box = (diff, diff, (imageSize - diff), (imageSize - diff))
     for i in range(1, mmlSize + 1):
         for j in range(1, mmlSize + 1):
-            fileName = image_filename(name, i, j)
-            im = Image.open(originalLocation + fileName)
             # crop to square the size of lens
-            image = im.crop(box)
-            # rotate the images 180 degrees
-            transpose = image.transpose(Image.ROTATE_180)
+            # print(i, ' ', j)
+            image = images[i-1, j-1]
+            image = image[diff:(imageSize - diff), diff:(imageSize - diff)]
             # resize the altered image to 500 pixels squared
-            final = transpose.resize((500, 500))
+            image = cv.resize(image, (500, 500))
             # save the altered image set
-            final.save(newLocation + fileName)
+            if name == 'par' or name == 'depth':
+                fileName = image_filename('par', i, j)
+            elif name == 'cal':
+                fileName = image_filename('cal', i, j)
+            elif name == 'HDR':
+                fileName = image_filename('HDR', i, j)
+            cv.imwrite(newLocation + fileName, image)
 
 
 # return the correct image from the file corresponding to the slider value in the form fa_11.png
+# NOTE: outdated for new camera type render
 def image_filename(name, sl1, sl2):
     col = str(sl1)
     row = str(sl2)
-    if name == 'par':
-        groupName = 'fa'
-    elif name == 'depth':
-        groupName = 'de'
+    if name == 'par' or name == 'depth':
+        groupName = 'par'
+    elif name == 'cal':
+        groupName = 'cal'
     elif name == 'HDR':
-        groupName = 'abs'
+        groupName = 'HDR'
     else:
         print('Please give a name of `par`, `HDR` or `depth`')
 

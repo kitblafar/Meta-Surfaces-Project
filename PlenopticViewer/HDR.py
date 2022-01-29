@@ -83,8 +83,8 @@ overlap from all images (spiral) lens spacing and therefore overlap are constant
 
 # align the images to a centre point
 def align_images():
-    images = []
     imagesOutput = []
+    images = []
     size = parallax.mml_size('HDR')
     shift = np.zeros([size, size, 2])  # 2D shift therefore two shift values for each MML
     vertShift = np.zeros([size*size, 1])
@@ -96,24 +96,29 @@ def align_images():
     alignMTB = cv.createAlignMTB() # use open cv align med function to get estimate of shifts
 
     # read images into an array
-    images = depth.read_images('HDR')
+    arrayImages = depth.read_images('HDR')
 
-    # find the vertical and horizontal shifts of each image from the center image
+    # make images flat
+    for i in range(0, size):
+        for j in range(0, size):
+            images.append(arrayImages[i, j])
+
+        # find the vertical and horizontal shifts of each image from the center image
     for i in range(0, size):
         for j in range(0, size):
             shift[i, j] = alignMTB.calculateShift(cv.cvtColor(images[i * size + j], cv.COLOR_BGR2GRAY),
-                                                  cv.cvtColor(images[int((size*size - 1)/2)], cv.COLOR_BGR2GRAY))
+                                                  cv.cvtColor(images[int((size * size - 1) / 2)], cv.COLOR_BGR2GRAY))
 
-    # find the median horizontal and vertical shifts and use this for all the images (spacing is even)
+        # find the median horizontal and vertical shifts and use this for all the images (spacing is even)
     for i in range(0, size):
         for j in range(0, size):
             horShift[i * size + j] = shift[i, j, 0]
             vertShift[i * size + j] = shift[i, j, 1]
 
     for i in range(0, size):
-        horList[i] = horShift[i*3]
+        vertList[i] = vertShift[i * 3]
 
-    vertList = vertShift[0:size]
+    horList = horShift[0:size]
 
     medHor = np.median(horList)
     medVert = np.median(vertList)
@@ -124,8 +129,11 @@ def align_images():
     # make list of new shifts
     for i in range(0, size):
         for j in range(0, size):
-            newShift[i*size + j, 0] = -medHor * -(j - int((size-1)/2))
-            newShift[i*size + j, 1] = -medVert * -(i - int((size-1)/2))
+            newShift[i * size + j, 1] = medHor * -(j - int((size - 1) / 2))
+            newShift[i * size + j, 0] = medVert * -(i - int((size - 1) / 2))
+
+    print(shift)
+    print(newShift)
 
     # shift the image by the new shift values
     for i in range(0, size * size):
@@ -171,14 +179,16 @@ def shift_image(inputImage, shift):
     outputImage = cv.warpAffine(image, M, (rows, cols))
     return outputImage
 
+
 # TODO allow users to adjust the estimated exposure (absorption rate) for each absorption lens to get a better image
 # i.e. a slider for max exposure and min exposure and assume equally distributed within take as inputs here
 # HDR combination techniques applied to the final image
-def HDR_combine(inputImages, maxAbs=15.0, minAbs=0.5):
+def HDR_combine(inputImages, maxAbs=100, minAbs=5):
+
     size = parallax.mml_size('HDR')
     exposure = np.zeros((size*size), dtype=np.float32)
 
-    for i in range((size*size-1), -1, -1): # highest absorption= lowest brightness= lowest exposure
+    for i in range((size*size-1), -1, -1):  # highest absorption= lowest brightness= lowest exposure
         absorption = i * ((maxAbs-minAbs)/(size*size))+minAbs  # as absorption is linearly distributed
         exposure[i] = 1/absorption
 
@@ -191,9 +201,9 @@ def HDR_combine(inputImages, maxAbs=15.0, minAbs=0.5):
     mergeDebevec = cv.createMergeDebevec()
     hdr = mergeDebevec.process(inputImages, exposure, response)
 
-    # Tonemap the HDR- Done to map 32 bit number onto 1 to 0 range (although some time larger therefore clip used)
-    tonemap1 = cv.createTonemap(gamma=2.2)
-    res_debevec = tonemap1.process(hdr.copy())
+    # Tonemap the HDR- using Reinhard's method to obtain 24-bit color image
+    tonemapReinhard = cv.createTonemapReinhard(1.5, 0, 0, 0)
+    ldrReinhard = tonemapReinhard.process(hdr)
 
     # # Attempt at exposure fusion method
     # mergeExpoFus = cv.createMergeMertens()
@@ -204,7 +214,7 @@ def HDR_combine(inputImages, maxAbs=15.0, minAbs=0.5):
 
 
     # save the HDR image (first convert to 8 bit)
-    hdr = np.clip(res_debevec*255, 0, 255).astype('uint8')  # change type and clip overflow
+    hdr = np.clip(ldrReinhard*255, 0, 255).astype('uint8')  # change type and clip overflow
     cv.imwrite('HDRImage.png', hdr)
     # Rearrange colors- put into format readable by tkinter
     blue, green, red = cv.split(hdr)
