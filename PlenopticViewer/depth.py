@@ -9,6 +9,7 @@ import numpy as np
 class DepthPage(tk.Frame):
     def __init__(self, container):
         super().__init__(container)
+
         # define the left and right frames
         leftFrame = tk.Frame(container)
         leftFrame.grid(row=0, column=0, sticky=tk.NSEW)
@@ -90,7 +91,7 @@ def read_images(name, mode='normal'):
                     image = cv.flip(image, 0)
                     images[i, j] = image
     else:
-        imageSize = 500 # all images are resized to this value for displaying
+        imageSize = 500  # all images are resized to this value for displaying
         if name == 'par' or name == 'depth':
             MMLsize = parallax.mml_size('par')
             directory = 'ParallaxAltered/'
@@ -110,7 +111,6 @@ def read_images(name, mode='normal'):
         for i in range(0, MMLsize):
             for j in range(0, MMLsize):
                 filename = directory + parallax.image_filename(groupname, j + 1, i + 1)
-                print(filename)
                 im = cv.imread(filename)
                 images[i, j] = im
 

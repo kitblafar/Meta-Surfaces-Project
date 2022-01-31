@@ -35,10 +35,12 @@ class ParallaxPage(tk.Frame):
 
         # top slider
         mmlSize = mml_size('par')
-        self.S1 = tk.Scale(self.slideImage, from_=1, to=mmlSize, orient=tk.HORIZONTAL, command=self.image_update)
+        self.S1 = tk.Scale(self.slideImage, from_=mmlSize, to=1, orient=tk.HORIZONTAL, command=self.image_update)
+        self.S1.set(int((mmlSize + 1)/2))
         self.S1.grid(row=0, column=0, sticky=tk.EW)
         # right slider
-        self.S2 = tk.Scale(self.slideImage, from_=1, to=mmlSize, orient=tk.VERTICAL, command=self.image_update)
+        self.S2 = tk.Scale(self.slideImage, from_=mmlSize, to=1, orient=tk.VERTICAL, command=self.image_update)
+        self.S2.set(int((mmlSize + 1) / 2))
         self.S2.grid(row=1, column=1, sticky=tk.NS)
 
         # Find the main image fileName
@@ -52,24 +54,18 @@ class ParallaxPage(tk.Frame):
         # Create parallax parameters frame in the left frame
         parPar = tk.Frame(leftFrame)
         parPar.rowconfigure(0, weight=1)
-        parPar.rowconfigure(1, weight=1)
         parPar.columnconfigure(0, weight=1)
         parPar.columnconfigure(1, weight=1)
         parPar.grid(row=0, column=0)
 
-        # Example labels that serve as placeholders for other widgets
-        ttk.Button(parPar, text="Inputs").grid(row=0, column=0, padx=5, pady=3, ipadx=10, sticky='s')
-        ttk.Button(parPar, text="Viewing").grid(row=0, column=1, padx=5, pady=3, ipadx=10, sticky='s')
-
         # Example labels that could be displayed under the "Tool" menu
-        tk.Label(parPar, text="File Location of Images").grid(row=1, column=0, padx=5, pady=5, sticky='n')
-        tk.Entry(parPar).grid(row=1, column=1, padx=5, pady=5, sticky='n')
+        tk.Label(parPar, text="Move Sliders to Move Over Image").grid(row=0, column=0, padx=5, pady=5, sticky='n')
         container.tkraise()
 
     def image_update(self, number):
         sl1 = int(self.S1.get())
         sl2 = int(self.S2.get())
-        self.fileName = image_filename('par', sl1, sl2)
+        self.fileName = image_filename('par', sl2, sl1)
         self.fileName = 'ParallaxAltered/' + self.fileName
         self.image = tk.PhotoImage(file=self.fileName)
         self.mainIm = tk.Label(self.slideImage, image=self.image)
@@ -142,6 +138,8 @@ def im_resize(name):
     diff = int((imageSize - squareSize) / 2)
     # do a tighter crop than the absolute minimum for HDR
     if name == 'HDR':
+        diff = int(diff*1.5)
+    elif name == 'par':
         diff = int(diff*1.5)
 
     for i in range(1, mmlSize + 1):

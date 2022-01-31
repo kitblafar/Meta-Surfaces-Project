@@ -11,7 +11,8 @@ import depth
 class HDRPage(tk.Frame):
     def __init__(self, container):
         super().__init__(container)
-        self.imageSet = align_images()
+        [self.imageSet, x, y] = align_images()
+
         # define the left and right frames
         left_frame = tk.Frame(container)
         left_frame.grid(row=0, column=0, sticky=tk.NSEW)
@@ -61,7 +62,7 @@ class HDRPage(tk.Frame):
 
     def update_absorb(self, number):
         maxAbs = self.sl1.get()
-        print('Max Absorption='+str(maxAbs))
+        print('Max Absorption=' + str(maxAbs))
         minAbs = self.sl2.get()
         print('Min Absorption=' + str(minAbs))
 
@@ -75,41 +76,58 @@ class HDRPage(tk.Frame):
         self.mainIm.grid(row=0, column=0)
 
 
-
 """find the overlap between two neighbouring images (with middle absorption= best chance of features) and remove 
 overlap from all images (spiral) lens spacing and therefore overlap are constant between images """
 # TODO stitch two images, stitched image length- original image length= cut-off
 """as the parallax is small (in reality), aligning using the expose align built into opencv should work"""
 
+
 # align the images to a centre point
-def align_images():
+def align_images(name='HDR'):
     imagesOutput = []
     images = []
-    size = parallax.mml_size('HDR')
+
+    if name == 'HDR':
+        alignMTB = cv.createAlignMTB()  # use open cv align med function to get estimate of shifts
+        # read images into an array
+        arrayImages = depth.read_images('HDR')
+        size = parallax.mml_size('HDR')
+    else:
+        arrayImages = depth.read_images('par')
+        size = parallax.mml_size('par')
+        # convert the center image to greyscale
+        centreImage = cv.cvtColor(arrayImages[int((size - 1) / 2), int((size - 1) / 2)],  cv.COLOR_BGR2GRAY)
+        centreImage = np.float32(centreImage)
+        # window to reduce edge effects
+        imageSize = arrayImages[1, 1].shape[0]
+        center = int(imageSize / 2)
+        hannW = cv.createHanningWindow([imageSize, imageSize], cv.CV_32F)
+
     shift = np.zeros([size, size, 2])  # 2D shift therefore two shift values for each MML
-    vertShift = np.zeros([size*size, 1])
-    horShift = np.zeros([size*size, 1])
-    newShift = np.zeros([size*size, 2])
-    horList = np.zeros([size, 1])
+    vertShift = np.zeros([size * size, 1])
+    horShift = np.zeros([size * size, 1])
+    newShift = np.zeros([size * size, 2])
     vertList = np.zeros([size, 1])
-
-    alignMTB = cv.createAlignMTB() # use open cv align med function to get estimate of shifts
-
-    # read images into an array
-    arrayImages = depth.read_images('HDR')
 
     # make images flat
     for i in range(0, size):
         for j in range(0, size):
             images.append(arrayImages[i, j])
 
-        # find the vertical and horizontal shifts of each image from the center image
+    # find the vertical and horizontal shifts of each image from the center image
     for i in range(0, size):
         for j in range(0, size):
-            shift[i, j] = alignMTB.calculateShift(cv.cvtColor(images[i * size + j], cv.COLOR_BGR2GRAY),
-                                                  cv.cvtColor(images[int((size * size - 1) / 2)], cv.COLOR_BGR2GRAY))
+            if name == 'HDR':
+                shift[i, j] = alignMTB.calculateShift(cv.cvtColor(images[i * size + j], cv.COLOR_BGR2GRAY),
+                                                      cv.cvtColor(images[i * size + j],
+                                                                  cv.COLOR_BGR2GRAY))
+            else:
+                comparisonImage = cv.cvtColor(arrayImages[i, j], cv.COLOR_BGR2GRAY)
+                comparisonImage = np.float32(comparisonImage)
+                fullShift = cv.phaseCorrelate(comparisonImage, centreImage, hannW)
+                shift[i, j] = fullShift[0]
 
-        # find the median horizontal and vertical shifts and use this for all the images (spacing is even)
+    # find the median horizontal and vertical shifts and use this for all the images (spacing is even)
     for i in range(0, size):
         for j in range(0, size):
             horShift[i * size + j] = shift[i, j, 0]
@@ -132,41 +150,37 @@ def align_images():
             newShift[i * size + j, 1] = medHor * -(j - int((size - 1) / 2))
             newShift[i * size + j, 0] = medVert * -(i - int((size - 1) / 2))
 
-    print(shift)
-    print(newShift)
+    # print(shift)
+    # print(newShift)
 
     # shift the image by the new shift values
     for i in range(0, size * size):
-        imagesOutput.append(shift_image(images[i], newShift[i]))
+        shiftImages = shift_image(images[i], newShift[i])
+        if name == 'HDR':
+            imagesOutput.append(shiftImages)
 
-    return imagesOutput
+        # crop the images for reconstruction
+        else:
+            vertShift = int(newShift[i][0])
+            horShift = int(newShift[i][1])
+            print(str(i), ' horizontal shift: ', horShift, ' vertical shift: ', vertShift)
+            imageSize = shiftImages.shape[0]
+            if horShift < 0:
+                if vertShift < 0:
+                    cropImage = shiftImages[0:(imageSize - abs(horShift)), 0:(imageSize - abs(horShift))]
+                else:
+                    cropImage = shiftImages[0:(imageSize - abs(horShift)), abs(vertShift):imageSize]  # correct
+            else:
+                if vertShift < 0:
+                    cropImage = shiftImages[abs(horShift):imageSize, 0:(imageSize - abs(vertShift))]
+                else:
+                    cropImage = shiftImages[abs(horShift):imageSize, abs(vertShift):imageSize]
 
-    ''' Demonstration of stiching usage
-    images = []
-    filenames = ['HDRAltered/' + parallax.image_filename('HDR', 1, 1), 'HDRAltered/' + parallax.image_filename('HDR', 1, 2)]
-    
-    for i in range(len(filenames)):
-        images.append(cv.imread(filenames[i]))
-        cv.imshow(str(i), images[i])
-    
-    cv.waitKey(0)
-    
-    stitching = cv.Stitcher.create()
-    (dummy, output) = stitching.stitch(images)
-    
-    if dummy != cv.STITCHER_OK:
-        # .stitch() function returns a true value if stitching success
-        print("did not work")
-    else:
-        print('worked')
-    
-    # final output
-    cv.imshow('final result', output)
-    
-    cv.imwrite('StitchingExample.png', output)
-    
-    cv.waitKey(0)
-    '''
+            imagesOutput.append(cropImage)
+
+
+    return imagesOutput, medHor, medVert
+
 
 # translating the image by a shift matrix using the transformation matrix
 def shift_image(inputImage, shift):
@@ -184,13 +198,12 @@ def shift_image(inputImage, shift):
 # i.e. a slider for max exposure and min exposure and assume equally distributed within take as inputs here
 # HDR combination techniques applied to the final image
 def HDR_combine(inputImages, maxAbs=5, minAbs=0.5):
-
     size = parallax.mml_size('HDR')
-    exposure = np.zeros((size*size), dtype=np.float32)
+    exposure = np.zeros((size * size), dtype=np.float32)
 
-    for i in range((size*size-1), -1, -1):  # highest absorption= lowest brightness= lowest exposure
-        absorption = i * ((maxAbs-minAbs)/(size*size))+minAbs  # as absorption is linearly distributed
-        exposure[i] = 1/absorption
+    for i in range((size * size - 1), -1, -1):  # highest absorption= lowest brightness= lowest exposure
+        absorption = i * ((maxAbs - minAbs) / (size * size)) + minAbs  # as absorption is linearly distributed
+        exposure[i] = 1 / absorption
 
     # Merge images in to HDR image
     mergeDebvec = cv.createMergeDebevec()
@@ -207,9 +220,8 @@ def HDR_combine(inputImages, maxAbs=5, minAbs=0.5):
     # res_mertens_8bit = np.clip(expoFus * 255, 0, 255).astype('uint8')
     # cv.imshow('Exposure Fusion', expoFus)
 
-
     # save the HDR image (first convert to 8 bit)
-    hdr = np.clip(ldrReinhard*255, 0, 255).astype('uint8')  # change type and clip overflow
+    hdr = np.clip(ldrReinhard * 255, 0, 255).astype('uint8')  # change type and clip overflow
     cv.imwrite('HDRImage.png', hdr)
     # Rearrange colors- put into format readable by tkinter
     blue, green, red = cv.split(hdr)
@@ -219,3 +231,29 @@ def HDR_combine(inputImages, maxAbs=5, minAbs=0.5):
     print('Image Saved')
     return hdrtk
 
+    ''' Demonstration of stiching usage
+    images = []
+    filenames = ['HDRAltered/' + parallax.image_filename('HDR', 1, 1), 'HDRAltered/' + parallax.image_filename('HDR', 1, 2)]
+
+    for i in range(len(filenames)):
+        images.append(cv.imread(filenames[i]))
+        cv.imshow(str(i), images[i])
+
+    cv.waitKey(0)
+
+    stitching = cv.Stitcher.create()
+    (dummy, output) = stitching.stitch(images)
+
+    if dummy != cv.STITCHER_OK:
+        # .stitch() function returns a true value if stitching success
+        print("did not work")
+    else:
+        print('worked')
+
+    # final output
+    cv.imshow('final result', output)
+
+    cv.imwrite('StitchingExample.png', output)
+
+    cv.waitKey(0)
+    '''
