@@ -119,7 +119,7 @@ def align_images(name='HDR'):
         for j in range(0, size):
             if name == 'HDR':
                 shift[i, j] = alignMTB.calculateShift(cv.cvtColor(images[i * size + j], cv.COLOR_BGR2GRAY),
-                                                      cv.cvtColor(images[i * size + j],
+                                                      cv.cvtColor(images[int((size * size - 1) / 2)],
                                                                   cv.COLOR_BGR2GRAY))
             else:
                 comparisonImage = cv.cvtColor(arrayImages[i, j], cv.COLOR_BGR2GRAY)
