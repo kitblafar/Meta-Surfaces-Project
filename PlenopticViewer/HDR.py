@@ -104,10 +104,9 @@ def align_images(name='HDR'):
         hannW = cv.createHanningWindow([imageSize, imageSize], cv.CV_32F)
 
     shift = np.zeros([size, size, 2])  # 2D shift therefore two shift values for each MML
-    vertShift = np.zeros([size * size, 1])
-    horShift = np.zeros([size * size, 1])
     newShift = np.zeros([size * size, 2])
-    vertList = np.zeros([size, 1])
+    vertList = np.zeros([(size-1)*(size-1), 1])
+    horList = np.zeros([(size - 1) * (size - 1), 1])
 
     # make images flat
     for i in range(0, size):
@@ -115,31 +114,32 @@ def align_images(name='HDR'):
             images.append(arrayImages[i, j])
 
     # find the vertical and horizontal shifts of each image from the center image
-    for i in range(0, size):
-        for j in range(0, size):
+    for i in range(0, size-1):
+        for j in range(0, size-1):
             if name == 'HDR':
-                shift[i, j] = alignMTB.calculateShift(cv.cvtColor(images[i * size + j], cv.COLOR_BGR2GRAY),
-                                                      cv.cvtColor(images[int((size * size - 1) / 2)],
-                                                                  cv.COLOR_BGR2GRAY))
+                prevIm = cv.cvtColor(arrayImages[i, j], cv.COLOR_BGR2GRAY)
+                curImHor = cv.cvtColor(arrayImages[i, j + 1], cv.COLOR_BGR2GRAY)
+                curImVert = cv.cvtColor(arrayImages[i + 1, j], cv.COLOR_BGR2GRAY)
+                vertList[i*(size-1)+j] = alignMTB.calculateShift(curImVert, prevIm)[0]
+                horList[i * (size - 1) + j] = alignMTB.calculateShift(curImHor, prevIm)[1]
+
             else:
-                comparisonImage = cv.cvtColor(arrayImages[i, j], cv.COLOR_BGR2GRAY)
-                comparisonImage = np.float32(comparisonImage)
-                fullShift = cv.phaseCorrelate(comparisonImage, centreImage, hannW)
-                shift[i, j] = fullShift[0]
+                cv.imshow(str(i+j), arrayImages[i, j])
+                prevIm = cv.cvtColor(arrayImages[i, j], cv.COLOR_BGR2GRAY)
+                prevIm = np.float32(prevIm)
+                curImVert = cv.cvtColor(arrayImages[i, j+1], cv.COLOR_BGR2GRAY)
+                curImVert = np.float32(curImVert)
+                curImHor = cv.cvtColor(arrayImages[i+1, j], cv.COLOR_BGR2GRAY)
+                curImHor = np.float32(curImHor)
+                vertList[i*(size-1)+j] = cv.phaseCorrelate(prevIm, curImVert, hannW)[0][1]
+                horList[i*(size-1)+j] = cv.phaseCorrelate(prevIm, curImHor, hannW)[0][0]
+
+    print(vertList)
+    print(horList)
 
     # find the median horizontal and vertical shifts and use this for all the images (spacing is even)
-    for i in range(0, size):
-        for j in range(0, size):
-            horShift[i * size + j] = shift[i, j, 0]
-            vertShift[i * size + j] = shift[i, j, 1]
-
-    for i in range(0, size):
-        vertList[i] = vertShift[i * 3]
-
-    horList = horShift[0:size]
-
-    medHor = np.median(horList)
-    medVert = np.median(vertList)
+    medHor = np.mean(horList)
+    medVert = np.mean(vertList)
 
     if medHor == medVert:
         print('Success: shift up matched shift across')
@@ -163,7 +163,7 @@ def align_images(name='HDR'):
         else:
             vertShift = int(newShift[i][0])
             horShift = int(newShift[i][1])
-            print(str(i), ' horizontal shift: ', horShift, ' vertical shift: ', vertShift)
+            # print(str(i), ' horizontal shift: ', horShift, ' vertical shift: ', vertShift)
             imageSize = shiftImages.shape[0]
             if horShift < 0:
                 if vertShift < 0:

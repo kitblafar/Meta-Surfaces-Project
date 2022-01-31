@@ -140,7 +140,7 @@ def im_resize(name):
     if name == 'HDR':
         diff = int(diff*1.5)
     elif name == 'par':
-        diff = int(diff*1.5)
+        diff = int(diff*1.6)
 
     for i in range(1, mmlSize + 1):
         for j in range(1, mmlSize + 1):

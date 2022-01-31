@@ -132,10 +132,11 @@ def reconstruct_image():
     shiftHor = abs(int(shiftHor))
     shiftVert = abs(int(shiftVert))
     imageSet = depth.read_images('par')
+    print(shiftVert)
+    print(shiftHor)
 
     size = parallax.mml_size('par')
     imageSize = imageSet[1, 1].shape[0]
-    print(imageSize)
     # create an empty array to fill with the reconstructed image
     imageReconstruct = np.zeros([imageSize+shiftVert*2, imageSize+shiftHor*2, 3], dtype=np.uint8)
     print(imageReconstruct.shape)
@@ -151,12 +152,12 @@ def reconstruct_image():
             # print('vertical- Upper:', upperVert, 'Lower:', lowerVert)
 
             imageReconstruct[lowerVert:upperVert, lowerHor: upperHor] = imageSet[i, j]
+            cv.imshow('reconstructed', imageReconstruct)
+            cv.waitKey(0)
 
     # put the middle image in for best result
     middle = int((size-1)/2)
     imageReconstruct[shiftVert:shiftVert+imageSize, shiftHor: shiftHor+imageSize] = imageSet[middle, middle]
-    # cv.imshow('recontructed', imageReconstruct)
-    # cv.waitKey(0)
 
     # change image into a form that works for tkinter
     imageReconstruct = cv.cvtColor(imageReconstruct, cv.COLOR_BGR2RGB)
