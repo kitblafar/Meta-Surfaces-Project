@@ -14,6 +14,8 @@ def initial_tasks():
     parallax.im_resize('par')
     parallax.im_resize('HDR')
     parallax.im_resize('cal')
+    # calibrate the camera and remove distortion
+    depth.camera_calibrate()
     root.destroy()
 
 
@@ -128,36 +130,49 @@ class Reconstructed(tk.Frame):
 
 
 def reconstruct_image():
-    [a, shiftHor, shiftVert] = HDR.align_images('par')
-    shiftHor = abs(int(shiftHor))
-    shiftVert = abs(int(shiftVert))
+    [a, horShiftLine, vertShiftLine] = HDR.align_images('par')
     imageSet = depth.read_images('par')
-    print(shiftVert)
-    print(shiftHor)
+
+    horShiftLine = np.concatenate(([[0]], np.flip(vertShiftLine)), axis=0)
+    vertShiftLine = np.concatenate(([[0]], np.flip(horShiftLine)), axis=0)
+
+    print('horizontal line shift', horShiftLine)
+    print('vertical line shift', vertShiftLine)
 
     size = parallax.mml_size('par')
     imageSize = imageSet[1, 1].shape[0]
     # create an empty array to fill with the reconstructed image
-    imageReconstruct = np.zeros([imageSize+shiftVert*2, imageSize+shiftHor*2, 3], dtype=np.uint8)
-    print(imageReconstruct.shape)
+    horSize = imageSize
+    vertSize = imageSize
+
+    for i in range(0, horShiftLine.shape[0]):
+        horSize = int(horSize + horShiftLine[i])
+        vertSize = int(vertSize + vertShiftLine[i])
+
+    imageReconstruct = np.zeros([vertSize, horSize, 3], dtype=np.uint8)
+    print('size of full image: ', imageReconstruct.shape)
 
     # populate array
-    for i in range(0, size):
-        for j in range(0, size):
-            lowerHor = i*shiftHor
-            upperHor = i*shiftHor+imageSize
-            lowerVert = j*shiftVert
-            upperVert = j*shiftVert+imageSize
-            # print('horizontal- Upper:', upperHor, 'Lower:', lowerHor)
-            # print('vertical- Upper:', upperVert, 'Lower:', lowerVert)
+    for i in range(0, size):  # do for half the image
+        for k in range(0, horShiftLine.shape[0]):
+            lowerHor = int(i * horShiftLine[k])
+            upperHor = int(i * horShiftLine[k] + imageSize)
+            for j in range(0, size):
+                lowerVert = 0
+                for z in range(0, horShiftLine.shape[0]):
+                    lowerVert = int(lowerVert + vertShiftLine[z])
+                    upperVert = int(imageSize +lowerVert)
+                    print(vertShiftLine[z])
+                    print('horizontal- Upper:', upperHor, 'Lower:', lowerHor)
+                    print('vertical- Upper:', upperVert, 'Lower:', lowerVert)
+                    imageReconstruct[lowerVert:upperVert, lowerHor: upperHor] = imageSet[i*size+k, j*size+z]
+                    cv.imshow('recon', imageReconstruct)
+                    cv.waitKey(0)
 
-            imageReconstruct[lowerVert:upperVert, lowerHor: upperHor] = imageSet[i, j]
-            cv.imshow('reconstructed', imageReconstruct)
-            cv.waitKey(0)
 
-    # put the middle image in for best result
-    middle = int((size-1)/2)
-    imageReconstruct[shiftVert:shiftVert+imageSize, shiftHor: shiftHor+imageSize] = imageSet[middle, middle]
+    # # put the middle image in for best result
+    # middle = int((size-1)/2)
+    # imageReconstruct[shiftVert:shiftVert+imageSize, shiftHor: shiftHor+imageSize] = imageSet[middle, middle]
 
     # change image into a form that works for tkinter
     imageReconstruct = cv.cvtColor(imageReconstruct, cv.COLOR_BGR2RGB)

@@ -95,16 +95,12 @@ def align_images(name='HDR'):
     else:
         arrayImages = depth.read_images('par')
         size = parallax.mml_size('par')
-        # convert the center image to greyscale
-        centreImage = cv.cvtColor(arrayImages[int((size - 1) / 2), int((size - 1) / 2)],  cv.COLOR_BGR2GRAY)
-        centreImage = np.float32(centreImage)
         # window to reduce edge effects
         imageSize = arrayImages[1, 1].shape[0]
-        center = int(imageSize / 2)
         hannW = cv.createHanningWindow([imageSize, imageSize], cv.CV_32F)
 
-    shift = np.zeros([size, size, 2])  # 2D shift therefore two shift values for each MML
-    newShift = np.zeros([size * size, 2])
+    newShift = np.zeros([size*size, 2])
+    shift = np.zeros([size,size, 2])
     vertList = np.zeros([(size-1)*(size-1), 1])
     horList = np.zeros([(size - 1) * (size - 1), 1])
 
@@ -124,7 +120,6 @@ def align_images(name='HDR'):
                 horList[i * (size - 1) + j] = alignMTB.calculateShift(curImHor, prevIm)[1]
 
             else:
-                cv.imshow(str(i+j), arrayImages[i, j])
                 prevIm = cv.cvtColor(arrayImages[i, j], cv.COLOR_BGR2GRAY)
                 prevIm = np.float32(prevIm)
                 curImVert = cv.cvtColor(arrayImages[i, j+1], cv.COLOR_BGR2GRAY)
@@ -134,52 +129,55 @@ def align_images(name='HDR'):
                 vertList[i*(size-1)+j] = cv.phaseCorrelate(prevIm, curImVert, hannW)[0][1]
                 horList[i*(size-1)+j] = cv.phaseCorrelate(prevIm, curImHor, hannW)[0][0]
 
-    print(vertList)
-    print(horList)
+    # print(horList)
+    # print(vertList)
 
-    # find the median horizontal and vertical shifts and use this for all the images (spacing is even)
-    medHor = np.mean(horList)
-    medVert = np.mean(vertList)
+    if name == 'HDR':
+        # find the median horizontal and vertical shifts and use this for all the images (spacing is even)
+        medHor = np.median(horList)
+        medVert = np.median(vertList)
 
-    if medHor == medVert:
-        print('Success: shift up matched shift across')
+        # for HDR take the median value of the shifts (there is variation here)
+        for i in range(0, size):
+            for j in range(0, size):
+                newShift[i * size + j, 1] = medHor * -(j - int((size - 1) / 2))
+                newShift[i * size + j, 0] = medVert * -(i - int((size - 1) / 2))
+    else:
+        horShiftLine = np.zeros([size-1, 1])
+        vertShiftLine = np.zeros([size-1, 1])
+        for k in range(0, size-1):
+            horShiftLine[k] = int(abs(np.median(horList[k*(size-1):k*(size-1)+1])))
+            vertShiftLine[k] = int(abs(np.median(vertList[k*(size-1):k*(size-1)+1])))
 
-    # make list of new shifts
-    for i in range(0, size):
-        for j in range(0, size):
-            newShift[i * size + j, 1] = medHor * -(j - int((size - 1) / 2))
-            newShift[i * size + j, 0] = medVert * -(i - int((size - 1) / 2))
+    # print(vertShiftLine)
 
-    # print(shift)
-    # print(newShift)
-
-    # shift the image by the new shift values
-    for i in range(0, size * size):
-        shiftImages = shift_image(images[i], newShift[i])
-        if name == 'HDR':
+    # shift the image by the new shift values if doing HDR
+    if name == 'HDR':
+        for i in range(0, size * size):
+            shiftImages = shift_image(images[i], newShift[i])
             imagesOutput.append(shiftImages)
 
-        # crop the images for reconstruction
-        else:
-            vertShift = int(newShift[i][0])
-            horShift = int(newShift[i][1])
-            # print(str(i), ' horizontal shift: ', horShift, ' vertical shift: ', vertShift)
-            imageSize = shiftImages.shape[0]
-            if horShift < 0:
-                if vertShift < 0:
-                    cropImage = shiftImages[0:(imageSize - abs(horShift)), 0:(imageSize - abs(horShift))]
-                else:
-                    cropImage = shiftImages[0:(imageSize - abs(horShift)), abs(vertShift):imageSize]  # correct
-            else:
-                if vertShift < 0:
-                    cropImage = shiftImages[abs(horShift):imageSize, 0:(imageSize - abs(vertShift))]
-                else:
-                    cropImage = shiftImages[abs(horShift):imageSize, abs(vertShift):imageSize]
+    # # crop the images for reconstruction (not used)
+    # else:
+    #     vertShift = int(newShift[i][0])
+    #     horShift = int(newShift[i][1])
+    #     # print(str(i), ' horizontal shift: ', horShift, ' vertical shift: ', vertShift)
+    #     imageSize = shiftImages.shape[0]
+    #     if horShift < 0:
+    #         if vertShift < 0:
+    #             cropImage = shiftImages[0:(imageSize - abs(horShift)), 0:(imageSize - abs(horShift))]
+    #         else:
+    #             cropImage = shiftImages[0:(imageSize - abs(horShift)), abs(vertShift):imageSize]  # correct
+    #     else:
+    #         if vertShift < 0:
+    #             cropImage = shiftImages[abs(horShift):imageSize, 0:(imageSize - abs(vertShift))]
+    #         else:
+    #             cropImage = shiftImages[abs(horShift):imageSize, abs(vertShift):imageSize]
+    #
+    #     imagesOutput.append(cropImage)
 
-            imagesOutput.append(cropImage)
-
-
-    return imagesOutput, medHor, medVert
+    #image output blank for image reconstructoin, shift values blank for HDR
+    return imagesOutput, horShiftLine, vertShiftLine
 
 
 # translating the image by a shift matrix using the transformation matrix
