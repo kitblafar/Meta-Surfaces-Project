@@ -1,7 +1,10 @@
 # Functions used to add depth sensing imaging to the GUI
 import tkinter as tk
 from tkinter import ttk
+
+import HDR
 import parallax
+from PIL import Image, ImageTk
 import cv2 as cv
 import numpy as np
 
@@ -30,14 +33,19 @@ class DepthPage(tk.Frame):
 
         # Find the main image fileName (middle image of the micro lens array)
         size = parallax.mml_size('par')
-        self.filename = parallax.image_filename('depth', int((size+1) / 2), int((size+1) / 2))
-        self.image = tk.PhotoImage(file='ParallaxAltered/' + self.filename)
+        self.filename = 'ParallaxAltered/' + parallax.image_filename('depth', int((size + 1) / 2), int((size + 1) / 2))
+
 
         # main image
+        depthMap = depth_calculate()
+        [sharp, averageValues, fullContours] = segment(depthMap, cv.imread(self.filename))
+        # make image displayable in tkinter
+        sharp = cv.cvtColor(sharp, cv.COLOR_BGR2RGB)
+        sharp = Image.fromarray(sharp)
+        self.image = ImageTk.PhotoImage(image=sharp)
+
         self.mainIm = tk.Label(self.slideImage, image=self.image)
         self.mainIm.grid(row=0, column=0)
-        depthMap = depth_calculate()
-        self.averageDepthMap = segment(depthMap)
         self.mainIm.bind("<B1-Motion>", self.show_depth)
 
         # Create parallax parameters frame in the left frame
@@ -151,7 +159,7 @@ def camera_calibrate():
     # find the points necessary for camera callibration
     ret, mtx, dist, rvecs, tvecs = cv.calibrateCamera(objpoints, imgpoints, gray.shape[::-1], None, None)
 
-    #read the required set of images (the parallax set for this application
+    # read the required set of images (the parallax set for this application
     imgArray = read_images('par')
     for i in range(0, size):
         for j in range(0, size):
@@ -164,45 +172,51 @@ def camera_calibrate():
             dst = cv.remap(img, mapx, mapy, cv.INTER_LINEAR)
             # crop the image
             x, y, w, h = roi
-            x = x+10
-            y = y+10
+            x = x + 10
+            y = y + 10
             # print('x :',x, ' y:  ',y, ' w: ',w, ' h: ',h)
             dst = dst[y:y + h - 10, x:x + w - 10]
             # resize the altered image to 500 pixels squared
             dst = cv.resize(dst, (500, 500))
-            filename = 'ParallaxAltered/' + parallax.image_filename('par', j+1, i+1)
+            filename = 'ParallaxAltered/' + parallax.image_filename('par', j + 1, i + 1)
             cv.imwrite(filename, dst)
             # cv.imshow('undistort', dst)
             # cv.waitKey(0)
 
 
-
-def depth_calculate(baseline=3, focalLength=4):
+def depth_calculate(baseline=0.05, focalLength=4, apSize=5):
     images = read_images('depth')
+    imageSize = images[1, 1].shape[0]
     size = parallax.mml_size('depth')
-    # find the middle two images- from which depth is calculated (only 2 are needed)
-    image1 = images[int((size * size) / 2)]
-    image2 = images[int((size * size) / 2 + size)]
+    # find the middle three images- from which depth is calculated (only 2 are needed)
+    image1 = images[int(size / 2), int(size / 2)]
+    image2 = images[int(size / 2) + 1, int(size / 2)]
+    image3 = images[int(size / 2) - 1, int(size / 2)]
 
-    cv.imshow('image1', image1)
-    cv.imshow('image2', image2)
+    # #median filter to remove drop pixels
+    # image1 = cv.medianBlur(image1, 3)
+    # image2 = cv.medianBlur(image2, 3)
 
+    # sharpen image
+    kernel = np.array([[-1, -1, -1], [-1, 9, -1], [-1, -1, -1]])
+    image1 = cv.filter2D(image1, -1, kernel)
+    image2 = cv.filter2D(image2, -1, kernel)
+    image3 = cv.filter2D(image3, -1, kernel)
 
-    #median filter to remove drop pixels
-    image1 = cv.medianBlur(image1, 3)
-    image2 = cv.medianBlur(image2, 3)
+    # cv.waitKey(0)
 
     # Set disparity parameters
     # Note: disparity range is tuned according to specific parameters obtained through trial and error.
     # allow users to tune
     # Create Block matching object.
     minDisparity = 0
-    numDisparities = 30
+    [a, horShift, b] = HDR.align_images('par')
+    numDisparities = abs(int(horShift))  # use the shift calculated to align the images
     stereo = cv.StereoSGBM_create(numDisparities=numDisparities,
-                                  blockSize=5,
-                                  P1=8*3*5*5,
-                                  P2=32*3*5*5,
-                                  preFilterCap=31,
+                                  blockSize=10,
+                                  P1=8 * 3 * 5 * 5,
+                                  P2=32 * 3 * 5 * 5,
+                                  preFilterCap=10,
                                   uniquenessRatio=10,
                                   speckleRange=0,
                                   speckleWindowSize=0,
@@ -211,38 +225,53 @@ def depth_calculate(baseline=3, focalLength=4):
                                   mode=1)
     # Compute disparity map
     print("\nComputing the disparity  map...")
-    disparityMap = stereo.compute(image1, image2) + 1
-
-    print(disparityMap.dtype)
+    disparityMap1 = stereo.compute(image3, image1)
+    disparityMap2 = stereo.compute(image1, image2)
 
     # convert the disparity map to the depth map
     # baseline is the distance between the centre of each mml in um (entered in GUI by user)
     # focal length is the focal length of the MML entered by user
 
-    disparityMap = disparityMap.astype(np.float32)
-    # Scaling down the disparity values and normalizing them
-    disparityMap = (disparityMap / 16.0 - minDisparity) / numDisparities
-    #
-    # #apply heavy median filtering to remove all the speckling
-    # disparityMap = cv.medianBlur(disparityMap, 7)
+    disparityMap1 = disparityMap1.astype(np.float32)
+    disparityMap2 = disparityMap2.astype(np.float32)
 
-    cv.imshow('dismap', disparityMap)
-    depthMap = (baseline * focalLength) / disparityMap
-    cv.imshow('depth', depthMap)
-    cv.waitKey(0)
-    return depthMap
+    # combine both dispartiy maps (average where the intersection is)
+    fullDismap = np.zeros([imageSize, imageSize], dtype=np.float32)
+
+    fullDismap[0:imageSize, 0:imageSize - numDisparities] = disparityMap1[0:imageSize, numDisparities:imageSize]
+    fullDismap[0:imageSize, numDisparities:imageSize] = disparityMap2[0:imageSize, numDisparities:imageSize]
+
+    # average the overlap
+    fullDismap[0:imageSize, numDisparities:imageSize - numDisparities] = (fullDismap[0:imageSize,
+                                                                          numDisparities:imageSize - numDisparities] + disparityMap1[
+                                                                                                                       0:imageSize,
+                                                                                                                       numDisparities * 2:imageSize]) * 0.5
+
+    # replace all zero values with 17 ( this will scale down in the next step to a  (avoids divide by zero error)
+    result = np.where(fullDismap < 17)
+    listOfIndices = list(zip(result[0], result[1]))
+
+    for i in range(0, len(listOfIndices)):
+        fullDismap[listOfIndices[i]] = 17
+
+    # Scaling down the disparity values and normalizing them
+    fullDismap = (fullDismap / 16.0 - minDisparity) / numDisparities
+
+    # cv.imshow('fulldismap', fullDismap)
+
+    fullDepthMap = np.reciprocal(fullDismap)
+    fullDepthMap = fullDepthMap * (baseline * focalLength)
+    # cv.imshow('depth', fullDepthMap)
+    # cv.waitKey(0)
+
+    return fullDepthMap
 
 
 # segment the image
-def segment(depthMap):
+def segment(depthMap, image):
     size = parallax.mml_size('depth')
-    selection = int((size - 1) / 2)
-    filename = parallax.image_filename('depth', selection, selection)
-    filename = 'ParallaxAltered/' + filename
-    orImage = cv.imread(filename)
-
     # median filter the image to remove non essential fine details
-    median = cv.medianBlur(orImage, 3)
+    median = cv.medianBlur(image, 5)
 
     # resharpen
     kernel = np.array([[0, -1, 0],
@@ -250,45 +279,49 @@ def segment(depthMap):
                        [0, -1, 0]])
     sharp = cv.filter2D(src=median, ddepth=-1, kernel=kernel)
 
-    # draw contours onto image
-    # make image grey scale
-    imgray = cv.cvtColor(sharp, cv.COLOR_BGR2GRAY)
-    # Find Canny edges
-    edged = cv.Canny(imgray, 190, 200)
+    # cv.imshow('sharp', sharp)
+    averageValue = []
+    fullcontours = []
 
-    # dilate the image to join the contours
-    kernel = cv.getStructuringElement(cv.MORPH_ELLIPSE, (3, 3))
-    dilated = cv.dilate(edged, kernel)
-    contours, hierarchy = cv.findContours(dilated.copy(), cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)
+    # find contours in image on each channel
+    for i in range(0, sharp.shape[2]):
+        # make image grey scale
+        im = sharp[:, :, i]
 
-    for index in range(0, len(contours)):
-        colour = np.random.randint(0, 255, size=(3,))
+        im = cv.medianBlur(im, 7)
+        # Find Canny edges
+        edged = cv.Canny(im, 0, 150, apertureSize=3, L2gradient=True)
 
-        # convert data types int64 to int
-        colour = (int(colour[0]), int(colour[1]), int(colour[2]))
-        print(colour)
-        cv.drawContours(sharp, contours, index, colour, cv.FILLED, 8, hierarchy)
+        # dilate the image to join the contours
+        kernel = cv.getStructuringElement(cv.MORPH_ELLIPSE, (3, 3))
+        dilated = cv.dilate(edged, kernel)
 
-    # # write contours into a mask within which the depth is averaged and return both the segmented image and the average
-    # # depth map
-    # averageDepthMap = np.zeros(orImage.shape, np.uint8)
-    #
-    # mask = np.zeros(orImage.shape[:2], np.uint8)
-    # for i in range(0, len(contours)):
-    #     contourArea = cv.contourArea(contours[i])
-    #     if contourArea > 10:
-    #         cv.drawContours(mask, contours, i, 255, -1)
-    #         cv.imshow('mask', mask)
-    #         smallDepthMap = cv.bitwise_and(depthMap, depthMap, mask=mask)
-    #         cv.imshow('smallDepthMap', smallDepthMap)
-    #         # find median of all non-zero values
-    #         median = np.median(np.nonzero(smallDepthMap))
-    #         # assign all non-zero values to the median value
-    #         averageSmallDepthMap = smallDepthMap
-    #         averageSmallDepthMap[np.nonzero(averageSmallDepthMap)] = median
-    #         cv.imshow('averageSmallDepthMap', averageSmallDepthMap)
-    #         averageDepthMap = np.add(averageDepthMap, averageSmallDepthMap)
-    #         cv.imshow('averageDepthMap', averageDepthMap)
-    #         cv.waitKey(0)
+        contours, hierarchy = cv.findContours(dilated, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)
 
-    return averageDepthMap
+        # draw contours onto image on each channel
+        for index in range(0, len(contours)):
+            colour = np.random.randint(0, 255, size=(3,))
+            mask = np.zeros((image.shape[0], image.shape[1]), np.uint8)
+            # convert data types int64 to int
+            colour = (int(colour[0]), int(colour[1]), int(colour[2]))
+            cv.drawContours(sharp, contours, index, colour, 3)
+
+            # create the mask
+            cv.drawContours(mask, contours, index, (255, 255, 255), cv.FILLED, 8, hierarchy)
+            # converting to its binary form
+            _, mask = cv.threshold(mask, 1, 255, cv.THRESH_BINARY)
+
+            noPoints = np.count_nonzero(mask)
+
+            # average the depth map within the contours
+            index = np.transpose(np.nonzero(mask))
+            # print(index[1])
+            sum = 0
+            for i in range(0, len(index)):
+                sum = sum + depthMap[index[i][0], index[i][1]]
+
+            averageValue.append([sum / noPoints])
+            fullcontours.append(contours)
+            print(fullcontours)
+
+    return sharp, averageValue, fullcontours

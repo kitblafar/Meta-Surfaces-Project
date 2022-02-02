@@ -131,23 +131,14 @@ def align_images(name='HDR'):
 
     # print(horList)
     # print(vertList)
+    medHor = np.median(horList)
+    medVert = np.median(vertList)
 
-    if name == 'HDR':
-        # find the median horizontal and vertical shifts and use this for all the images (spacing is even)
-        medHor = np.median(horList)
-        medVert = np.median(vertList)
-
-        # for HDR take the median value of the shifts (there is variation here)
-        for i in range(0, size):
-            for j in range(0, size):
-                newShift[i * size + j, 1] = medHor * -(j - int((size - 1) / 2))
-                newShift[i * size + j, 0] = medVert * -(i - int((size - 1) / 2))
-    else:
-        horShiftLine = np.zeros([size-1, 1])
-        vertShiftLine = np.zeros([size-1, 1])
-        for k in range(0, size-1):
-            horShiftLine[k] = int(abs(np.median(horList[k*(size-1):k*(size-1)+1])))
-            vertShiftLine[k] = int(abs(np.median(vertList[k*(size-1):k*(size-1)+1])))
+    # for HDR take the median value of the shifts (there is variation here)
+    for i in range(0, size):
+        for j in range(0, size):
+            newShift[i * size + j, 1] = medHor * -(j - int((size - 1) / 2))
+            newShift[i * size + j, 0] = medVert * -(i - int((size - 1) / 2))
 
     # print(vertShiftLine)
 
@@ -177,7 +168,7 @@ def align_images(name='HDR'):
     #     imagesOutput.append(cropImage)
 
     #image output blank for image reconstructoin, shift values blank for HDR
-    return imagesOutput, horShiftLine, vertShiftLine
+    return imagesOutput, medHor, medVert
 
 
 # translating the image by a shift matrix using the transformation matrix
