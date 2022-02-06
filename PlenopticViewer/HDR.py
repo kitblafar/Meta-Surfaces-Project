@@ -70,7 +70,6 @@ class HDRPage(tk.Frame):
             minAbs = 0.001
 
         # update image
-        self.imageSet = align_images()
         self.image = HDR_combine(self.imageSet, maxAbs, minAbs)
         self.mainIm = tk.Label(self.HDRImage, image=self.image)
         self.mainIm.grid(row=0, column=0)

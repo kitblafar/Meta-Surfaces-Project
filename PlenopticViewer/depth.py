@@ -33,45 +33,123 @@ class DepthPage(tk.Frame):
 
         # Find the main image fileName (middle image of the micro lens array)
         size = parallax.mml_size('par')
-        self.filename = 'ParallaxAltered/' + parallax.image_filename('depth', int((size + 1) / 2), int((size + 1) / 2))
+        filename = 'ParallaxAltered/' + parallax.image_filename('depth', int((size + 1) / 2), int((size + 1) / 2))
 
+        self.depthMap = depth_calculate()
 
         # main image
-        depthMap = depth_calculate()
-        [sharp, averageValues, fullContours] = segment(depthMap, cv.imread(self.filename))
-        # make image displayable in tkinter
-        sharp = cv.cvtColor(sharp, cv.COLOR_BGR2RGB)
-        sharp = Image.fromarray(sharp)
-        self.image = ImageTk.PhotoImage(image=sharp)
+        self.originalIm = cv.imread(filename)
+
+        # originally show the untouched image
+        self.image = cv.cvtColor(self.originalIm, cv.COLOR_BGR2RGB)
+        self.image = Image.fromarray(self.image)
+        self.image = ImageTk.PhotoImage(image=self.image)
 
         self.mainIm = tk.Label(self.slideImage, image=self.image)
         self.mainIm.grid(row=0, column=0)
-        self.mainIm.bind("<B1-Motion>", self.show_depth)
 
-        # Create parallax parameters frame in the left frame
+        # define lists to be populated later
+        self.masks = []
+        self.averageValues = []
+
+        # Create depth parameters frame in the left frame
         parPar = tk.Frame(leftFrame)
         parPar.rowconfigure(0, weight=1)
         parPar.rowconfigure(1, weight=1)
+        parPar.rowconfigure(2, weight=1)
+        parPar.rowconfigure(3, weight=1)
+        parPar.rowconfigure(4, weight=1)
         parPar.columnconfigure(0, weight=1)
         parPar.columnconfigure(1, weight=1)
         parPar.grid(row=0, column=0)
 
-        # Example labels that serve as placeholders for other widgets
-        ttk.Button(parPar, text="Inputs").grid(row=0, column=0, padx=5, pady=3, ipadx=10, sticky='s')
-        ttk.Button(parPar, text="Viewing").grid(row=0, column=1, padx=5, pady=3, ipadx=10, sticky='s')
+        # Example labels
+        tk.Label(parPar, text="Click `Set Background` then Double Click the Image Background.").grid(row=0, column=0,
+                                                                                                     padx=5, pady=5,
+                                                                                                     sticky='n')
+        ttk.Button(parPar, text="Set Background", command=self.rebind_canvas).grid(row=0, column=1, padx=5, pady=3,
+                                                                                   ipadx=10, sticky='s')
 
+        # TODO: Get focal length and distance between MML centres to be user inputs
         # Example labels that could be displayed under the "Tool" menu
-        tk.Label(parPar, text="Distance(um) Between MML Centres").grid(row=1, column=0, padx=5, pady=5, sticky='n')
-        tk.Entry(parPar).grid(row=1, column=1, padx=5, pady=5, sticky='n')
-        tk.Label(parPar, text="Focal Length (um)").grid(row=1, column=0, padx=5, pady=5, sticky='n')
-        tk.Entry(parPar).grid(row=1, column=1, padx=5, pady=5, sticky='n')
+        tk.Label(parPar, text="Enter the Values Required").grid(row=1, column=0, padx=5, pady=5, sticky='n')
+        tk.Label(parPar, text="Distance(um) Between MML Centres (Auto: 0.05)").grid(row=2, column=0, padx=5, pady=5,
+                                                                                    sticky='n')
+        self.distanceEnt = tk.Entry(parPar)
+        self.distanceEnt.grid(row=2, column=1, padx=5, pady=5, sticky='n')
+        self.distanceEnt.bind('<Return>', self.update_depthmap)
+        tk.Label(parPar, text="Focal Length (um) (Auto: 4)").grid(row=3, column=0, padx=5, pady=5, sticky='n')
+        self.focalEnt = tk.Entry(parPar)
+        self.focalEnt.grid(row=3, column=1, padx=5, pady=5, sticky='n')
+        self.focalEnt.bind('<Return>', self.update_depthmap)
+        self.depthLabel = tk.Label(parPar, text='Double Click an Image Area to See Depth')
+        self.depthLabel.grid(row=4, column=0, padx=5, pady=5, sticky='n')
         container.tkraise()
+
+    def update_depthmap(self, _):
+        baseline = self.distanceEnt.get()
+        focalLength = self.focalEnt.get()
+
+        if baseline == '' or focalLength == '':
+            self.depthLabel = depth_calculate()
+        else:
+            self.depthMap = depth_calculate(baseline=float(baseline), focalLength=float(focalLength))
+        # cv.imshow('depthmap', self.depthMap)
+        # cv.imshow('original', self.originalIm)
+        # cv.waitKey(0)
+
+        [_, self.averageValues, _] = segment(self.depthMap, self.originalIm.copy())
+
+    def rebind_canvas(self):
+        print('rebound to update background')
+        self.mainIm.bind('<Double-1>', self.update_background)
+        self.mainIm.grid(row=0, column=0)
+
+    # remove background
+    def update_background(self, event):
+        x1, y1 = event.x, event.y
+        print('update background called')
+
+        image = remove_background(self.originalIm, x1, y1)
+
+        # cv.imshow('removebackground', image)
+        # cv.waitKey(0)
+
+        # with background removed apply contouring
+        depthMap = self.depthMap
+        [drawnContours, self.averageValues, self.masks] = segment(depthMap, image)
+
+        # # update the main image
+        # cv.imshow('contoursdrawn', drawnContours)
+        # cv.waitKey(0)
+
+        print(drawnContours.shape)
+
+        imageUpdate = cv.cvtColor(drawnContours, cv.COLOR_BGR2RGB)
+        imageUpdate = Image.fromarray(imageUpdate)
+
+        self.image = ImageTk.PhotoImage(image=imageUpdate)
+
+        self.mainIm = tk.Label(self.slideImage, image=self.image)
+
+        self.mainIm.grid(row=0, column=0)
+        print('image updated')
+
+        # rebind the canvas to showing depth
+        self.mainIm.bind('<Double-1>', self.show_depth)
+        # show the options for
+
+        print('rebound to show depth')
 
     # return the selection from the average depth map
     def show_depth(self, event):
         x1, y1 = event.x, event.y
-        depth = self.averageDepthMap[x1, y1]
-        print(depth)
+        depth = return_average(x1, y1, self.averageValues, self.masks)
+        if depth == 0:
+            text = 'Background Value Not Calculated'
+        else:
+            text = 'Depth: ' + str(depth) + '\u03BC' + 'm'
+        self.depthLabel.config(text=text)
 
 
 def read_images(name, mode='normal'):
@@ -184,7 +262,57 @@ def camera_calibrate():
             # cv.waitKey(0)
 
 
-def depth_calculate(baseline=0.05, focalLength=4, apSize=5):
+def remove_background(image, x, y):
+    # segment the image using k-cluster means
+    # convert to RGB
+    image = cv.cvtColor(image, cv.COLOR_BGR2RGB)
+
+    # reshape the image to a 2D array of pixels and 3 color values (RGB)
+    pixelValue = image.reshape((-1, 3))
+
+    # convert to float
+    pixelValue = np.float32(pixelValue)
+
+    # define stopping criteria
+    criteria = (cv.TERM_CRITERIA_EPS + cv.TERM_CRITERIA_MAX_ITER, 100, 0.2)
+
+    # number of clusters (K)
+
+    k = 5
+    _, labels, (centers) = cv.kmeans(pixelValue, k, None, criteria, 10, cv.KMEANS_RANDOM_CENTERS)
+
+    # convert back to 8 bit values
+    centers = np.uint8(centers)
+    print(labels)
+    print(centers)
+
+    # flatten the labels array
+    labels = labels.flatten()
+
+    # convert all pixels to the color of the centroids
+    segmentedImage = centers[labels.flatten()]
+
+    # reshape back to the original image dimension
+    segmentedImage = segmentedImage.reshape(image.shape)
+
+    # find the segment the user clicked on and remove it
+    segment = segmentedImage[y, x].astype(np.float32)
+
+    backgroundRemoved = np.copy(image)
+    # convert to the shape of a vector of pixel values
+    backgroundRemoved = backgroundRemoved.reshape((-1, 3))
+
+    cluster = np.argwhere(centers == segment)
+    print(cluster[0][0])
+    backgroundRemoved[labels == cluster[0][0]] = [0, 0, 0]
+    # convert back to original shape
+    backgroundRemoved = backgroundRemoved.reshape(image.shape)
+    backgroundRemoved = cv.cvtColor(backgroundRemoved, cv.COLOR_BGR2RGB)
+
+    return backgroundRemoved
+
+
+def depth_calculate(baseline=0.05, focalLength=4.22):
     images = read_images('depth')
     imageSize = images[1, 1].shape[0]
     size = parallax.mml_size('depth')
@@ -262,6 +390,7 @@ def depth_calculate(baseline=0.05, focalLength=4, apSize=5):
     fullDepthMap = np.reciprocal(fullDismap)
     fullDepthMap = fullDepthMap * (baseline * focalLength)
     # cv.imshow('depth', fullDepthMap)
+
     # cv.waitKey(0)
 
     return fullDepthMap
@@ -270,58 +399,116 @@ def depth_calculate(baseline=0.05, focalLength=4, apSize=5):
 # segment the image
 def segment(depthMap, image):
     size = parallax.mml_size('depth')
-    # median filter the image to remove non essential fine details
-    median = cv.medianBlur(image, 5)
+    drawnContours = image
 
-    # resharpen
-    kernel = np.array([[0, -1, 0],
-                       [-1, 5, -1],
-                       [0, -1, 0]])
-    sharp = cv.filter2D(src=median, ddepth=-1, kernel=kernel)
+    # segment the image using k-cluster means
+    # convert to RGB
+    image = cv.cvtColor(image, cv.COLOR_BGR2RGB)
 
-    # cv.imshow('sharp', sharp)
+    print(image.shape, image.dtype)
+    # reshape the image to a 2D array of pixels and 3 color values (RGB)
+    pixel_values = image.reshape((-1, 3))
+    # convert to float
+    pixel_values = np.float32(pixel_values)
+
+    # define stopping criteria
+    criteria = (cv.TERM_CRITERIA_EPS + cv.TERM_CRITERIA_MAX_ITER, 100, 0.2)
+
+    # number of clusters (K)
+    k = 3
+    _, labels, (centers) = cv.kmeans(pixel_values, k, None, criteria, 10, cv.KMEANS_RANDOM_CENTERS)
+
+    print(centers)
+    # convert back to 8 bit values
+    centers = np.uint8(centers)
+
+    # flatten the labels array
+    labels = labels.flatten()
+
+    clusteredImage = []
+    blankCluster = np.zeros(image.shape, np.uint8)
+
+    # separate each cluster and store as separate image
+    for i in range(0, k):
+        # disable only the cluster number 2 (turn the pixel into black)
+        currClustIm = np.copy(blankCluster)
+        # convert to the shape of a vector of pixel values
+        currClustIm = currClustIm.reshape((-1, 3))
+        # color (i.e cluster) to disable
+        cluster = i
+        currClustIm[labels == cluster] = [255, 255, 255]
+
+        # convert back to original shape
+        currClustIm = currClustIm.reshape(image.shape)
+        # # show the mask
+        # cv.imshow('mask', currClustIm)
+        # cv.waitKey(0)
+
+        # append the mask to the mask array
+        clusteredImage.append(currClustIm)
+
     averageValue = []
-    fullcontours = []
+    masks = []
 
-    # find contours in image on each channel
-    for i in range(0, sharp.shape[2]):
-        # make image grey scale
-        im = sharp[:, :, i]
+    # find contours in image on each clustered image (make a mask of each)
+    for i in range(0, len(clusteredImage)):
+        # make cluster image grey scale
+        im = cv.cvtColor(clusteredImage[i], cv.COLOR_RGB2GRAY)
 
-        im = cv.medianBlur(im, 7)
-        # Find Canny edges
-        edged = cv.Canny(im, 0, 150, apertureSize=3, L2gradient=True)
+        # cv.imshow('cluster', im)
+        # cv.waitKey(0)
 
-        # dilate the image to join the contours
-        kernel = cv.getStructuringElement(cv.MORPH_ELLIPSE, (3, 3))
-        dilated = cv.dilate(edged, kernel)
+        # find the contours on the clustered image
+        contours, hierarchy = cv.findContours(im, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)
 
-        contours, hierarchy = cv.findContours(dilated, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)
-
-        # draw contours onto image on each channel
-        for index in range(0, len(contours)):
+        # draw contours onto colour image and on each mask
+        for j in range(0, len(contours)):
             colour = np.random.randint(0, 255, size=(3,))
+
+            # define a blank mask
             mask = np.zeros((image.shape[0], image.shape[1]), np.uint8)
+
             # convert data types int64 to int
             colour = (int(colour[0]), int(colour[1]), int(colour[2]))
-            cv.drawContours(sharp, contours, index, colour, 3)
+            cv.drawContours(drawnContours, contours, j, colour, 2)
+            # cv.imshow('drawn', drawnContours)
 
             # create the mask
-            cv.drawContours(mask, contours, index, (255, 255, 255), cv.FILLED, 8, hierarchy)
-            # converting to its binary form
+            cv.drawContours(mask, contours, j, (255, 255, 255), cv.FILLED)
+            # cv.imshow('mask', mask)
+            # cv.waitKey(0)
+
+            # converting masks to its binary form
             _, mask = cv.threshold(mask, 1, 255, cv.THRESH_BINARY)
 
             noPoints = np.count_nonzero(mask)
 
+            if noPoints == (image.shape[0] * image.shape[1]):  # if all the values are positive skip this one
+                print('full image mask')
+                continue
+
             # average the depth map within the contours
             index = np.transpose(np.nonzero(mask))
+
             # print(index[1])
             sum = 0
             for i in range(0, len(index)):
                 sum = sum + depthMap[index[i][0], index[i][1]]
 
             averageValue.append([sum / noPoints])
-            fullcontours.append(contours)
-            print(fullcontours)
+            masks.append(mask)
 
-    return sharp, averageValue, fullcontours
+    return drawnContours, averageValue, masks
+
+
+# return the average of the smallest contour within the set (most specific value)
+# BACKGROUND VALUE AS YET INACCURATE (TELL USERS TO MAKE BACKGROUND DIFFERENT TO INSPECTED SHAPE)
+def return_average(x, y, averageValues, masks):
+    depth = 0.0
+    prevSum = masks[0].shape[0] + 1  # the maximum size the mask could be (all high) +1
+    for i in range(0, len(masks)):
+        if masks[i][y, x] != 0:
+            currSum = np.sum(masks[i], dtype=np.uint8)
+            if prevSum > currSum:
+                depth = averageValues[i]  # if this is the smallest contour set depth to this
+    return depth

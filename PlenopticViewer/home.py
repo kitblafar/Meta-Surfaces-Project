@@ -21,7 +21,7 @@ def initial_tasks():
 
 # loading window
 root = tk.Tk()
-root.title('MML Viewer')
+root.title('MML Array Viewer')
 root.iconphoto(False, tk.PhotoImage(file='./Icon.png'))
 label = tk.Label(root, text='loading...')
 label.grid(row=0)
@@ -186,9 +186,9 @@ def reconstruct_image():
 class App(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title('MML Viewer')
+        self.title('MML Array Viewer')
         self.iconphoto(False, tk.PhotoImage(file='./Icon.png'))
-        self.geometry('900x600')
+        self.geometry('1000x600')
         self.resizable(True, True)
 
 
