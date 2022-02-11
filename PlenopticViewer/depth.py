@@ -1,14 +1,12 @@
 # Functions used to add depth sensing imaging to the GUI
 import tkinter as tk
 from tkinter import ttk
-
-import numpy
-
 import HDR
 import parallax
 from PIL import Image, ImageTk
 import cv2 as cv
 import numpy as np
+import matplotlib.pyplot as plt
 
 
 class DepthPage(tk.Frame):
@@ -48,6 +46,9 @@ class DepthPage(tk.Frame):
         self.image = Image.fromarray(self.image)
         self.image = ImageTk.PhotoImage(image=self.image)
 
+        self.heatmap = self.originalIm.copy()
+        self.drawnContours = self.originalIm.copy()
+
         self.mainIm = tk.Label(self.slideImage, image=self.image)
         self.mainIm.grid(row=0, column=0)
 
@@ -64,6 +65,7 @@ class DepthPage(tk.Frame):
         parPar.rowconfigure(2, weight=1)
         parPar.rowconfigure(3, weight=1)
         parPar.rowconfigure(4, weight=1)
+        parPar.rowconfigure(5, weight=1)
         parPar.columnconfigure(0, weight=1)
         parPar.columnconfigure(1, weight=1)
         parPar.grid(row=0, column=0)
@@ -72,27 +74,55 @@ class DepthPage(tk.Frame):
 
         # TODO: Get focal length and distance between MML centres to be user inputs
         # Example labels that could be displayed under the "Tool" menu
+        ttk.Button(parPar, text="Contour Image", command=lambda: self.update_mainimage('n')).grid(row=0,
+                                                                                                  column=0,
+                                                                                                  padx=5,
+                                                                                                  pady=3,
+                                                                                                  ipadx=10,
+                                                                                                  sticky='s')
+        ttk.Button(parPar, text="HeatMap View", command=lambda: self.update_mainimage('h')).grid(row=0, column=1,
+                                                                                                 padx=5, pady=3,
+                                                                                                 ipadx=10, sticky='s')
 
-        tk.Label(parPar, text="Enter the Values Required").grid(row=0, column=0, padx=5, pady=5, sticky='n')
+        tk.Label(parPar, text="Enter the Values Required").grid(row=1, column=0, padx=5, pady=5, sticky='n')
 
-        tk.Label(parPar, text="Distance(um) Between MML Centres (Auto: 0.05)").grid(row=1, column=0, padx=5, pady=5,
+        tk.Label(parPar, text="Distance(um) Between MML Centres (Auto: 0.05)").grid(row=2, column=0, padx=5, pady=5,
                                                                                     sticky='n')
         self.distanceEnt = tk.Entry(parPar)
-        self.distanceEnt.grid(row=1, column=1, padx=5, pady=5, sticky='n')
+        self.distanceEnt.grid(row=2, column=1, padx=5, pady=5, sticky='n')
         self.distanceEnt.bind('<Return>', self.update_depthmap)
-        tk.Label(parPar, text="Focal Length (um) (Auto: 4)").grid(row=2, column=0, padx=5, pady=5, sticky='n')
+        tk.Label(parPar, text="Focal Length (um) (Auto: 4)").grid(row=3, column=0, padx=5, pady=5, sticky='n')
         self.focalEnt = tk.Entry(parPar)
-        self.focalEnt.grid(row=2, column=1, padx=5, pady=5, sticky='n')
+        self.focalEnt.grid(row=3, column=1, padx=5, pady=5, sticky='n')
         self.focalEnt.bind('<Return>', self.update_depthmap)
         self.depthLabel = tk.Label(parPar, text='Double Click an Image Area to See Depth')
-        self.depthLabel.grid(row=3, column=0, padx=5, pady=5, sticky='n')
-        tk.Label(parPar, text="Click `Set Background` then Double Click the Image Background.").grid(row=4, column=0,
+        self.depthLabel.grid(row=4, column=0, padx=5, pady=5, sticky='n')
+        tk.Label(parPar, text="Click `Set Background` then Double Click the Image Background.").grid(row=5, column=0,
                                                                                                      padx=5, pady=5,
                                                                                                      sticky='n')
-        ttk.Button(parPar, text="Set Background", command=self.rebind_canvas).grid(row=4, column=1, padx=5, pady=3,
+        ttk.Button(parPar, text="Set Background", command=self.rebind_canvas).grid(row=5, column=1, padx=5, pady=3,
                                                                                    ipadx=10, sticky='s')
 
         container.tkraise()
+
+    def update_mainimage(self, name):
+        print('image update called')
+        # change the main image to the normal segmented image
+        imageUpdate = self.originalIm
+        if name == 'h':
+            imageUpdate = cv.cvtColor(self.heatmap, cv.COLOR_BGR2RGB)
+        elif name == 'n':
+            imageUpdate = cv.cvtColor(self.drawnContours, cv.COLOR_BGR2RGB)
+
+        imageUpdate = Image.fromarray(imageUpdate)
+        self.image = ImageTk.PhotoImage(image=imageUpdate)
+        self.mainIm = tk.Label(self.slideImage, image=self.image)
+        self.mainIm.grid(row=0, column=0)
+
+        print('image updated')
+
+        # rebind the canvas to showing depth
+        self.mainIm.bind('<Double-1>', self.show_depth)
 
     # to update the depthmap redefine the background
     def update_depthmap(self, _):
@@ -123,31 +153,14 @@ class DepthPage(tk.Frame):
         print('update segment called')
         self.ignoreMask = []
         # apply contouring to image with background removed
-        [drawnContours, self.averageValues, self.masks, self.ignoreMask] = segment(self.backgroundCord[1],
-                                                                          self.backgroundCord[0],
-                                                                          self.depthMapOrg,
-                                                                          self.originalIm.copy())
+        [self.drawnContours, self.averageValues, self.masks, self.ignoreMask] = segment(self.backgroundCord[1],
+                                                                                        self.backgroundCord[0],
+                                                                                        self.depthMapOrg,
+                                                                                        self.originalIm.copy())
+        # create the heatmap overlay
+        self.heatmap = create_heatmap(self.masks, self.averageValues, self.ignoreMask)
 
-        # cv.imshow('mask to ignore', self.ignoreMask)
-
-        # # update the main image
-        # cv.imshow('contoursdrawn', drawnContours)
-        # cv.waitKey(0)
-
-        imageUpdate = cv.cvtColor(drawnContours, cv.COLOR_BGR2RGB)
-        imageUpdate = Image.fromarray(imageUpdate)
-
-        self.image = ImageTk.PhotoImage(image=imageUpdate)
-
-        self.mainIm = tk.Label(self.slideImage, image=self.image)
-
-        self.mainIm.grid(row=0, column=0)
-        print('image updated')
-
-        # rebind the canvas to showing depth
-        self.mainIm.bind('<Double-1>', self.show_depth)
-        # show the options for
-        print('rebound to show depth')
+        self.update_mainimage('n')
 
     # return the selection from the average depth map
     def show_depth(self, event):
@@ -225,7 +238,6 @@ def camera_calibrate():
     images = read_images('cal')
 
     size = images.shape[0]
-    print(size)
 
     for i in range(0, size):
         for j in range(0, size):
@@ -401,8 +413,8 @@ def segment(x, y, depthMap, image):
 
     ignoreMask = np.copy(backgroundRemoved)
     backgroundRemoved[labels == ignore] = [0, 0, 0]
-    ignoreMask[labels == ignore] = [255, 255, 255]
-    ignoreMask[labels != ignore] = [0, 0, 0]
+    ignoreMask[labels == ignore] = [0, 0, 0]
+    ignoreMask[labels != ignore] = [1, 1, 1]
 
     # convert back to original shape
     backgroundRemoved = backgroundRemoved.reshape(image.shape)
@@ -460,7 +472,7 @@ def segment(x, y, depthMap, image):
 
             # convert data types int64 to int
             colour = (int(colour[0]), int(colour[1]), int(colour[2]))
-            cv.drawContours(drawnContours, contours, j, colour, 2)
+            cv.drawContours(drawnContours, contours, j, colour, 1)
             # cv.imshow('drawn', drawnContours)
 
             # create the mask
@@ -469,7 +481,7 @@ def segment(x, y, depthMap, image):
             # cv.waitKey(0)
 
             # converting masks to its binary form
-            _, mask = cv.threshold(mask, 1, 255, cv.THRESH_BINARY)
+            mask = mask.astype(bool)
 
             noPoints = np.count_nonzero(mask)
 
@@ -487,12 +499,43 @@ def segment(x, y, depthMap, image):
     return drawnContours, averageValue, masks, ignoreMask
 
 
+def create_heatmap(masks, averageValues, ignoreMask):
+    # multiple each mask by average values associated and combine into large greyscale image
+    heatmap = np.zeros(masks[1].shape, np.uint8)
+    maxAverageValue = max(averageValues)
+
+    for i in range(0, len(averageValues)):
+        # normalise the average value to 255 (greyscale)
+        normalAverageValue = averageValues[i][0].astype(np.float) * 255.0 / float(maxAverageValue[0])
+
+        averageMask = np.multiply(masks[i].astype(np.uint8), normalAverageValue.astype(np.uint8))
+
+        print('average mask value ', np.max(averageMask[i]).astype(np.uint8))
+        print('normal average value ', normalAverageValue)
+        heatmap = np.add(heatmap, averageMask)
+        # print('maximum mask value: ', np.max(masks[i]).astype(np.uint8))
+
+    cv.imshow('mask * average values ' + str(i), heatmap)
+    cv.waitKey(0)
+
+    heatmap = cv.applyColorMap(heatmap, cv.COLORMAP_JET)
+    cv.imshow('ignore mask: ', ignoreMask * 255)
+    cv.waitKey(0)
+    heatmap = np.multiply(heatmap, ignoreMask)  # remove the background again
+    heatmap = cv.cvtColor(heatmap, cv.COLOR_RGB2BGR)
+    cv.imshow('heatmap', heatmap)
+    cv.waitKey(0)
+
+    return heatmap
+
+
 # return the average of the smallest contour within the set (most specific value)
 # BACKGROUND VALUE AS YET INACCURATE (TELL USERS TO MAKE BACKGROUND DIFFERENT TO INSPECTED SHAPE)
 def return_average(x, y, averageValues, masks, ignoreMask):
     depth = 0.0
+    # print('coordinates: ', x , y)
     prevSum = masks[0].shape[0] + 1  # the maximum size the mask could be (all high) +1
-    if ignoreMask[y][x][0] != 0:  # if in the background return depth is zero
+    if ignoreMask[y][x][0] == 0:  # if in the background return depth is zero
         depth = 0.0
     else:
         for i in range(0, len(masks)):
@@ -500,4 +543,5 @@ def return_average(x, y, averageValues, masks, ignoreMask):
                 currSum = np.sum(masks[i], dtype=np.uint8)
                 if prevSum > currSum:
                     depth = averageValues[i]  # if this is the smallest contour set depth to this
+    print('depth', depth)
     return depth
