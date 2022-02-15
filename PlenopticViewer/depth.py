@@ -8,7 +8,6 @@ import cv2 as cv
 import numpy as np
 import matplotlib.pyplot as plt
 
-
 class DepthPage(tk.Frame):
     def __init__(self, container):
         super().__init__(container)
@@ -74,13 +73,18 @@ class DepthPage(tk.Frame):
 
         # TODO: Get focal length and distance between MML centres to be user inputs
         # Example labels that could be displayed under the "Tool" menu
-        ttk.Button(parPar, text="Contour Image", command=lambda: self.update_mainimage('n')).grid(row=0,
+        topRow = tk.Frame(parPar)
+        topRow.grid(row=0, column=0, columnspan=2)
+        ttk.Button(topRow, text="Contour Image", command=lambda: self.update_mainimage('n')).grid(row=0,
                                                                                                   column=0,
                                                                                                   padx=5,
                                                                                                   pady=3,
                                                                                                   ipadx=10,
                                                                                                   sticky='s')
-        ttk.Button(parPar, text="HeatMap View", command=lambda: self.update_mainimage('h')).grid(row=0, column=1,
+        ttk.Button(topRow, text="HeatMap View", command=lambda: self.update_mainimage('h')).grid(row=0, column=1,
+                                                                                                 padx=5, pady=3,
+                                                                                                 ipadx=10, sticky='s')
+        ttk.Button(topRow, text="Size Pop-Up", command=lambda: self.show_size()).grid(row=0, column=2,
                                                                                                  padx=5, pady=3,
                                                                                                  ipadx=10, sticky='s')
 
@@ -103,7 +107,22 @@ class DepthPage(tk.Frame):
         ttk.Button(parPar, text="Set Background", command=self.rebind_canvas).grid(row=5, column=1, padx=5, pady=3,
                                                                                    ipadx=10, sticky='s')
 
+        self.baseline = self.distanceEnt.get()
+        if not self.baseline.isnumeric():
+            self.baseline = 0.05
         container.tkraise()
+
+    def show_size(self):
+        [_, shift, _] = HDR.align_images()
+
+        imageScale = float(self.baseline) / (-shift)
+        _, ax = plt.subplots()
+
+        ax.imshow(cv.cvtColor(self.originalIm, cv.COLOR_BGR2RGB), extent=[0, 500 * imageScale,0, 500 * imageScale])
+        plt.xlabel("Size (um)")
+        plt.ylabel("Size (um)")
+        plt.show()
+
 
     def update_mainimage(self, name):
         print('image update called')
@@ -129,7 +148,7 @@ class DepthPage(tk.Frame):
         baseline = self.distanceEnt.get()
         focalLength = self.focalEnt.get()
 
-        if baseline == '' or focalLength == '':
+        if not baseline.isnumeric() or not focalLength.isnumeric():
             self.depthLabel = depth_calculate()
         else:
             self.depthMap = depth_calculate(baseline=float(baseline), focalLength=float(focalLength))
@@ -515,16 +534,9 @@ def create_heatmap(masks, averageValues, ignoreMask):
         heatmap = np.add(heatmap, averageMask)
         # print('maximum mask value: ', np.max(masks[i]).astype(np.uint8))
 
-    cv.imshow('mask * average values ' + str(i), heatmap)
-    cv.waitKey(0)
-
     heatmap = cv.applyColorMap(heatmap, cv.COLORMAP_JET)
-    cv.imshow('ignore mask: ', ignoreMask * 255)
-    cv.waitKey(0)
     heatmap = np.multiply(heatmap, ignoreMask)  # remove the background again
     heatmap = cv.cvtColor(heatmap, cv.COLOR_RGB2BGR)
-    cv.imshow('heatmap', heatmap)
-    cv.waitKey(0)
 
     return heatmap
 
