@@ -84,7 +84,7 @@ class DepthPage(tk.Frame):
         ttk.Button(topRow, text="HeatMap View", command=lambda: self.update_mainimage('h')).grid(row=0, column=1,
                                                                                                  padx=5, pady=3,
                                                                                                  ipadx=10, sticky='s')
-        ttk.Button(topRow, text="Size Pop-Up", command=lambda: self.show_size()).grid(row=0, column=2,
+        ttk.Button(topRow, text="Scale Pop-Up", command=lambda: self.show_size()).grid(row=0, column=2,
                                                                                                  padx=5, pady=3,
                                                                                                  ipadx=10, sticky='s')
 
@@ -545,15 +545,19 @@ def create_heatmap(masks, averageValues, ignoreMask):
 # BACKGROUND VALUE AS YET INACCURATE (TELL USERS TO MAKE BACKGROUND DIFFERENT TO INSPECTED SHAPE)
 def return_average(x, y, averageValues, masks, ignoreMask):
     depth = 0.0
+    sucessValues = []
+    sums = []
     # print('coordinates: ', x , y)
-    prevSum = masks[0].shape[0] + 1  # the maximum size the mask could be (all high) +1
     if ignoreMask[y][x][0] == 0:  # if in the background return depth is zero
         depth = 0.0
     else:
         for i in range(0, len(masks)):
             if masks[i][y, x] != 0:
-                currSum = np.sum(masks[i], dtype=np.uint8)
-                if prevSum > currSum:
-                    depth = averageValues[i]  # if this is the smallest contour set depth to this
+                sums.append(np.sum(masks[i], dtype=np.uint8))
+                sucessValues.append(averageValues[i])
+
+        # find the smallest sum and return the associated
+        minIndex = sums.index(min(sums))
+        depth = sucessValues[minIndex]
     print('depth', depth)
     return depth

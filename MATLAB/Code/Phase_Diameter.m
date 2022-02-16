@@ -85,9 +85,11 @@ legend('561nm','633nm','Chosen Values');
 %read each intensity data
 data=importdata("561IntensityRadius.txt"); %import file of changing intensity with diameter
 intensity1=data.data(:,2);
+intensity1=intensity1.*intensity1; %intensity is A^2
 radiusOrg1=data.data(:,1);
 data=importdata("633IntensityRadius.txt"); %import file of changing intensity with diameter
 intensity2=data.data(:,2);
+intensity2=intensity2.*intensity2; %intensity is A^2
 radiusOrg2=data.data(:,1);
 
 %interpolate to the same radius values
