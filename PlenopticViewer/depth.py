@@ -8,6 +8,7 @@ import cv2 as cv
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 class DepthPage(tk.Frame):
     def __init__(self, container):
         super().__init__(container)
@@ -85,17 +86,17 @@ class DepthPage(tk.Frame):
                                                                                                  padx=5, pady=3,
                                                                                                  ipadx=10, sticky='s')
         ttk.Button(topRow, text="Scale Pop-Up", command=lambda: self.show_size()).grid(row=0, column=2,
-                                                                                                 padx=5, pady=3,
-                                                                                                 ipadx=10, sticky='s')
+                                                                                       padx=5, pady=3,
+                                                                                       ipadx=10, sticky='s')
 
         tk.Label(parPar, text="Enter the Values Required").grid(row=1, column=0, padx=5, pady=5, sticky='n')
 
-        tk.Label(parPar, text="Distance(um) Between MML Centres (Auto: 0.05)").grid(row=2, column=0, padx=5, pady=5,
+        tk.Label(parPar, text="Distance(mm) Between MML Centres (Auto: 0.05)").grid(row=2, column=0, padx=5, pady=5,
                                                                                     sticky='n')
         self.distanceEnt = tk.Entry(parPar)
         self.distanceEnt.grid(row=2, column=1, padx=5, pady=5, sticky='n')
         self.distanceEnt.bind('<Return>', self.update_depthmap)
-        tk.Label(parPar, text="Focal Length (um) (Auto: 4)").grid(row=3, column=0, padx=5, pady=5, sticky='n')
+        tk.Label(parPar, text="Focal Length (mm) (Auto: 4)").grid(row=3, column=0, padx=5, pady=5, sticky='n')
         self.focalEnt = tk.Entry(parPar)
         self.focalEnt.grid(row=3, column=1, padx=5, pady=5, sticky='n')
         self.focalEnt.bind('<Return>', self.update_depthmap)
@@ -118,16 +119,16 @@ class DepthPage(tk.Frame):
         imageScale = float(self.baseline) / (-shift)
         _, ax = plt.subplots()
 
-        ax.imshow(cv.cvtColor(self.originalIm, cv.COLOR_BGR2RGB), extent=[0, 500 * imageScale,0, 500 * imageScale])
-        plt.xlabel("Size (um)")
-        plt.ylabel("Size (um)")
+        ax.imshow(cv.cvtColor(self.originalIm, cv.COLOR_BGR2RGB), extent=[0, 500 * imageScale, 0, 500 * imageScale])
+        plt.xlabel("Size (mm)")
+        plt.ylabel("Size (mm)")
         plt.show()
-
 
     def update_mainimage(self, name):
         print('image update called')
         # change the main image to the normal segmented image
         imageUpdate = self.originalIm
+
         if name == 'h':
             imageUpdate = cv.cvtColor(self.heatmap, cv.COLOR_BGR2RGB)
         elif name == 'n':
@@ -145,13 +146,13 @@ class DepthPage(tk.Frame):
 
     # to update the depthmap redefine the background
     def update_depthmap(self, _):
-        baseline = self.distanceEnt.get()
+        self.baseline = self.distanceEnt.get()
         focalLength = self.focalEnt.get()
 
-        if not baseline.isnumeric() or not focalLength.isnumeric():
-            self.depthLabel = depth_calculate()
+        if not self.baseline.isnumeric() or not focalLength.isnumeric():
+            self.depthMap = depth_calculate()
         else:
-            self.depthMap = depth_calculate(baseline=float(baseline), focalLength=float(focalLength))
+            self.depthMap = depth_calculate(baseline=float(self.baseline), focalLength=float(focalLength))
 
         self.update_segment()
         # cv.imshow('depthmap', self.depthMap)
@@ -174,7 +175,7 @@ class DepthPage(tk.Frame):
         # apply contouring to image with background removed
         [self.drawnContours, self.averageValues, self.masks, self.ignoreMask] = segment(self.backgroundCord[1],
                                                                                         self.backgroundCord[0],
-                                                                                        self.depthMapOrg,
+                                                                                        self.depthMap,
                                                                                         self.originalIm.copy())
         # create the heatmap overlay
         self.heatmap = create_heatmap(self.masks, self.averageValues, self.ignoreMask)
@@ -189,7 +190,11 @@ class DepthPage(tk.Frame):
         if depth == 0:
             text = 'Background Value Not Calculated'
         else:
-            text = 'Depth: ' + str(depth) + '\u03BC' + 'm'
+            print(depth)
+            depth = depth[0] * 1000
+            text = 'Depth: ' + str(depth) + 'mm'
+
+        print('depth label updated'+text)
         self.depthLabel.config(text=text)
 
 
@@ -378,6 +383,9 @@ def depth_calculate(baseline=0.05, focalLength=4.22):
     # cv.imshow('fulldismap', fullDismap)
 
     fullDepthMap = np.reciprocal(fullDismap)
+    baseline = baseline / 1000  # covert to meters
+    focalLength = focalLength / 1000  # convert to meters
+
     fullDepthMap = fullDepthMap * (baseline * focalLength)
     # cv.imshow('depth', fullDepthMap)
 
@@ -554,6 +562,8 @@ def return_average(x, y, averageValues, masks, ignoreMask):
         for i in range(0, len(masks)):
             if masks[i][y, x] != 0:
                 sums.append(np.sum(masks[i], dtype=np.uint8))
+                print(np.sum(masks[i], dtype=np.uint8))
+                print(averageValues[i])
                 sucessValues.append(averageValues[i])
 
         # find the smallest sum and return the associated
