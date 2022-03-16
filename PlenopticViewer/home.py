@@ -132,37 +132,52 @@ class Reconstructed(tk.Frame):
 
 def reconstruct_image():
     [a, shiftHor, shiftVert] = HDR.align_images('par')
-    shiftHor = abs(int(shiftHor))
-    shiftVert = abs(int(shiftVert))
     imageSet = depth.read_images('par')
+    shiftHor = shiftHor.astype(int)
+    shiftVert = shiftVert.astype(int)
+
+    # make each element the sum of the last
+    shiftHor = np.cumsum(shiftHor)
+    shiftVert = np.cumsum(shiftVert)
+
+    # add zero at beginning as initially no shift
+    shiftHor = np.insert(shiftHor, 0, 0)
+    shiftVert = np.insert(shiftVert, 0, 0)
+
     print(shiftVert)
     print(shiftHor)
 
     size = parallax.mml_size('par')
+
     imageSize = imageSet[1, 1].shape[0]
     # create an empty array to fill with the reconstructed image
-    imageReconstruct = np.zeros([imageSize + shiftVert * (size-1), imageSize + shiftHor * (size-1), 3], dtype=np.uint8)
+    # find the last element of vert and hor shift this is max shift in each direction
+    lenHor = len(shiftHor)
+    fullHor = shiftHor[lenHor - 1]
+    lenVert = len(shiftVert)
+    fullVert = shiftVert[lenVert - 1]
+    imageReconstruct = np.zeros([imageSize - fullVert, imageSize - fullHor, 3], dtype=np.uint8)
     print(imageReconstruct.shape)
 
     # populate array
-    for i in range(0, size):
-        for j in range(0, size):
-            lowerHor = i * shiftHor
-            upperHor = i * shiftHor + imageSize
-            lowerVert = j * shiftVert
-            upperVert = j * shiftVert + imageSize
-            # print('horizontal- Upper:', upperHor, 'Lower:', lowerHor)
-            # print('vertical- Upper:', upperVert, 'Lower:', lowerVert)
+    for i in range(0, size):  # sets horizontal
+        for j in range(0, size):  # sets vertical
+            lowerHor = -shiftHor[i]
+            upperHor = -shiftHor[i] + imageSize
+            lowerVert = -shiftVert[j]
+            upperVert = -shiftVert[j] + imageSize
+            print('horizontal- Upper:', upperHor, 'Lower:', lowerHor)
+            print('vertical- Upper:', upperVert, 'Lower:', lowerVert, '\n')
 
             imageReconstruct[lowerVert:upperVert, lowerHor: upperHor] = imageSet[i, j]
-            fileName = 'Reconstruct'+str(i)+str(j)
-            cv.imwrite('Recon/' + fileName+'.png', imageReconstruct)
+            fileName = 'Reconstruct' + str(i) + str(j)
+            cv.imwrite('Recon/' + fileName + '.png', imageReconstruct)
             cv.imshow('reconstructed', imageReconstruct)
             cv.waitKey(0)
 
-    # put the middle image in for best result
-    middle = int((size - 1) / 2)
-    imageReconstruct[shiftVert:shiftVert + imageSize, shiftHor: shiftHor + imageSize] = imageSet[middle, middle]
+    # # put the middle image in for best result
+    # middle = int((size - 1) / 2)
+    # imageReconstruct[-shiftVert[1]:-shiftVert[1] + imageSize, -shiftHor[1]: -shiftHor[1] + imageSize] = imageSet[middle, middle]
 
     # change image into a form that works for tkinter
     imageReconstruct = cv.cvtColor(imageReconstruct, cv.COLOR_BGR2RGB)
@@ -171,10 +186,6 @@ def reconstruct_image():
     imageReconstruct = ImageTk.PhotoImage(image=imageReconstruct)
 
     return imageReconstruct
-
-    # # put the middle image in for best result
-    # middle = int((size-1)/2)
-    # imageReconstruct[shiftVert:shiftVert+imageSize, shiftHor: shiftHor+imageSize] = imageSet[middle, middle]
 
     # change image into a form that works for tkinter
     imageReconstruct = cv.cvtColor(imageReconstruct, cv.COLOR_BGR2RGB)
