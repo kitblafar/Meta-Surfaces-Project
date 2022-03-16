@@ -194,7 +194,7 @@ class DepthPage(tk.Frame):
             depth = depth[0] * 1000
             text = 'Depth: ' + str(depth) + 'mm'
 
-        print('depth label updated'+text)
+        print('depth label updated' + text)
         self.depthLabel.config(text=text)
 
 
@@ -282,8 +282,12 @@ def camera_calibrate():
     # find the points necessary for camera callibration
     ret, mtx, dist, rvecs, tvecs = cv.calibrateCamera(objpoints, imgpoints, gray.shape[::-1], None, None)
 
-    # read the required set of images (the parallax set for this application
+    # read the required set of images (the parallax set for this application)
     imgArray = read_images('par')
+    pre = 'ParallaxAltered/'
+    post = 'par'
+    cv.imwrite('Calibrate Demo/Before.png', imgArray[1, 1])
+
     for i in range(0, size):
         for j in range(0, size):
             img = imgArray[i, j]
@@ -301,7 +305,10 @@ def camera_calibrate():
             dst = dst[y:y + h - 10, x:x + w - 10]
             # resize the altered image to 500 pixels squared
             dst = cv.resize(dst, (500, 500))
-            filename = 'ParallaxAltered/' + parallax.image_filename('par', j + 1, i + 1)
+            filename = pre + parallax.image_filename(post, j + 1, i + 1)
+            if i == 1:
+                if j == 1:
+                    cv.imwrite('Calibrate Demo/After.png', dst)
             cv.imwrite(filename, dst)
             # cv.imshow('undistort', dst)
             # cv.waitKey(0)

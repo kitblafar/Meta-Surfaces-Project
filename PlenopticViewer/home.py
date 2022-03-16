@@ -84,6 +84,7 @@ class ToolBar(tk.Frame):
         else:
             print('Page reference not found.')
 
+
 # show the reconstructed image frame by default
 class Reconstructed(tk.Frame):
     def __init__(self, container):
@@ -140,26 +141,28 @@ def reconstruct_image():
     size = parallax.mml_size('par')
     imageSize = imageSet[1, 1].shape[0]
     # create an empty array to fill with the reconstructed image
-    imageReconstruct = np.zeros([imageSize+shiftVert*2, imageSize+shiftHor*2, 3], dtype=np.uint8)
+    imageReconstruct = np.zeros([imageSize + shiftVert * (size-1), imageSize + shiftHor * (size-1), 3], dtype=np.uint8)
     print(imageReconstruct.shape)
 
     # populate array
     for i in range(0, size):
         for j in range(0, size):
-            lowerHor = i*shiftHor
-            upperHor = i*shiftHor+imageSize
-            lowerVert = j*shiftVert
-            upperVert = j*shiftVert+imageSize
+            lowerHor = i * shiftHor
+            upperHor = i * shiftHor + imageSize
+            lowerVert = j * shiftVert
+            upperVert = j * shiftVert + imageSize
             # print('horizontal- Upper:', upperHor, 'Lower:', lowerHor)
             # print('vertical- Upper:', upperVert, 'Lower:', lowerVert)
 
             imageReconstruct[lowerVert:upperVert, lowerHor: upperHor] = imageSet[i, j]
-            # cv.imshow('reconstructed', imageReconstruct)
-            # cv.waitKey(0)
+            fileName = 'Reconstruct'+str(i)+str(j)
+            cv.imwrite('Recon/' + fileName+'.png', imageReconstruct)
+            cv.imshow('reconstructed', imageReconstruct)
+            cv.waitKey(0)
 
     # put the middle image in for best result
-    middle = int((size-1)/2)
-    imageReconstruct[shiftVert:shiftVert+imageSize, shiftHor: shiftHor+imageSize] = imageSet[middle, middle]
+    middle = int((size - 1) / 2)
+    imageReconstruct[shiftVert:shiftVert + imageSize, shiftHor: shiftHor + imageSize] = imageSet[middle, middle]
 
     # change image into a form that works for tkinter
     imageReconstruct = cv.cvtColor(imageReconstruct, cv.COLOR_BGR2RGB)
@@ -180,7 +183,6 @@ def reconstruct_image():
     imageReconstruct = ImageTk.PhotoImage(image=imageReconstruct)
 
     return imageReconstruct
-
 
 
 class App(tk.Tk):

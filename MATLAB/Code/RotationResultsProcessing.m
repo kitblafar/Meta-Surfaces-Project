@@ -131,5 +131,36 @@ xlabel('rx (nm)');
 ylabel('Phase (2pi normalised)'); 
 title('Phase: Fixed Rotation Angle with Varying Geometry');
 
+%% ry=200
+AmplitudeData=importdata("Theta30Ry200Intensity.txt").data; %read intensity
+Amplitude=AmplitudeData(:, 2);
+rx=AmplitudeData(:, 1);
+Phase = importdata("Theta30Ry200Phase.txt").data; %read phase
+Phase=Phase(:, 2);
+
+% Amplitude
+figure;
+tiledlayout(2,1);
+nexttile;
+plot(rx, Amplitude,'LineWidth',3,'Color',[0 0.45 0.74]);
+xlabel('rx (nm)');
+ylabel('Amplitude'); 
+title('Amplitude: Fixed Rotation Angle with Varying Geometry');
+subtitle('Rotation: 30 degrees, Geometry Ratio: ry = 200nm');
+
+%Reflect in the x-axis
+Phase=Phase.*(-1);
+%shift all the values past the 98th sample of 561 up by 360
+index=find(rx==125);
+Phase(index:end)=Phase(index:end)+360;
+%normalise to 360 degrees
+Phase=Phase./360;
+
+% Phase
+nexttile;
+plot(rx, Phase,'LineWidth',3,'Color',[0.63 0.078 0.18]);
+xlabel('rx (nm)');
+ylabel('Phase (2pi normalised)'); 
+title('Phase: Fixed Rotation Angle with Varying Geometry');
 
 %% Varying Rotation and Geometry
