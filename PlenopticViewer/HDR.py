@@ -174,7 +174,7 @@ def shift_image(inputImage, shift):
 # TODO allow users to adjust the estimated exposure (absorption rate) for each absorption lens to get a better image
 # i.e. a slider for max exposure and min exposure and assume equally distributed within take as inputs here
 # HDR combination techniques applied to the final image
-def HDR_combine(inputImages, maxAbs=5, minAbs=0.5):
+def HDR_combine(inputImages, maxAbs=5, minAbs=1):
     size = parallax.mml_size('HDR')
     exposure = np.zeros((size * size), dtype=np.float32)
 
@@ -183,23 +183,24 @@ def HDR_combine(inputImages, maxAbs=5, minAbs=0.5):
         exposure[i] = 1 / absorption
 
     # Merge images in to HDR image
-    mergeDebvec = cv.createMergeDebevec()
+    mergeDebvec = cv.createMergeRobertson()
     hdr = mergeDebvec.process(inputImages, times=exposure.copy())
 
     # Tonemap the HDR- using Reinhard's method to obtain 24-bit color image
     tonemapReinhard = cv.createTonemapReinhard(1, 0, 0, 0)
     ldrReinhard = tonemapReinhard.process(hdr)
 
-    # # Attempt at exposure fusion method
-    # mergeExpoFus = cv.createMergeMertens()
-    # expoFus = mergeExpoFus.process(inputImages)
+    # Attempt at exposure fusion method
+    mergeExpoFus = cv.createMergeMertens()
+    expoFus = mergeExpoFus.process(inputImages)
+    res_mertens_8bit = np.clip(expoFus * 255, 0, 255).astype('uint8')
     # cv.imshow('Exposure Fusion', expoFus)
-    # res_mertens_8bit = np.clip(expoFus * 255, 0, 255).astype('uint8')
-    # cv.imshow('Exposure Fusion', expoFus)
+    # cv.waitKey(0)
 
     # save the HDR image (first convert to 8 bit)
     hdr = np.clip(ldrReinhard * 255, 0, 255).astype('uint8')  # change type and clip overflow
     cv.imwrite('HDRImage.png', hdr)
+
     # Rearrange colors- put into format readable by tkinter
     blue, green, red = cv.split(hdr)
     hdr = cv.merge((red, green, blue))

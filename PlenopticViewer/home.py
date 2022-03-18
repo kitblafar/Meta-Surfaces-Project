@@ -144,8 +144,8 @@ def reconstruct_image():
     shiftHor = np.insert(shiftHor, 0, 0)
     shiftVert = np.insert(shiftVert, 0, 0)
 
-    print(shiftVert)
-    print(shiftHor)
+    # print(shiftVert)
+    # print(shiftHor)
 
     size = parallax.mml_size('par')
 
@@ -157,7 +157,7 @@ def reconstruct_image():
     lenVert = len(shiftVert)
     fullVert = shiftVert[lenVert - 1]
     imageReconstruct = np.zeros([imageSize - fullVert, imageSize - fullHor, 3], dtype=np.uint8)
-    print(imageReconstruct.shape)
+    # print(imageReconstruct.shape)
 
     # populate array
     for i in range(0, size):  # sets horizontal
@@ -166,18 +166,14 @@ def reconstruct_image():
             upperHor = -shiftHor[i] + imageSize
             lowerVert = -shiftVert[j]
             upperVert = -shiftVert[j] + imageSize
-            print('horizontal- Upper:', upperHor, 'Lower:', lowerHor)
-            print('vertical- Upper:', upperVert, 'Lower:', lowerVert, '\n')
+            # print('horizontal- Upper:', upperHor, 'Lower:', lowerHor)
+            # print('vertical- Upper:', upperVert, 'Lower:', lowerVert, '\n')
 
             imageReconstruct[lowerVert:upperVert, lowerHor: upperHor] = imageSet[i, j]
-            fileName = 'Reconstruct' + str(i) + str(j)
-            cv.imwrite('Recon/' + fileName + '.png', imageReconstruct)
-            cv.imshow('reconstructed', imageReconstruct)
-            cv.waitKey(0)
-
-    # # put the middle image in for best result
-    # middle = int((size - 1) / 2)
-    # imageReconstruct[-shiftVert[1]:-shiftVert[1] + imageSize, -shiftHor[1]: -shiftHor[1] + imageSize] = imageSet[middle, middle]
+            # fileName = 'Reconstruct' + str(i) + str(j)
+            # cv.imwrite('Recon/' + fileName + '.png', imageReconstruct)
+            # cv.imshow('reconstructed', imageReconstruct)
+            # cv.waitKey(0)
 
     # change image into a form that works for tkinter
     imageReconstruct = cv.cvtColor(imageReconstruct, cv.COLOR_BGR2RGB)

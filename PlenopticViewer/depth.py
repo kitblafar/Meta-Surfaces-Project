@@ -46,7 +46,6 @@ class DepthPage(tk.Frame):
         self.image = Image.fromarray(self.image)
         self.image = ImageTk.PhotoImage(image=self.image)
 
-        self.heatmap = self.originalIm.copy()
         self.drawnContours = self.originalIm.copy()
 
         self.mainIm = tk.Label(self.slideImage, image=self.image)
@@ -76,16 +75,13 @@ class DepthPage(tk.Frame):
         # Example labels that could be displayed under the "Tool" menu
         topRow = tk.Frame(parPar)
         topRow.grid(row=0, column=0, columnspan=2)
-        ttk.Button(topRow, text="Contour Image", command=lambda: self.update_mainimage('n')).grid(row=0,
-                                                                                                  column=0,
-                                                                                                  padx=5,
-                                                                                                  pady=3,
-                                                                                                  ipadx=10,
-                                                                                                  sticky='s')
-        ttk.Button(topRow, text="HeatMap View", command=lambda: self.update_mainimage('h')).grid(row=0, column=1,
-                                                                                                 padx=5, pady=3,
-                                                                                                 ipadx=10, sticky='s')
-        ttk.Button(topRow, text="Scale Pop-Up", command=lambda: self.show_size()).grid(row=0, column=2,
+        ttk.Button(topRow, text="HeatMap View",
+                   command=lambda: create_heatmap(self.masks, self.averageValues, self.ignoreMask)).grid(row=0,
+                                                                                                         column=0,
+                                                                                                         padx=5, pady=3,
+                                                                                                         ipadx=10,
+                                                                                                         sticky='s')
+        ttk.Button(topRow, text="Scale Pop-Up", command=lambda: self.show_size()).grid(row=0, column=1,
                                                                                        padx=5, pady=3,
                                                                                        ipadx=10, sticky='s')
 
@@ -114,9 +110,12 @@ class DepthPage(tk.Frame):
         container.tkraise()
 
     def show_size(self):
-        [_, shift, _] = HDR.align_images()
+        [_, shift, _] = HDR.align_images(name='depth')
 
-        imageScale = float(self.baseline) / (-shift)
+        imageScale = float(self.baseline) / (-shift[0])
+        print((-shift[0]))
+        print(float(self.baseline))
+        print(imageScale)
         _, ax = plt.subplots()
 
         ax.imshow(cv.cvtColor(self.originalIm, cv.COLOR_BGR2RGB), extent=[0, 500 * imageScale, 0, 500 * imageScale])
@@ -125,14 +124,9 @@ class DepthPage(tk.Frame):
         plt.show()
 
     def update_mainimage(self, name):
-        print('image update called')
+        # print('image update called')
         # change the main image to the normal segmented image
-        imageUpdate = self.originalIm
-
-        if name == 'h':
-            imageUpdate = cv.cvtColor(self.heatmap, cv.COLOR_BGR2RGB)
-        elif name == 'n':
-            imageUpdate = cv.cvtColor(self.drawnContours, cv.COLOR_BGR2RGB)
+        imageUpdate = cv.cvtColor(self.drawnContours, cv.COLOR_BGR2RGB)
 
         imageUpdate = Image.fromarray(imageUpdate)
         self.image = ImageTk.PhotoImage(image=imageUpdate)
@@ -146,15 +140,21 @@ class DepthPage(tk.Frame):
 
     # to update the depthmap redefine the background
     def update_depthmap(self, _):
+        # close open plots since they need to be recalculated
+        plt.close('all')
+
         self.baseline = self.distanceEnt.get()
         focalLength = self.focalEnt.get()
 
         if not self.baseline.isnumeric() or not focalLength.isnumeric():
             self.depthMap = depth_calculate()
+            print('enter numeric values')
         else:
             self.depthMap = depth_calculate(baseline=float(self.baseline), focalLength=float(focalLength))
 
         self.update_segment()
+        print('Baseline: ', float(self.baseline))
+        print('Focal Length: ', float(focalLength))
         # cv.imshow('depthmap', self.depthMap)
         # cv.imshow('original', self.originalIm)
         # cv.waitKey(0)
@@ -177,8 +177,7 @@ class DepthPage(tk.Frame):
                                                                                         self.backgroundCord[0],
                                                                                         self.depthMap,
                                                                                         self.originalIm.copy())
-        # create the heatmap overlay
-        self.heatmap = create_heatmap(self.masks, self.averageValues, self.ignoreMask)
+        print('Average Values: ', self.averageValues)
 
         self.update_mainimage('n')
 
@@ -266,21 +265,17 @@ def camera_calibrate():
     for i in range(0, size):
         for j in range(0, size):
             img = images[i, j]
-            cv.imshow('imgage reference', img)
-            cv.waitKey(0)
             gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
             # Find the chess board corners
             ret, corners = cv.findChessboardCorners(gray, (6, 6), None)
             # If found, add object points, image points (after refining them)
             if ret == True:
                 objpoints.append(objp)
-                print(objp)
+                # print(objp)
                 corners2 = cv.cornerSubPix(gray, corners, (6, 6), (-1, -1), criteria)
                 imgpoints.append(corners)
                 # Draw and display the corners
                 cv.drawChessboardCorners(img, (6, 6), corners2, ret)
-                cv.imshow('img', img)
-                cv.waitKey(0)
 
     # find the points necessary for camera callibration
     ret, mtx, dist, rvecs, tvecs = cv.calibrateCamera(objpoints, imgpoints, gray.shape[::-1], None, None)
@@ -344,7 +339,7 @@ def depth_calculate(baseline=0.05, focalLength=4.22):
     # Create Block matching object.
     minDisparity = 0
     [a, horShift, b] = HDR.align_images('par')
-    numDisparities = abs(int(horShift))  # use the shift calculated to align the images
+    numDisparities = abs(int(horShift[0]))  # use the shift calculated to align the images
     stereo = cv.StereoSGBM_create(numDisparities=numDisparities,
                                   blockSize=10,
                                   P1=8 * 3 * 5 * 5,
@@ -391,15 +386,13 @@ def depth_calculate(baseline=0.05, focalLength=4.22):
     fullDismap = (fullDismap / 16.0 - minDisparity) / numDisparities
 
     # cv.imshow('fulldismap', fullDismap)
+    # cv.waitKey(0)
 
     fullDepthMap = np.reciprocal(fullDismap)
     baseline = baseline / 1000  # covert to meters
     focalLength = focalLength / 1000  # convert to meters
-
-    fullDepthMap = fullDepthMap * (baseline * focalLength)
-    # cv.imshow('depth', fullDepthMap)
-
-    # cv.waitKey(0)
+    constant = baseline * focalLength
+    fullDepthMap = np.multiply(fullDepthMap, constant)
 
     return fullDepthMap
 
@@ -437,6 +430,9 @@ def segment(x, y, depthMap, image):
 
     # reshape back to the original image dimension
     segmentedImage = segmentedImage.reshape(image.shape)
+
+    # saveImage = cv.cvtColor(segmentedImage, cv.COLOR_BGR2RGB)
+    # cv.imwrite('segmented.png', saveImage)
 
     # find the segment the user clicked on and remove it
     segment = segmentedImage[y, x].astype(np.float32)
@@ -533,28 +529,48 @@ def segment(x, y, depthMap, image):
             averageValue.append([sum / noPoints])
             masks.append(mask)
 
+    # cv.imwrite('contours.png', drawnContours)
     return drawnContours, averageValue, masks, ignoreMask
 
 
 def create_heatmap(masks, averageValues, ignoreMask):
-    # multiple each mask by average values associated and combine into large greyscale image
+    print('creating heatmap...')
+    # multiple each mask by average values associated and combine into large array
     heatmap = np.zeros(masks[1].shape, np.uint8)
-    maxAverageValue = max(averageValues)
 
     for i in range(0, len(averageValues)):
-        # normalise the average value to 255 (greyscale)
-        normalAverageValue = averageValues[i][0].astype(np.float) * 255.0 / float(maxAverageValue[0])
-
-        averageMask = np.multiply(masks[i].astype(np.uint8), normalAverageValue.astype(np.uint8))
-
-        print('average mask value ', np.max(averageMask[i]).astype(np.uint8))
-        print('normal average value ', normalAverageValue)
+        averageMask = np.multiply(masks[i].astype(np.uint8), averageValues[i][0].astype(np.float)*1000)
         heatmap = np.add(heatmap, averageMask)
-        # print('maximum mask value: ', np.max(masks[i]).astype(np.uint8))
 
-    heatmap = cv.applyColorMap(heatmap, cv.COLORMAP_JET)
-    heatmap = np.multiply(heatmap, ignoreMask)  # remove the background again
-    heatmap = cv.cvtColor(heatmap, cv.COLOR_RGB2BGR)
+    heatmap = np.multiply(heatmap, ignoreMask[:, :, 0])  # remove the background again
+    heatmap[heatmap == 0] = np.nan # set nan values to remove from heatmap background
+
+
+    # create the figure
+    fig, axis = plt.subplots()
+    # set the colormap - there are many options for colormaps - see documentation
+    # we will use cm.jet
+    hm = axis.pcolor(heatmap, cmap=plt.cm.viridis_r, vmin=np.nanmin(heatmap), vmax=np.nanmax(heatmap))
+    # set axis ranges
+    axis.set(xlim=[0, heatmap.shape[1]], ylim=[0, heatmap.shape[0]], aspect=1)
+    # need to invert coordinate for images
+    axis.invert_yaxis()
+    # remove the ticks
+    axis.set_xticks([])
+    axis.set_yticks([])
+
+    # fit the colorbar to the height
+    shrink_scale = 1.0
+    aspect = heatmap.shape[0] / float(heatmap.shape[1])
+    if aspect < 1.0:
+        shrink_scale = aspect
+    clb = plt.colorbar(hm, shrink=shrink_scale)
+    # set title
+    clb.ax.set_title('Depth (mm)', fontsize=10, pad=15)
+    # saves image to same directory that the script is located in (our working directory)
+    plt.savefig('heatmap.png', bbox_inches='tight')
+
+    plt.show()
 
     return heatmap
 
@@ -572,12 +588,12 @@ def return_average(x, y, averageValues, masks, ignoreMask):
         for i in range(0, len(masks)):
             if masks[i][y, x] != 0:
                 sums.append(np.sum(masks[i], dtype=np.uint8))
-                print(np.sum(masks[i], dtype=np.uint8))
-                print(averageValues[i])
+                # print(np.sum(masks[i], dtype=np.uint8))
+                # print(averageValues[i])
                 sucessValues.append(averageValues[i])
 
         # find the smallest sum and return the associated
         minIndex = sums.index(min(sums))
         depth = sucessValues[minIndex]
-    print('depth', depth)
+    print('depth clicked: ', depth)
     return depth
