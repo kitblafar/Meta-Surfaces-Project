@@ -54,6 +54,7 @@ title({'Varying Phase with Pillar Radius (Height= 695nm)'});
 
 %% Find indeces for 530nm which gives 10 pillars with even phase jumps from 0 -> 2pi
 step=(1)/9;
+
 %initialise values and index array
 index1=zeros(10,1);
 index2=zeros(10,1);
@@ -65,6 +66,7 @@ for i=1:10
     %round to the nearest 5 or 10 as this can be done by the optical setup
     index1(i)=round( index1(i) / 5 ) * 5+1;
 end
+
 % for the zero phase value choose a higher value as the initial section of
 % the graph is approximatley linear (done by eye)
 index1(1)=find(radius==50);

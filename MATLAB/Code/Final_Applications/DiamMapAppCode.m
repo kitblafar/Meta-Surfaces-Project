@@ -1,24 +1,27 @@
-classdef DiamMapAppCode < matlab.apps.AppBase
+ classdef DiamMapAppCode < matlab.apps.AppBase
 
     % Properties that correspond to app components
     properties (Access = public)
-        UIFigure                     matlab.ui.Figure
-        GridLayout                   matlab.ui.container.GridLayout
-        LeftPanel                    matlab.ui.container.Panel
-        DistanceBetweenPillarCentresumEditFieldLabel  matlab.ui.control.Label
-        DistanceBetweenPillarCentresumEditField  matlab.ui.control.NumericEditField
-        FocalLengthumEditFieldLabel  matlab.ui.control.Label
-        FocalLengthumEditField       matlab.ui.control.NumericEditField
-        WavelengthumEditFieldLabel   matlab.ui.control.Label
-        WavelengthumEditField        matlab.ui.control.NumericEditField
-        LensDiameterApertureumEditField_2Label  matlab.ui.control.Label
-        LensDiameterApertureumEditField_2  matlab.ui.control.NumericEditField
-        DIAMETERMAPGENERATORLabel    matlab.ui.control.Label
-        Image                        matlab.ui.control.Image
-        USERINPUTSLabel_2            matlab.ui.control.Label
-        EnterButton                  matlab.ui.control.Button
-        RightPanel                   matlab.ui.container.Panel
-        UIAxes                       matlab.ui.control.UIAxes
+        UIFigure                                        matlab.ui.Figure
+        GridLayout                                      matlab.ui.container.GridLayout
+        LeftPanel                                       matlab.ui.container.Panel
+        DistanceBetweenPillarCentresumEditFieldLabel    matlab.ui.control.Label
+        DistanceBetweenPillarCentresumEditField         matlab.ui.control.NumericEditField
+        FocalLengthumEditFieldLabel                     matlab.ui.control.Label
+        FocalLengthumEditField                          matlab.ui.control.NumericEditField
+        WavelengthumEditFieldLabel                      matlab.ui.control.Label
+        WavelengthumEditField                           matlab.ui.control.NumericEditField
+        AmplitudeEditFieldLabel                         matlab.ui.control.Label
+        AmplitudeEditField                              matlab.ui.control.NumericEditField
+        LensDiameterApertureumEditField_2Label          matlab.ui.control.Label
+        LensDiameterApertureumEditField_2               matlab.ui.control.NumericEditField
+        DIAMETERMAPGENERATORLabel                       matlab.ui.control.Label
+        Image                                           matlab.ui.control.Image
+        USERINPUTSLabel_2                               matlab.ui.control.Label
+        EnterButton                                     matlab.ui.control.Button
+        RotationButton                                  matlab.ui.control.Button
+        RightPanel                                      matlab.ui.container.Panel
+        UIAxes                                          matlab.ui.control.UIAxes
     end
 
     % Properties that correspond to apps with auto-reflow
@@ -49,6 +52,10 @@ classdef DiamMapAppCode < matlab.apps.AppBase
         
         % Updates the Phase Map When the Enter Button Clicked
         function EnterButtonPushed(app)
+            amp =  app.AmplitudeEditField.Value;
+            if amp == 0 
+                amp=50;    %amplitude in percentage of full range
+            end
             
             f =  app.FocalLengthumEditField.Value;
             if f == 0 
@@ -70,11 +77,28 @@ classdef DiamMapAppCode < matlab.apps.AppBase
                 lambda = 0.561;    %this is the wavelength in um for the equation   
             end  
             
-            diameterMap = createDiameterMap(Px, f, pix, lambda);
-            
+            [diameterMap, rotationMap] = createDiameterMap(amp, Px, f, pix, lambda);
+            assignin('base','diameterMap',diameterMap);
+            assignin('base','rotationMap',rotationMap);
             imagesc(diameterMap, 'Parent', app.UIAxes);
             
-            
+        end
+          % Shows the Rotation Map
+        function RotationButtonPushed(app)
+            % update title
+            title(app.UIAxes, 'Rotation Map (degrees)')
+            % update image
+            rotationMap = evalin('base', 'rotationMap');
+            imagesc(rotationMap, 'Parent', app.UIAxes);
+        end
+        
+        % Shows the Diameter Map
+        function DiameterButtonPushed(app)
+            % update title
+            title(app.UIAxes, 'Diameter Map (nm)')
+            % update image
+            diameterMap = evalin('base', 'diameterMap');
+            imagesc(diameterMap, 'Parent', app.UIAxes);
         end
     end
 
@@ -104,27 +128,38 @@ classdef DiamMapAppCode < matlab.apps.AppBase
             app.LeftPanel = uipanel(app.GridLayout);
             app.LeftPanel.Layout.Row = 1;
             app.LeftPanel.Layout.Column = 1;
+            
+             % Create AmplitudeEditFieldLabel
+            app.AmplitudeEditFieldLabel = uilabel(app.LeftPanel);
+            app.AmplitudeEditFieldLabel.WordWrap = 'on';
+            app.AmplitudeEditFieldLabel.HorizontalAlignment = 'center';
+            app.AmplitudeEditFieldLabel.Position = [13 289 118 57];
+            app.AmplitudeEditFieldLabel.Text = 'Amplitude (%)';
+
+            % Create AmplitudeEditField
+            app.AmplitudeEditField = uieditfield(app.LeftPanel, 'numeric');
+            app.AmplitudeEditField.Position = [130 306 76 22];
 
             % Create DistanceBetweenPillarCentresumEditFieldLabel
             app.DistanceBetweenPillarCentresumEditFieldLabel = uilabel(app.LeftPanel);
             app.DistanceBetweenPillarCentresumEditFieldLabel.WordWrap = 'on';
-            app.DistanceBetweenPillarCentresumEditFieldLabel.Position = [13 306 118 57];
+            app.DistanceBetweenPillarCentresumEditFieldLabel.Position = [13 231 118 57];
             app.DistanceBetweenPillarCentresumEditFieldLabel.Text = 'Distance Between Pillar Centres (um)';
 
             % Create DistanceBetweenPillarCentresumEditField
             app.DistanceBetweenPillarCentresumEditField = uieditfield(app.LeftPanel, 'numeric');
-            app.DistanceBetweenPillarCentresumEditField.Position = [130 323 76 22];
+            app.DistanceBetweenPillarCentresumEditField.Position = [130 248 76 22];
 
             % Create FocalLengthumEditFieldLabel
             app.FocalLengthumEditFieldLabel = uilabel(app.LeftPanel);
             app.FocalLengthumEditFieldLabel.HorizontalAlignment = 'center';
             app.FocalLengthumEditFieldLabel.WordWrap = 'on';
-            app.FocalLengthumEditFieldLabel.Position = [13 240 118 42];
+            app.FocalLengthumEditFieldLabel.Position = [13 190 118 42];
             app.FocalLengthumEditFieldLabel.Text = 'Focal Length (um)';
 
             % Create FocalLengthumEditField
             app.FocalLengthumEditField = uieditfield(app.LeftPanel, 'numeric');
-            app.FocalLengthumEditField.Position = [130 250 76 22];
+            app.FocalLengthumEditField.Position = [130 200 76 22];
 
             % Create WavelengthumEditFieldLabel
             app.WavelengthumEditFieldLabel = uilabel(app.LeftPanel);
@@ -141,12 +176,12 @@ classdef DiamMapAppCode < matlab.apps.AppBase
             app.LensDiameterApertureumEditField_2Label = uilabel(app.LeftPanel);
             app.LensDiameterApertureumEditField_2Label.HorizontalAlignment = 'center';
             app.LensDiameterApertureumEditField_2Label.WordWrap = 'on';
-            app.LensDiameterApertureumEditField_2Label.Position = [13 158 118 56];
+            app.LensDiameterApertureumEditField_2Label.Position = [13 133 118 56];
             app.LensDiameterApertureumEditField_2Label.Text = 'Lens Diameter (Aperture) (um)';
 
             % Create LensDiameterApertureumEditField_2
             app.LensDiameterApertureumEditField_2 = uieditfield(app.LeftPanel, 'numeric');
-            app.LensDiameterApertureumEditField_2.Position = [130 175 76 22];
+            app.LensDiameterApertureumEditField_2.Position = [130 150 76 22];
 
             % Create DIAMETERMAPGENERATORLabel
             app.DIAMETERMAPGENERATORLabel = uilabel(app.LeftPanel);
@@ -174,6 +209,16 @@ classdef DiamMapAppCode < matlab.apps.AppBase
             app.EnterButton = uibutton(app.LeftPanel, 'push', 'ButtonPushedFcn', @(btn,event)EnterButtonPushed(app));
             app.EnterButton.Position = [60 35 100 22];
             app.EnterButton.Text = 'Enter';
+            
+            % Create Show Rotation Map Button
+            app.RotationButton = uibutton(app.LeftPanel, 'push', 'ButtonPushedFcn', @(btn,event)RotationButtonPushed(app));
+            app.RotationButton.Position = [120 5 100 22];
+            app.RotationButton.Text = 'Rotation Map';
+            
+            % Create Show Diameter Map Button
+            app.RotationButton = uibutton(app.LeftPanel, 'push', 'ButtonPushedFcn', @(btn,event)DiameterButtonPushed(app));
+            app.RotationButton.Position = [5 5 100 22];
+            app.RotationButton.Text = 'Diameter Map';
 
             % Create RightPanel
             app.RightPanel = uipanel(app.GridLayout);
@@ -217,232 +262,268 @@ classdef DiamMapAppCode < matlab.apps.AppBase
 end
 
 %% Phase Map Code
-function diameterMap = createDiameterMap(Px, f, pix, lambda)
-%% The start of the phase map code
+function [diameterMap, rotationMap] = createDiameterMap(amppercent, Px, f, pix, lambda)
+    %% The start of the phase map code
+    
     Vortex = 0;
     Py=((Px).*sqrt(3))./2; %period in y in um, for a honeycomb arrangement, change to just Px for square grid
     NA = pix./(2.*f);
     lam = lambda.*1000;
+    amp = amppercent/100;
+    amp = 0.17*amp+0.1; %map to the full known range
 
+    fprintf('The amplitude percentage is %d percent \n',amppercent)
     fprintf('The focal length is %dum \n',f)
     fprintf('The lens size/diameter is %dum \n',pix)
     fprintf('The wavelength is %dnm \n',lam)
     fprintf('The Numerical Aperture is is %.2f \n',NA)
- %%                              
-                sizes =importdata('10_SiNx_Pillars_561nm.txt');     %this is where you input the data file from CST with your pillar and corresponding phase values
-%                 sizes = sizes(:,1)
-
-                FileName = sprintf('VortexLens_d%dum_f%dum_%dnm_%.2fNA_l1', pix,f,lam,NA);        %the file name, can modify to be based on date, time etc
-                [status, msg, msgID] = mkdir(FileName)
-                
- %% Produces the number of pixels within the lens size, and checks if odd or even              
-Rx = single((pix - (mod(pix,Px)))/Px);      %mod returns remainder after division, so Rx divides the aperture up into an integer number of pixels, Px
-
-if mod(Rx,2) ~= 0           %if remainder of Rx,2 is not zero, i.e. odd number, subtract 1
     
-    Rx = Rx - 1;            %fixes the issue where you have an even number of pixels, helpful for calculating only quarter of a lens to speed up
+    %%
+    sizes =importdata('Phase_Geo_10_SiNx_Pillars_561nm.txt');     %this is where you input the data file from CST with your pillar and corresponding phase values
+    %                 sizes = sizes(:,1)
+    rotations = readtable('Amp_Geo_10_SiNx_Pillars_561nm.csv');
+
+    FileName = sprintf('VortexLens_a%d_d%dum_f%dum_%dnm_%.2fNA_l1', amppercent, pix,f,lam,NA);
+    FileNameDiam = sprintf('DiamVortexLens_a%d_d%dum_f%dum_%dnm_%.2fNA_l1', amppercent, pix,f,lam,NA);        %the file name, can modify to be based on date, time etc
+    FileNameRot = sprintf('RotVortexLens_a%d_d%dum_f%dum_%dnm_%.2fNA_l1', amppercent, pix,f,lam,NA);
+    [status, msg, msgID] = mkdir(FileName)
+
+    %% Produces the number of pixels within the lens size, and checks if odd or even
     
-end
+    Rx = single((pix - (mod(pix,Px)))/Px);      %mod returns remainder after division, so Rx divides the aperture up into an integer number of pixels, Px
 
-Ry = single((pix - (mod(pix,Py)))/Py);
+    if mod(Rx,2) ~= 0           %if remainder of Rx,2 is not zero, i.e. odd number, subtract 1
 
-if mod(Ry,2) ~= 0
-        
-    Ry = Ry - 1;                %same as above for Y direction   
-    
-end
-%% generates 2D meshgrids for X,Y coordinates and corresponding phase based on vectors on Rx and Ry
+        Rx = Rx - 1;            %fixes the issue where you have an even number of pixels, helpful for calculating only quarter of a lens to speed up
 
-x1 = linspace((-Rx./2).*Px,(Rx./2).*Px,Rx+1);       %makes a vector x1 with evenly spaced coordinates based on Rx
-y1 = linspace((-Ry./2).*Py,(Ry./2).*Py,Ry+1);       %same but for Ry
-sx = length(x1);                                    %checks size of x1
-sy = length(y1);                                    %checks size of y1
+    end
 
-Xcoord = (zeros(sx,sy));                            %makes a matrix that is sx*sy in size, which is 1 larger than Rx, as needs to contain "zeroth" pixel
-Ycoord = (zeros(sx,sy));
-phi  = (zeros(sx,sy));
-Phi_Vortex = phi;
+    Ry = single((pix - (mod(pix,Py)))/Py);
 
-%% Chooses values for x and y, to put into lens equation, and looks if honeycomb pattern, wraps phase as fraction of 1
+    if mod(Ry,2) ~= 0
 
-for i = 1:sx   
-    for j = 1:sy                                                          %make triangular lattice, for x row, based on if odd or even y value
-        if mod(j,2) ~= 0                    % if j is even, do stuff
-            x = x1(i);
-            y = y1(j);
-        else                                % if j is odd, do stuff
-            x = x1(i) + Px./2;  
-            y = y1(j);
-        end        
-        Xcoord(i,j) = x;    %these are for the output x and y coordinates in the text file
-        Xcoord(i,j) = Xcoord(i,j);   %TRY AND CUT AWAY VALUES THAT GO OVER THE BORDER OF THE LENS SIZE (EVERY ODD COLUMN)
-        Ycoord(i,j) = y;
-    end       
-end       
+        Ry = Ry - 1;                %same as above for Y direction
+
+    end
+    %% generates 2D meshgrids for X,Y coordinates and corresponding phase based on vectors on Rx and Ry
+
+    x1 = linspace((-Rx./2).*Px,(Rx./2).*Px,Rx+1);       %makes a vector x1 with evenly spaced coordinates based on Rx
+    y1 = linspace((-Ry./2).*Py,(Ry./2).*Py,Ry+1);       %same but for Ry
+    sx = length(x1);                                    %checks size of x1
+    sy = length(y1);                                    %checks size of y1
+
+    Xcoord = (zeros(sx,sy));                            %makes a matrix that is sx*sy in size, which is 1 larger than Rx, as needs to contain "zeroth" pixel
+    Ycoord = (zeros(sx,sy));
+    phi  = (zeros(sx,sy));
+    Phi_Vortex = phi;
+
+    %% Chooses values for x and y, to put into lens equation, and looks if honeycomb pattern, wraps phase as fraction of 1
+
+    for i = 1:sx
+        for j = 1:sy                                                          %make triangular lattice, for x row, based on if odd or even y value
+            if mod(j,2) ~= 0                    % if j is even, do stuff
+                x = x1(i);
+                y = y1(j);
+            else                                % if j is odd, do stuff
+                x = x1(i) + Px./2;
+                y = y1(j);
+            end
+            Xcoord(i,j) = x;    %these are for the output x and y coordinates in the text file
+            Xcoord(i,j) = Xcoord(i,j);   %TRY AND CUT AWAY VALUES THAT GO OVER THE BORDER OF THE LENS SIZE (EVERY ODD COLUMN)
+            Ycoord(i,j) = y;
+        end
+    end
     phi = (-((2*pi./lambda).* ((sqrt( (f*f)+((Xcoord.^2)+(Ycoord.^2)) )-f)))); %write phase information to matrix based on triangular lattice location
     %phi is in multiples of 2pi, have to wrap phase
-        
-   %%   phase plate
-   vort = atan2d(Xcoord,Ycoord);
-   vort = vort+180;
-%%    wrap phase
 
-phib=phi;    
-phi = phi./(2.*pi); %to make phase as a fraction of 2pi, same format as input file from CST. Can compare the two, as below
-
-vortb = vort;
-vort = vort./360;
-
-for i=1:sx
-    for j = 1:sy            
-        while phib(i,j) < -360
-            phib(i,j) = phib(i,j) + 360; %%this part is to wrap phase and create zones    
-        end        
-    end
-end
-
-for i=1:sx
-    for j = 1:sy
-            
-        while phi(i,j) < -1
-            phi(i,j) = phi(i,j) + 1; %%this part is to wrap phase and create zones
+    %%   phase plate
     
+    vort = atan2d(Xcoord,Ycoord);
+    vort = vort+180;
+    %%    wrap phase
+
+    phib=phi;
+    phi = phi./(2.*pi); %to make phase as a fraction of 2pi, same format as input file from CST. Can compare the two, as below
+    vortb = vort;
+    vort = vort./360;
+    for i=1:sx
+        for j = 1:sy
+            while phib(i,j) < -360
+                phib(i,j) = phib(i,j) + 360; %%this part is to wrap phase and create zones
+            end
         end
-        
     end
-end
-phi = phi + 1;
 
-%%  section to generate a circle to crop the lens area, convert from square matrix to circular matrix
+    for i=1:sx
+        for j = 1:sy
 
-diam = phi*0;       %make a zero matrix
-vortdiam = vort*0;
-combodiam = vort*0;
-circ = diam;        %make a copy of diam
-% Create a logical image of an ellipse with specified
-% semi-major and semi-minor axes, center, and image size.
-% First create the image.
+            while phi(i,j) < -1
+                phi(i,j) = phi(i,j) + 1; %%this part is to wrap phase and create zones
 
-imageSizeX = sy;
-imageSizeY = sx;
-[columnsInImage rowsInImage] = meshgrid(1:imageSizeX, 1:imageSizeY);        %make a 2D grid
-% Next create the ellipse in the image.
-centerX = sy/2;
-centerY = sx/2;
-radiusX = sy/2;
-radiusY = sx/2;
-ellipsePixels = (rowsInImage - centerY).^2 ./ radiusY^2 ...    %%finds difference between coordinate and centre, then squares to make positive, then divides by radius squared to normalise
-    + (columnsInImage - centerX).^2 ./ radiusX^2 <= 1;  % ellipsePixels is a 2D "logical" array.
+            end
 
-% Now, display it.
-
-% figure(1)
-% image(ellipsePixels) ;
-% colormap([0 0 0; 1 1 1]);
-% title('Binary image of a ellipse', 'FontSize', 20);
-
-circ = ellipsePixels;
-
-%% map pillars and round to nearest value onto equation of a lens
-
-mask = phi;         %make a copy of phase matrix phi
-vortmask = vort;
-
-if Vortex ~= 1
-    vortmask = 0;
-end
-
-combomask = mask + vortmask;
-
-% figure(2)
-% imagesc(mask)
-if Vortex ==1
-%     figure(3)
-%     imagesc(vortmask)
-end
-% figure(4)
-% imagesc(combomask)
-
-for i=1:sx
-    for j = 1:sy            
-        while combomask(i,j) > 1
-            combomask(i,j) = combomask(i,j) - 1; %%this part is to wrap phase and create zones    
-        end        
+        end
     end
-end
+    phi = phi + 1;
 
-if Vortex == 1
+    %%  section to generate a circle to crop the lens area, convert from square matrix to circular matrix
 
-% figure(5)
-% imagesc(combomask)
+    diam = phi*0;       %make a zero matrix
+    vortdiam = vort*0;
+    combodiam = vort*0;
+    comborotat = vort*0;
+    circ = diam;        %make a copy of diam
+    % Create a logical image of an ellipse with specified
+    % semi-major and semi-minor axes, center, and image size.
+    % First create the image.
 
-else 
+    imageSizeX = sy;
+    imageSizeY = sx;
+    [columnsInImage rowsInImage] = meshgrid(1:imageSizeX, 1:imageSizeY);        %make a 2D grid
+    % Next create the ellipse in the image.
+    centerX = sy/2;
+    centerY = sx/2;
+    radiusX = sy/2;
+    radiusY = sx/2;
+    ellipsePixels = (rowsInImage - centerY).^2 ./ radiusY^2 ...    %%finds difference between coordinate and centre, then squares to make positive, then divides by radius squared to normalise
+        + (columnsInImage - centerX).^2 ./ radiusX^2 <= 1;  % ellipsePixels is a 2D "logical" array.
 
-end
+    % Now, display it.
+
+    % figure(1)
+    % image(ellipsePixels) ;
+    % colormap([0 0 0; 1 1 1]);
+    % title('Binary image of a ellipse', 'FontSize', 20);
+
+    circ = ellipsePixels;
+
+    %% map pillars and round to nearest value onto equation of a lens
+
+    mask = phi;         %make a copy of phase matrix phi
+    vortmask = vort;
+
+    if Vortex ~= 1
+        vortmask = 0;
+    end
+
+    combomask = mask + vortmask;
+
+%     figure(2)
+%     imagesc(mask)
+    if Vortex ==1
+        figure(3)
+        imagesc(vortmask)
+    end
+%     figure(4)
+%     imagesc(combomask)
+
+    for i=1:sx
+        for j = 1:sy
+            while combomask(i,j) > 1
+                combomask(i,j) = combomask(i,j) - 1; %%this part is to wrap phase and create zones
+            end
+        end
+    end
+
+    if Vortex == 1
+
+        %figure(5)
+        %imagesc(combomask)
+
+    else
+
+    end
 
 
-%%
-% vortmask = vort;         %make a copy of phase matrix phi
+    %% Assign
+    % vortmask = vort;                              %make a copy of phase matrix phi
 
-for i=1:ceil(sx)        %only generate quarter of a lens
-    for j=1:ceil(sy)
-    if circ(i,j) == 1           %%only for circlular data in the ellipse
-      
-    test = sizes(:,2)-combomask(i,j);        %compares pillar phase and equation phase from phi
-    index_neg = find(test<0);
-    test(index_neg) = test(index_neg)+1;    
-    % NEED TO delete the negative values, choose smallest positive value
-    test2 = find(test==min(test));   
+    for i=1:ceil(sx)                                %only generate quarter of a lens
+        for j=1:ceil(sy)
+            if circ(i,j) == 1                           %only for circlular data in the ellipse
+
+                test = sizes(:,2)-combomask(i,j);           %compares pillar phase and equation phase from phi
+                index_neg = find(test<0);
+                test(index_neg) = test(index_neg)+1;
+                % NEED TO delete the negative values, choose smallest positive value
+                test2 = find(test==min(test));
+
+                if length(index_neg) == length(sizes)
+                    clear test2
+                    test2 = 1;
+                end
+
+                %find the nearest rotation value for the chosen amplitude
+                %round amp to the nearest possible value
+                roundTargets = 0.1:(0.17/9):0.27;
+                ampRounded = interp1(roundTargets,roundTargets,amp,'nearest','extrap');
+                %find the index this corresponds to so the row used is known
+                rowIndex = find(roundTargets==ampRounded);
+                rotation4AmpTable = rotations(rowIndex+1,:);
+                rotation4Amp = table2array(rotation4AmpTable);
+
+
+                switch test2
+                    % asign diameter and rotations
+                    case 1
+                        combodiam(i,j) = sizes(1,1);
+                        comborotat(i,j) = rotation4Amp(1,1);
+                    case 2
+                        combodiam(i,j) = sizes(2,1);
+                        comborotat(i,j) = rotation4Amp(1,2);
+                    case 3
+                        combodiam(i,j) = sizes(3,1);
+                        comborotat(i,j) = rotation4Amp(1,3);
+                    case 4
+                        combodiam(i,j) = sizes(4,1);
+                        comborotat(i,j) = rotation4Amp(1,4);
+                    case 5
+                        combodiam(i,j) = sizes(5,1);
+                        comborotat(i,j) = rotation4Amp(1,5);
+                    case 6                              %%All of these cases correspond to the number of chosen pillars, e.g. 8, 10, 16
+                        combodiam(i,j) = sizes(6,1);
+                        comborotat(i,j) = rotation4Amp(1,6);
+                    case 7
+                        combodiam(i,j) = sizes(7,1);
+                        comborotat(i,j) = rotation4Amp(1,7);
+                    case 8
+                        combodiam(i,j) = sizes(8,1);
+                        comborotat(i,j) = rotation4Amp(1,8);
+                    case 9
+                        combodiam(i,j) = sizes(9,1);
+                        comborotat(i,j) = rotation4Amp(1,9);
+                    case 10
+                        combodiam(i,j) = sizes(10,1);
+                        comborotat(i,j) = rotation4Amp(1,10);
+                end
+                clear test
+                clear test2
+
+            end
+
+        end
+    end
+
+    % %% This part replicates the quarter lens into the other 3 quadrants, so don't need to calculate, symmetric
+    % diam(1:(ceil(sx/2)) , ((ceil(sy/2))+1):sy) = diam(1:(ceil(sx/2)) , 1:((floor(sy/2))));
+    % diam(1:(ceil(sx/2)) , ((ceil(sy/2))+1):sy) = fliplr(diam(1:(ceil(sx/2)) , ((ceil(sy/2))+1):sy));
+    % diam(((ceil(sx/2))+1):sx , 1:sy) = diam(1:(floor(sx/2)) , 1:sy);
+    % diam(((ceil(sx/2))+1):sx , 1:sy) = flipud(diam(((ceil(sx/2))+1):sx , 1:sy));
+    %% Make a file name to write data to with three headers
+    save_name = sprintf('%s/%s.mat',FileName, FileNameDiam);
+    save (save_name, 'combodiam');
+    save_name = sprintf('%s/%s.mat',FileName, FileNameRot);
+    save (save_name, 'comborotat');
     
-    if length(index_neg) == length(sizes)
-        clear test2
-        test2 = 1;
-    end
-    
-    switch test2
-        
-        case 1
-            combodiam(i,j) = sizes(1,1);
-        case 2
-            combodiam(i,j) = sizes(2,1);             
-        case 3
-            combodiam(i,j) = sizes(3,1);
-        case 4
-              combodiam(i,j) = sizes(4,1);
-        case 5
-              combodiam(i,j) = sizes(5,1);
-        case 6                              %%All of these cases correspond to the number of chosen pillars, e.g. 8, 10, 16
-              combodiam(i,j) = sizes(6,1);
-        case 7
-              combodiam(i,j) = sizes(7,1);
-        case 8
-              combodiam(i,j) = sizes(8,1); 
-        case 9
-              combodiam(i,j) = sizes(9,1); 
-        case 10
-              combodiam(i,j) = sizes(10,1); 
-    end     
-    clear test
-    clear test2
-    
-    end
-    
-    end
-end 
-% %% This part replicates the quarter lens into the other 3 quadrants, so don't need to calculate, symmetric
-% diam(1:(ceil(sx/2)) , ((ceil(sy/2))+1):sy) = diam(1:(ceil(sx/2)) , 1:((floor(sy/2))));
-% diam(1:(ceil(sx/2)) , ((ceil(sy/2))+1):sy) = fliplr(diam(1:(ceil(sx/2)) , ((ceil(sy/2))+1):sy));    
-% diam(((ceil(sx/2))+1):sx , 1:sy) = diam(1:(floor(sx/2)) , 1:sy);
-% diam(((ceil(sx/2))+1):sx , 1:sy) = flipud(diam(((ceil(sx/2))+1):sx , 1:sy));
-%%
-
-%% Make a file name to write data to with three headers
-save_name = sprintf('%s/%s.mat',FileName, FileName)
-save (save_name, 'combodiam')
-%% Plot the lens in terms of pillar diameter
-if Vortex == 0
-    diameterMap = combodiam;       
-%     save_fig = sprintf('%s/%s.fig',FileName, FileName)
-%     savefig(imagesc(combodiam),save_fig)
-end
+    %% Plot the lens in terms of pillar diameter
+    fig = figure('visible','on');
+    imagesc(combodiam);
+    save_fig = sprintf('%s/%s.fig',FileName, FileNameDiam);
+    savefig(fig,save_fig);
+    fig2 = figure('visible','on');
+    imagesc(comborotat);
+    save_fig = sprintf('%s/%s.fig',FileName, FileNameRot);
+    savefig(fig2,save_fig);
+    rotationMap = comborotat;
+    diameterMap = combodiam;
 end
