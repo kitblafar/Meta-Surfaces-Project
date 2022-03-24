@@ -74,7 +74,7 @@
             
             lambda =  app.WavelengthumEditField.Value;
             if lambda == 0
-                lambda = 0.561;    %this is the wavelength in um for the equation   
+                lambda = 561;    %this is the wavelength in um for the equation   
             end  
             
             [diameterMap, rotationMap] = createDiameterMap(amp, Px, f, pix, lambda);
@@ -166,7 +166,7 @@
             app.WavelengthumEditFieldLabel.HorizontalAlignment = 'center';
             app.WavelengthumEditFieldLabel.WordWrap = 'on';
             app.WavelengthumEditFieldLabel.Position = [13 68 110 56];
-            app.WavelengthumEditFieldLabel.Text = 'Wavelength (um)';
+            app.WavelengthumEditFieldLabel.Text = 'Wavelength (nm)';
 
             % Create WavelengthumEditField
             app.WavelengthumEditField = uieditfield(app.LeftPanel, 'numeric');
@@ -190,7 +190,7 @@
             app.DIAMETERMAPGENERATORLabel.FontSize = 16;
             app.DIAMETERMAPGENERATORLabel.FontWeight = 'bold';
             app.DIAMETERMAPGENERATORLabel.Position = [72 415 134 53];
-            app.DIAMETERMAPGENERATORLabel.Text = 'DIAMETER MAP GENERATOR';
+            app.DIAMETERMAPGENERATORLabel.Text = 'METASURFACE GENERATOR';
 
             % Create Image
             app.Image = uiimage(app.LeftPanel);
@@ -262,13 +262,13 @@
 end
 
 %% Phase Map Code
-function [diameterMap, rotationMap] = createDiameterMap(amppercent, Px, f, pix, lambda)
+function [diameterMap, rotationMap] = createDiameterMap(amppercent, Px, f, pix, lam)
     %% The start of the phase map code
     
     Vortex = 0;
     Py=((Px).*sqrt(3))./2; %period in y in um, for a honeycomb arrangement, change to just Px for square grid
     NA = pix./(2.*f);
-    lam = lambda.*1000;
+    lambda =lam/1000;
     amp = amppercent/100;
     amp = 0.17*amp+0.1; %map to the full known range
 
@@ -516,14 +516,15 @@ function [diameterMap, rotationMap] = createDiameterMap(amppercent, Px, f, pix, 
     save (save_name, 'comborotat');
     
     %% Plot the lens in terms of pillar diameter
-    fig = figure('visible','on');
+    fig = figure('visible','off');
     imagesc(combodiam);
     save_fig = sprintf('%s/%s.fig',FileName, FileNameDiam);
     savefig(fig,save_fig);
-    fig2 = figure('visible','on');
+    fig2 = figure('visible','off');
     imagesc(comborotat);
     save_fig = sprintf('%s/%s.fig',FileName, FileNameRot);
     savefig(fig2,save_fig);
+    close all;
     rotationMap = comborotat;
     diameterMap = combodiam;
 end
