@@ -80,7 +80,7 @@
             end  
             
             [diameterMap, rotationMap] = createDiameterMap(amp, Px, f, pix, lambda);
-            assignin('base','userInputs',[Px, f, pix, lambda]);
+            assignin('base','userInputs',[amp, Px, f, pix, lambda]);
             assignin('base','diameterMap',diameterMap);
             assignin('base','rotationMap',rotationMap);
             imagesc(diameterMap, 'Parent', app.UIAxes);
@@ -110,7 +110,7 @@
             rotationMap = evalin('base', 'rotationMap');
             diameterMap = evalin('base', 'diameterMap');
             userInputs = evalin('base', 'userInputs');
-            GDSMapComplete = generateGDSIIFile(userInputs(1), userInputs(2), userInputs(3), userInputs(4), diameterMap, rotationMap)
+            GDSMapComplete = generateGDSIIFile(userInputs(1), userInputs(2), userInputs(3), userInputs(4), userInputs(5), diameterMap, rotationMap)
             set(app.GDSButton,'Backgroundcolor','green');
         end
     end
@@ -548,38 +548,34 @@ function [diameterMap, rotationMap] = createDiameterMap(amppercent, Px, f, pix, 
 end
 
 %% GDS Map Generation
-function gdsDone = generateGDSIIFile(Px, f, pix, lam, diameterMap, rotationMap)
-    %% TODO- change this to come from user inputs
-                    split = 0;
+function gdsDone = generateGDSIIFile(amppercent, Px, f, pix, lam, diameterMap, rotationMap)
+  
+    split = 0;
+    Px=Px*1000; %period in x in nm (distance between pillar centres)
 
-                    Px=Px*1000; %period in x in nm (distance between pillar centres)
+    Py=Px; %((Px).*sqrt(3))./2; %period in y in um, for a honeycomb arrangement, change to just Px for square grid
 
-                    Py=Px; %((Px).*sqrt(3))./2; %period in y in um, for a honeycomb arrangement, change to just Px for square grid
+    f=f*1000;    %focal length in um
 
-                    f=f*1000;    %focal length in um
+    pix=pix*1000;  %aperture or lens diameter size in um
 
-                    pix=pix*1000;  %aperture or lens diameter size in um
+    NA = pix./(2.*f);
 
-                    NA = pix./(2.*f);
+    fprintf('The focal length is %dum \n',f)
+    fprintf('The lens size/diameter is %dum \n',pix)
+    fprintf('The wavelength is %dnm \n',lam)
+    fprintf('The Numerical Aperture is is %.2f \n',NA)
+    
+%%  rename file            
+    diam = diameterMap;
+    rotat = rotationMap;
 
-                    fprintf('The focal length is %dum \n',f)
-                    fprintf('The lens size/diameter is %dum \n',pix)
-                    fprintf('The wavelength is %dnm \n',lam)
-                    fprintf('The Numerical Aperture is is %.2f \n',NA)
 
-
-      %%              
-                   % TODO - change this to come from functions 
-                    diam = diameterMap;
-                    rotat = rotationMap;
-
-                    % TODO- name should be the filename + GDS map
-                    name='a10_d100um_f200um_561nm_0.25NA_l1';
-                    FileName = sprintf(name);        %the file name, can modify to be based on date, time etc
-                    sizes =importdata('Phase_Geo_10_SiNx_Pillars_561nm.txt');
-                    rotations = importdata('Amp_Geo_10_SiNx_Pillars_561nm.csv');
-                    rotations = rotations(2:end, :);
-                    pill = sizes(:,1);
+    FileName = sprintf('gds%d_d%dum_f%dum_%dnm_%.2fNA_l1', amppercent, pix,f,lam);   %the file name, can modify to be based on date, time etc
+    sizes =importdata('Phase_Geo_10_SiNx_Pillars_561nm.txt');
+    rotations = importdata('Amp_Geo_10_SiNx_Pillars_561nm.csv');
+    rotations = rotations(2:end, :);
+    pill = sizes(:,1);
 
      %% Make the pillars and store in structure.
     repx=length(pill); 
