@@ -270,3 +270,6 @@ dmypy.json
 
 # remove all CST simultations
 /CST
+
+#ignore the final framework it is in a seperate repository
+/FinalFramework

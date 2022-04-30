@@ -239,8 +239,8 @@ def read_images(name, mode='normal'):
 
         images = np.zeros((MMLsize, MMLsize, imageSize, imageSize, 3), dtype=np.uint8)
         # read images into an array
-        for i in range(0, MMLsize):
-            for j in range(0, MMLsize):
+        for j in range(0, MMLsize):
+            for i in range(0, MMLsize):
                 filename = directory + parallax.image_filename(groupname, j + 1, i + 1)
                 im = cv.imread(filename)
                 images[i, j] = im

@@ -49,12 +49,12 @@ class HDRPage(tk.Frame):
         parPar.rowconfigure(4, weight=1)
         parPar.columnconfigure(0, weight=1)
 
-        label1 = tk.Label(parPar, text="Maximum Absorption (between 5 and 50)")
+        label1 = tk.Label(parPar, text="Maximum Transmission Amplitude (90-100)")
         label1.grid(row=0, column=0, padx=5, pady=5, sticky='n')
         self.sl1 = ttk.Scale(parPar, from_=5, to=50, orient=tk.HORIZONTAL)
         self.sl1.bind('<ButtonRelease>', self.update_absorb)
         self.sl1.grid(row=1, column=0, sticky='NSEW')
-        label2 = tk.Label(parPar, text="Minimum Absorption (between 0 and 10)")
+        label2 = tk.Label(parPar, text="Minimum Transmission Amplitude (70-90)")
         label2.grid(row=2, column=0)
         self.sl2 = ttk.Scale(parPar, from_=0, to=10, orient=tk.HORIZONTAL)
         self.sl2.bind('<ButtonRelease>', self.update_absorb)
@@ -179,11 +179,14 @@ def HDR_combine(inputImages, maxAbs=5, minAbs=1):
     exposure = np.zeros((size * size), dtype=np.float32)
 
     for i in range((size * size - 1), -1, -1):  # highest absorption= lowest brightness= lowest exposure
+        # windowName = 'input image' + str(i)
+        # cv.imshow(windowName,inputImages[i])
+        # cv.waitKey(0)
         absorption = i * ((maxAbs - minAbs) / (size * size)) + minAbs  # as absorption is linearly distributed
         exposure[i] = 1 / absorption
 
     # Merge images in to HDR image
-    mergeDebvec = cv.createMergeRobertson()
+    mergeDebvec = cv.createMergeDebevec()
     hdr = mergeDebvec.process(inputImages, times=exposure.copy())
 
     # Tonemap the HDR- using Reinhard's method to obtain 24-bit color image
