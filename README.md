@@ -28,7 +28,8 @@ Due to COVID, the lab was closed so the lens could not be fabricated. In order t
 
 ## Image Reconstruction
 
-Using the Blender images, a Tkinter Python app was made to process these images using HDR and into a map that predicts the depth of each object. 
+Using the Blender images, a Python app with very basic Tkinter GUI was made to process these images using HDR and into a map that predicts the depth of each object. 
+![Tkinter GUI](https://github.com/kitblafar/Meta-Surfaces-Project/blob/main/PlenopticViewer/Demos/PlenopticViewerUI.png)
 
 ### Depth Sensing: 
 Each object, which we wanted to know the of should be seperated from each other image. First the image was contoured to guess at the border of each object, the objects where then classified by colour. As the distance of the sensor from the lens; the distance between each lens in the array and the location of the object in each image are known, then the distance between the lens and the object or the "depth" can be triangulated. This was done and the heatmap generated.
