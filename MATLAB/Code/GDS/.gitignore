@@ -1,7 +1,0 @@
-# backup files
-*~
-
-# intermediate and mex files
-*.o
-*.mex
-

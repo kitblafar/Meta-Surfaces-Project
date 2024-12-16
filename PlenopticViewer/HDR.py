@@ -4,7 +4,7 @@ from tkinter import ttk
 import parallax
 import cv2 as cv
 import numpy as np
-from PIL import Image, ImageTk
+from PIL import Image
 import depth
 
 

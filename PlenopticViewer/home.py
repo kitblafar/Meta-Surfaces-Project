@@ -8,7 +8,6 @@ import numpy as np
 import cv2 as cv
 from PIL import Image, ImageTk
 
-
 # Initial processing steps
 def initial_tasks():
     parallax.im_resize('par')
